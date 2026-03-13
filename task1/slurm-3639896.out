@@ -1,0 +1,250 @@
+
+The following have been reloaded with a version change:
+  1) Python/Anaconda_v02.2024 => Python/Miniconda
+
+[prun] Master compute host = cn-039
+[prun] Resource manager = slurm
+[prun] Launch cmd = mpirun /home/peivzarenkov/.conda/envs/peter_env/bin/python train_etn.py (family=openmpi)
+group size rank 2 = 4768
+group size rank 6 = 4768
+group size rank 0 = 4768
+group size rank 1 = 4736
+group size rank 3 = 4768
+group size rank 7 = 4768
+group size rank 4 = 4768
+group size rank 5 = 4768
+group size rank 3 = 960
+group size rank 6 = 960
+group size rank 2 = 960
+group size rank 0 = 960
+group size rank 1 = 960
+group size rank 7 = 960
+group size rank 4 = 960
+group size rank 5 = 960
+[cn-039:166046:0:166046] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x70)
+[cn-039:166041:0:166041] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x70)
+[cn-039:166045:0:166045] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x70)
+[cn-039:166039:0:166039] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x70)
+[cn-039:166042:0:166042] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x70)
+[cn-039:166048:0:166048] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x70)
+[cn-039:166047:0:166047] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x70)
+[cn-039:166044:0:166044] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x70)
+==== backtrace (tid: 166044) ====
+==== backtrace (tid: 166047) ====
+ 0  /home/peivzarenkov/.conda/envs/peter_env/lib/python3.10/site-packages/mpi4py/../../.././libucs.so.0(ucs_handle_error+0x2fd) [0x7fa54dcd684d]
+ 1  /home/peivzarenkov/.conda/envs/peter_env/lib/python3.10/site-packages/mpi4py/../../.././libucs.so.0(+0x2fa3f) [0x7fa54dcd6a3f]
+ 2  /home/peivzarenkov/.conda/envs/peter_env/lib/python3.10/site-packages/mpi4py/../../.././libucs.so.0(+0x2fc0a) [0x7fa54dcd6c0a]
+ 3  /lib64/libpthread.so.0(+0xf5f0) [0x7fa5668655f0]
+ 4  /home/peivzarenkov/mlip-4/build/libpyinterface.so(_ZN6ExtCfg17ToRelativeSpeciesERK12SpeciesOrder+0xad) [0x7fa535172b7f]
+ 5  /home/peivzarenkov/mlip-4/build/libpyinterface.so(_ZN7CalcCfg9AttachPotERKSt10shared_ptrI11AnyLocalPotE+0x1c3) [0x7fa535268567]
+ 6  /home/peivzarenkov/mlip-4/build/libpyinterface.so(_ZN7LossCfg9AttachPotERKSt10shared_ptrI11AnyLocalPotE+0x23) [0x7fa53526cc53]
+ 7  /home/peivzarenkov/mlip-4/build/libpyinterface.so(_ZN12LossFunction9AttachPotERKSt10shared_ptrI11AnyLocalPotE+0x8d) [0x7fa53526bf17]
+ 8  /home/peivzarenkov/mlip-4/build/libpyinterface.so(_ZN6mlip_411pyinterface14p_LossFunction9AttachPotENS0_13p_AnyLocalPotE+0x2e) [0x7fa535156378]
+ 9  /home/peivzarenkov/.local/lib/python3.10/site-packages/mlip_4/mlip_loss_function.so(+0x1e14d) [0x7fa5317bd14d]
+10  /home/peivzarenkov/.local/lib/python3.10/site-packages/mlip_4/mlip_loss_function.so(+0x1e038) [0x7fa5317bd038]
+11  /home/peivzarenkov/.local/lib/python3.10/site-packages/mlip_4/mlip_loss_function.so(+0x3d35f) [0x7fa5317dc35f]
+12  /home/peivzarenkov/.conda/envs/peter_env/bin/python(_PyEval_EvalFrameDefault+0x72e) [0x4ee5be]
+13  /home/peivzarenkov/.conda/envs/peter_env/bin/python() [0x594312]
+14  /home/peivzarenkov/.conda/envs/peter_env/bin/python(PyEval_EvalCode+0x87) [0x594257]
+15  /home/peivzarenkov/.conda/envs/peter_env/bin/python() [0x5c50f7]
+16  /home/peivzarenkov/.conda/envs/peter_env/bin/python() [0x5c0220]
+17  /home/peivzarenkov/.conda/envs/peter_env/bin/python() [0x459eff]
+18  /home/peivzarenkov/.conda/envs/peter_env/bin/python(_PyRun_SimpleFileObject+0x19f) [0x5ba7af]
+19  /home/peivzarenkov/.conda/envs/peter_env/bin/python(_PyRun_AnyFileObject+0x43) [0x5ba513]
+20  /home/peivzarenkov/.conda/envs/peter_env/bin/python(Py_RunMain+0x38d) [0x5b72cd]
+21  /home/peivzarenkov/.conda/envs/peter_env/bin/python(Py_BytesMain+0x39) [0x5873d9]
+22  /lib64/libc.so.6(__libc_start_main+0xf5) [0x7fa565da1505]
+23  /home/peivzarenkov/.conda/envs/peter_env/bin/python() [0x58728e]
+=================================
+==== backtrace (tid: 166039) ====
+ 0  /home/peivzarenkov/.conda/envs/peter_env/lib/python3.10/site-packages/mpi4py/../../.././libucs.so.0(ucs_handle_error+0x2fd) [0x7fe8487c784d]
+ 1  /home/peivzarenkov/.conda/envs/peter_env/lib/python3.10/site-packages/mpi4py/../../.././libucs.so.0(+0x2fa3f) [0x7fe8487c7a3f]
+ 2  /home/peivzarenkov/.conda/envs/peter_env/lib/python3.10/site-packages/mpi4py/../../.././libucs.so.0(+0x2fc0a) [0x7fe8487c7c0a]
+ 3  /lib64/libpthread.so.0(+0xf5f0) [0x7fe8613565f0]
+ 4  /home/peivzarenkov/mlip-4/build/libpyinterface.so(_ZN6ExtCfg17ToRelativeSpeciesERK12SpeciesOrder+0xad) [0x7fe831040b7f]
+ 5  /home/peivzarenkov/mlip-4/build/libpyinterface.so(_ZN7CalcCfg9AttachPotERKSt10shared_ptrI11AnyLocalPotE+0x1c3) [0x7fe831136567]
+ 6  /home/peivzarenkov/mlip-4/build/libpyinterface.so(_ZN7LossCfg9AttachPotERKSt10shared_ptrI11AnyLocalPotE+0x23) [0x7fe83113ac53]
+ 7  /home/peivzarenkov/mlip-4/build/libpyinterface.so(_ZN12LossFunction9AttachPotERKSt10shared_ptrI11AnyLocalPotE+0x8d) [0x7fe831139f17]
+ 8  /home/peivzarenkov/mlip-4/build/libpyinterface.so(_ZN6mlip_411pyinterface14p_LossFunction9AttachPotENS0_13p_AnyLocalPotE+0x2e) [0x7fe831024378]
+ 9  /home/peivzarenkov/.local/lib/python3.10/site-packages/mlip_4/mlip_loss_function.so(+0x1e14d) [0x7fe82d91914d]
+10  /home/peivzarenkov/.local/lib/python3.10/site-packages/mlip_4/mlip_loss_function.so(+0x1e038) [0x7fe82d919038]
+11  /home/peivzarenkov/.local/lib/python3.10/site-packages/mlip_4/mlip_loss_function.so(+0x3d35f) [0x7fe82d93835f]
+12  /home/peivzarenkov/.conda/envs/peter_env/bin/python(_PyEval_EvalFrameDefault+0x72e) [0x4ee5be]
+13  /home/peivzarenkov/.conda/envs/peter_env/bin/python() [0x594312]
+14  /home/peivzarenkov/.conda/envs/peter_env/bin/python(PyEval_EvalCode+0x87) [0x594257]
+15  /home/peivzarenkov/.conda/envs/peter_env/bin/python() [0x5c50f7]
+16  /home/peivzarenkov/.conda/envs/peter_env/bin/python() [0x5c0220]
+17  /home/peivzarenkov/.conda/envs/peter_env/bin/python() [0x459eff]
+==== backtrace (tid: 166041) ====
+ 0  /home/peivzarenkov/.conda/envs/peter_env/lib/python3.10/site-packages/mpi4py/../../.././libucs.so.0(ucs_handle_error+0x2fd) [0x7ff0969d184d]
+ 1  /home/peivzarenkov/.conda/envs/peter_env/lib/python3.10/site-packages/mpi4py/../../.././libucs.so.0(+0x2fa3f) [0x7ff0969d1a3f]
+ 2  /home/peivzarenkov/.conda/envs/peter_env/lib/python3.10/site-packages/mpi4py/../../.././libucs.so.0(+0x2fc0a) [0x7ff0969d1c0a]
+ 3  /lib64/libpthread.so.0(+0xf5f0) [0x7ff0af5605f0]
+ 4  /home/peivzarenkov/mlip-4/build/libpyinterface.so(_ZN6ExtCfg17ToRelativeSpeciesERK12SpeciesOrder+0xad) [0x7ff07f23eb7f]
+ 5  /home/peivzarenkov/mlip-4/build/libpyinterface.so(_ZN7CalcCfg9AttachPotERKSt10shared_ptrI11AnyLocalPotE+0x1c3) [0x7ff07f334567]
+ 6  /home/peivzarenkov/mlip-4/build/libpyinterface.so(_ZN7LossCfg9AttachPotERKSt10shared_ptrI11AnyLocalPotE+0x23) [0x7ff07f338c53]
+ 7  /home/peivzarenkov/mlip-4/build/libpyinterface.so(_ZN12LossFunction9AttachPotERKSt10shared_ptrI11AnyLocalPotE+0x8d) [0x7ff07f337f17]
+ 8  /home/peivzarenkov/mlip-4/build/libpyinterface.so(_ZN6mlip_411pyinterface14p_LossFunction9AttachPotENS0_13p_AnyLocalPotE+0x2e) [0x7ff07f222378]
+ 9  /home/peivzarenkov/.local/lib/python3.10/site-packages/mlip_4/mlip_loss_function.so(+0x1e14d) [0x7ff07b8a914d]
+10  /home/peivzarenkov/.local/lib/python3.10/site-packages/mlip_4/mlip_loss_function.so(+0x1e038) [0x7ff07b8a9038]
+11  /home/peivzarenkov/.local/lib/python3.10/site-packages/mlip_4/mlip_loss_function.so(+0x3d35f) [0x7ff07b8c835f]
+12  /home/peivzarenkov/.conda/envs/peter_env/bin/python(_PyEval_EvalFrameDefault+0x72e) [0x4ee5be]
+13  /home/peivzarenkov/.conda/envs/peter_env/bin/python() [0x594312]
+14  /home/peivzarenkov/.conda/envs/peter_env/bin/python(PyEval_EvalCode+0x87) [0x594257]
+15  /home/peivzarenkov/.conda/envs/peter_env/bin/python() [0x5c50f7]
+16  /home/peivzarenkov/.conda/envs/peter_env/bin/python() [0x5c0220]
+17  /home/peivzarenkov/.conda/envs/peter_env/bin/python() [0x459eff]
+==== backtrace (tid: 166046) ====
+ 0  /home/peivzarenkov/.conda/envs/peter_env/lib/python3.10/site-packages/mpi4py/../../.././libucs.so.0(ucs_handle_error+0x2fd) [0x7f0ba527f84d]
+ 1  /home/peivzarenkov/.conda/envs/peter_env/lib/python3.10/site-packages/mpi4py/../../.././libucs.so.0(+0x2fa3f) [0x7f0ba527fa3f]
+ 2  /home/peivzarenkov/.conda/envs/peter_env/lib/python3.10/site-packages/mpi4py/../../.././libucs.so.0(+0x2fc0a) [0x7f0ba527fc0a]
+ 3  /lib64/libpthread.so.0(+0xf5f0) [0x7f0bbde0e5f0]
+ 4  /home/peivzarenkov/mlip-4/build/libpyinterface.so(_ZN6ExtCfg17ToRelativeSpeciesERK12SpeciesOrder+0xad) [0x7f0b8cdf0b7f]
+ 5  /home/peivzarenkov/mlip-4/build/libpyinterface.so(_ZN7CalcCfg9AttachPotERKSt10shared_ptrI11AnyLocalPotE+0x1c3) [0x7f0b8cee6567]
+ 6  /home/peivzarenkov/mlip-4/build/libpyinterface.so(_ZN7LossCfg9AttachPotERKSt10shared_ptrI11AnyLocalPotE+0x23) [0x7f0b8ceeac53]
+ 7  /home/peivzarenkov/mlip-4/build/libpyinterface.so(_ZN12LossFunction9AttachPotERKSt10shared_ptrI11AnyLocalPotE+0x8d) [0x7f0b8cee9f17]
+ 8  /home/peivzarenkov/mlip-4/build/libpyinterface.so(_ZN6mlip_411pyinterface14p_LossFunction9AttachPotENS0_13p_AnyLocalPotE+0x2e) [0x7f0b8cdd4378]
+ 9  /home/peivzarenkov/.local/lib/python3.10/site-packages/mlip_4/mlip_loss_function.so(+0x1e14d) [0x7f0b8945b14d]
+10  /home/peivzarenkov/.local/lib/python3.10/site-packages/mlip_4/mlip_loss_function.so(+0x1e038) [0x7f0b8945b038]
+11  /home/peivzarenkov/.local/lib/python3.10/site-packages/mlip_4/mlip_loss_function.so(+0x3d35f) [0x7f0b8947a35f]
+12  /home/peivzarenkov/.conda/envs/peter_env/bin/python(_PyEval_EvalFrameDefault+0x72e) [0x4ee5be]
+13  /home/peivzarenkov/.conda/envs/peter_env/bin/python() [0x594312]
+14  /home/peivzarenkov/.conda/envs/peter_env/bin/python(PyEval_EvalCode+0x87) [0x594257]
+15  /home/peivzarenkov/.conda/envs/peter_env/bin/python() [0x5c50f7]
+16  /home/peivzarenkov/.conda/envs/peter_env/bin/python() [0x5c0220]
+17  /home/peivzarenkov/.conda/envs/peter_env/bin/python() [0x459eff]
+18  /home/peivzarenkov/.conda/envs/peter_env/bin/python(_PyRun_SimpleFileObject+0x19f) [0x5ba7af]
+19  /home/peivzarenkov/.conda/envs/peter_env/bin/python(_PyRun_AnyFileObject+0x43) [0x5ba513]
+20  /home/peivzarenkov/.conda/envs/peter_env/bin/python(Py_RunMain+0x38d) [0x5b72cd]
+21  /home/peivzarenkov/.conda/envs/peter_env/bin/python(Py_BytesMain+0x39) [0x5873d9]
+22  /lib64/libc.so.6(__libc_start_main+0xf5) [0x7f0bbd34a505]
+23  /home/peivzarenkov/.conda/envs/peter_env/bin/python() [0x58728e]
+=================================
+==== backtrace (tid: 166048) ====
+ 0  /home/peivzarenkov/.conda/envs/peter_env/lib/python3.10/site-packages/mpi4py/../../.././libucs.so.0(ucs_handle_error+0x2fd) [0x7ff26a1ef84d]
+ 1  /home/peivzarenkov/.conda/envs/peter_env/lib/python3.10/site-packages/mpi4py/../../.././libucs.so.0(+0x2fa3f) [0x7ff26a1efa3f]
+ 2  /home/peivzarenkov/.conda/envs/peter_env/lib/python3.10/site-packages/mpi4py/../../.././libucs.so.0(+0x2fc0a) [0x7ff26a1efc0a]
+ 3  /lib64/libpthread.so.0(+0xf5f0) [0x7ff282d7e5f0]
+ 4  /home/peivzarenkov/mlip-4/build/libpyinterface.so(_ZN6ExtCfg17ToRelativeSpeciesERK12SpeciesOrder+0xad) [0x7ff2519a4b7f]
+ 5  /home/peivzarenkov/mlip-4/build/libpyinterface.so(_ZN7CalcCfg9AttachPotERKSt10shared_ptrI11AnyLocalPotE+0x1c3) [0x7ff251a9a567]
+ 6  /home/peivzarenkov/mlip-4/build/libpyinterface.so(_ZN7LossCfg9AttachPotERKSt10shared_ptrI11AnyLocalPotE+0x23) [0x7ff251a9ec53]
+ 7  /home/peivzarenkov/mlip-4/build/libpyinterface.so(_ZN12LossFunction9AttachPotERKSt10shared_ptrI11AnyLocalPotE+0x8d) [0x7ff251a9df17]
+ 8  /home/peivzarenkov/mlip-4/build/libpyinterface.so(_ZN6mlip_411pyinterface14p_LossFunction9AttachPotENS0_13p_AnyLocalPotE+0x2e) [0x7ff251988378]
+ 9  /home/peivzarenkov/.local/lib/python3.10/site-packages/mlip_4/mlip_loss_function.so(+0x1e14d) [0x7ff24e00f14d]
+10  /home/peivzarenkov/.local/lib/python3.10/site-packages/mlip_4/mlip_loss_function.so(+0x1e038) [0x7ff24e00f038]
+11  /home/peivzarenkov/.local/lib/python3.10/site-packages/mlip_4/mlip_loss_function.so(+0x3d35f) [0x7ff24e02e35f]
+12  /home/peivzarenkov/.conda/envs/peter_env/bin/python(_PyEval_EvalFrameDefault+0x72e) [0x4ee5be]
+13  /home/peivzarenkov/.conda/envs/peter_env/bin/python() [0x594312]
+14  /home/peivzarenkov/.conda/envs/peter_env/bin/python(PyEval_EvalCode+0x87) [0x594257]
+15  /home/peivzarenkov/.conda/envs/peter_env/bin/python() [0x5c50f7]
+16  /home/peivzarenkov/.conda/envs/peter_env/bin/python() [0x5c0220]
+17  /home/peivzarenkov/.conda/envs/peter_env/bin/python() [0x459eff]
+18  /home/peivzarenkov/.conda/envs/peter_env/bin/python(_PyRun_SimpleFileObject+0x19f) [0x5ba7af]
+19  /home/peivzarenkov/.conda/envs/peter_env/bin/python(_PyRun_AnyFileObject+0x43) [0x5ba513]
+20  /home/peivzarenkov/.conda/envs/peter_env/bin/python(Py_RunMain+0x38d) [0x5b72cd]
+21  /home/peivzarenkov/.conda/envs/peter_env/bin/python(Py_BytesMain+0x39) [0x5873d9]
+22  /lib64/libc.so.6(__libc_start_main+0xf5) [0x7ff2822ba505]
+23  /home/peivzarenkov/.conda/envs/peter_env/bin/python() [0x58728e]
+=================================
+18  /home/peivzarenkov/.conda/envs/peter_env/bin/python(_PyRun_SimpleFileObject+0x19f) [0x5ba7af]
+19  /home/peivzarenkov/.conda/envs/peter_env/bin/python(_PyRun_AnyFileObject+0x43) [0x5ba513]
+20  /home/peivzarenkov/.conda/envs/peter_env/bin/python(Py_RunMain+0x38d) [0x5b72cd]
+21  /home/peivzarenkov/.conda/envs/peter_env/bin/python(Py_BytesMain+0x39) [0x5873d9]
+22  /lib64/libc.so.6(__libc_start_main+0xf5) [0x7fe860892505]
+23  /home/peivzarenkov/.conda/envs/peter_env/bin/python() [0x58728e]
+=================================
+18  /home/peivzarenkov/.conda/envs/peter_env/bin/python(_PyRun_SimpleFileObject+0x19f) [0x5ba7af]
+19  /home/peivzarenkov/.conda/envs/peter_env/bin/python(_PyRun_AnyFileObject+0x43) [0x5ba513]
+20  /home/peivzarenkov/.conda/envs/peter_env/bin/python(Py_RunMain+0x38d) [0x5b72cd]
+21  /home/peivzarenkov/.conda/envs/peter_env/bin/python(Py_BytesMain+0x39) [0x5873d9]
+22  /lib64/libc.so.6(__libc_start_main+0xf5) [0x7ff0aea9c505]
+23  /home/peivzarenkov/.conda/envs/peter_env/bin/python() [0x58728e]
+=================================
+ 0  /home/peivzarenkov/.conda/envs/peter_env/lib/python3.10/site-packages/mpi4py/../../.././libucs.so.0(ucs_handle_error+0x2fd) [0x7fa31c22584d]
+ 1  /home/peivzarenkov/.conda/envs/peter_env/lib/python3.10/site-packages/mpi4py/../../.././libucs.so.0(+0x2fa3f) [0x7fa31c225a3f]
+ 2  /home/peivzarenkov/.conda/envs/peter_env/lib/python3.10/site-packages/mpi4py/../../.././libucs.so.0(+0x2fc0a) [0x7fa31c225c0a]
+ 3  /lib64/libpthread.so.0(+0xf5f0) [0x7fa334db45f0]
+ 4  /home/peivzarenkov/mlip-4/build/libpyinterface.so(_ZN6ExtCfg17ToRelativeSpeciesERK12SpeciesOrder+0xad) [0x7fa3041a5b7f]
+ 5  /home/peivzarenkov/mlip-4/build/libpyinterface.so(_ZN7CalcCfg9AttachPotERKSt10shared_ptrI11AnyLocalPotE+0x1c3) [0x7fa30429b567]
+ 6  /home/peivzarenkov/mlip-4/build/libpyinterface.so(_ZN7LossCfg9AttachPotERKSt10shared_ptrI11AnyLocalPotE+0x23) [0x7fa30429fc53]
+ 7  /home/peivzarenkov/mlip-4/build/libpyinterface.so(_ZN12LossFunction9AttachPotERKSt10shared_ptrI11AnyLocalPotE+0x8d) [0x7fa30429ef17]
+ 8  /home/peivzarenkov/mlip-4/build/libpyinterface.so(_ZN6mlip_411pyinterface14p_LossFunction9AttachPotENS0_13p_AnyLocalPotE+0x2e) [0x7fa304189378]
+ 9  /home/peivzarenkov/.local/lib/python3.10/site-packages/mlip_4/mlip_loss_function.so(+0x1e14d) [0x7fa30081014d]
+10  /home/peivzarenkov/.local/lib/python3.10/site-packages/mlip_4/mlip_loss_function.so(+0x1e038) [0x7fa300810038]
+11  /home/peivzarenkov/.local/lib/python3.10/site-packages/mlip_4/mlip_loss_function.so(+0x3d35f) [0x7fa30082f35f]
+12  /home/peivzarenkov/.conda/envs/peter_env/bin/python(_PyEval_EvalFrameDefault+0x72e) [0x4ee5be]
+13  /home/peivzarenkov/.conda/envs/peter_env/bin/python() [0x594312]
+14  /home/peivzarenkov/.conda/envs/peter_env/bin/python(PyEval_EvalCode+0x87) [0x594257]
+15  /home/peivzarenkov/.conda/envs/peter_env/bin/python() [0x5c50f7]
+16  /home/peivzarenkov/.conda/envs/peter_env/bin/python() [0x5c0220]
+17  /home/peivzarenkov/.conda/envs/peter_env/bin/python() [0x459eff]
+18  /home/peivzarenkov/.conda/envs/peter_env/bin/python(_PyRun_SimpleFileObject+0x19f) [0x5ba7af]
+19  /home/peivzarenkov/.conda/envs/peter_env/bin/python(_PyRun_AnyFileObject+0x43) [0x5ba513]
+20  /home/peivzarenkov/.conda/envs/peter_env/bin/python(Py_RunMain+0x38d) [0x5b72cd]
+==== backtrace (tid: 166042) ====
+ 0  /home/peivzarenkov/.conda/envs/peter_env/lib/python3.10/site-packages/mpi4py/../../.././libucs.so.0(ucs_handle_error+0x2fd) [0x7f545ea2584d]
+ 1  /home/peivzarenkov/.conda/envs/peter_env/lib/python3.10/site-packages/mpi4py/../../.././libucs.so.0(+0x2fa3f) [0x7f545ea25a3f]
+ 2  /home/peivzarenkov/.conda/envs/peter_env/lib/python3.10/site-packages/mpi4py/../../.././libucs.so.0(+0x2fc0a) [0x7f545ea25c0a]
+ 3  /lib64/libpthread.so.0(+0xf5f0) [0x7f54775b45f0]
+ 4  /home/peivzarenkov/mlip-4/build/libpyinterface.so(_ZN6ExtCfg17ToRelativeSpeciesERK12SpeciesOrder+0xad) [0x7f544723eb7f]
+ 5  /home/peivzarenkov/mlip-4/build/libpyinterface.so(_ZN7CalcCfg9AttachPotERKSt10shared_ptrI11AnyLocalPotE+0x1c3) [0x7f5447334567]
+ 6  /home/peivzarenkov/mlip-4/build/libpyinterface.so(_ZN7LossCfg9AttachPotERKSt10shared_ptrI11AnyLocalPotE+0x23) [0x7f5447338c53]
+ 7  /home/peivzarenkov/mlip-4/build/libpyinterface.so(_ZN12LossFunction9AttachPotERKSt10shared_ptrI11AnyLocalPotE+0x8d) [0x7f5447337f17]
+ 8  /home/peivzarenkov/mlip-4/build/libpyinterface.so(_ZN6mlip_411pyinterface14p_LossFunction9AttachPotENS0_13p_AnyLocalPotE+0x2e) [0x7f5447222378]
+ 9  /home/peivzarenkov/.local/lib/python3.10/site-packages/mlip_4/mlip_loss_function.so(+0x1e14d) [0x7f5443c4914d]
+10  /home/peivzarenkov/.local/lib/python3.10/site-packages/mlip_4/mlip_loss_function.so(+0x1e038) [0x7f5443c49038]
+11  /home/peivzarenkov/.local/lib/python3.10/site-packages/mlip_4/mlip_loss_function.so(+0x3d35f) [0x7f5443c6835f]
+12  /home/peivzarenkov/.conda/envs/peter_env/bin/python(_PyEval_EvalFrameDefault+0x72e) [0x4ee5be]
+13  /home/peivzarenkov/.conda/envs/peter_env/bin/python() [0x594312]
+==== backtrace (tid: 166045) ====
+14  /home/peivzarenkov/.conda/envs/peter_env/bin/python(PyEval_EvalCode+0x87) [0x594257]
+15  /home/peivzarenkov/.conda/envs/peter_env/bin/python() [0x5c50f7]
+16  /home/peivzarenkov/.conda/envs/peter_env/bin/python() [0x5c0220]
+17  /home/peivzarenkov/.conda/envs/peter_env/bin/python() [0x459eff]
+18  /home/peivzarenkov/.conda/envs/peter_env/bin/python(_PyRun_SimpleFileObject+0x19f) [0x5ba7af]
+19  /home/peivzarenkov/.conda/envs/peter_env/bin/python(_PyRun_AnyFileObject+0x43) [0x5ba513]
+20  /home/peivzarenkov/.conda/envs/peter_env/bin/python(Py_RunMain+0x38d) [0x5b72cd]
+21  /home/peivzarenkov/.conda/envs/peter_env/bin/python(Py_BytesMain+0x39) [0x5873d9]
+22  /lib64/libc.so.6(__libc_start_main+0xf5) [0x7f5476af0505]
+ 0  /home/peivzarenkov/.conda/envs/peter_env/lib/python3.10/site-packages/mpi4py/../../.././libucs.so.0(ucs_handle_error+0x2fd) [0x7ff868ffd84d]
+ 1  /home/peivzarenkov/.conda/envs/peter_env/lib/python3.10/site-packages/mpi4py/../../.././libucs.so.0(+0x2fa3f) [0x7ff868ffda3f]
+ 2  /home/peivzarenkov/.conda/envs/peter_env/lib/python3.10/site-packages/mpi4py/../../.././libucs.so.0(+0x2fc0a) [0x7ff868ffdc0a]
+ 3  /lib64/libpthread.so.0(+0xf5f0) [0x7ff881b8c5f0]
+ 4  /home/peivzarenkov/mlip-4/build/libpyinterface.so(_ZN6ExtCfg17ToRelativeSpeciesERK12SpeciesOrder+0xad) [0x7ff851040b7f]
+ 5  /home/peivzarenkov/mlip-4/build/libpyinterface.so(_ZN7CalcCfg9AttachPotERKSt10shared_ptrI11AnyLocalPotE+0x1c3) [0x7ff851136567]
+ 6  /home/peivzarenkov/mlip-4/build/libpyinterface.so(_ZN7LossCfg9AttachPotERKSt10shared_ptrI11AnyLocalPotE+0x23) [0x7ff85113ac53]
+23  /home/peivzarenkov/.conda/envs/peter_env/bin/python() [0x58728e]
+=================================
+ 7  /home/peivzarenkov/mlip-4/build/libpyinterface.so(_ZN12LossFunction9AttachPotERKSt10shared_ptrI11AnyLocalPotE+0x8d) [0x7ff851139f17]
+ 8  /home/peivzarenkov/mlip-4/build/libpyinterface.so(_ZN6mlip_411pyinterface14p_LossFunction9AttachPotENS0_13p_AnyLocalPotE+0x2e) [0x7ff851024378]
+ 9  /home/peivzarenkov/.local/lib/python3.10/site-packages/mlip_4/mlip_loss_function.so(+0x1e14d) [0x7ff84e11714d]
+10  /home/peivzarenkov/.local/lib/python3.10/site-packages/mlip_4/mlip_loss_function.so(+0x1e038) [0x7ff84e117038]
+11  /home/peivzarenkov/.local/lib/python3.10/site-packages/mlip_4/mlip_loss_function.so(+0x3d35f) [0x7ff84e13635f]
+12  /home/peivzarenkov/.conda/envs/peter_env/bin/python(_PyEval_EvalFrameDefault+0x72e) [0x4ee5be]
+13  /home/peivzarenkov/.conda/envs/peter_env/bin/python() [0x594312]
+14  /home/peivzarenkov/.conda/envs/peter_env/bin/python(PyEval_EvalCode+0x87) [0x594257]
+15  /home/peivzarenkov/.conda/envs/peter_env/bin/python() [0x5c50f7]
+16  /home/peivzarenkov/.conda/envs/peter_env/bin/python() [0x5c0220]
+17  /home/peivzarenkov/.conda/envs/peter_env/bin/python() [0x459eff]
+18  /home/peivzarenkov/.conda/envs/peter_env/bin/python(_PyRun_SimpleFileObject+0x19f) [0x5ba7af]
+19  /home/peivzarenkov/.conda/envs/peter_env/bin/python(_PyRun_AnyFileObject+0x43) [0x5ba513]
+20  /home/peivzarenkov/.conda/envs/peter_env/bin/python(Py_RunMain+0x38d) [0x5b72cd]
+21  /home/peivzarenkov/.conda/envs/peter_env/bin/python(Py_BytesMain+0x39) [0x5873d9]
+22  /lib64/libc.so.6(__libc_start_main+0xf5) [0x7ff8810c8505]
+23  /home/peivzarenkov/.conda/envs/peter_env/bin/python() [0x58728e]
+=================================
+21  /home/peivzarenkov/.conda/envs/peter_env/bin/python(Py_BytesMain+0x39) [0x5873d9]
+22  /lib64/libc.so.6(__libc_start_main+0xf5) [0x7fa3342f0505]
+23  /home/peivzarenkov/.conda/envs/peter_env/bin/python() [0x58728e]
+=================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   PID 166039 RUNNING AT cn-039
+=   EXIT CODE: 11
+=   CLEANING UP REMAINING PROCESSES
+=   YOU CAN IGNORE THE BELOW CLEANUP MESSAGES
+===================================================================================
+YOUR APPLICATION TERMINATED WITH THE EXIT STRING: Segmentation fault (signal 11)
+This typically refers to a problem with your application.
+Please see the FAQ page for debugging suggestions

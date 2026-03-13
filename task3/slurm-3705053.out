@@ -1,0 +1,108 @@
+
+The following have been reloaded with a version change:
+  1) Python/Anaconda_v02.2024 => Python/Miniconda
+
+[prun] Master compute host = cn-030
+[prun] Resource manager = slurm
+[prun] Launch cmd = mpirun /home/peivzarenkov/.conda/envs/peter_env/bin/python train_mtp_scipy_bfgs.py (family=openmpi)
+group size rank 0 = 4768
+group size rank 7 = 4768
+group size rank 5 = 4768
+group size rank 4 = 4768
+group size rank 6 = 4768
+group size rank 1 = 4736
+group size rank 2 = 4768
+group size rank 3 = 4768
+group size rank 0 = 960
+group size rank 4 = 960
+group size rank 7 = 960
+group size rank 5 = 960
+group size rank 3 = 960
+group size rank 6 = 960
+group size rank 1 = 960
+group size rank 2 = 960
+POT: 1
+SCIPY BFGS TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 5.098363e+01, 1.365111e+02, 9.435699e+02
+Energy/Atom = 1.593238e+00, 4.265971e+00, 2.948656e+01
+Forces      = 2.762560e+01, 9.207570e+01, 2.439731e+03
+Stress      = 3.385057e+02, 1.121439e+03, 1.660083e+04
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+SCIPY BFGS VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 5.480923e+01, 1.486733e+02, 7.796249e+02
+Energy/Atom = 1.712788e+00, 4.646041e+00, 2.436328e+01
+Forces      = 4.553978e+01, 1.448556e+02, 2.769536e+03
+Stress      = 5.483308e+02, 1.557175e+03, 1.139435e+04
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+SCIPY BFGS TIME: 319.59479454532266 NIT: 500 SUCCESS: False
+
+POT: 2
+SCIPY BFGS TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 2.238920e-01, 3.997748e-01, 2.872922e+00
+Energy/Atom = 6.996626e-03, 1.249296e-02, 8.977881e-02
+Forces      = 1.879550e-01, 3.396527e-01, 8.321878e+00
+Stress      = 2.766779e+00, 5.940228e+00, 8.011862e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+SCIPY BFGS VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 3.916082e-01, 6.711047e-01, 3.073241e+00
+Energy/Atom = 1.223776e-02, 2.097202e-02, 9.603878e-02
+Forces      = 3.197098e-01, 7.915954e-01, 3.375901e+01
+Stress      = 5.279655e+00, 1.245569e+01, 1.254382e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+SCIPY BFGS TIME: 318.626857155934 NIT: 500 SUCCESS: False
+
+POT: 3
+SCIPY BFGS TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.078113e-01, 1.638056e-01, 1.824363e+00
+Energy/Atom = 3.369104e-03, 5.118926e-03, 5.701136e-02
+Forces      = 9.335927e-02, 1.495616e-01, 7.623160e+00
+Stress      = 1.133831e+00, 1.799052e+00, 1.582765e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+SCIPY BFGS VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 2.050606e-01, 2.950717e-01, 1.283067e+00
+Energy/Atom = 6.408143e-03, 9.220991e-03, 4.009584e-02
+Forces      = 1.513525e-01, 2.928111e-01, 1.324467e+01
+Stress      = 1.756677e+00, 2.832171e+00, 2.374686e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+SCIPY BFGS TIME: 318.17614503391087 NIT: 500 SUCCESS: False
+
+POT: 4
+SCIPY BFGS TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 3.479370e-01, 5.724846e-01, 3.671319e+00
+Energy/Atom = 1.087303e-02, 1.789014e-02, 1.147287e-01
+Forces      = 2.552104e-01, 4.072981e-01, 7.572210e+00
+Stress      = 4.858802e+00, 8.669422e+00, 7.561583e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+SCIPY BFGS VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 8.565219e-01, 1.267640e+00, 4.243641e+00
+Energy/Atom = 2.676631e-02, 3.961376e-02, 1.326138e-01
+Forces      = 4.086666e-01, 7.399551e-01, 3.065819e+01
+Stress      = 6.020814e+00, 1.057041e+01, 7.049131e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+SCIPY BFGS TIME: 331.07166980579495 NIT: 500 SUCCESS: False
+
+POT: 5
+SCIPY BFGS TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 3.331546e-01, 4.730860e-01, 2.478391e+00
+Energy/Atom = 1.041108e-02, 1.478394e-02, 7.744971e-02
+Forces      = 2.735760e-01, 3.953664e-01, 6.418543e+00
+Stress      = 3.943266e+00, 6.183596e+00, 4.646414e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+SCIPY BFGS VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 6.061802e-01, 8.132137e-01, 2.773319e+00
+Energy/Atom = 1.894313e-02, 2.541293e-02, 8.666622e-02
+Forces      = 4.240690e-01, 6.814729e-01, 3.296319e+01
+Stress      = 5.499302e+00, 8.642093e+00, 6.105997e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+SCIPY BFGS TIME: 324.4033099319786 NIT: 500 SUCCESS: False
+

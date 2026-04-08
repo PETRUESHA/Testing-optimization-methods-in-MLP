@@ -1,4 +1,4 @@
-import numpy as np
+# import numpy as np
 from mlip_4 import FitErrors, ETN, Cfg, RadialBasisCinf, MTP, CalcCfg, LossCfg, LossFunction, PairPot, QRd
 
 # sim = CalcCfg(Cfg([[1, 0, 0], [0, 1, 0], [0, 0, 1]], [[0, 0, 0], [
@@ -12,4 +12,5 @@ from mlip_4 import FitErrors, ETN, Cfg, RadialBasisCinf, MTP, CalcCfg, LossCfg, 
 # print(func.calc_errors().epa())
 # print(func.calc_errors())
 # print(help(FitErrors))
-print(help(ETN))
+# print(help(ETN))
+print(help(LossFunction))

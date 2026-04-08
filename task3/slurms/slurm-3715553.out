@@ -1,0 +1,26 @@
+
+The following have been reloaded with a version change:
+  1) Python/Anaconda_v02.2024 => Python/Miniconda
+
+[prun] Master compute host = cn-038
+[prun] Resource manager = slurm
+[prun] Launch cmd = mpirun /home/peivzarenkov/.conda/envs/peter_env/bin/python train_mtp_scipy_bfgs_intervals.py (family=openmpi)
+group size rank 1 = 4736
+group size rank 6 = 4768
+group size rank 0 = 4768
+group size rank 7 = 4768
+group size rank 3 = 4768
+group size rank 2 = 4768
+group size rank 4 = 4768
+group size rank 5 = 4768
+group size rank 0 = 960
+group size rank 1 = 960
+group size rank 2 = 960
+group size rank 6 = 960
+group size rank 3 = 960
+group size rank 7 = 960
+group size rank 5 = 960
+group size rank 4 = 960
+slurmstepd: error: slurm_curl_request: curl_easy_perform failed to send data to 192.168.1.252:8086/write?db=slurm_jobs&rp=autogen&precision=s. Reason: Timeout was reached
+slurmstepd: error: send data failed
+slurmstepd: error: *** JOB 3715553 ON cn-038 CANCELLED AT 2026-03-16T19:32:13 ***

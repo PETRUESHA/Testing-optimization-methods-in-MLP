@@ -74,7 +74,7 @@ level = 16
 jit = True
 
 batch_size = 32
-max_steps = 150
+max_steps = 1000
 lr = 3e-3
 gtol = 1e-6
 clip = 1.0

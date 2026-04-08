@@ -5,12 +5,12 @@ import numpy as np
 import time
 from mpi4py import MPI
 from scipy.optimize import minimize
+
+from mlip_4 import LossFunction, RadialBasisCinf, ETN
+from utils import MlipWrapper
 import sys
 sys.path.insert(0, "/home/peivzarenkov/mlip-4/Testing-optimization-methods-in-MLP")
 
-
-from mlip_4 import LossFunction, RadialBasisCinf, MTP
-from utils import MlipWrapper
 
 TRAIN_PATH = "/home/peivzarenkov/mlip-4/Testing-optimization-methods-in-MLP/datasets/PdAg/PdAg.json"
 VALID_PATH = "/home/peivzarenkov/mlip-4/Testing-optimization-methods-in-MLP/datasets/PdAg/validation_PdAg.json"
@@ -22,11 +22,11 @@ train_json_bytes = b""
 valid_json_bytes = b""
 
 if rank == 0:
-    with open("results_mtp_scipy_bfgs_001.csv", "w") as f:
+    with open("results_etn_scipy_bfgs.csv", "w") as f:
         f.write(
             "pot_num,"
-            "train_energy_rmse,train_energy_atom_rmse,train_forces_rmse,"
-            "val_energy_rmse,val_energy_atom_rmse,val_forces_rmse,"
+            "train_energy_atom_rmse,train_forces_rmse,"
+            "val_energy_atom_rmse,val_forces_rmse,"
             "train_time,nit,success,final_loss\n"
         )
 
@@ -39,12 +39,10 @@ if rank == 0:
 train_json_bytes = comm.bcast(train_json_bytes, 0)
 valid_json_bytes = comm.bcast(valid_json_bytes, 0)
 
-train_func = LossFunction.from_json_bytes(train_json_bytes, True)
-val_func = LossFunction.from_json_bytes(valid_json_bytes, True)
-
 rb = RadialBasisCinf(size=8, min_dist=1.9, cutoff=5.0)
 species_order = [0, 1]
-level = 16
+etn_shape = [[1], [6], [3]]
+ett_ranks = [[1], [1]]
 jit = True
 
 max_iter_count = 500
@@ -54,15 +52,24 @@ for pot_num in range(1, 6):
     pot_json = b""
 
     if rank == 0:
-        pot = MTP(radial_basis=rb, species=species_order, level=level, jit=jit)
+        pot = ETN(
+            radial_basis=rb,
+            etn_shape=etn_shape,
+            species=species_order,
+            ett_ranks=ett_ranks,
+            jit=jit,
+        )
 
         np.random.seed(42 + pot_num)
-        pot.params[:] = np.random.uniform(low=-00.1, high=00.1, size=len(pot.params))
+        pot.params[:] = np.random.uniform(low=-0.1, high=0.1, size=len(pot.params))
 
         pot_json = pot.to_json_bytes()
 
     pot_json = comm.bcast(pot_json, 0)
-    pot = MTP.from_json_bytes(pot_json)
+    pot = ETN.from_json_bytes(pot_json)
+
+    train_func = LossFunction.from_json_bytes(train_json_bytes, True)
+    val_func = LossFunction.from_json_bytes(valid_json_bytes, True)
 
     train_func.attach_pot(pot)
     wrapper = MlipWrapper(train_func, pot)
@@ -91,11 +98,9 @@ for pot_num in range(1, 6):
     val_func.calc()
     val_fit_errors = val_func.calc_errors()
 
-    train_energy_rmse = float(train_fit_errors.energy())
     train_epa_rmse = float(train_fit_errors.epa())
     train_forces_rmse = float(train_fit_errors.forces())
 
-    val_energy_rmse = float(val_fit_errors.energy())
     val_epa_rmse = float(val_fit_errors.epa())
     val_forces_rmse = float(val_fit_errors.forces())
 
@@ -104,11 +109,11 @@ for pot_num in range(1, 6):
         success = int(bool(getattr(res, "success", False)))
         final_loss = float(getattr(res, "fun", float("nan")))
 
-        with open("results_mtp_scipy_bfgs_001.csv", "a") as f:
+        with open("results_etn_scipy_bfgs.csv", "a") as f:
             f.write(
                 f"{pot_num},"
-                f"{train_energy_rmse},{train_epa_rmse},{train_forces_rmse},"
-                f"{val_energy_rmse},{val_epa_rmse},{val_forces_rmse},"
+                f"{train_epa_rmse},{train_forces_rmse},"
+                f"{val_epa_rmse},{val_forces_rmse},"
                 f"{train_time},{nit},{success},{final_loss}\n"
             )
 

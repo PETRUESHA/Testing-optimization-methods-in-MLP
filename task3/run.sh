@@ -8,5 +8,5 @@ module load Python
 
 conda activate peter_env
 
-prun /home/peivzarenkov/.conda/envs/peter_env/bin/python train_mtp_scipy_bfgs.py
+prun /home/peivzarenkov/.conda/envs/peter_env/bin/python train_etn_scipy_bfgs.py
 # prun /home/peivzarenkov/.conda/envs/peter_env/bin/python test.py

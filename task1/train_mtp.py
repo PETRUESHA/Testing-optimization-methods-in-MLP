@@ -30,10 +30,6 @@ if rank == 0:
 
 train_json_bytes = comm.bcast(train_json_bytes, 0)
 valid_json_bytes = comm.bcast(valid_json_bytes, 0)
-
-train_func = LossFunction.from_json_bytes(train_json_bytes, True)
-val_func = LossFunction.from_json_bytes(valid_json_bytes, True)
-
 # --- MTP hyperparameters (tune these) ---
 rb = RadialBasisCinf(size=8, min_dist=1.9, cutoff=5.0)
 # IMPORTANT: must match the dataset's "types" encoding/order
@@ -55,6 +51,11 @@ for pot_num in range(1, 6):
 
     pot_json = comm.bcast(pot_json, 0)
     pot = MTP.from_json_bytes(pot_json)
+
+
+    train_func = LossFunction.from_json_bytes(train_json_bytes, True)
+    val_func = LossFunction.from_json_bytes(valid_json_bytes, True)
+
 
     train_func.attach_pot(pot)
     trainer = Trainer(train_func)

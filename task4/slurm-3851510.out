@@ -87,3 +87,86 @@ group size rank 7 = 4768
 group size rank 2 = 4768
 group size rank 7 = 960
 group size rank 2 = 960
+group size rank 7 = 4768
+group size rank 4 = 4768
+group size rank 6 = 4768
+group size rank 1 = 4736
+group size rank 3 = 4768
+POT: 3
+MY SGD TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 6.730370e+01, 6.767824e+01, 8.490082e+01
+Energy/Atom = 2.103241e+00, 2.114945e+00, 2.653151e+00
+Forces      = 2.717101e+00, 3.660939e+00, 2.125445e+01
+Stress      = 3.866961e+01, 6.653388e+01, 3.452261e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY SGD VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 7.488301e+01, 7.498725e+01, 8.474502e+01
+Energy/Atom = 2.340094e+00, 2.343352e+00, 2.648282e+00
+Forces      = 2.669068e+00, 3.477893e+00, 2.137717e+01
+Stress      = 3.542552e+01, 4.656485e+01, 1.672508e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY SGD TIME: 272.61107728630304 STEPS: 1000 EPOCHS: 199 FINAL_LOSS: 3180.131058598989
+
+group size rank 0 = 4768
+group size rank 5 = 4768
+group size rank 2 = 4768
+group size rank 7 = 960
+group size rank 4 = 960
+group size rank 1 = 960
+group size rank 6 = 960
+group size rank 0 = 960
+group size rank 3 = 960
+group size rank 5 = 960
+group size rank 2 = 960
+group size rank 1 = 4736
+group size rank 4 = 4768
+group size rank 2 = 4768
+group size rank 6 = 4768
+group size rank 7 = 4768
+group size rank 3 = 4768
+POT: 4
+MY SGD TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 2.588762e+01, 2.975109e+01, 5.685935e+01
+Energy/Atom = 8.089881e-01, 9.297216e-01, 1.776855e+00
+Forces      = 5.592597e+00, 7.430351e+00, 4.863011e+01
+Stress      = 9.481493e+01, 1.635326e+02, 8.700372e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY SGD VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 3.065334e+01, 3.283995e+01, 5.238725e+01
+Energy/Atom = 9.579170e-01, 1.026248e+00, 1.637102e+00
+Forces      = 6.367990e+00, 8.460389e+00, 5.026401e+01
+Stress      = 5.465976e+01, 7.199769e+01, 4.300141e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY SGD TIME: 266.57078988291323 STEPS: 1000 EPOCHS: 199 FINAL_LOSS: 1822.1551582431753
+
+group size rank 0 = 4768
+group size rank 5 = 4768
+group size rank 4 = 960
+group size rank 1 = 960
+group size rank 2 = 960
+group size rank 6 = 960
+group size rank 7 = 960
+group size rank 3 = 960
+group size rank 0 = 960
+group size rank 5 = 960
+POT: 5
+MY SGD TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 8.552020e+00, 1.045550e+01, 3.250869e+01
+Energy/Atom = 2.672506e-01, 3.267344e-01, 1.015897e+00
+Forces      = 3.516837e+00, 4.585428e+00, 4.003319e+01
+Stress      = 1.064944e+02, 1.453673e+02, 5.532904e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY SGD VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.063504e+01, 1.302772e+01, 3.319537e+01
+Energy/Atom = 3.323451e-01, 4.071162e-01, 1.037355e+00
+Forces      = 4.531672e+00, 5.859664e+00, 4.016460e+01
+Stress      = 1.459906e+02, 1.933068e+02, 5.586839e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY SGD TIME: 246.4146752692759 STEPS: 1000 EPOCHS: 199 FINAL_LOSS: 554.8657669161597
+

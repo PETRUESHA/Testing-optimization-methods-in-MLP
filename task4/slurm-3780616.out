@@ -1,0 +1,15 @@
+
+The following have been reloaded with a version change:
+  1) Python/Anaconda_v02.2024 => Python/Miniconda
+
+[prun] Master compute host = cn-036
+[prun] Resource manager = slurm
+[prun] Launch cmd = mpirun /home/peivzarenkov/.conda/envs/peter_env/bin/python train_mtp_my_sgd.py (family=openmpi)
+/home/peivzarenkov/.conda/envs/peter_env/bin/python: can't open file '/home/peivzarenkov/mlip-4/Testing-optimization-methods-in-MLP/task4/train_mtp_my_sgd.py': [Errno 2] No such file or directory
+/home/peivzarenkov/.conda/envs/peter_env/bin/python: can't open file '/home/peivzarenkov/mlip-4/Testing-optimization-methods-in-MLP/task4/train_mtp_my_sgd.py': [Errno 2] No such file or directory
+/home/peivzarenkov/.conda/envs/peter_env/bin/python: can't open file '/home/peivzarenkov/mlip-4/Testing-optimization-methods-in-MLP/task4/train_mtp_my_sgd.py': [Errno 2] No such file or directory
+/home/peivzarenkov/.conda/envs/peter_env/bin/python: can't open file '/home/peivzarenkov/mlip-4/Testing-optimization-methods-in-MLP/task4/train_mtp_my_sgd.py': [Errno 2] No such file or directory
+/home/peivzarenkov/.conda/envs/peter_env/bin/python: can't open file '/home/peivzarenkov/mlip-4/Testing-optimization-methods-in-MLP/task4/train_mtp_my_sgd.py': [Errno 2] No such file or directory
+/home/peivzarenkov/.conda/envs/peter_env/bin/python: can't open file '/home/peivzarenkov/mlip-4/Testing-optimization-methods-in-MLP/task4/train_mtp_my_sgd.py': [Errno 2] No such file or directory
+/home/peivzarenkov/.conda/envs/peter_env/bin/python: can't open file '/home/peivzarenkov/mlip-4/Testing-optimization-methods-in-MLP/task4/train_mtp_my_sgd.py': [Errno 2] No such file or directory
+/home/peivzarenkov/.conda/envs/peter_env/bin/python: can't open file '/home/peivzarenkov/mlip-4/Testing-optimization-methods-in-MLP/task4/train_mtp_my_sgd.py': [Errno 2] No such file or directory

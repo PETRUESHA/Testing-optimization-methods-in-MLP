@@ -1,0 +1,40 @@
+
+The following have been reloaded with a version change:
+  1) Python/Anaconda_v02.2024 => Python/Miniconda
+
+[prun] Master compute host = cn-022
+[prun] Resource manager = slurm
+[prun] Launch cmd = mpirun /home/peivzarenkov/.conda/envs/peter_env/bin/python train_mtp_my_sgd.py (family=openmpi)
+group size rank 7 = 4768
+group size rank 6 = 4768
+group size rank 5 = 4768
+group size rank 4 = 4768
+group size rank 0 = 4768
+group size rank 3 = 4768
+group size rank 1 = 4736
+group size rank 2 = 4768
+group size rank 7 = 960
+group size rank 6 = 960
+group size rank 5 = 960
+group size rank 4 = 960
+group size rank 0 = 960
+group size rank 3 = 960
+group size rank 1 = 960
+group size rank 2 = 960
+POT: 1
+MY SGD TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 7.985684e+01, 8.093677e+01, 1.061415e+02
+Energy/Atom = 2.495526e+00, 2.529274e+00, 3.316923e+00
+Forces      = 6.652145e+00, 9.800617e+00, 1.633787e+02
+Stress      = 1.262545e+02, 2.262844e+02, 1.136913e+03
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY SGD VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 7.381226e+01, 7.538990e+01, 1.000790e+02
+Energy/Atom = 2.306633e+00, 2.355934e+00, 3.127470e+00
+Forces      = 8.544813e+00, 1.281455e+01, 1.681246e+02
+Stress      = 9.501495e+01, 1.304324e+02, 7.737100e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY SGD TIME: 43.70229675248265 STEPS: 150 EPOCHS: 29 FINAL_LOSS: 6909.401592659227
+

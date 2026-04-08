@@ -1,0 +1,182 @@
+
+The following have been reloaded with a version change:
+  1) Python/Anaconda_v02.2024 => Python/Miniconda
+
+[prun] Master compute host = cn-011
+[prun] Resource manager = slurm
+[prun] Launch cmd = mpirun /home/peivzarenkov/.conda/envs/peter_env/bin/python train_mtp_torch_sgd.py (family=openmpi)
+group size rank 0 = 4768
+group size rank 6 = 4768
+group size rank 4 = 4768
+group size rank 5 = 4768
+group size rank 3 = 4768
+group size rank 7 = 4768
+group size rank 1 = 4736
+group size rank 2 = 4768
+group size rank 0 = 960
+group size rank 6 = 960
+group size rank 4 = 960
+group size rank 5 = 960
+group size rank 3 = 960
+group size rank 7 = 960
+group size rank 1 = 960
+group size rank 2 = 960
+slurmstepd: error: slurm_curl_request: curl_easy_perform failed to send data to 192.168.1.252:8086/write?db=slurm_jobs&rp=autogen&precision=s. Reason: Couldn't connect to server
+slurmstepd: error: send data failed
+slurmstepd: error: slurm_curl_request: curl_easy_perform failed to send data to 192.168.1.252:8086/write?db=slurm_jobs&rp=autogen&precision=s. Reason: Couldn't connect to server
+slurmstepd: error: send data failed
+slurmstepd: error: slurm_curl_request: curl_easy_perform failed to send data to 192.168.1.252:8086/write?db=slurm_jobs&rp=autogen&precision=s. Reason: Couldn't connect to server
+slurmstepd: error: send data failed
+slurmstepd: error: slurm_curl_request: curl_easy_perform failed to send data to 192.168.1.252:8086/write?db=slurm_jobs&rp=autogen&precision=s. Reason: Couldn't connect to server
+slurmstepd: error: send data failed
+group size rank 3 = 4768
+group size rank 6 = 4768
+group size rank 4 = 4768
+group size rank 1 = 4736
+POT: 1
+TORCH SGD TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = nan, nan, 0.000000e+00
+Energy/Atom = nan, nan, 0.000000e+00
+Forces      = nan, nan, 0.000000e+00
+Stress      = nan, nan, 0.000000e+00
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+TORCH SGD VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = nan, nan, 0.000000e+00
+Energy/Atom = nan, nan, 0.000000e+00
+Forces      = nan, nan, 0.000000e+00
+Stress      = nan, nan, 0.000000e+00
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+TORCH SGD TIME: 3437.949213469401 STEPS: 5000 FINAL_LOSS: nan
+
+group size rank 0 = 4768
+group size rank 5 = 4768
+group size rank 7 = 4768
+group size rank 2 = 4768
+group size rank 3 = 960
+group size rank 6 = 960
+group size rank 1 = 960
+group size rank 4 = 960
+group size rank 5 = 960
+group size rank 0 = 960
+group size rank 7 = 960
+group size rank 2 = 960
+slurmstepd: error: slurm_curl_request: curl_easy_perform failed to send data to 192.168.1.252:8086/write?db=slurm_jobs&rp=autogen&precision=s. Reason: Timeout was reached
+slurmstepd: error: send data failed
+group size rank 1 = 4736
+group size rank 4 = 4768
+group size rank 5 = 4768
+group size rank 7 = 4768
+group size rank 3 = 4768
+group size rank 6 = 4768
+group size rank 2 = 4768
+POT: 2
+TORCH SGD TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = nan, nan, 0.000000e+00
+Energy/Atom = nan, nan, 0.000000e+00
+Forces      = nan, nan, 0.000000e+00
+Stress      = nan, nan, 0.000000e+00
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+TORCH SGD VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = nan, nan, 0.000000e+00
+Energy/Atom = nan, nan, 0.000000e+00
+Forces      = nan, nan, 0.000000e+00
+Stress      = nan, nan, 0.000000e+00
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+TORCH SGD TIME: 3459.146660782397 STEPS: 5000 FINAL_LOSS: nan
+
+group size rank 0 = 4768
+group size rank 1 = 960
+group size rank 5 = 960
+group size rank 7 = 960
+group size rank 4 = 960
+group size rank 3 = 960
+group size rank 2 = 960
+group size rank 6 = 960
+group size rank 0 = 960
+POT: 3
+TORCH SGD TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = nan, nan, 0.000000e+00
+Energy/Atom = nan, nan, 0.000000e+00
+Forces      = nan, nan, 0.000000e+00
+Stress      = nan, nan, 0.000000e+00
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+TORCH SGD VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = nan, nan, 0.000000e+00
+Energy/Atom = nan, nan, 0.000000e+00
+Forces      = nan, nan, 0.000000e+00
+Stress      = nan, nan, 0.000000e+00
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+TORCH SGD TIME: 3548.0838501937687 STEPS: 5000 FINAL_LOSS: nan
+
+group size rank 0 = 4768
+group size rank 3 = 4768
+group size rank 4 = 4768
+group size rank 2 = 4768
+group size rank 1 = 4736
+group size rank 5 = 4768
+group size rank 7 = 4768
+group size rank 6 = 4768
+group size rank 4 = 960
+group size rank 2 = 960
+group size rank 0 = 960
+group size rank 3 = 960
+group size rank 1 = 960
+group size rank 5 = 960
+group size rank 7 = 960
+group size rank 6 = 960
+group size rank 6 = 4768
+group size rank 2 = 4768
+group size rank 5 = 4768
+group size rank 7 = 4768
+group size rank 3 = 4768
+group size rank 4 = 4768
+POT: 4
+TORCH SGD TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = nan, nan, 0.000000e+00
+Energy/Atom = nan, nan, 0.000000e+00
+Forces      = nan, nan, 0.000000e+00
+Stress      = nan, nan, 0.000000e+00
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+TORCH SGD VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = nan, nan, 0.000000e+00
+Energy/Atom = nan, nan, 0.000000e+00
+Forces      = nan, nan, 0.000000e+00
+Stress      = nan, nan, 0.000000e+00
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+TORCH SGD TIME: 3450.1271425634623 STEPS: 5000 FINAL_LOSS: nan
+
+group size rank 0 = 4768
+group size rank 1 = 4736
+group size rank 6 = 960
+group size rank 5 = 960
+group size rank 2 = 960
+group size rank 3 = 960
+group size rank 7 = 960
+group size rank 4 = 960
+group size rank 0 = 960
+group size rank 1 = 960
+POT: 5
+TORCH SGD TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = nan, nan, 0.000000e+00
+Energy/Atom = nan, nan, 0.000000e+00
+Forces      = nan, nan, 0.000000e+00
+Stress      = nan, nan, 0.000000e+00
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+TORCH SGD VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = nan, nan, 0.000000e+00
+Energy/Atom = nan, nan, 0.000000e+00
+Forces      = nan, nan, 0.000000e+00
+Stress      = nan, nan, 0.000000e+00
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+TORCH SGD TIME: 3301.0121661275625 STEPS: 5000 FINAL_LOSS: nan
+

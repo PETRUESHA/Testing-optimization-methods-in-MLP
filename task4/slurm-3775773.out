@@ -1,0 +1,58 @@
+
+The following have been reloaded with a version change:
+  1) Python/Anaconda_v02.2024 => Python/Miniconda
+
+[prun] Master compute host = cn-031
+[prun] Resource manager = slurm
+[prun] Launch cmd = mpirun /home/peivzarenkov/.conda/envs/peter_env/bin/python train_mtp_torch_sgd.py (family=openmpi)
+group size rank 0 = 4768
+group size rank 1 = 4736
+group size rank 5 = 4768
+group size rank 3 = 4768
+group size rank 6 = 4768
+group size rank 4 = 4768
+group size rank 7 = 4768
+group size rank 2 = 4768
+group size rank 1 = 960
+group size rank 3 = 960
+group size rank 6 = 960
+group size rank 0 = 960
+group size rank 5 = 960
+group size rank 4 = 960
+group size rank 7 = 960
+group size rank 2 = 960
+group size rank 4 = 4768
+POT: 1
+TORCH SGD TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.816346e+00, 2.818350e+00, 1.311663e+01
+Energy/Atom = 5.676082e-02, 8.807343e-02, 4.098947e-01
+Forces      = 1.015537e+00, 1.376273e+00, 1.314005e+01
+Stress      = 5.846708e+01, 8.426971e+01, 2.403009e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+TORCH SGD VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 4.703864e+00, 5.564930e+00, 1.311663e+01
+Energy/Atom = 1.469958e-01, 1.739041e-01, 4.098947e-01
+Forces      = 1.476969e+00, 1.926550e+00, 1.314005e+01
+Stress      = 8.772789e+01, 1.187253e+02, 2.403009e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+TORCH SGD TIME: 2698.7684912495315 STEPS: 5000 FINAL_LOSS: 503.3265144773678
+
+group size rank 0 = 4768
+group size rank 7 = 4768
+group size rank 5 = 4768
+group size rank 1 = 4736
+group size rank 6 = 4768
+group size rank 3 = 4768
+group size rank 4 = 960
+group size rank 0 = 960
+group size rank 2 = 4768
+group size rank 7 = 960
+group size rank 5 = 960
+group size rank 1 = 960
+group size rank 6 = 960
+group size rank 3 = 960
+group size rank 2 = 960
+slurmstepd: error: *** JOB 3775773 ON cn-031 CANCELLED AT 2026-03-24T09:51:47 ***
+slurmstepd: error: *** STEP 3775773.0 ON cn-031 CANCELLED AT 2026-03-24T09:51:47 ***

@@ -50,7 +50,7 @@ def write_row_with_history(
 
 
 if rank == 0:
-    with open("results_mtp_my_sgd.csv", "w") as f:
+    with open("results/results_mtp_my_sgd_torchlike.csv", "w") as f:
         f.write(
             "pot_num,"
             "train_epa_rmse,train_forces_rmse,"
@@ -74,8 +74,8 @@ level = 16
 jit = True
 
 batch_size = 32
-max_steps = 1000
-lr = 3e-3
+max_steps = 500
+lr = 1e-3
 gtol = 1e-6
 clip = 1.0
 full_batch = False
@@ -98,7 +98,7 @@ for pot_num in range(1, 6):
     train_func.attach_pot(pot)
     batcher = utils.LossBatcher(train_func, batch_size, True, seed=42 + pot_num)
 
-    lr_schedule = utils.lr_schedules.TimeDecayLR(lr)
+    lr_schedule = utils.lr_schedules.ConstantLR(lr)
     opt = utils.optimizers.SGD(lr_schedule=lr_schedule)
 
     trainer = utils.mlip_trainer.MlipTrainer(gtol=gtol, max_steps=max_steps)
@@ -136,7 +136,7 @@ for pot_num in range(1, 6):
 
     if rank == 0:
         write_row_with_history(
-            "results_mtp_my_sgd.csv",
+            "results/results_mtp_my_sgd_torchlike.csv",
             pot_num,
             train_epa_rmse,
             train_forces_rmse,

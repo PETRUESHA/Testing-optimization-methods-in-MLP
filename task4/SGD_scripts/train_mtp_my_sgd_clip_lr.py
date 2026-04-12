@@ -13,7 +13,7 @@ import utils
 
 TRAIN_PATH = "/home/peivzarenkov/mlip-4/Testing-optimization-methods-in-MLP/datasets/PdAg/PdAg.json"
 VALID_PATH = "/home/peivzarenkov/mlip-4/Testing-optimization-methods-in-MLP/datasets/PdAg/validation_PdAg.json"
-RESULT_PATH = "results/results_mtp_my_sgd_clip_lr_grid_experiment.csv"
+RESULT_PATH = "/home/peivzarenkov/mlip-4/Testing-optimization-methods-in-MLP/task4/results/results_mtp_my_sgd_clip_lr_grid_experiment.csv"
 
 comm = MPI.COMM_WORLD
 rank = comm.Get_rank()

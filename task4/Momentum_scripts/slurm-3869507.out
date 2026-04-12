@@ -1,0 +1,172 @@
+
+The following have been reloaded with a version change:
+  1) Python/Anaconda_v02.2024 => Python/Miniconda
+
+[prun] Master compute host = cn-033
+[prun] Resource manager = slurm
+[prun] Launch cmd = mpirun /home/peivzarenkov/.conda/envs/peter_env/bin/python train_mtp_my_momentum.py (family=openmpi)
+group size rank 4 = 4768
+group size rank 7 = 4768
+group size rank 5 = 4768
+group size rank 6 = 4768
+group size rank 0 = 4768
+group size rank 6 = 960
+group size rank 7 = 960
+group size rank 0 = 960
+group size rank 5 = 960
+group size rank 4 = 960
+group size rank 1 = 4736
+group size rank 2 = 4768
+group size rank 3 = 4768
+group size rank 1 = 960
+group size rank 2 = 960
+group size rank 3 = 960
+group size rank 1 = 4736
+group size rank 3 = 4768
+group size rank 4 = 4768
+POT: 1
+MY MOMENTUM TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.022593e+00, 1.328565e+00, 5.840177e+00
+Energy/Atom = 3.195604e-02, 4.151765e-02, 1.825055e-01
+Forces      = 6.548815e-01, 9.381040e-01, 1.260903e+01
+Stress      = 2.608073e+01, 3.964568e+01, 1.336854e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY MOMENTUM VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.710967e+00, 2.159646e+00, 6.434427e+00
+Energy/Atom = 5.346773e-02, 6.748893e-02, 2.010758e-01
+Forces      = 9.598865e-01, 1.353006e+00, 1.268424e+01
+Stress      = 4.553570e+01, 6.166144e+01, 1.392970e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY MOMENTUM TIME: 362.4156733099371 STEPS: 1500 EPOCHS: 299 FINAL_LOSS: 24.98063274401745
+
+group size rank 0 = 4768
+group size rank 6 = 4768
+group size rank 7 = 4768
+group size rank 2 = 4768
+group size rank 5 = 4768
+group size rank 1 = 960
+group size rank 3 = 960
+group size rank 6 = 960
+group size rank 0 = 960
+group size rank 7 = 960
+group size rank 4 = 960
+group size rank 2 = 960
+group size rank 5 = 960
+group size rank 1 = 4736
+group size rank 3 = 4768
+group size rank 4 = 4768
+group size rank 2 = 4768
+POT: 2
+MY MOMENTUM TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 6.744086e-01, 8.714658e-01, 4.406412e+00
+Energy/Atom = 2.107527e-02, 2.723331e-02, 1.377004e-01
+Forces      = 6.616686e-01, 9.737817e-01, 1.130199e+01
+Stress      = 1.806419e+01, 2.779725e+01, 1.159319e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY MOMENTUM VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.090158e+00, 1.347978e+00, 3.854396e+00
+Energy/Atom = 3.406745e-02, 4.212433e-02, 1.204499e-01
+Forces      = 1.004789e+00, 1.425195e+00, 1.144524e+01
+Stress      = 3.312801e+01, 4.483296e+01, 1.100425e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY MOMENTUM TIME: 362.12779600918293 STEPS: 1500 EPOCHS: 299 FINAL_LOSS: 19.828565896225502
+
+group size rank 0 = 4768
+group size rank 7 = 4768
+group size rank 6 = 4768
+group size rank 5 = 4768
+group size rank 1 = 960
+group size rank 4 = 960
+group size rank 0 = 960
+group size rank 3 = 960
+group size rank 6 = 960
+group size rank 7 = 960
+group size rank 2 = 960
+group size rank 5 = 960
+group size rank 1 = 4736
+group size rank 2 = 4768
+group size rank 4 = 4768
+group size rank 3 = 4768
+group size rank 7 = 4768
+group size rank 6 = 4768
+POT: 3
+MY MOMENTUM TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 9.673681e-01, 1.291924e+00, 5.544968e+00
+Energy/Atom = 3.023025e-02, 4.037262e-02, 1.732803e-01
+Forces      = 7.792986e-01, 1.095514e+00, 1.262977e+01
+Stress      = 2.792988e+01, 4.074726e+01, 1.423337e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY MOMENTUM VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.926520e+00, 2.371905e+00, 7.322510e+00
+Energy/Atom = 6.020376e-02, 7.412204e-02, 2.288284e-01
+Forces      = 1.125896e+00, 1.552086e+00, 1.253177e+01
+Stress      = 4.666522e+01, 6.258821e+01, 1.425432e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY MOMENTUM TIME: 362.56775631941855 STEPS: 1500 EPOCHS: 299 FINAL_LOSS: 34.456361176702885
+
+group size rank 0 = 4768
+group size rank 5 = 4768
+group size rank 1 = 960
+group size rank 2 = 960
+group size rank 4 = 960
+group size rank 7 = 960
+group size rank 6 = 960
+group size rank 0 = 960
+group size rank 3 = 960
+group size rank 5 = 960
+group size rank 1 = 4736
+group size rank 4 = 4768
+group size rank 7 = 4768
+group size rank 3 = 4768
+POT: 4
+MY MOMENTUM TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.583753e+00, 2.032695e+00, 8.261115e+00
+Energy/Atom = 4.949229e-02, 6.352171e-02, 2.581599e-01
+Forces      = 8.893147e-01, 1.224197e+00, 1.196442e+01
+Stress      = 3.027091e+01, 4.410859e+01, 1.533008e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY MOMENTUM VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 2.412316e+00, 2.922973e+00, 7.766038e+00
+Energy/Atom = 7.538488e-02, 9.134291e-02, 2.426887e-01
+Forces      = 1.269148e+00, 1.712620e+00, 1.189470e+01
+Stress      = 4.883676e+01, 6.591713e+01, 1.497585e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY MOMENTUM TIME: 362.4084219150245 STEPS: 1500 EPOCHS: 299 FINAL_LOSS: 39.09940863422151
+
+group size rank 0 = 4768
+group size rank 2 = 4768
+group size rank 5 = 4768
+group size rank 6 = 4768
+group size rank 1 = 960
+group size rank 4 = 960
+group size rank 7 = 960
+group size rank 0 = 960
+group size rank 2 = 960
+group size rank 3 = 960
+group size rank 5 = 960
+group size rank 6 = 960
+POT: 5
+MY MOMENTUM TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.312063e+00, 1.727028e+00, 6.486352e+00
+Energy/Atom = 4.100195e-02, 5.396963e-02, 2.026985e-01
+Forces      = 6.473356e-01, 9.405762e-01, 1.208356e+01
+Stress      = 1.699328e+01, 2.581529e+01, 1.181124e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY MOMENTUM VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 2.075227e+00, 2.506576e+00, 6.072899e+00
+Energy/Atom = 6.485084e-02, 7.833051e-02, 1.897781e-01
+Forces      = 9.967499e-01, 1.376397e+00, 1.188695e+01
+Stress      = 2.984514e+01, 4.066324e+01, 1.311016e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY MOMENTUM TIME: 362.5696505513042 STEPS: 1500 EPOCHS: 299 FINAL_LOSS: 20.79230815851534
+

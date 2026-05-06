@@ -1,0 +1,172 @@
+
+The following have been reloaded with a version change:
+  1) Python/Anaconda_v02.2024 => Python/Miniconda
+
+[prun] Master compute host = cn-010
+[prun] Resource manager = slurm
+[prun] Launch cmd = mpirun /home/peivzarenkov/.conda/envs/peter_env/bin/python train_mtp_my_muon.py (family=openmpi)
+group size rank 3 = 4768
+group size rank 0 = 4768
+group size rank 7 = 4768
+group size rank 5 = 4768
+group size rank 4 = 4768
+group size rank 6 = 4768
+group size rank 2 = 4768
+group size rank 3 = 960
+group size rank 0 = 960
+group size rank 1 = 4736
+group size rank 7 = 960
+group size rank 4 = 960
+group size rank 5 = 960
+group size rank 6 = 960
+group size rank 2 = 960
+group size rank 1 = 960
+POT: 1
+MY MUON TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 2.067900e+00, 2.686201e+00, 5.411823e+00
+Energy/Atom = 6.462188e-02, 8.394377e-02, 1.691195e-01
+Forces      = 2.857126e-01, 4.201771e-01, 9.283095e+00
+Stress      = 5.267574e+00, 8.393192e+00, 4.400654e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY MUON VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.889122e+00, 2.433429e+00, 5.562604e+00
+Energy/Atom = 5.903505e-02, 7.604464e-02, 1.738314e-01
+Forces      = 4.559599e-01, 6.706395e-01, 9.338861e+00
+Stress      = 9.866686e+00, 1.428272e+01, 4.550195e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY MUON TIME: 479.2812924236059 STEPS: 1500 EPOCHS: 299 FINAL_LOSS: 16.565008276876963
+
+group size rank 0 = 4768
+group size rank 1 = 4736
+group size rank 2 = 4768
+group size rank 5 = 4768
+group size rank 7 = 4768
+group size rank 6 = 4768
+group size rank 3 = 4768
+group size rank 4 = 4768
+group size rank 0 = 960
+group size rank 1 = 960
+group size rank 2 = 960
+group size rank 5 = 960
+group size rank 7 = 960
+group size rank 6 = 960
+group size rank 3 = 960
+group size rank 4 = 960
+POT: 2
+MY MUON TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 3.257774e+00, 3.772104e+00, 9.251390e+00
+Energy/Atom = 1.018054e-01, 1.178782e-01, 2.891059e-01
+Forces      = 3.954141e-01, 5.615409e-01, 1.089280e+01
+Stress      = 1.099188e+01, 1.678162e+01, 7.581042e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY MUON VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 3.100438e+00, 3.702051e+00, 8.067919e+00
+Energy/Atom = 9.688869e-02, 1.156891e-01, 2.521225e-01
+Forces      = 5.628566e-01, 8.117565e-01, 1.024110e+01
+Stress      = 1.778919e+01, 2.495866e+01, 7.233159e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY MUON TIME: 480.9534796066582 STEPS: 1500 EPOCHS: 299 FINAL_LOSS: 6.654174944120462
+
+group size rank 0 = 4768
+group size rank 6 = 4768
+group size rank 2 = 4768
+group size rank 5 = 4768
+group size rank 4 = 4768
+group size rank 7 = 4768
+group size rank 1 = 4736
+group size rank 0 = 960
+group size rank 6 = 960
+group size rank 2 = 960
+group size rank 4 = 960
+group size rank 5 = 960
+group size rank 7 = 960
+group size rank 1 = 960
+group size rank 3 = 4768
+group size rank 3 = 960
+POT: 3
+MY MUON TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 2.123072e+00, 2.435227e+00, 5.011265e+00
+Energy/Atom = 6.634599e-02, 7.610084e-02, 1.566020e-01
+Forces      = 3.611482e-01, 5.586428e-01, 1.042047e+01
+Stress      = 4.516852e+00, 6.945863e+00, 5.002666e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY MUON VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 2.011268e+00, 2.349223e+00, 5.381167e+00
+Energy/Atom = 6.285214e-02, 7.341322e-02, 1.681615e-01
+Forces      = 5.470202e-01, 8.406663e-01, 9.899013e+00
+Stress      = 7.879367e+00, 1.157705e+01, 4.624274e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY MUON TIME: 477.2160536572337 STEPS: 1500 EPOCHS: 299 FINAL_LOSS: 17.098682867792913
+
+group size rank 0 = 4768
+group size rank 4 = 4768
+group size rank 6 = 4768
+group size rank 2 = 4768
+group size rank 3 = 4768
+group size rank 7 = 4768
+group size rank 5 = 4768
+group size rank 0 = 960
+group size rank 4 = 960
+group size rank 6 = 960
+group size rank 2 = 960
+group size rank 3 = 960
+group size rank 7 = 960
+group size rank 1 = 4736
+group size rank 5 = 960
+group size rank 1 = 960
+group size rank 2 = 4768
+POT: 4
+MY MUON TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 3.013792e+00, 3.348068e+00, 6.685735e+00
+Energy/Atom = 9.418101e-02, 1.046271e-01, 2.089292e-01
+Forces      = 3.795510e-01, 5.705672e-01, 1.051972e+01
+Stress      = 1.042375e+01, 1.623395e+01, 6.752739e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY MUON VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 2.846823e+00, 3.275870e+00, 8.644465e+00
+Energy/Atom = 8.896321e-02, 1.023709e-01, 2.701395e-01
+Forces      = 5.982406e-01, 8.905636e-01, 9.745462e+00
+Stress      = 1.814713e+01, 2.567574e+01, 7.026456e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY MUON TIME: 483.5557790733874 STEPS: 1500 EPOCHS: 299 FINAL_LOSS: 19.94373557377291
+
+group size rank 0 = 4768
+group size rank 1 = 4736
+group size rank 5 = 4768
+group size rank 7 = 4768
+group size rank 6 = 4768
+group size rank 3 = 4768
+group size rank 4 = 4768
+group size rank 2 = 960
+group size rank 0 = 960
+group size rank 1 = 960
+group size rank 5 = 960
+group size rank 6 = 960
+group size rank 7 = 960
+group size rank 4 = 960
+group size rank 3 = 960
+POT: 5
+MY MUON TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 2.087237e+00, 2.945720e+00, 7.195382e+00
+Energy/Atom = 6.522614e-02, 9.205376e-02, 2.248557e-01
+Forces      = 2.968163e-01, 4.516419e-01, 9.240607e+00
+Stress      = 6.132824e+00, 1.005786e+01, 6.004337e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY MUON VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 2.193852e+00, 3.056219e+00, 6.959582e+00
+Energy/Atom = 6.855788e-02, 9.550685e-02, 2.174869e-01
+Forces      = 4.640964e-01, 7.071377e-01, 8.329345e+00
+Stress      = 8.695980e+00, 1.330962e+01, 5.446997e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY MUON TIME: 477.3531996868551 STEPS: 1500 EPOCHS: 299 FINAL_LOSS: 14.312931028679348
+

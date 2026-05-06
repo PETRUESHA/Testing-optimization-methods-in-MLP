@@ -1,0 +1,172 @@
+
+The following have been reloaded with a version change:
+  1) Python/Anaconda_v02.2024 => Python/Miniconda
+
+[prun] Master compute host = cn-034
+[prun] Resource manager = slurm
+[prun] Launch cmd = mpirun /home/peivzarenkov/.conda/envs/peter_env/bin/python train_mtp_adam_clip_schedule.py (family=openmpi)
+group size rank 1 = 4736
+group size rank 0 = 4768
+group size rank 7 = 4768
+group size rank 4 = 4768
+group size rank 2 = 4768
+group size rank 5 = 4768
+group size rank 1 = 960
+group size rank 0 = 960
+group size rank 7 = 960
+group size rank 4 = 960
+group size rank 5 = 960
+group size rank 2 = 960
+group size rank 3 = 4768
+group size rank 6 = 4768
+group size rank 3 = 960
+group size rank 6 = 960
+group size rank 1 = 4736
+group size rank 4 = 4768
+group size rank 2 = 4768
+group size rank 7 = 4768
+POT: 1
+ADAM CLIP-SCHEDULE TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.422311e+00, 1.742665e+00, 5.102014e+00
+Energy/Atom = 4.444722e-02, 5.445830e-02, 1.594379e-01
+Forces      = 2.797957e-01, 4.321333e-01, 1.038914e+01
+Stress      = 5.815107e+00, 9.428023e+00, 4.438621e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ADAM CLIP-SCHEDULE VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.437650e+00, 1.786510e+00, 5.191883e+00
+Energy/Atom = 4.492655e-02, 5.582843e-02, 1.622464e-01
+Forces      = 4.489324e-01, 6.920361e-01, 9.371125e+00
+Stress      = 1.110770e+01, 1.598832e+01, 5.347242e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+TIME: 371.68100730516016 STEPS: 1500 EPOCHS: 298 FINAL_LOSS: 5.073509809969732
+
+group size rank 0 = 4768
+group size rank 6 = 4768
+group size rank 3 = 4768
+group size rank 5 = 4768
+group size rank 1 = 960
+group size rank 4 = 960
+group size rank 2 = 960
+group size rank 7 = 960
+group size rank 0 = 960
+group size rank 6 = 960
+group size rank 3 = 960
+group size rank 5 = 960
+group size rank 4 = 4768
+group size rank 1 = 4736
+group size rank 7 = 4768
+group size rank 2 = 4768
+group size rank 6 = 4768
+POT: 2
+ADAM CLIP-SCHEDULE TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.723219e+00, 2.097458e+00, 5.088952e+00
+Energy/Atom = 5.385059e-02, 6.554555e-02, 1.590298e-01
+Forces      = 2.677676e-01, 3.962884e-01, 8.140849e+00
+Stress      = 5.656862e+00, 8.966825e+00, 4.729681e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ADAM CLIP-SCHEDULE VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.575254e+00, 1.950387e+00, 5.134808e+00
+Energy/Atom = 4.922668e-02, 6.094959e-02, 1.604627e-01
+Forces      = 4.335844e-01, 6.401250e-01, 8.824148e+00
+Stress      = 1.007041e+01, 1.435023e+01, 4.744971e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+TIME: 372.4728954844177 STEPS: 1500 EPOCHS: 298 FINAL_LOSS: 9.060949316808863
+
+group size rank 0 = 4768
+group size rank 5 = 4768
+group size rank 3 = 4768
+group size rank 1 = 960
+group size rank 7 = 960
+group size rank 2 = 960
+group size rank 6 = 960
+group size rank 4 = 960
+group size rank 0 = 960
+group size rank 5 = 960
+group size rank 3 = 960
+group size rank 6 = 4768
+group size rank 7 = 4768
+group size rank 1 = 4736
+group size rank 2 = 4768
+group size rank 5 = 4768
+group size rank 4 = 4768
+POT: 3
+ADAM CLIP-SCHEDULE TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.947754e+00, 2.255463e+00, 7.035079e+00
+Energy/Atom = 6.086730e-02, 7.048322e-02, 2.198462e-01
+Forces      = 3.249085e-01, 5.110421e-01, 1.073963e+01
+Stress      = 6.068496e+00, 9.219999e+00, 4.530465e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ADAM CLIP-SCHEDULE VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 2.033031e+00, 2.579356e+00, 7.287527e+00
+Energy/Atom = 6.353223e-02, 8.060488e-02, 2.277352e-01
+Forces      = 5.020181e-01, 7.945111e-01, 9.958614e+00
+Stress      = 9.621841e+00, 1.364640e+01, 4.507821e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+TIME: 369.711585836485 STEPS: 1500 EPOCHS: 298 FINAL_LOSS: 8.965086138578148
+
+group size rank 0 = 4768
+group size rank 3 = 4768
+group size rank 6 = 960
+group size rank 1 = 960
+group size rank 7 = 960
+group size rank 2 = 960
+group size rank 5 = 960
+group size rank 0 = 960
+group size rank 3 = 960
+group size rank 4 = 960
+group size rank 6 = 4768
+group size rank 1 = 4736
+group size rank 4 = 4768
+group size rank 7 = 4768
+group size rank 2 = 4768
+POT: 4
+ADAM CLIP-SCHEDULE TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.234023e+00, 1.394857e+00, 3.157020e+00
+Energy/Atom = 3.856322e-02, 4.358930e-02, 9.865689e-02
+Forces      = 2.290567e-01, 3.414157e-01, 8.772253e+00
+Stress      = 4.156190e+00, 6.671590e+00, 4.097983e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ADAM CLIP-SCHEDULE VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.126626e+00, 1.311513e+00, 4.016239e+00
+Energy/Atom = 3.520706e-02, 4.098477e-02, 1.255075e-01
+Forces      = 3.604568e-01, 5.570436e-01, 9.551474e+00
+Stress      = 8.089945e+00, 1.165264e+01, 3.887017e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+TIME: 370.3031418789178 STEPS: 1500 EPOCHS: 298 FINAL_LOSS: 5.619399258122799
+
+group size rank 0 = 4768
+group size rank 5 = 4768
+group size rank 3 = 4768
+group size rank 6 = 960
+group size rank 1 = 960
+group size rank 0 = 960
+group size rank 7 = 960
+group size rank 2 = 960
+group size rank 4 = 960
+group size rank 5 = 960
+group size rank 3 = 960
+POT: 5
+ADAM CLIP-SCHEDULE TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.103443e+00, 1.210813e+00, 3.093968e+00
+Energy/Atom = 3.448261e-02, 3.783791e-02, 9.668651e-02
+Forces      = 2.958281e-01, 4.579576e-01, 9.454015e+00
+Stress      = 4.346898e+00, 6.709254e+00, 4.457227e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ADAM CLIP-SCHEDULE VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.203768e+00, 1.364021e+00, 3.453883e+00
+Energy/Atom = 3.761776e-02, 4.262565e-02, 1.079338e-01
+Forces      = 4.859754e-01, 7.302832e-01, 9.446477e+00
+Stress      = 7.663355e+00, 1.115049e+01, 4.678220e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+TIME: 370.65422128885984 STEPS: 1500 EPOCHS: 298 FINAL_LOSS: 4.27852355960801
+

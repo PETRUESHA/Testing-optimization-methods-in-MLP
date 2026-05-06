@@ -1,0 +1,177 @@
+
+The following have been reloaded with a version change:
+  1) Python/Anaconda_v02.2024 => Python/Miniconda
+
+[prun] Master compute host = cn-032
+[prun] Resource manager = slurm
+[prun] Launch cmd = mpirun /home/peivzarenkov/.conda/envs/peter_env/bin/python train_mtp_adam_then_lbfgs.py (family=openmpi)
+group size rank 3 = 4768
+group size rank 4 = 4768
+group size rank 6 = 4768
+group size rank 5 = 4768
+group size rank 2 = 4768
+group size rank 1 = 4736
+group size rank 7 = 4768
+group size rank 3 = 960
+group size rank 5 = 960
+group size rank 2 = 960
+group size rank 1 = 960
+group size rank 4 = 960
+group size rank 7 = 960
+group size rank 0 = 4768
+group size rank 6 = 960
+group size rank 0 = 960
+group size rank 4 = 4768
+group size rank 3 = 4768
+group size rank 2 = 4768
+group size rank 7 = 4768
+POT: 1
+ADAM->LBFGS TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 2.638582e-01, 3.921697e-01, 2.847260e+00
+Energy/Atom = 8.245569e-03, 1.225530e-02, 8.897687e-02
+Forces      = 2.773244e-01, 4.253850e-01, 9.736268e+00
+Stress      = 4.340401e+00, 7.029616e+00, 3.906817e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ADAM->LBFGS VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 5.714670e-01, 7.485707e-01, 3.158691e+00
+Energy/Atom = 1.785834e-02, 2.339284e-02, 9.870909e-02
+Forces      = 4.542801e-01, 6.849708e-01, 1.013109e+01
+Stress      = 8.877208e+00, 1.281256e+01, 4.578365e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ADAM: 205.49640488997102 STEPS: 800 EPOCHS: 159 FINAL_LOSS: 18.65982653365915
+LBFGS: 285.44355756416917 NIT: 300 SUCCESS: False FINAL_LOSS: 23.417426887783773
+
+group size rank 0 = 4768
+group size rank 5 = 4768
+group size rank 6 = 4768
+group size rank 1 = 4736
+group size rank 2 = 960
+group size rank 3 = 960
+group size rank 4 = 960
+group size rank 0 = 960
+group size rank 7 = 960
+group size rank 5 = 960
+group size rank 6 = 960
+group size rank 1 = 960
+group size rank 7 = 4768
+group size rank 3 = 4768
+group size rank 2 = 4768
+group size rank 4 = 4768
+group size rank 5 = 4768
+group size rank 6 = 4768
+group size rank 1 = 4736
+group size rank 7 = 960
+group size rank 3 = 960
+group size rank 2 = 960
+group size rank 4 = 960
+group size rank 6 = 960
+group size rank 5 = 960
+group size rank 1 = 960
+POT: 2
+ADAM->LBFGS TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 2.358034e-01, 3.346705e-01, 1.864587e+00
+Energy/Atom = 7.368855e-03, 1.045845e-02, 5.826833e-02
+Forces      = 2.456940e-01, 3.789401e-01, 8.193400e+00
+Stress      = 3.889149e+00, 6.484755e+00, 3.868960e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ADAM->LBFGS VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 4.959875e-01, 6.021604e-01, 1.743807e+00
+Energy/Atom = 1.549961e-02, 1.881751e-02, 5.449397e-02
+Forces      = 4.105335e-01, 6.228289e-01, 8.370348e+00
+Stress      = 8.130495e+00, 1.172500e+01, 4.345838e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ADAM: 204.25500588864088 STEPS: 800 EPOCHS: 159 FINAL_LOSS: 8.408057221949662
+LBFGS: 320.78146870806813 NIT: 300 SUCCESS: False FINAL_LOSS: 22.889449301803946
+
+group size rank 0 = 4768
+group size rank 0 = 960
+group size rank 3 = 4768
+group size rank 4 = 4768
+group size rank 2 = 4768
+group size rank 5 = 4768
+group size rank 7 = 4768
+group size rank 1 = 4736
+group size rank 2 = 960
+group size rank 4 = 960
+group size rank 3 = 960
+group size rank 5 = 960
+group size rank 7 = 960
+group size rank 1 = 960
+POT: 3
+ADAM->LBFGS TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 2.082916e-01, 2.895254e-01, 2.229614e+00
+Energy/Atom = 6.509113e-03, 9.047667e-03, 6.967545e-02
+Forces      = 2.048113e-01, 3.148778e-01, 7.653481e+00
+Stress      = 2.237625e+00, 3.432142e+00, 2.468647e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ADAM->LBFGS VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 3.904676e-01, 5.138781e-01, 1.962315e+00
+Energy/Atom = 1.220211e-02, 1.605869e-02, 6.132233e-02
+Forces      = 3.071672e-01, 4.933968e-01, 9.146941e+00
+Stress      = 4.110322e+00, 6.066645e+00, 2.887030e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ADAM: 274.1293898895383 STEPS: 800 EPOCHS: 159 FINAL_LOSS: 15.324907561121638
+LBFGS: 332.4880442209542 NIT: 300 SUCCESS: False FINAL_LOSS: 15.546023871691256
+
+group size rank 0 = 4768
+group size rank 6 = 4768
+group size rank 6 = 960
+group size rank 0 = 960
+group size rank 4 = 4768
+group size rank 3 = 4768
+group size rank 2 = 4768
+group size rank 5 = 4768
+group size rank 6 = 4768
+group size rank 7 = 4768
+group size rank 1 = 4736
+group size rank 3 = 960
+group size rank 2 = 960
+group size rank 4 = 960
+group size rank 5 = 960
+group size rank 6 = 960
+group size rank 7 = 960
+group size rank 1 = 960
+POT: 4
+ADAM->LBFGS TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.945430e-01, 2.846505e-01, 1.759671e+00
+Energy/Atom = 6.079468e-03, 8.895328e-03, 5.498971e-02
+Forces      = 2.196132e-01, 3.348776e-01, 8.252548e+00
+Stress      = 3.345823e+00, 5.220845e+00, 3.279741e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ADAM->LBFGS VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 4.003551e-01, 5.213446e-01, 1.706326e+00
+Energy/Atom = 1.251110e-02, 1.629202e-02, 5.332269e-02
+Forces      = 3.447684e-01, 5.451931e-01, 8.891217e+00
+Stress      = 6.416863e+00, 9.234430e+00, 3.654637e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ADAM: 236.63208089023829 STEPS: 800 EPOCHS: 159 FINAL_LOSS: 9.200541858096544
+LBFGS: 319.40178537368774 NIT: 300 SUCCESS: False FINAL_LOSS: 16.94453564753078
+
+group size rank 0 = 4768
+group size rank 0 = 960
+POT: 5
+ADAM->LBFGS TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 2.235610e-01, 3.393282e-01, 1.899258e+00
+Energy/Atom = 6.986280e-03, 1.060401e-02, 5.935181e-02
+Forces      = 2.379827e-01, 3.849112e-01, 8.760848e+00
+Stress      = 3.406695e+00, 5.886051e+00, 4.517950e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ADAM->LBFGS VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 4.855641e-01, 6.140299e-01, 1.611809e+00
+Energy/Atom = 1.517388e-02, 1.918843e-02, 5.036905e-02
+Forces      = 4.080861e-01, 6.467674e-01, 9.108934e+00
+Stress      = 7.475747e+00, 1.126247e+01, 4.379828e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ADAM: 305.527072776109 STEPS: 800 EPOCHS: 159 FINAL_LOSS: 7.9074428142358135
+LBFGS: 291.9856274537742 NIT: 300 SUCCESS: False FINAL_LOSS: 22.711875196475507
+

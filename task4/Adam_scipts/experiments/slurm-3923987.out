@@ -1,0 +1,667 @@
+
+The following have been reloaded with a version change:
+  1) Python/Anaconda_v02.2024 => Python/Miniconda
+
+[prun] Master compute host = cn-021
+[prun] Resource manager = slurm
+[prun] Launch cmd = mpirun /home/peivzarenkov/.conda/envs/peter_env/bin/python train_mtp_adam_lr_grid.py (family=openmpi)
+group size rank 3 = 4768
+group size rank 7 = 4768
+group size rank 0 = 4768
+group size rank 5 = 4768
+group size rank 2 = 4768
+group size rank 6 = 4768
+group size rank 4 = 4768
+group size rank 1 = 4736
+group size rank 7 = 960
+group size rank 3 = 960
+group size rank 0 = 960
+group size rank 2 = 960
+group size rank 6 = 960
+group size rank 5 = 960
+group size rank 4 = 960
+group size rank 1 = 960
+LR: 0.0003 POT: 1
+ADAM LR-GRID TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 6.051865e-01, 7.757345e-01, 3.018951e+00
+Energy/Atom = 1.891208e-02, 2.424170e-02, 9.434223e-02
+Forces      = 3.742428e-01, 5.838649e-01, 1.119285e+01
+Stress      = 6.456958e+00, 1.047635e+01, 5.977570e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ADAM LR-GRID VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 8.179777e-01, 1.049142e+00, 3.334560e+00
+Energy/Atom = 2.556180e-02, 3.278569e-02, 1.042050e-01
+Forces      = 6.044096e-01, 9.175324e-01, 1.079134e+01
+Stress      = 1.339271e+01, 1.878158e+01, 6.177264e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+TIME: 490.85205361805856 STEPS: 1500 EPOCHS: 299 FINAL_LOSS: 7.231449554473491
+
+group size rank 0 = 4768
+group size rank 7 = 4768
+group size rank 3 = 4768
+group size rank 5 = 4768
+group size rank 6 = 4768
+group size rank 2 = 4768
+group size rank 4 = 4768
+group size rank 1 = 4736
+group size rank 0 = 960
+group size rank 7 = 960
+group size rank 3 = 960
+group size rank 5 = 960
+group size rank 6 = 960
+group size rank 2 = 960
+group size rank 4 = 960
+group size rank 1 = 960
+LR: 0.0003 POT: 2
+ADAM LR-GRID TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 6.647973e-01, 8.496998e-01, 3.196083e+00
+Energy/Atom = 2.077492e-02, 2.655312e-02, 9.987758e-02
+Forces      = 3.758152e-01, 5.660868e-01, 9.603364e+00
+Stress      = 6.418887e+00, 1.015766e+01, 6.087712e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ADAM LR-GRID VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 7.968144e-01, 1.014842e+00, 3.028761e+00
+Energy/Atom = 2.490045e-02, 3.171381e-02, 9.464879e-02
+Forces      = 5.986749e-01, 8.931160e-01, 9.701163e+00
+Stress      = 1.270967e+01, 1.773851e+01, 5.765825e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+TIME: 496.3196797631681 STEPS: 1500 EPOCHS: 299 FINAL_LOSS: 6.207002685829797
+
+group size rank 0 = 4768
+group size rank 5 = 4768
+group size rank 7 = 4768
+group size rank 3 = 4768
+group size rank 2 = 4768
+group size rank 1 = 4736
+group size rank 6 = 4768
+group size rank 4 = 4768
+group size rank 0 = 960
+group size rank 5 = 960
+group size rank 7 = 960
+group size rank 3 = 960
+group size rank 2 = 960
+group size rank 1 = 960
+group size rank 6 = 960
+group size rank 4 = 960
+group size rank 3 = 4768
+group size rank 5 = 4768
+LR: 0.0003 POT: 3
+ADAM LR-GRID TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.121927e+00, 1.307548e+00, 3.724665e+00
+Energy/Atom = 3.506023e-02, 4.086086e-02, 1.163958e-01
+Forces      = 4.384620e-01, 6.789716e-01, 1.217788e+01
+Stress      = 6.306754e+00, 9.759368e+00, 5.684104e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ADAM LR-GRID VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.219484e+00, 1.478901e+00, 4.205804e+00
+Energy/Atom = 3.810887e-02, 4.621565e-02, 1.314314e-01
+Forces      = 6.890482e-01, 1.033706e+00, 1.157535e+01
+Stress      = 1.146322e+01, 1.636290e+01, 5.684104e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+TIME: 491.41543081589043 STEPS: 1500 EPOCHS: 299 FINAL_LOSS: 8.309828704188172
+
+group size rank 0 = 4768
+group size rank 7 = 4768
+group size rank 6 = 4768
+group size rank 2 = 4768
+group size rank 4 = 4768
+group size rank 1 = 4736
+group size rank 3 = 960
+group size rank 5 = 960
+group size rank 0 = 960
+group size rank 7 = 960
+group size rank 6 = 960
+group size rank 2 = 960
+group size rank 1 = 960
+group size rank 4 = 960
+group size rank 5 = 4768
+group size rank 3 = 4768
+group size rank 7 = 4768
+LR: 0.0003 POT: 4
+ADAM LR-GRID TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 8.651844e-01, 1.018860e+00, 4.374052e+00
+Energy/Atom = 2.703701e-02, 3.183937e-02, 1.366891e-01
+Forces      = 3.334678e-01, 5.173215e-01, 1.046204e+01
+Stress      = 6.324160e+00, 9.784993e+00, 5.337558e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ADAM LR-GRID VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 9.387251e-01, 1.165416e+00, 3.552188e+00
+Energy/Atom = 2.933516e-02, 3.641924e-02, 1.110059e-01
+Forces      = 5.262807e-01, 8.192377e-01, 1.059366e+01
+Stress      = 1.201224e+01, 1.672440e+01, 5.150948e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+TIME: 488.2960412222892 STEPS: 1500 EPOCHS: 299 FINAL_LOSS: 10.066074814371515
+
+group size rank 0 = 4768
+group size rank 2 = 4768
+group size rank 6 = 4768
+group size rank 4 = 4768
+group size rank 1 = 4736
+group size rank 5 = 960
+group size rank 3 = 960
+group size rank 7 = 960
+group size rank 0 = 960
+group size rank 6 = 960
+group size rank 2 = 960
+group size rank 4 = 960
+group size rank 1 = 960
+group size rank 5 = 4768
+group size rank 7 = 4768
+group size rank 3 = 4768
+LR: 0.0003 POT: 5
+ADAM LR-GRID TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 9.197885e-01, 1.056302e+00, 3.489151e+00
+Energy/Atom = 2.874339e-02, 3.300944e-02, 1.090360e-01
+Forces      = 4.148001e-01, 6.388204e-01, 1.042464e+01
+Stress      = 7.279991e+00, 1.097051e+01, 5.273616e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ADAM LR-GRID VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.131594e+00, 1.406634e+00, 4.170487e+00
+Energy/Atom = 3.536233e-02, 4.395732e-02, 1.303277e-01
+Forces      = 6.936431e-01, 1.013530e+00, 1.018917e+01
+Stress      = 9.950162e+00, 1.417546e+01, 4.967463e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+TIME: 490.02480976842344 STEPS: 1500 EPOCHS: 299 FINAL_LOSS: 8.889844827236669
+
+group size rank 0 = 4768
+group size rank 2 = 4768
+group size rank 1 = 4736
+group size rank 6 = 4768
+group size rank 4 = 4768
+group size rank 5 = 960
+group size rank 0 = 960
+group size rank 3 = 960
+group size rank 7 = 960
+group size rank 1 = 960
+group size rank 2 = 960
+group size rank 6 = 960
+group size rank 4 = 960
+group size rank 3 = 4768
+LR: 0.001 POT: 1
+ADAM LR-GRID TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.505514e+00, 1.844234e+00, 5.700610e+00
+Energy/Atom = 4.704730e-02, 5.763231e-02, 1.781441e-01
+Forces      = 3.147020e-01, 4.901276e-01, 1.038535e+01
+Stress      = 6.011919e+00, 9.795352e+00, 5.211796e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ADAM LR-GRID VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.781799e+00, 2.194911e+00, 5.519505e+00
+Energy/Atom = 5.568120e-02, 6.859096e-02, 1.724845e-01
+Forces      = 5.019104e-01, 7.686171e-01, 1.010805e+01
+Stress      = 1.204875e+01, 1.716470e+01, 5.437341e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+TIME: 491.78275300748646 STEPS: 1500 EPOCHS: 299 FINAL_LOSS: 4.413543722173825
+
+group size rank 0 = 4768
+group size rank 7 = 4768
+group size rank 5 = 4768
+group size rank 2 = 4768
+group size rank 6 = 4768
+group size rank 4 = 4768
+group size rank 1 = 4736
+group size rank 0 = 960
+group size rank 3 = 960
+group size rank 7 = 960
+group size rank 5 = 960
+group size rank 2 = 960
+group size rank 6 = 960
+group size rank 1 = 960
+group size rank 4 = 960
+group size rank 7 = 4768
+group size rank 3 = 4768
+LR: 0.001 POT: 2
+ADAM LR-GRID TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 2.232532e+00, 2.392953e+00, 5.021233e+00
+Energy/Atom = 6.976662e-02, 7.477979e-02, 1.569135e-01
+Forces      = 3.242572e-01, 4.971478e-01, 9.295886e+00
+Stress      = 6.304254e+00, 1.008450e+01, 5.538730e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ADAM LR-GRID VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.994349e+00, 2.236014e+00, 4.758305e+00
+Energy/Atom = 6.232341e-02, 6.987544e-02, 1.486970e-01
+Forces      = 5.257912e-01, 7.970849e-01, 1.002392e+01
+Stress      = 1.112739e+01, 1.583220e+01, 5.428910e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+TIME: 489.17491391673684 STEPS: 1500 EPOCHS: 299 FINAL_LOSS: 18.024138225803082
+
+group size rank 0 = 4768
+group size rank 5 = 4768
+group size rank 1 = 4736
+group size rank 2 = 4768
+group size rank 6 = 4768
+group size rank 4 = 4768
+group size rank 0 = 960
+group size rank 3 = 960
+group size rank 5 = 960
+group size rank 7 = 960
+group size rank 2 = 960
+group size rank 1 = 960
+group size rank 6 = 960
+group size rank 4 = 960
+group size rank 3 = 4768
+group size rank 5 = 4768
+group size rank 7 = 4768
+LR: 0.001 POT: 3
+ADAM LR-GRID TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.393518e+00, 1.507663e+00, 3.767496e+00
+Energy/Atom = 4.354744e-02, 4.711448e-02, 1.177342e-01
+Forces      = 3.309883e-01, 5.348521e-01, 1.016279e+01
+Stress      = 4.479964e+00, 6.943340e+00, 4.997672e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ADAM LR-GRID VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.393971e+00, 1.593687e+00, 3.870753e+00
+Energy/Atom = 4.356159e-02, 4.980272e-02, 1.209610e-01
+Forces      = 5.214806e-01, 8.346650e-01, 1.001405e+01
+Stress      = 7.102490e+00, 1.047024e+01, 4.899576e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+TIME: 490.4658096116036 STEPS: 1500 EPOCHS: 299 FINAL_LOSS: 6.278260576234163
+
+group size rank 0 = 4768
+group size rank 1 = 4736
+group size rank 2 = 4768
+group size rank 4 = 4768
+group size rank 6 = 4768
+group size rank 0 = 960
+group size rank 3 = 960
+group size rank 5 = 960
+group size rank 7 = 960
+group size rank 1 = 960
+group size rank 6 = 960
+group size rank 4 = 960
+group size rank 2 = 960
+LR: 0.001 POT: 4
+ADAM LR-GRID TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.381629e+00, 1.485971e+00, 3.584801e+00
+Energy/Atom = 4.317590e-02, 4.643660e-02, 1.120250e-01
+Forces      = 2.515518e-01, 4.019419e-01, 9.454848e+00
+Stress      = 5.587476e+00, 8.683254e+00, 4.959490e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ADAM LR-GRID VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.284740e+00, 1.456475e+00, 4.127637e+00
+Energy/Atom = 4.014813e-02, 4.551485e-02, 1.289887e-01
+Forces      = 4.176689e-01, 6.673354e-01, 9.681788e+00
+Stress      = 1.033719e+01, 1.441183e+01, 4.697879e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+TIME: 495.592528635636 STEPS: 1500 EPOCHS: 299 FINAL_LOSS: 8.940916422426188
+
+group size rank 0 = 4768
+group size rank 5 = 4768
+group size rank 3 = 4768
+group size rank 7 = 4768
+group size rank 2 = 4768
+group size rank 4 = 4768
+group size rank 1 = 4736
+group size rank 6 = 4768
+group size rank 0 = 960
+group size rank 3 = 960
+group size rank 5 = 960
+group size rank 7 = 960
+group size rank 2 = 960
+group size rank 4 = 960
+group size rank 1 = 960
+group size rank 6 = 960
+group size rank 3 = 4768
+group size rank 5 = 4768
+LR: 0.001 POT: 5
+ADAM LR-GRID TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.403067e+00, 1.474565e+00, 3.673444e+00
+Energy/Atom = 4.384584e-02, 4.608015e-02, 1.147951e-01
+Forces      = 3.373502e-01, 5.301174e-01, 9.540206e+00
+Stress      = 5.557458e+00, 8.558038e+00, 4.701668e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ADAM LR-GRID VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.597539e+00, 1.767441e+00, 3.903607e+00
+Energy/Atom = 4.992310e-02, 5.523253e-02, 1.219877e-01
+Forces      = 5.569003e-01, 8.442200e-01, 9.597069e+00
+Stress      = 9.077761e+00, 1.315952e+01, 4.864951e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+TIME: 495.68332588113844 STEPS: 1500 EPOCHS: 299 FINAL_LOSS: 6.737564510706088
+
+group size rank 0 = 4768
+group size rank 7 = 4768
+group size rank 2 = 4768
+group size rank 4 = 4768
+group size rank 1 = 4736
+group size rank 6 = 4768
+group size rank 0 = 960
+group size rank 3 = 960
+group size rank 5 = 960
+group size rank 7 = 960
+group size rank 2 = 960
+group size rank 4 = 960
+group size rank 6 = 960
+group size rank 1 = 960
+group size rank 7 = 4768
+group size rank 3 = 4768
+LR: 0.003 POT: 1
+ADAM LR-GRID TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.407395e+00, 1.614911e+00, 3.863058e+00
+Energy/Atom = 4.398109e-02, 5.046596e-02, 1.207206e-01
+Forces      = 2.064236e-01, 3.109604e-01, 7.329350e+00
+Stress      = 4.587492e+00, 7.131742e+00, 3.280761e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ADAM LR-GRID VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.317127e+00, 1.522316e+00, 3.972207e+00
+Energy/Atom = 4.116022e-02, 4.757237e-02, 1.241315e-01
+Forces      = 3.399026e-01, 5.202890e-01, 9.113707e+00
+Stress      = 8.061140e+00, 1.144371e+01, 4.198306e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+TIME: 491.4976126253605 STEPS: 1500 EPOCHS: 299 FINAL_LOSS: 11.709203821064559
+
+group size rank 0 = 4768
+group size rank 5 = 4768
+group size rank 2 = 4768
+group size rank 4 = 4768
+group size rank 1 = 4736
+group size rank 6 = 4768
+group size rank 7 = 960
+group size rank 0 = 960
+group size rank 3 = 960
+group size rank 2 = 960
+group size rank 4 = 960
+group size rank 6 = 960
+group size rank 1 = 960
+group size rank 5 = 960
+group size rank 3 = 4768
+group size rank 7 = 4768
+group size rank 5 = 4768
+LR: 0.003 POT: 2
+ADAM LR-GRID TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.765358e+00, 2.062998e+00, 4.863124e+00
+Energy/Atom = 5.516743e-02, 6.446870e-02, 1.519726e-01
+Forces      = 2.477533e-01, 3.600852e-01, 7.675003e+00
+Stress      = 6.693790e+00, 1.063180e+01, 4.673592e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ADAM LR-GRID VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.707933e+00, 1.962297e+00, 4.176124e+00
+Energy/Atom = 5.337291e-02, 6.132179e-02, 1.305039e-01
+Forces      = 3.811423e-01, 5.644127e-01, 7.711975e+00
+Stress      = 9.977506e+00, 1.404291e+01, 4.268212e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+TIME: 491.31125691346824 STEPS: 1500 EPOCHS: 299 FINAL_LOSS: 8.1362910646581
+
+group size rank 0 = 4768
+group size rank 2 = 4768
+group size rank 4 = 4768
+group size rank 6 = 4768
+group size rank 1 = 4736
+group size rank 3 = 960
+group size rank 7 = 960
+group size rank 0 = 960
+group size rank 5 = 960
+group size rank 2 = 960
+group size rank 4 = 960
+group size rank 6 = 960
+group size rank 1 = 960
+group size rank 3 = 4768
+group size rank 5 = 4768
+group size rank 7 = 4768
+LR: 0.003 POT: 3
+ADAM LR-GRID TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.970543e+00, 2.040144e+00, 3.712765e+00
+Energy/Atom = 6.157946e-02, 6.375451e-02, 1.160239e-01
+Forces      = 2.857451e-01, 4.556861e-01, 9.775776e+00
+Stress      = 4.333080e+00, 6.426342e+00, 3.215015e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ADAM LR-GRID VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.657115e+00, 1.810328e+00, 3.906099e+00
+Energy/Atom = 5.178485e-02, 5.657276e-02, 1.220656e-01
+Forces      = 4.522142e-01, 7.167698e-01, 1.023499e+01
+Stress      = 6.119135e+00, 8.712545e+00, 3.288934e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+TIME: 491.5512825846672 STEPS: 1500 EPOCHS: 299 FINAL_LOSS: 8.258270916096937
+
+group size rank 0 = 4768
+group size rank 2 = 4768
+group size rank 4 = 4768
+group size rank 6 = 4768
+group size rank 1 = 4736
+group size rank 3 = 960
+group size rank 5 = 960
+group size rank 7 = 960
+group size rank 0 = 960
+group size rank 2 = 960
+group size rank 4 = 960
+group size rank 6 = 960
+group size rank 1 = 960
+group size rank 5 = 4768
+group size rank 7 = 4768
+group size rank 3 = 4768
+LR: 0.003 POT: 4
+ADAM LR-GRID TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.355064e+00, 1.568579e+00, 3.472012e+00
+Energy/Atom = 4.234574e-02, 4.901809e-02, 1.085004e-01
+Forces      = 2.456368e-01, 3.553136e-01, 6.672578e+00
+Stress      = 5.956458e+00, 9.289240e+00, 3.954668e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ADAM LR-GRID VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.428316e+00, 1.674490e+00, 3.798388e+00
+Energy/Atom = 4.463489e-02, 5.232781e-02, 1.186996e-01
+Forces      = 3.555057e-01, 5.247730e-01, 7.948099e+00
+Stress      = 6.247393e+00, 9.928015e+00, 4.284561e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+TIME: 492.6506346371025 STEPS: 1500 EPOCHS: 299 FINAL_LOSS: 3.4384876580447883
+
+group size rank 0 = 4768
+group size rank 2 = 4768
+group size rank 1 = 4736
+group size rank 4 = 4768
+group size rank 6 = 4768
+group size rank 0 = 960
+group size rank 5 = 960
+group size rank 3 = 960
+group size rank 7 = 960
+group size rank 2 = 960
+group size rank 4 = 960
+group size rank 6 = 960
+group size rank 1 = 960
+group size rank 6 = 4768
+group size rank 1 = 4736
+LR: 0.003 POT: 5
+ADAM LR-GRID TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.390922e+00, 1.426451e+00, 2.731596e+00
+Energy/Atom = 4.346630e-02, 4.457658e-02, 8.536239e-02
+Forces      = 2.304940e-01, 3.462374e-01, 9.370243e+00
+Stress      = 5.584263e+00, 8.895560e+00, 4.163741e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ADAM LR-GRID VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.327768e+00, 1.436182e+00, 3.032981e+00
+Energy/Atom = 4.149277e-02, 4.488068e-02, 9.478067e-02
+Forces      = 3.639181e-01, 5.534244e-01, 8.845001e+00
+Stress      = 9.229497e+00, 1.336233e+01, 4.163741e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+TIME: 492.70198225416243 STEPS: 1500 EPOCHS: 299 FINAL_LOSS: 3.563787398104352
+
+group size rank 0 = 4768
+group size rank 4 = 4768
+group size rank 2 = 4768
+group size rank 7 = 4768
+group size rank 3 = 4768
+group size rank 6 = 960
+group size rank 0 = 960
+group size rank 4 = 960
+group size rank 2 = 960
+group size rank 5 = 4768
+group size rank 3 = 960
+group size rank 1 = 960
+group size rank 5 = 960
+group size rank 7 = 960
+group size rank 7 = 4768
+group size rank 1 = 4736
+group size rank 7 = 960
+group size rank 1 = 960
+group size rank 5 = 4768
+group size rank 2 = 4768
+group size rank 4 = 4768
+group size rank 3 = 4768
+LR: 0.01 POT: 1
+ADAM LR-GRID TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.297770e+00, 1.480847e+00, 3.546380e+00
+Energy/Atom = 4.055530e-02, 4.627647e-02, 1.108244e-01
+Forces      = 1.784477e-01, 2.447115e-01, 3.923740e+00
+Stress      = 3.737394e+00, 6.186448e+00, 3.445242e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ADAM LR-GRID VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.521055e+00, 1.766397e+00, 3.989924e+00
+Energy/Atom = 4.753297e-02, 5.519991e-02, 1.246851e-01
+Forces      = 2.663447e-01, 3.672899e-01, 6.527563e+00
+Stress      = 7.884553e+00, 1.105470e+01, 3.303023e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+TIME: 496.76027230732143 STEPS: 1500 EPOCHS: 299 FINAL_LOSS: 2.088999115424118
+
+group size rank 0 = 4768
+group size rank 6 = 4768
+group size rank 2 = 960
+group size rank 4 = 960
+group size rank 5 = 960
+group size rank 0 = 960
+group size rank 3 = 960
+group size rank 6 = 960
+group size rank 3 = 4768
+LR: 0.01 POT: 2
+ADAM LR-GRID TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.543528e+00, 1.813932e+00, 4.987418e+00
+Energy/Atom = 4.823525e-02, 5.668537e-02, 1.558568e-01
+Forces      = 1.668190e-01, 2.340193e-01, 4.165112e+00
+Stress      = 4.772200e+00, 7.907833e+00, 4.548878e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ADAM LR-GRID VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.742735e+00, 2.066454e+00, 4.890526e+00
+Energy/Atom = 5.446047e-02, 6.457669e-02, 1.528290e-01
+Forces      = 2.458237e-01, 3.391316e-01, 5.877638e+00
+Stress      = 7.888723e+00, 1.160097e+01, 4.334100e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+TIME: 493.378580134362 STEPS: 1500 EPOCHS: 299 FINAL_LOSS: 2.029952747696
+
+group size rank 0 = 4768
+group size rank 7 = 4768
+group size rank 2 = 4768
+group size rank 6 = 4768
+group size rank 4 = 4768
+group size rank 1 = 4736
+group size rank 5 = 4768
+group size rank 0 = 960
+group size rank 3 = 960
+group size rank 7 = 960
+group size rank 6 = 960
+group size rank 2 = 960
+group size rank 4 = 960
+group size rank 1 = 960
+group size rank 5 = 960
+LR: 0.01 POT: 3
+ADAM LR-GRID TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.710315e+00, 1.864454e+00, 4.323555e+00
+Energy/Atom = 5.344734e-02, 5.826419e-02, 1.351111e-01
+Forces      = 1.756437e-01, 2.472882e-01, 3.307404e+00
+Stress      = 4.417215e+00, 7.151882e+00, 3.495033e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ADAM LR-GRID VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.704074e+00, 1.954395e+00, 4.035548e+00
+Energy/Atom = 5.325231e-02, 6.107485e-02, 1.261109e-01
+Forces      = 2.676213e-01, 3.663669e-01, 5.025116e+00
+Stress      = 9.132847e+00, 1.264275e+01, 4.263238e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+TIME: 490.3718815371394 STEPS: 1500 EPOCHS: 299 FINAL_LOSS: 1.8317077354786016
+
+group size rank 0 = 4768
+group size rank 1 = 4736
+group size rank 3 = 4768
+group size rank 7 = 4768
+group size rank 2 = 4768
+group size rank 4 = 4768
+group size rank 6 = 4768
+group size rank 5 = 4768
+group size rank 0 = 960
+group size rank 1 = 960
+group size rank 3 = 960
+group size rank 7 = 960
+group size rank 2 = 960
+group size rank 4 = 960
+group size rank 5 = 960
+group size rank 6 = 960
+group size rank 3 = 4768
+group size rank 7 = 4768
+LR: 0.01 POT: 4
+ADAM LR-GRID TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.833590e+00, 2.597617e+00, 7.360249e+00
+Energy/Atom = 5.729970e-02, 8.117552e-02, 2.300078e-01
+Forces      = 1.610009e-01, 2.310850e-01, 2.821280e+00
+Stress      = 3.618796e+00, 5.925987e+00, 3.371348e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ADAM LR-GRID VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.893173e+00, 2.621199e+00, 7.758960e+00
+Energy/Atom = 5.916167e-02, 8.191247e-02, 2.424675e-01
+Forces      = 2.427992e-01, 3.459068e-01, 5.718282e+00
+Stress      = 6.841308e+00, 9.763834e+00, 3.474437e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+TIME: 493.2319823820144 STEPS: 1500 EPOCHS: 299 FINAL_LOSS: 1.4207793772058634
+
+group size rank 0 = 4768
+group size rank 1 = 4736
+group size rank 2 = 4768
+group size rank 5 = 4768
+group size rank 4 = 4768
+group size rank 6 = 4768
+group size rank 0 = 960
+group size rank 3 = 960
+group size rank 7 = 960
+group size rank 1 = 960
+group size rank 5 = 960
+group size rank 4 = 960
+group size rank 6 = 960
+group size rank 2 = 960
+LR: 0.01 POT: 5
+ADAM LR-GRID TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.369984e+00, 1.534257e+00, 4.277701e+00
+Energy/Atom = 4.281199e-02, 4.794552e-02, 1.336782e-01
+Forces      = 1.504759e-01, 2.049884e-01, 2.425168e+00
+Stress      = 3.681451e+00, 5.852176e+00, 3.225961e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ADAM LR-GRID VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.369494e+00, 1.596900e+00, 3.596566e+00
+Energy/Atom = 4.279670e-02, 4.990312e-02, 1.123927e-01
+Forces      = 2.180449e-01, 3.072447e-01, 4.507393e+00
+Stress      = 7.070154e+00, 9.904905e+00, 3.297002e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+TIME: 489.46898380480707 STEPS: 1500 EPOCHS: 299 FINAL_LOSS: 1.378254128818138
+

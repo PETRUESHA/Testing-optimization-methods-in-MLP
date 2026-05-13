@@ -1,19 +1,22 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+import sys
+import json
+
+sys.path.insert(
+    0, "/home/peivzarenkov/mlip-4/Testing-optimization-methods-in-MLP")
+
+import utils
+from mlip_4 import LossFunction, RadialBasisCinf, ETN
 import numpy as np
 import time
 from mpi4py import MPI
-import sys
 
-sys.path.insert(0, "/home/peivzarenkov/mlip-4/Testing-optimization-methods-in-MLP")
-
-from mlip_4 import LossFunction, RadialBasisCinf, ETN
-import utils
 
 TRAIN_PATH = "/home/peivzarenkov/mlip-4/Testing-optimization-methods-in-MLP/datasets/PdAg/PdAg.json"
 VALID_PATH = "/home/peivzarenkov/mlip-4/Testing-optimization-methods-in-MLP/datasets/PdAg/validation_PdAg.json"
-RESULT_PATH = "/home/peivzarenkov/mlip-4/Testing-optimization-methods-in-MLP/task4/results/results_etn_my_momentum_sgd.csv"
+RESULT_PATH = "/home/peivzarenkov/mlip-4/Testing-optimization-methods-in-MLP/task4/results/results_etn_my_momentum.csv"
 
 comm = MPI.COMM_WORLD
 rank = comm.Get_rank()
@@ -21,13 +24,42 @@ rank = comm.Get_rank()
 train_json_bytes = b""
 valid_json_bytes = b""
 
+
+def write_row_with_history(
+    filename,
+    pot_num,
+    train_epa_rmse,
+    train_forces_rmse,
+    val_epa_rmse,
+    val_forces_rmse,
+    train_time,
+    steps_done,
+    epochs_done,
+    final_loss,
+    hist,
+):
+    losses = json.dumps([float(x) for x in hist.loss])
+    grad_norms = json.dumps([float(x) for x in hist.grad_norm])
+    lrs = json.dumps([float(x) for x in hist.lr])
+
+    with open(filename, "a") as f:
+        f.write(
+            f"{pot_num},"
+            f"{train_epa_rmse},{train_forces_rmse},"
+            f"{val_epa_rmse},{val_forces_rmse},"
+            f"{train_time},{steps_done},{epochs_done},{final_loss},"
+            f"\"{losses}\",\"{grad_norms}\",\"{lrs}\"\n"
+        )
+
+
 if rank == 0:
     with open(RESULT_PATH, "w") as f:
         f.write(
             "pot_num,"
             "train_epa_rmse,train_forces_rmse,"
             "val_epa_rmse,val_forces_rmse,"
-            "train_time,steps,epochs,final_loss\n"
+            "train_time,steps,epochs,final_loss,"
+            "losses,grad_norms,lrs\n"
         )
     with open(TRAIN_PATH, "rb") as f:
         train_json_bytes = f.read()
@@ -63,7 +95,8 @@ for pot_num in range(1, 6):
             jit=jit,
         )
         np.random.seed(42 + pot_num)
-        pot.params[:] = np.random.uniform(low=-0.1, high=0.1, size=len(pot.params))
+        pot.params[:] = np.random.uniform(
+            low=-0.1, high=0.1, size=len(pot.params))
         pot_json = pot.to_json_bytes()
 
     pot_json = comm.bcast(pot_json, 0)
@@ -73,12 +106,11 @@ for pot_num in range(1, 6):
     val_func = LossFunction.from_json_bytes(valid_json_bytes, True)
 
     train_func.attach_pot(pot)
-    batcher = utils.LossBatcher(train_func, batch_size, True, seed=42 + pot_num)
+    batcher = utils.LossBatcher(
+        train_func, batch_size, True, seed=42 + pot_num)
 
     lr_schedule = utils.lr_schedules.ConstantLR(lr)
-
-
-    opt = utils.optimizers.MomentumSGD(lr_schedule=lr_schedule, beta=beta)
+    opt = utils.optimizers.Momentum(lr_schedule=lr_schedule, beta=beta)
 
     trainer = utils.mlip_trainer.MlipTrainer(gtol=gtol, max_steps=max_steps)
 
@@ -113,16 +145,23 @@ for pot_num in range(1, 6):
     epochs_done = int(hist.epochs)
 
     if rank == 0:
-        with open(RESULT_PATH, "a") as f:
-            f.write(
-                f"{pot_num},"
-                f"{train_epa_rmse},{train_forces_rmse},"
-                f"{val_epa_rmse},{val_forces_rmse},"
-                f"{train_time},{steps_done},{epochs_done},{final_loss}\n"
-            )
+        write_row_with_history(
+            RESULT_PATH,
+            pot_num,
+            train_epa_rmse,
+            train_forces_rmse,
+            val_epa_rmse,
+            val_forces_rmse,
+            train_time,
+            steps_done,
+            epochs_done,
+            final_loss,
+            hist,
+        )
 
         print(f"POT: {pot_num}")
         print("MY MOMENTUM TRAIN:", train_fit_errors)
         print("MY MOMENTUM VALID:", val_fit_errors)
-        print("MY MOMENTUM TIME:", train_time, "STEPS:", steps_done, "EPOCHS:", epochs_done, "FINAL_LOSS:", final_loss)
+        print("MY MOMENTUM TIME:", train_time, "STEPS:", steps_done,
+              "EPOCHS:", epochs_done, "FINAL_LOSS:", final_loss)
         print()

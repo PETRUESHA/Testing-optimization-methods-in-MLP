@@ -1,20 +1,22 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-import numpy as np
-import time
-from mpi4py import MPI
-import sys
 import json
+import os
+import sys
+import time
+
+import numpy as np
+from mpi4py import MPI
 
 sys.path.insert(0, "/home/peivzarenkov/mlip-4/Testing-optimization-methods-in-MLP")
 
-from mlip_4 import LossFunction, RadialBasisCinf, ETN
 import utils
+from mlip_4 import LossFunction, RadialBasisCinf, ETN
 
 TRAIN_PATH = "/home/peivzarenkov/mlip-4/Testing-optimization-methods-in-MLP/datasets/PdAg/PdAg.json"
 VALID_PATH = "/home/peivzarenkov/mlip-4/Testing-optimization-methods-in-MLP/datasets/PdAg/validation_PdAg.json"
-RESULT_PATH = "/home/peivzarenkov/mlip-4/Testing-optimization-methods-in-MLP/task4/results/results_etn_my_adam.csv"
+RESULT_PATH = "/home/peivzarenkov/mlip-4/Testing-optimization-methods-in-MLP/task4/results/results_etn_my_sgd_torchlike.csv"
 
 comm = MPI.COMM_WORLD
 rank = comm.Get_rank()
@@ -51,6 +53,8 @@ def write_row_with_history(
 
 
 if rank == 0:
+    os.makedirs(os.path.dirname(RESULT_PATH), exist_ok=True)
+
     with open(RESULT_PATH, "w") as f:
         f.write(
             "pot_num,"
@@ -76,11 +80,8 @@ ett_ranks = [[1], [1]]
 jit = True
 
 batch_size = 32
-max_steps = 1500
+max_steps = 500
 lr = 1e-3
-beta1 = 0.9
-beta2 = 0.999
-eps = 1e-8
 gtol = 1e-6
 clip = 1.0
 full_batch = False
@@ -107,17 +108,21 @@ for pot_num in range(1, 6):
     val_func = LossFunction.from_json_bytes(valid_json_bytes, True)
 
     train_func.attach_pot(pot)
-    batcher = utils.LossBatcher(train_func, batch_size, True, seed=42 + pot_num)
 
-    lr_schedule = utils.lr_schedules.ConstantLR(lr)
-    opt = utils.optimizers.Adam(
-        lr_schedule=lr_schedule,
-        beta1=beta1,
-        beta2=beta2,
-        eps=eps,
+    batcher = utils.LossBatcher(
+        train_func,
+        batch_size,
+        True,
+        seed=42 + pot_num,
     )
 
-    trainer = utils.mlip_trainer.MlipTrainer(gtol=gtol, max_steps=max_steps)
+    lr_schedule = utils.lr_schedules.ConstantLR(lr)
+    opt = utils.optimizers.SGD(lr_schedule=lr_schedule)
+
+    trainer = utils.mlip_trainer.MlipTrainer(
+        gtol=gtol,
+        max_steps=max_steps,
+    )
 
     comm.Barrier()
     start_timer = time.perf_counter()
@@ -142,6 +147,7 @@ for pot_num in range(1, 6):
 
     train_epa_rmse = float(train_fit_errors.epa())
     train_forces_rmse = float(train_fit_errors.forces())
+
     val_epa_rmse = float(val_fit_errors.epa())
     val_forces_rmse = float(val_fit_errors.forces())
 
@@ -165,10 +171,10 @@ for pot_num in range(1, 6):
         )
 
         print(f"POT: {pot_num}")
-        print("MY ADAM TRAIN:", train_fit_errors)
-        print("MY ADAM VALID:", val_fit_errors)
+        print("ETN SGD TRAIN:", train_fit_errors)
+        print("ETN SGD VALID:", val_fit_errors)
         print(
-            "MY ADAM TIME:",
+            "ETN SGD TIME:",
             train_time,
             "STEPS:",
             steps_done,

@@ -1,20 +1,20 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-import numpy as np
-import time
-from mpi4py import MPI
 import sys
-import json
-
-sys.path.insert(0, "/home/peivzarenkov/mlip-4/Testing-optimization-methods-in-MLP")
-
-from mlip_4 import LossFunction, RadialBasisCinf, ETN
+sys.path.insert(
+    0, "/home/peivzarenkov/mlip-4/Testing-optimization-methods-in-MLP")
 import utils
+import json
+from mpi4py import MPI
+import time
+import numpy as np
+from mlip_4 import LossFunction, RadialBasisCinf, MTP
+
 
 TRAIN_PATH = "/home/peivzarenkov/mlip-4/Testing-optimization-methods-in-MLP/datasets/PdAg/PdAg.json"
 VALID_PATH = "/home/peivzarenkov/mlip-4/Testing-optimization-methods-in-MLP/datasets/PdAg/validation_PdAg.json"
-RESULT_PATH = "/home/peivzarenkov/mlip-4/Testing-optimization-methods-in-MLP/task4/results/results_etn_my_adam.csv"
+RESULT_PATH = "/home/peivzarenkov/mlip-4/Testing-optimization-methods-in-MLP/task4/results/results_mtp_my_muon_factorization.csv"
 
 comm = MPI.COMM_WORLD
 rank = comm.Get_rank()
@@ -71,50 +71,53 @@ valid_json_bytes = comm.bcast(valid_json_bytes, 0)
 
 rb = RadialBasisCinf(size=8, min_dist=1.9, cutoff=5.0)
 species_order = [0, 1]
-etn_shape = [[1], [6], [3]]
-ett_ranks = [[1], [1]]
+level = 16
 jit = True
 
 batch_size = 32
 max_steps = 1500
 lr = 1e-3
-beta1 = 0.9
-beta2 = 0.999
-eps = 1e-8
 gtol = 1e-6
 clip = 1.0
 full_batch = False
+
+muon_beta = 0.95
+muon_ns_steps = 5
+muon_nesterov = True
+muon_eps = 1e-7
+muon_shape_mode = "factor"  # или "factor"
+muon_param_shape = None
 
 for pot_num in range(1, 6):
     pot_json = b""
 
     if rank == 0:
-        pot = ETN(
-            radial_basis=rb,
-            etn_shape=etn_shape,
-            species=species_order,
-            ett_ranks=ett_ranks,
-            jit=jit,
-        )
+        pot = MTP(radial_basis=rb, species=species_order, level=level, jit=jit)
         np.random.seed(42 + pot_num)
-        pot.params[:] = np.random.uniform(low=-0.1, high=0.1, size=len(pot.params))
+        pot.params[:] = np.random.uniform(
+            low=-0.1, high=0.1, size=len(pot.params))
         pot_json = pot.to_json_bytes()
 
     pot_json = comm.bcast(pot_json, 0)
-    pot = ETN.from_json_bytes(pot_json)
+    pot = MTP.from_json_bytes(pot_json)
 
     train_func = LossFunction.from_json_bytes(train_json_bytes, True)
     val_func = LossFunction.from_json_bytes(valid_json_bytes, True)
 
     train_func.attach_pot(pot)
-    batcher = utils.LossBatcher(train_func, batch_size, True, seed=42 + pot_num)
+    batcher = utils.LossBatcher(
+        train_func, batch_size, True, seed=42 + pot_num)
 
     lr_schedule = utils.lr_schedules.ConstantLR(lr)
-    opt = utils.optimizers.Adam(
+
+    opt = utils.optimizers.Muon(
         lr_schedule=lr_schedule,
-        beta1=beta1,
-        beta2=beta2,
-        eps=eps,
+        beta=muon_beta,
+        ns_steps=muon_ns_steps,
+        nesterov=muon_nesterov,
+        eps=muon_eps,
+        shape_mode=muon_shape_mode,
+        param_shape=muon_param_shape,
     )
 
     trainer = utils.mlip_trainer.MlipTrainer(gtol=gtol, max_steps=max_steps)
@@ -142,6 +145,7 @@ for pot_num in range(1, 6):
 
     train_epa_rmse = float(train_fit_errors.epa())
     train_forces_rmse = float(train_fit_errors.forces())
+
     val_epa_rmse = float(val_fit_errors.epa())
     val_forces_rmse = float(val_fit_errors.forces())
 
@@ -165,16 +169,8 @@ for pot_num in range(1, 6):
         )
 
         print(f"POT: {pot_num}")
-        print("MY ADAM TRAIN:", train_fit_errors)
-        print("MY ADAM VALID:", val_fit_errors)
-        print(
-            "MY ADAM TIME:",
-            train_time,
-            "STEPS:",
-            steps_done,
-            "EPOCHS:",
-            epochs_done,
-            "FINAL_LOSS:",
-            final_loss,
-        )
+        print("MY MUON TRAIN:", train_fit_errors)
+        print("MY MUON VALID:", val_fit_errors)
+        print("MY MUON TIME:", train_time, "STEPS:", steps_done,
+              "EPOCHS:", epochs_done, "FINAL_LOSS:", final_loss)
         print()

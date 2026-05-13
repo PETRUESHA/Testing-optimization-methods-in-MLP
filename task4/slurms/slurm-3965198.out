@@ -1,0 +1,172 @@
+
+The following have been reloaded with a version change:
+  1) Python/Anaconda_v02.2024 => Python/Miniconda
+
+[prun] Master compute host = cn-016
+[prun] Resource manager = slurm
+[prun] Launch cmd = mpirun /home/peivzarenkov/.conda/envs/peter_env/bin/python train_etn_my_sgd.py (family=openmpi)
+group size rank 1 = 4736
+group size rank 2 = 4768
+group size rank 4 = 4768
+group size rank 7 = 4768
+group size rank 3 = 4768
+group size rank 0 = 4768
+group size rank 5 = 4768
+group size rank 6 = 4768
+group size rank 7 = 960
+group size rank 3 = 960
+group size rank 1 = 960
+group size rank 2 = 960
+group size rank 4 = 960
+group size rank 0 = 960
+group size rank 5 = 960
+group size rank 6 = 960
+group size rank 7 = 4768
+group size rank 4 = 4768
+group size rank 1 = 4736
+group size rank 2 = 4768
+POT: 1
+ETN SGD TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 9.632861e+01, 9.641657e+01, 1.040473e+02
+Energy/Atom = 3.010269e+00, 3.013018e+00, 3.251480e+00
+Forces      = 1.039068e+00, 1.402907e+00, 1.353560e+01
+Stress      = 1.308821e+01, 1.936767e+01, 7.389414e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN SGD VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 9.118179e+01, 9.120488e+01, 9.616285e+01
+Energy/Atom = 2.849431e+00, 2.850153e+00, 3.005089e+00
+Forces      = 1.267431e+00, 1.731155e+00, 1.353558e+01
+Stress      = 2.335259e+01, 3.083471e+01, 7.389411e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN SGD TIME: 131.07390117272735 STEPS: 500 EPOCHS: 99 FINAL_LOSS: 6202.516213924771
+
+group size rank 0 = 4768
+group size rank 5 = 4768
+group size rank 6 = 4768
+group size rank 3 = 4768
+group size rank 7 = 960
+group size rank 4 = 960
+group size rank 1 = 960
+group size rank 2 = 960
+group size rank 0 = 960
+group size rank 5 = 960
+group size rank 6 = 960
+group size rank 3 = 960
+group size rank 1 = 4736
+group size rank 7 = 4768
+group size rank 2 = 4768
+POT: 2
+ETN SGD TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 9.693203e+01, 9.701882e+01, 1.046279e+02
+Energy/Atom = 3.029126e+00, 3.031838e+00, 3.269623e+00
+Forces      = 1.037311e+00, 1.401087e+00, 1.354145e+01
+Stress      = 1.308107e+01, 1.934751e+01, 7.379434e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN SGD VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 9.180326e+01, 9.182610e+01, 9.678328e+01
+Energy/Atom = 2.868852e+00, 2.869565e+00, 3.024477e+00
+Forces      = 1.266169e+00, 1.729979e+00, 1.354144e+01
+Stress      = 2.331768e+01, 3.079010e+01, 7.379436e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN SGD TIME: 130.69917272776365 STEPS: 500 EPOCHS: 99 FINAL_LOSS: 6284.762676099095
+
+group size rank 0 = 4768
+group size rank 4 = 4768
+group size rank 5 = 4768
+group size rank 6 = 4768
+group size rank 3 = 4768
+group size rank 1 = 960
+group size rank 7 = 960
+group size rank 2 = 960
+group size rank 0 = 960
+group size rank 4 = 960
+group size rank 5 = 960
+group size rank 6 = 960
+group size rank 3 = 960
+POT: 3
+ETN SGD TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 9.503866e+01, 9.512732e+01, 1.027425e+02
+Energy/Atom = 2.969958e+00, 2.972729e+00, 3.210703e+00
+Forces      = 1.037733e+00, 1.401487e+00, 1.354116e+01
+Stress      = 1.306722e+01, 1.932435e+01, 7.375885e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN SGD VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 8.990759e+01, 8.993092e+01, 9.488261e+01
+Energy/Atom = 2.809612e+00, 2.810341e+00, 2.965082e+00
+Forces      = 1.266369e+00, 1.730206e+00, 1.354116e+01
+Stress      = 2.330022e+01, 3.076686e+01, 7.375876e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN SGD TIME: 133.44882252812386 STEPS: 500 EPOCHS: 99 FINAL_LOSS: 6002.64574453552
+
+group size rank 0 = 4768
+group size rank 1 = 4736
+group size rank 7 = 4768
+group size rank 2 = 4768
+group size rank 4 = 4768
+group size rank 5 = 4768
+group size rank 6 = 4768
+group size rank 3 = 4768
+group size rank 7 = 960
+group size rank 0 = 960
+group size rank 1 = 960
+group size rank 2 = 960
+group size rank 4 = 960
+group size rank 5 = 960
+group size rank 6 = 960
+group size rank 3 = 960
+group size rank 1 = 4736
+group size rank 4 = 4768
+POT: 4
+ETN SGD TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 9.320657e+01, 9.329619e+01, 1.008722e+02
+Energy/Atom = 2.912705e+00, 2.915506e+00, 3.152257e+00
+Forces      = 1.035548e+00, 1.399363e+00, 1.353745e+01
+Stress      = 1.308834e+01, 1.935026e+01, 7.380919e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN SGD VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 8.809591e+01, 8.811961e+01, 9.306806e+01
+Energy/Atom = 2.752997e+00, 2.753738e+00, 2.908377e+00
+Forces      = 1.265035e+00, 1.728910e+00, 1.353746e+01
+Stress      = 2.331554e+01, 3.078792e+01, 7.380898e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN SGD TIME: 129.14584067091346 STEPS: 500 EPOCHS: 99 FINAL_LOSS: 5849.61442993059
+
+group size rank 0 = 4768
+group size rank 2 = 4768
+group size rank 7 = 4768
+group size rank 5 = 4768
+group size rank 6 = 4768
+group size rank 3 = 4768
+group size rank 0 = 960
+group size rank 1 = 960
+group size rank 4 = 960
+group size rank 2 = 960
+group size rank 7 = 960
+group size rank 5 = 960
+group size rank 6 = 960
+group size rank 3 = 960
+POT: 5
+ETN SGD TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.003397e+02, 1.004237e+02, 1.080495e+02
+Energy/Atom = 3.135615e+00, 3.138241e+00, 3.376546e+00
+Forces      = 1.037638e+00, 1.401347e+00, 1.353361e+01
+Stress      = 1.305749e+01, 1.931666e+01, 7.384880e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN SGD VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 9.520860e+01, 9.523062e+01, 1.001944e+02
+Energy/Atom = 2.975269e+00, 2.975957e+00, 3.131075e+00
+Forces      = 1.266380e+00, 1.730199e+00, 1.353361e+01
+Stress      = 2.329996e+01, 3.076635e+01, 7.384836e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN SGD TIME: 132.0393392443657 STEPS: 500 EPOCHS: 99 FINAL_LOSS: 6623.191711151606
+

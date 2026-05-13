@@ -1,54 +1,26 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+
+import sys
+sys.path.insert(
+    0, "/home/peivzarenkov/mlip-4/Testing-optimization-methods-in-MLP")
+import utils
+import json
+from mlip_4 import LossFunction, RadialBasisCinf, ETN
 import numpy as np
 import time
 from mpi4py import MPI
-import sys
-import json
-
-sys.path.insert(0, "/home/peivzarenkov/mlip-4/Testing-optimization-methods-in-MLP")
-
-from mlip_4 import LossFunction, RadialBasisCinf, ETN
-import utils
 
 TRAIN_PATH = "/home/peivzarenkov/mlip-4/Testing-optimization-methods-in-MLP/datasets/PdAg/PdAg.json"
 VALID_PATH = "/home/peivzarenkov/mlip-4/Testing-optimization-methods-in-MLP/datasets/PdAg/validation_PdAg.json"
-RESULT_PATH = "/home/peivzarenkov/mlip-4/Testing-optimization-methods-in-MLP/task4/results/results_etn_my_adam.csv"
+RESULT_PATH = "/home/peivzarenkov/mlip-4/Testing-optimization-methods-in-MLP/task4/results/results_etn_my_muon_factorization.csv"
 
 comm = MPI.COMM_WORLD
 rank = comm.Get_rank()
 
 train_json_bytes = b""
 valid_json_bytes = b""
-
-
-def write_row_with_history(
-    filename,
-    pot_num,
-    train_epa_rmse,
-    train_forces_rmse,
-    val_epa_rmse,
-    val_forces_rmse,
-    train_time,
-    steps_done,
-    epochs_done,
-    final_loss,
-    hist,
-):
-    losses = json.dumps([float(x) for x in hist.loss])
-    grad_norms = json.dumps([float(x) for x in hist.grad_norm])
-    lrs = json.dumps([float(x) for x in hist.lr])
-
-    with open(filename, "a") as f:
-        f.write(
-            f"{pot_num},"
-            f"{train_epa_rmse},{train_forces_rmse},"
-            f"{val_epa_rmse},{val_forces_rmse},"
-            f"{train_time},{steps_done},{epochs_done},{final_loss},"
-            f"\"{losses}\",\"{grad_norms}\",\"{lrs}\"\n"
-        )
-
 
 if rank == 0:
     with open(RESULT_PATH, "w") as f:
@@ -59,10 +31,8 @@ if rank == 0:
             "train_time,steps,epochs,final_loss,"
             "losses,grad_norms,lrs\n"
         )
-
     with open(TRAIN_PATH, "rb") as f:
         train_json_bytes = f.read()
-
     with open(VALID_PATH, "rb") as f:
         valid_json_bytes = f.read()
 
@@ -78,12 +48,16 @@ jit = True
 batch_size = 32
 max_steps = 1500
 lr = 1e-3
-beta1 = 0.9
-beta2 = 0.999
-eps = 1e-8
 gtol = 1e-6
 clip = 1.0
 full_batch = False
+
+muon_beta = 0.95
+muon_ns_steps = 5
+muon_nesterov = True
+muon_eps = 1e-7
+muon_shape_mode = "factor"
+muon_param_shape = None
 
 for pot_num in range(1, 6):
     pot_json = b""
@@ -97,7 +71,8 @@ for pot_num in range(1, 6):
             jit=jit,
         )
         np.random.seed(42 + pot_num)
-        pot.params[:] = np.random.uniform(low=-0.1, high=0.1, size=len(pot.params))
+        pot.params[:] = np.random.uniform(
+            low=-0.1, high=0.1, size=len(pot.params))
         pot_json = pot.to_json_bytes()
 
     pot_json = comm.bcast(pot_json, 0)
@@ -107,14 +82,19 @@ for pot_num in range(1, 6):
     val_func = LossFunction.from_json_bytes(valid_json_bytes, True)
 
     train_func.attach_pot(pot)
-    batcher = utils.LossBatcher(train_func, batch_size, True, seed=42 + pot_num)
+    batcher = utils.LossBatcher(
+        train_func, batch_size, True, seed=42 + pot_num)
 
     lr_schedule = utils.lr_schedules.ConstantLR(lr)
-    opt = utils.optimizers.Adam(
+
+    opt = utils.optimizers.Muon(
         lr_schedule=lr_schedule,
-        beta1=beta1,
-        beta2=beta2,
-        eps=eps,
+        beta=muon_beta,
+        ns_steps=muon_ns_steps,
+        nesterov=muon_nesterov,
+        eps=muon_eps,
+        shape_mode=muon_shape_mode,
+        param_shape=muon_param_shape,
     )
 
     trainer = utils.mlip_trainer.MlipTrainer(gtol=gtol, max_steps=max_steps)
@@ -149,32 +129,23 @@ for pot_num in range(1, 6):
     steps_done = int(hist.steps)
     epochs_done = int(hist.epochs)
 
+    losses = json.dumps([float(x) for x in hist.loss])
+    grad_norms = json.dumps([float(x) for x in hist.grad_norm])
+    lrs = json.dumps([float(x) for x in hist.lr])
+
     if rank == 0:
-        write_row_with_history(
-            RESULT_PATH,
-            pot_num,
-            train_epa_rmse,
-            train_forces_rmse,
-            val_epa_rmse,
-            val_forces_rmse,
-            train_time,
-            steps_done,
-            epochs_done,
-            final_loss,
-            hist,
-        )
+        with open(RESULT_PATH, "a") as f:
+            f.write(
+                f"{pot_num},"
+                f"{train_epa_rmse},{train_forces_rmse},"
+                f"{val_epa_rmse},{val_forces_rmse},"
+                f"{train_time},{steps_done},{epochs_done},{final_loss},"
+                f"\"{losses}\",\"{grad_norms}\",\"{lrs}\"\n"
+            )
 
         print(f"POT: {pot_num}")
-        print("MY ADAM TRAIN:", train_fit_errors)
-        print("MY ADAM VALID:", val_fit_errors)
-        print(
-            "MY ADAM TIME:",
-            train_time,
-            "STEPS:",
-            steps_done,
-            "EPOCHS:",
-            epochs_done,
-            "FINAL_LOSS:",
-            final_loss,
-        )
+        print("MY MUON TRAIN:", train_fit_errors)
+        print("MY MUON VALID:", val_fit_errors)
+        print("MY MUON TIME:", train_time, "STEPS:", steps_done,
+              "EPOCHS:", epochs_done, "FINAL_LOSS:", final_loss)
         print()

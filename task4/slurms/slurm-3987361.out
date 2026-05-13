@@ -1,0 +1,172 @@
+
+The following have been reloaded with a version change:
+  1) Python/Anaconda_v02.2024 => Python/Miniconda
+
+[prun] Master compute host = cn-021
+[prun] Resource manager = slurm
+[prun] Launch cmd = mpirun /home/peivzarenkov/.conda/envs/peter_env/bin/python train_etn_my_adam.py (family=openmpi)
+group size rank 5 = 4768
+group size rank 7 = 4768
+group size rank 0 = 4768
+group size rank 3 = 4768
+group size rank 2 = 4768
+group size rank 4 = 4768
+group size rank 5 = 960
+group size rank 1 = 4736
+group size rank 7 = 960
+group size rank 0 = 960
+group size rank 6 = 4768
+group size rank 3 = 960
+group size rank 2 = 960
+group size rank 1 = 960
+group size rank 4 = 960
+group size rank 6 = 960
+group size rank 6 = 4768
+group size rank 5 = 4768
+group size rank 2 = 4768
+group size rank 1 = 4736
+group size rank 7 = 4768
+POT: 1
+MY ADAM TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 6.712116e-01, 8.460782e-01, 3.150002e+00
+Energy/Atom = 2.097536e-02, 2.643994e-02, 9.843755e-02
+Forces      = 4.757678e-01, 7.283693e-01, 1.118667e+01
+Stress      = 1.888841e+01, 2.620660e+01, 8.447497e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY ADAM VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.134446e+00, 1.357150e+00, 3.511856e+00
+Energy/Atom = 3.545144e-02, 4.241093e-02, 1.097455e-01
+Forces      = 6.933312e-01, 1.060287e+00, 1.112485e+01
+Stress      = 2.643341e+01, 3.555058e+01, 8.782426e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY ADAM TIME: 384.03520253673196 STEPS: 1500 EPOCHS: 299 FINAL_LOSS: 13.417377770493996
+
+group size rank 0 = 4768
+group size rank 4 = 4768
+group size rank 3 = 4768
+group size rank 6 = 960
+group size rank 5 = 960
+group size rank 2 = 960
+group size rank 1 = 960
+group size rank 7 = 960
+group size rank 0 = 960
+group size rank 4 = 960
+group size rank 3 = 960
+group size rank 6 = 4768
+group size rank 5 = 4768
+group size rank 2 = 4768
+group size rank 1 = 4736
+POT: 2
+MY ADAM TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 6.983955e-01, 8.813089e-01, 3.410333e+00
+Energy/Atom = 2.182486e-02, 2.754090e-02, 1.065729e-01
+Forces      = 4.778309e-01, 7.320968e-01, 1.118449e+01
+Stress      = 1.956953e+01, 2.714147e+01, 8.399093e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY ADAM VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.180012e+00, 1.409863e+00, 3.585244e+00
+Energy/Atom = 3.687539e-02, 4.405822e-02, 1.120389e-01
+Forces      = 6.951658e-01, 1.065147e+00, 1.120187e+01
+Stress      = 2.717739e+01, 3.656013e+01, 8.807279e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY ADAM TIME: 383.16600961238146 STEPS: 1500 EPOCHS: 299 FINAL_LOSS: 13.038523809277994
+
+group size rank 0 = 4768
+group size rank 7 = 4768
+group size rank 3 = 4768
+group size rank 4 = 4768
+group size rank 6 = 960
+group size rank 5 = 960
+group size rank 2 = 960
+group size rank 1 = 960
+group size rank 0 = 960
+group size rank 7 = 960
+group size rank 3 = 960
+group size rank 4 = 960
+group size rank 2 = 4768
+group size rank 6 = 4768
+group size rank 5 = 4768
+group size rank 1 = 4736
+POT: 3
+MY ADAM TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 7.003566e-01, 8.775479e-01, 3.479797e+00
+Energy/Atom = 2.188614e-02, 2.742337e-02, 1.087437e-01
+Forces      = 4.748072e-01, 7.272154e-01, 1.118400e+01
+Stress      = 1.896420e+01, 2.629290e+01, 8.111109e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY ADAM VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.191883e+00, 1.416929e+00, 3.563699e+00
+Energy/Atom = 3.724634e-02, 4.427903e-02, 1.113656e-01
+Forces      = 6.899815e-01, 1.057648e+00, 1.123686e+01
+Stress      = 2.640801e+01, 3.551569e+01, 8.530123e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY ADAM TIME: 387.40300921723247 STEPS: 1500 EPOCHS: 299 FINAL_LOSS: 14.38255731016215
+
+group size rank 0 = 4768
+group size rank 3 = 4768
+group size rank 7 = 4768
+group size rank 4 = 4768
+group size rank 2 = 960
+group size rank 6 = 960
+group size rank 5 = 960
+group size rank 1 = 960
+group size rank 0 = 960
+group size rank 3 = 960
+group size rank 7 = 960
+group size rank 4 = 960
+group size rank 6 = 4768
+group size rank 2 = 4768
+group size rank 5 = 4768
+group size rank 1 = 4736
+group size rank 3 = 4768
+POT: 4
+MY ADAM TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 6.931722e-01, 8.650805e-01, 3.212885e+00
+Energy/Atom = 2.166163e-02, 2.703377e-02, 1.004026e-01
+Forces      = 4.693996e-01, 7.190698e-01, 1.111083e+01
+Stress      = 1.838277e+01, 2.545919e+01, 8.085202e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY ADAM VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.167304e+00, 1.390337e+00, 3.507469e+00
+Energy/Atom = 3.647827e-02, 4.344804e-02, 1.096084e-01
+Forces      = 6.818967e-01, 1.046742e+00, 1.102470e+01
+Stress      = 2.561204e+01, 3.441711e+01, 8.588626e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY ADAM TIME: 382.9332852512598 STEPS: 1500 EPOCHS: 299 FINAL_LOSS: 15.603346452614534
+
+group size rank 0 = 4768
+group size rank 4 = 4768
+group size rank 7 = 4768
+group size rank 2 = 960
+group size rank 6 = 960
+group size rank 5 = 960
+group size rank 1 = 960
+group size rank 0 = 960
+group size rank 3 = 960
+group size rank 4 = 960
+group size rank 7 = 960
+POT: 5
+MY ADAM TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 7.162196e-01, 9.104157e-01, 3.487439e+00
+Energy/Atom = 2.238186e-02, 2.845049e-02, 1.089825e-01
+Forces      = 4.861883e-01, 7.430111e-01, 1.126773e+01
+Stress      = 2.042529e+01, 2.840347e+01, 8.579616e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY ADAM VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.306522e+00, 1.552675e+00, 3.753446e+00
+Energy/Atom = 4.082882e-02, 4.852108e-02, 1.172952e-01
+Forces      = 7.087095e-01, 1.080046e+00, 1.141952e+01
+Stress      = 2.844070e+01, 3.832475e+01, 8.935801e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY ADAM TIME: 382.85570960491896 STEPS: 1500 EPOCHS: 299 FINAL_LOSS: 16.43397432800313
+

@@ -8,13 +8,11 @@ module load Python
 
 conda activate peter_env
 
-cd "$(dirname "$0")"
-
-PYTHON_BIN="${PYTHON_BIN:-python}"
-
-prun "$PYTHON_BIN" train_etn_my_sgd.py
-prun "$PYTHON_BIN" train_etn_my_momentum.py
-prun "$PYTHON_BIN" train_etn_my_adam.py
-prun "$PYTHON_BIN" train_etn_my_muon_pad_sqrt.py
-prun "$PYTHON_BIN" train_etn_my_muon_factorization.py
-prun "$PYTHON_BIN" train_etn_scipy_bfgs.py
+# prun /home/peivzarenkov/.conda/envs/peter_env/bin/python train_etn_my_adam.py
+# prun /home/peivzarenkov/.conda/envs/peter_env/bin/python train_etn_my_momentum.py
+# prun /home/peivzarenkov/.conda/envs/peter_env/bin/python train_etn_my_muon_factorization.py
+# prun /home/peivzarenkov/.conda/envs/peter_env/bin/python train_etn_my_muon_pad_sqrt.py
+# prun /home/peivzarenkov/.conda/envs/peter_env/bin/python train_etn_my_sgd.py
+# prun /home/peivzarenkov/.conda/envs/peter_env/bin/python train_etn_scipy_bfgs.py
+prun /home/peivzarenkov/.conda/envs/peter_env/bin/python train_etn_bfgs.py
+# prun /home/peivzarenkov/.conda/envs/peter_env/bin/python test.py

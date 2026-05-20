@@ -1,0 +1,172 @@
+
+The following have been reloaded with a version change:
+  1) Python/Anaconda_v02.2024 => Python/Miniconda
+
+[prun] Master compute host = cn-035
+[prun] Resource manager = slurm
+[prun] Launch cmd = mpirun /home/peivzarenkov/.conda/envs/peter_env/bin/python train_etn_scipy_bfgs.py (family=openmpi)
+group size rank 6 = 9706
+group size rank 0 = 9707
+group size rank 3 = 9705
+group size rank 1 = 9705
+group size rank 5 = 9706
+group size rank 7 = 9706
+group size rank 4 = 9706
+group size rank 2 = 9705
+group size rank 3 = 1639
+group size rank 0 = 1640
+group size rank 6 = 1640
+group size rank 7 = 1640
+group size rank 1 = 1638
+group size rank 4 = 1639
+group size rank 5 = 1640
+group size rank 2 = 1639
+group size rank 3 = 9705
+POT: 1
+SCIPY BFGS TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 4.472203e+00, 6.975267e+00, 3.822362e+01
+Energy/Atom = 1.364871e-01, 3.595491e-01, 3.141567e+00
+Forces      = 3.655258e-01, 5.162509e-01, 9.562499e+00
+Stress      = 3.274092e+01, 6.515339e+01, 6.183340e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+SCIPY BFGS VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 4.551564e+00, 7.597177e+00, 4.904967e+01
+Energy/Atom = 1.713952e-01, 4.999524e-01, 3.853039e+00
+Forces      = 3.682221e-01, 5.290533e-01, 1.066415e+01
+Stress      = 2.912546e+01, 5.844760e+01, 3.114040e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+SCIPY BFGS TIME: 258.8821136727929 NIT: 245 SUCCESS: False
+
+group size rank 0 = 9707
+group size rank 4 = 9706
+group size rank 7 = 9706
+group size rank 6 = 9706
+group size rank 2 = 9705
+group size rank 5 = 9706
+group size rank 1 = 9705
+group size rank 3 = 1639
+group size rank 0 = 1640
+group size rank 4 = 1639
+group size rank 7 = 1640
+group size rank 6 = 1640
+group size rank 1 = 1638
+group size rank 2 = 1639
+group size rank 5 = 1640
+group size rank 3 = 9705
+group size rank 6 = 9706
+group size rank 1 = 9705
+group size rank 2 = 9705
+group size rank 4 = 9706
+group size rank 7 = 9706
+POT: 2
+SCIPY BFGS TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 4.923288e+00, 8.341932e+00, 7.985739e+01
+Energy/Atom = 1.678193e-01, 5.476666e-01, 7.629471e+00
+Forces      = 3.857572e-01, 5.586119e-01, 9.562499e+00
+Stress      = 3.236489e+01, 6.501244e+01, 6.183340e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+SCIPY BFGS VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 5.579760e+00, 9.659632e+00, 5.024057e+01
+Energy/Atom = 2.004639e-01, 5.716279e-01, 3.965120e+00
+Forces      = 3.917421e-01, 5.743603e-01, 1.066415e+01
+Stress      = 2.776441e+01, 5.623796e+01, 3.114040e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+SCIPY BFGS TIME: 319.1355863958597 NIT: 152 SUCCESS: False
+
+group size rank 0 = 9707
+group size rank 5 = 9706
+group size rank 6 = 1640
+group size rank 1 = 1638
+group size rank 3 = 1639
+group size rank 2 = 1639
+group size rank 4 = 1639
+group size rank 7 = 1640
+group size rank 0 = 1640
+group size rank 5 = 1640
+group size rank 2 = 9705
+group size rank 4 = 9706
+group size rank 1 = 9705
+group size rank 3 = 9705
+group size rank 6 = 9706
+group size rank 7 = 9706
+group size rank 5 = 9706
+POT: 3
+SCIPY BFGS TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 4.472203e+00, 6.975267e+00, 3.822362e+01
+Energy/Atom = 1.364871e-01, 3.595491e-01, 3.141567e+00
+Forces      = 3.655258e-01, 5.162509e-01, 9.562499e+00
+Stress      = 3.274092e+01, 6.515339e+01, 6.183340e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+SCIPY BFGS VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 4.551564e+00, 7.597177e+00, 4.904967e+01
+Energy/Atom = 1.713952e-01, 4.999524e-01, 3.853039e+00
+Forces      = 3.682221e-01, 5.290533e-01, 1.066415e+01
+Stress      = 2.912546e+01, 5.844760e+01, 3.114040e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+SCIPY BFGS TIME: 208.54435174539685 NIT: 167 SUCCESS: False
+
+group size rank 0 = 9707
+group size rank 2 = 1639
+group size rank 4 = 1639
+group size rank 1 = 1638
+group size rank 6 = 1640
+group size rank 7 = 1640
+group size rank 3 = 1639
+group size rank 5 = 1640
+group size rank 0 = 1640
+POT: 4
+SCIPY BFGS TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 4.472203e+00, 6.975267e+00, 3.822362e+01
+Energy/Atom = 1.364871e-01, 3.595491e-01, 3.141567e+00
+Forces      = 3.655258e-01, 5.162509e-01, 9.562499e+00
+Stress      = 3.274092e+01, 6.515339e+01, 6.183340e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+SCIPY BFGS VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 4.551564e+00, 7.597178e+00, 4.904967e+01
+Energy/Atom = 1.713952e-01, 4.999524e-01, 3.853039e+00
+Forces      = 3.682221e-01, 5.290533e-01, 1.066415e+01
+Stress      = 2.912546e+01, 5.844760e+01, 3.114039e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+SCIPY BFGS TIME: 169.85183915123343 NIT: 195 SUCCESS: False
+
+group size rank 0 = 9707
+group size rank 6 = 9706
+group size rank 2 = 9705
+group size rank 7 = 9706
+group size rank 3 = 9705
+group size rank 4 = 9706
+group size rank 1 = 9705
+group size rank 5 = 9706
+group size rank 0 = 1640
+group size rank 6 = 1640
+group size rank 2 = 1639
+group size rank 7 = 1640
+group size rank 1 = 1638
+group size rank 3 = 1639
+group size rank 4 = 1639
+group size rank 5 = 1640
+POT: 5
+SCIPY BFGS TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 4.472203e+00, 6.975267e+00, 3.822362e+01
+Energy/Atom = 1.364871e-01, 3.595491e-01, 3.141567e+00
+Forces      = 3.655258e-01, 5.162509e-01, 9.562499e+00
+Stress      = 3.274092e+01, 6.515339e+01, 6.183340e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+SCIPY BFGS VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 4.551564e+00, 7.597177e+00, 4.904966e+01
+Energy/Atom = 1.713952e-01, 4.999524e-01, 3.853039e+00
+Forces      = 3.682221e-01, 5.290533e-01, 1.066415e+01
+Stress      = 2.912546e+01, 5.844760e+01, 3.114039e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+SCIPY BFGS TIME: 268.1835110448301 NIT: 182 SUCCESS: False
+

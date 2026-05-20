@@ -1,0 +1,975 @@
+
+The following have been reloaded with a version change:
+  1) Python/Anaconda_v02.2024 => Python/Miniconda
+
+[prun] Master compute host = cn-036
+[prun] Resource manager = slurm
+[prun] Launch cmd = mpirun /home/peivzarenkov/.conda/envs/peter_env/bin/python train_etn_my_adam.py (family=openmpi)
+group size rank 1 = 9705
+group size rank 5 = 9706
+group size rank 6 = 9706
+group size rank 3 = 9705
+group size rank 0 = 9707
+group size rank 2 = 9705
+group size rank 0 = 1640
+group size rank 1 = 1638
+group size rank 5 = 1640
+group size rank 3 = 1639
+group size rank 2 = 1639
+group size rank 6 = 1640
+group size rank 7 = 9706
+group size rank 4 = 9706
+group size rank 7 = 1640
+group size rank 4 = 1639
+group size rank 5 = 9706
+POT: 1
+ETN ADAM TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.276651e+01, 2.377389e+01, 3.263063e+02
+Energy/Atom = 4.186143e-01, 1.111653e+00, 6.225664e+00
+Forces      = 8.309268e-01, 1.125941e+00, 8.856115e+00
+Stress      = 3.103024e+01, 7.346218e+01, 7.945718e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN ADAM VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.301364e+01, 2.323231e+01, 1.159818e+02
+Energy/Atom = 4.946515e-01, 1.250134e+00, 6.070416e+00
+Forces      = 8.142057e-01, 1.120334e+00, 9.694010e+00
+Stress      = 2.987772e+01, 6.792121e+01, 6.753527e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN ADAM TIME: 808.468121457845 STEPS: 1500 EPOCHS: 299 FINAL_LOSS: 176.93810704128407
+
+group size rank 0 = 9707
+group size rank 7 = 9706
+group size rank 4 = 9706
+group size rank 2 = 9705
+group size rank 3 = 9705
+group size rank 1 = 9705
+group size rank 6 = 9706
+group size rank 0 = 1640
+group size rank 5 = 1640
+group size rank 7 = 1640
+group size rank 4 = 1639
+group size rank 2 = 1639
+group size rank 3 = 1639
+group size rank 1 = 1638
+group size rank 6 = 1640
+POT: 2
+ETN ADAM TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.277485e+01, 2.382297e+01, 3.274544e+02
+Energy/Atom = 4.216753e-01, 1.120429e+00, 6.278881e+00
+Forces      = 8.259784e-01, 1.118879e+00, 8.785613e+00
+Stress      = 3.117655e+01, 7.435742e+01, 8.131288e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN ADAM VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.302236e+01, 2.317734e+01, 1.079917e+02
+Energy/Atom = 4.979730e-01, 1.255102e+00, 6.026518e+00
+Forces      = 8.087511e-01, 1.112381e+00, 9.465607e+00
+Stress      = 2.965457e+01, 6.780931e+01, 6.760021e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN ADAM TIME: 798.648420047015 STEPS: 1500 EPOCHS: 299 FINAL_LOSS: 132.06282316670047
+
+group size rank 0 = 9707
+group size rank 5 = 9706
+group size rank 4 = 9706
+group size rank 2 = 9705
+group size rank 3 = 9705
+group size rank 7 = 9706
+group size rank 1 = 9705
+group size rank 6 = 9706
+group size rank 0 = 1640
+group size rank 5 = 1640
+group size rank 4 = 1639
+group size rank 2 = 1639
+group size rank 7 = 1640
+group size rank 3 = 1639
+group size rank 1 = 1638
+group size rank 6 = 1640
+group size rank 5 = 9706
+POT: 3
+ETN ADAM TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.257580e+01, 2.367802e+01, 3.309465e+02
+Energy/Atom = 4.113860e-01, 1.095200e+00, 6.152246e+00
+Forces      = 8.300090e-01, 1.122924e+00, 8.815190e+00
+Stress      = 2.993940e+01, 7.089447e+01, 7.893020e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN ADAM VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.268068e+01, 2.308321e+01, 1.100706e+02
+Energy/Atom = 4.841945e-01, 1.225381e+00, 5.940105e+00
+Forces      = 8.131441e-01, 1.117599e+00, 9.559277e+00
+Stress      = 2.876347e+01, 6.499772e+01, 6.614623e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN ADAM TIME: 795.2322073802352 STEPS: 1500 EPOCHS: 299 FINAL_LOSS: 197.43455835242162
+
+group size rank 0 = 9707
+group size rank 4 = 9706
+group size rank 1 = 9705
+group size rank 7 = 9706
+group size rank 3 = 9705
+group size rank 2 = 9705
+group size rank 6 = 9706
+group size rank 0 = 1640
+group size rank 5 = 1640
+group size rank 4 = 1639
+group size rank 7 = 1640
+group size rank 1 = 1638
+group size rank 3 = 1639
+group size rank 2 = 1639
+group size rank 6 = 1640
+POT: 4
+ETN ADAM TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.265895e+01, 2.348638e+01, 3.223494e+02
+Energy/Atom = 4.165899e-01, 1.107760e+00, 6.315386e+00
+Forces      = 8.236806e-01, 1.115729e+00, 8.770970e+00
+Stress      = 3.046945e+01, 7.253908e+01, 7.867415e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN ADAM VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.291858e+01, 2.314101e+01, 1.076749e+02
+Energy/Atom = 4.923721e-01, 1.242356e+00, 6.088899e+00
+Forces      = 8.072468e-01, 1.110489e+00, 9.617777e+00
+Stress      = 2.905890e+01, 6.657090e+01, 6.646481e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN ADAM TIME: 779.7367002144456 STEPS: 1500 EPOCHS: 299 FINAL_LOSS: 67.00700643042394
+
+group size rank 0 = 9707
+group size rank 5 = 9706
+group size rank 6 = 9706
+group size rank 4 = 9706
+group size rank 7 = 9706
+group size rank 3 = 9705
+group size rank 1 = 9705
+group size rank 2 = 9705
+group size rank 0 = 1640
+group size rank 5 = 1640
+group size rank 4 = 1639
+group size rank 7 = 1640
+group size rank 6 = 1640
+group size rank 3 = 1639
+group size rank 1 = 1638
+group size rank 2 = 1639
+POT: 5
+ETN ADAM TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.267203e+01, 2.321429e+01, 3.129963e+02
+Energy/Atom = 4.182809e-01, 1.105231e+00, 6.172027e+00
+Forces      = 8.473403e-01, 1.144333e+00, 8.845783e+00
+Stress      = 3.130350e+01, 7.238597e+01, 7.835477e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN ADAM VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.304194e+01, 2.320306e+01, 1.121000e+02
+Energy/Atom = 4.953572e-01, 1.243938e+00, 5.998231e+00
+Forces      = 8.305292e-01, 1.138940e+00, 9.427232e+00
+Stress      = 3.034540e+01, 6.664683e+01, 6.618063e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN ADAM TIME: 776.2070386298001 STEPS: 1500 EPOCHS: 299 FINAL_LOSS: 151.95435819397028
+
+[prun] Master compute host = cn-036
+[prun] Resource manager = slurm
+[prun] Launch cmd = mpirun /home/peivzarenkov/.conda/envs/peter_env/bin/python train_etn_my_momentum.py (family=openmpi)
+group size rank 1 = 9705
+group size rank 7 = 9706
+group size rank 0 = 9707
+group size rank 3 = 9705
+group size rank 2 = 9705
+group size rank 5 = 9706
+group size rank 4 = 9706
+group size rank 6 = 9706
+group size rank 1 = 1638
+group size rank 7 = 1640
+group size rank 0 = 1640
+group size rank 3 = 1639
+group size rank 2 = 1639
+group size rank 5 = 1640
+group size rank 4 = 1639
+group size rank 6 = 1640
+group size rank 7 = 9706
+POT: 1
+ETN MOMENTUM TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 5.805570e+02, 7.137907e+02, 2.825886e+03
+Energy/Atom = 8.759506e+00, 8.907206e+00, 1.130884e+01
+Forces      = 6.342729e-01, 9.002523e-01, 4.998999e+00
+Stress      = 1.885738e-01, 5.092706e-01, 4.903725e+00
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN MOMENTUM VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 5.643855e+02, 7.000939e+02, 2.356890e+03
+Energy/Atom = 8.709899e+00, 8.902640e+00, 1.130853e+01
+Forces      = 6.069722e-01, 8.876365e-01, 4.991482e+00
+Stress      = 1.881342e-01, 5.252596e-01, 5.848742e+00
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN MOMENTUM TIME: 782.3931926675141 STEPS: 1500 EPOCHS: 299 FINAL_LOSS: 94737.53400066357
+
+group size rank 0 = 9707
+group size rank 6 = 9706
+group size rank 4 = 9706
+group size rank 3 = 9705
+group size rank 1 = 9705
+group size rank 5 = 9706
+group size rank 2 = 9705
+group size rank 7 = 1640
+group size rank 0 = 1640
+group size rank 6 = 1640
+group size rank 3 = 1639
+group size rank 4 = 1639
+group size rank 1 = 1638
+group size rank 5 = 1640
+group size rank 2 = 1639
+group size rank 7 = 9706
+group size rank 3 = 9705
+group size rank 6 = 9706
+POT: 2
+ETN MOMENTUM TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 5.817319e+02, 7.147614e+02, 2.830664e+03
+Energy/Atom = 8.778904e+00, 8.921663e+00, 1.132636e+01
+Forces      = 6.340897e-01, 8.999911e-01, 4.993764e+00
+Stress      = 1.344674e-01, 4.131889e-01, 5.490862e+00
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN MOMENTUM VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 5.651432e+02, 7.002211e+02, 2.314265e+03
+Energy/Atom = 8.724692e+00, 8.911634e+00, 1.132706e+01
+Forces      = 6.067138e-01, 8.872887e-01, 4.993882e+00
+Stress      = 1.326598e-01, 4.084424e-01, 4.034017e+00
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN MOMENTUM TIME: 773.8143988735974 STEPS: 1500 EPOCHS: 299 FINAL_LOSS: 109883.26025491608
+
+group size rank 0 = 9707
+group size rank 4 = 9706
+group size rank 2 = 9705
+group size rank 5 = 9706
+group size rank 1 = 9705
+group size rank 7 = 1640
+group size rank 3 = 1639
+group size rank 6 = 1640
+group size rank 0 = 1640
+group size rank 4 = 1639
+group size rank 2 = 1639
+group size rank 1 = 1638
+group size rank 5 = 1640
+group size rank 7 = 9706
+group size rank 3 = 9705
+group size rank 2 = 9705
+group size rank 6 = 9706
+POT: 3
+ETN MOMENTUM TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 5.744125e+02, 7.060858e+02, 2.799998e+03
+Energy/Atom = 8.664675e+00, 8.811069e+00, 1.120454e+01
+Forces      = 6.339594e-01, 8.998520e-01, 4.993618e+00
+Stress      = 1.797253e-01, 5.357723e-01, 6.828842e+00
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN MOMENTUM VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 5.579375e+02, 6.916863e+02, 2.297532e+03
+Energy/Atom = 8.606808e+00, 8.798670e+00, 1.120599e+01
+Forces      = 6.065742e-01, 8.871637e-01, 4.990336e+00
+Stress      = 1.742293e-01, 5.157514e-01, 4.965318e+00
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN MOMENTUM TIME: 780.9021901339293 STEPS: 1500 EPOCHS: 299 FINAL_LOSS: 93738.7532108816
+
+group size rank 0 = 9707
+group size rank 4 = 9706
+group size rank 5 = 9706
+group size rank 1 = 9705
+group size rank 7 = 1640
+group size rank 3 = 1639
+group size rank 2 = 1639
+group size rank 6 = 1640
+group size rank 0 = 1640
+group size rank 4 = 1639
+group size rank 1 = 1638
+group size rank 5 = 1640
+group size rank 7 = 9706
+group size rank 3 = 9705
+group size rank 2 = 9705
+group size rank 6 = 9706
+group size rank 4 = 9706
+POT: 4
+ETN MOMENTUM TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 5.785709e+02, 7.114070e+02, 2.847876e+03
+Energy/Atom = 8.728809e+00, 8.877016e+00, 1.139413e+01
+Forces      = 6.339965e-01, 8.999037e-01, 4.995189e+00
+Stress      = 1.138548e-01, 2.694461e-01, 2.699514e+00
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN MOMENTUM VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 5.626446e+02, 6.978352e+02, 2.336073e+03
+Energy/Atom = 8.681836e+00, 8.875342e+00, 1.139578e+01
+Forces      = 6.066492e-01, 8.872422e-01, 4.989343e+00
+Stress      = 1.097088e-01, 2.542376e-01, 2.068221e+00
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN MOMENTUM TIME: 775.428937535733 STEPS: 1500 EPOCHS: 299 FINAL_LOSS: 173679.89172384512
+
+group size rank 0 = 9707
+group size rank 1 = 9705
+group size rank 5 = 9706
+group size rank 7 = 1640
+group size rank 3 = 1639
+group size rank 2 = 1639
+group size rank 1 = 1638
+group size rank 6 = 1640
+group size rank 4 = 1639
+group size rank 0 = 1640
+group size rank 5 = 1640
+POT: 5
+ETN MOMENTUM TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 5.759189e+02, 7.077620e+02, 2.804915e+03
+Energy/Atom = 8.687914e+00, 8.832978e+00, 1.122238e+01
+Forces      = 6.340013e-01, 8.998974e-01, 4.999389e+00
+Stress      = 3.565502e-02, 9.103484e-02, 1.115275e+00
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN MOMENTUM VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 5.600468e+02, 6.942177e+02, 2.315755e+03
+Energy/Atom = 8.641905e+00, 8.831071e+00, 1.122398e+01
+Forces      = 6.067140e-01, 8.873052e-01, 4.993024e+00
+Stress      = 3.136759e-02, 7.724908e-02, 5.546446e-01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN MOMENTUM TIME: 788.2043939307332 STEPS: 1500 EPOCHS: 299 FINAL_LOSS: 132184.55555331506
+
+[prun] Master compute host = cn-036
+[prun] Resource manager = slurm
+[prun] Launch cmd = mpirun /home/peivzarenkov/.conda/envs/peter_env/bin/python train_etn_my_muon_factorization.py (family=openmpi)
+group size rank 1 = 9705
+group size rank 2 = 9705
+group size rank 6 = 9706
+group size rank 4 = 9706
+group size rank 3 = 9705
+group size rank 7 = 9706
+group size rank 0 = 9707
+group size rank 5 = 9706
+group size rank 1 = 1638
+group size rank 2 = 1639
+group size rank 6 = 1640
+group size rank 4 = 1639
+group size rank 3 = 1639
+group size rank 7 = 1640
+group size rank 0 = 1640
+group size rank 5 = 1640
+group size rank 1 = 9705
+group size rank 5 = 9706
+group size rank 4 = 9706
+group size rank 2 = 9705
+group size rank 3 = 9705
+group size rank 6 = 9706
+POT: 1
+ETN MUON FACTORIZATION TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 3.678953e+02, 4.857665e+02, 2.452986e+03
+Energy/Atom = 5.812760e+00, 6.307622e+00, 1.036138e+01
+Forces      = 8.465198e-01, 1.164111e+00, 9.683040e+00
+Stress      = 9.077230e+01, 1.858697e+02, 1.878494e+03
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN MUON FACTORIZATION VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 3.834174e+02, 5.047111e+02, 1.609691e+03
+Energy/Atom = 6.086708e+00, 6.543667e+00, 1.002233e+01
+Forces      = 7.921280e-01, 1.091389e+00, 9.330071e+00
+Stress      = 8.047587e+01, 1.562400e+02, 1.070000e+03
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN MUON FACTORIZATION TIME: 781.5164692439139 STEPS: 1500 EPOCHS: 299 FINAL_LOSS: 44580.95907704434
+
+group size rank 0 = 9707
+group size rank 7 = 9706
+group size rank 1 = 1638
+group size rank 6 = 1640
+group size rank 5 = 1640
+group size rank 2 = 1639
+group size rank 4 = 1639
+group size rank 3 = 1639
+group size rank 0 = 1640
+group size rank 7 = 1640
+group size rank 3 = 9705
+group size rank 4 = 9706
+group size rank 5 = 9706
+group size rank 2 = 9705
+POT: 2
+ETN MUON FACTORIZATION TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 4.146979e+02, 5.276633e+02, 2.433999e+03
+Energy/Atom = 6.518620e+00, 6.900645e+00, 1.083019e+01
+Forces      = 7.326644e-01, 9.947783e-01, 7.617683e+00
+Stress      = 5.364664e+01, 1.226577e+02, 1.230081e+03
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN MUON FACTORIZATION VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 4.248909e+02, 5.454390e+02, 1.645825e+03
+Energy/Atom = 6.738373e+00, 7.100153e+00, 1.027426e+01
+Forces      = 6.961522e-01, 9.558922e-01, 8.009393e+00
+Stress      = 4.710868e+01, 1.042213e+02, 7.504590e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN MUON FACTORIZATION TIME: 797.6638532429934 STEPS: 1500 EPOCHS: 299 FINAL_LOSS: 58004.84768290274
+
+group size rank 0 = 9707
+group size rank 1 = 9705
+group size rank 6 = 9706
+group size rank 7 = 9706
+group size rank 3 = 1639
+group size rank 4 = 1639
+group size rank 5 = 1640
+group size rank 2 = 1639
+group size rank 0 = 1640
+group size rank 1 = 1638
+group size rank 6 = 1640
+group size rank 7 = 1640
+POT: 3
+ETN MUON FACTORIZATION TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 3.788327e+02, 4.963331e+02, 2.501979e+03
+Energy/Atom = 5.987254e+00, 6.464503e+00, 1.022158e+01
+Forces      = 9.342044e-01, 1.282563e+00, 9.735342e+00
+Stress      = 7.208187e+01, 1.521116e+02, 1.354192e+03
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN MUON FACTORIZATION VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 3.906676e+02, 5.157433e+02, 1.481239e+03
+Energy/Atom = 6.182848e+00, 6.660869e+00, 1.020574e+01
+Forces      = 8.879434e-01, 1.232594e+00, 1.118724e+01
+Stress      = 6.431391e+01, 1.324577e+02, 8.191654e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN MUON FACTORIZATION TIME: 797.2126876078546 STEPS: 1500 EPOCHS: 299 FINAL_LOSS: 41100.43000653195
+
+group size rank 0 = 9707
+group size rank 1 = 9705
+group size rank 6 = 9706
+group size rank 2 = 9705
+group size rank 3 = 9705
+group size rank 4 = 9706
+group size rank 5 = 9706
+group size rank 7 = 9706
+group size rank 0 = 1640
+group size rank 1 = 1638
+group size rank 6 = 1640
+group size rank 2 = 1639
+group size rank 3 = 1639
+group size rank 4 = 1639
+group size rank 5 = 1640
+group size rank 7 = 1640
+POT: 4
+ETN MUON FACTORIZATION TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 4.511565e+02, 5.708339e+02, 2.528578e+03
+Energy/Atom = 7.079755e+00, 7.474632e+00, 1.149760e+01
+Forces      = 7.623715e-01, 1.057854e+00, 9.297198e+00
+Stress      = 4.738410e+01, 1.182469e+02, 1.532451e+03
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN MUON FACTORIZATION VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 4.626581e+02, 5.912514e+02, 1.828830e+03
+Energy/Atom = 7.314530e+00, 7.681911e+00, 1.106237e+01
+Forces      = 7.200665e-01, 1.005119e+00, 8.875678e+00
+Stress      = 4.118093e+01, 1.040394e+02, 7.110962e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN MUON FACTORIZATION TIME: 795.4400670714676 STEPS: 1500 EPOCHS: 299 FINAL_LOSS: 101683.75259081063
+
+group size rank 0 = 9707
+group size rank 3 = 9705
+group size rank 4 = 9706
+group size rank 2 = 9705
+group size rank 5 = 9706
+group size rank 7 = 9706
+group size rank 0 = 1640
+group size rank 1 = 9705
+group size rank 6 = 9706
+group size rank 4 = 1639
+group size rank 3 = 1639
+group size rank 2 = 1639
+group size rank 5 = 1640
+group size rank 7 = 1640
+group size rank 1 = 1638
+group size rank 6 = 1640
+POT: 5
+ETN MUON FACTORIZATION TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 4.093443e+02, 5.359923e+02, 2.840519e+03
+Energy/Atom = 6.413852e+00, 6.900159e+00, 1.153390e+01
+Forces      = 8.072823e-01, 1.103995e+00, 9.271567e+00
+Stress      = 5.482434e+01, 1.253120e+02, 1.209987e+03
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN MUON FACTORIZATION VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 4.279159e+02, 5.567333e+02, 1.645052e+03
+Energy/Atom = 6.748556e+00, 7.163566e+00, 1.151145e+01
+Forces      = 7.531834e-01, 1.036183e+00, 7.804958e+00
+Stress      = 4.659365e+01, 1.008856e+02, 6.955909e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN MUON FACTORIZATION TIME: 778.9544045254588 STEPS: 1500 EPOCHS: 299 FINAL_LOSS: 65469.726253026056
+
+[prun] Master compute host = cn-036
+[prun] Resource manager = slurm
+[prun] Launch cmd = mpirun /home/peivzarenkov/.conda/envs/peter_env/bin/python train_etn_my_muon_pad_sqrt.py (family=openmpi)
+group size rank 6 = 9706
+group size rank 7 = 9706
+group size rank 4 = 9706
+group size rank 2 = 9705
+group size rank 5 = 9706
+group size rank 1 = 9705
+group size rank 3 = 9705
+group size rank 6 = 1640
+group size rank 0 = 9707
+group size rank 7 = 1640
+group size rank 4 = 1639
+group size rank 2 = 1639
+group size rank 5 = 1640
+group size rank 1 = 1638
+group size rank 3 = 1639
+group size rank 0 = 1640
+group size rank 5 = 9706
+POT: 1
+ETN MUON PAD SQRT TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 2.916064e+02, 3.959694e+02, 1.836811e+03
+Energy/Atom = 4.586590e+00, 5.094459e+00, 9.716527e+00
+Forces      = 1.738847e+00, 2.397700e+00, 1.728055e+01
+Stress      = 2.149363e+02, 4.256256e+02, 3.630117e+03
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN MUON PAD SQRT VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 3.024914e+02, 4.055874e+02, 9.205370e+02
+Energy/Atom = 4.825598e+00, 5.271212e+00, 8.929704e+00
+Forces      = 1.691485e+00, 2.338693e+00, 1.468374e+01
+Stress      = 1.945946e+02, 3.800379e+02, 2.552035e+03
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN MUON PAD SQRT TIME: 773.1198290735483 STEPS: 1500 EPOCHS: 299 FINAL_LOSS: 26648.64238067487
+
+group size rank 0 = 9707
+group size rank 4 = 9706
+group size rank 1 = 9705
+group size rank 7 = 9706
+group size rank 2 = 9705
+group size rank 3 = 9705
+group size rank 6 = 9706
+group size rank 5 = 1640
+group size rank 0 = 1640
+group size rank 1 = 1638
+group size rank 4 = 1639
+group size rank 2 = 1639
+group size rank 7 = 1640
+group size rank 3 = 1639
+group size rank 6 = 1640
+group size rank 2 = 9705
+POT: 2
+ETN MUON PAD SQRT TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 3.186058e+02, 4.358556e+02, 1.975254e+03
+Energy/Atom = 5.068113e+00, 5.713422e+00, 9.953826e+00
+Forces      = 1.951640e+00, 2.726693e+00, 2.089117e+01
+Stress      = 1.950313e+02, 4.167270e+02, 4.178968e+03
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN MUON PAD SQRT VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 3.309102e+02, 4.503424e+02, 1.039734e+03
+Energy/Atom = 5.298395e+00, 5.915482e+00, 9.933082e+00
+Forces      = 1.918405e+00, 2.687306e+00, 1.880237e+01
+Stress      = 1.776116e+02, 3.730423e+02, 2.197913e+03
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN MUON PAD SQRT TIME: 773.1063867136836 STEPS: 1500 EPOCHS: 299 FINAL_LOSS: 37504.64967424304
+
+group size rank 0 = 9707
+group size rank 5 = 9706
+group size rank 4 = 9706
+group size rank 6 = 9706
+group size rank 3 = 9705
+group size rank 1 = 9705
+group size rank 7 = 9706
+group size rank 2 = 1639
+group size rank 0 = 1640
+group size rank 6 = 1640
+group size rank 4 = 1639
+group size rank 5 = 1640
+group size rank 3 = 1639
+group size rank 1 = 1638
+group size rank 7 = 1640
+group size rank 2 = 9705
+group size rank 6 = 9706
+group size rank 3 = 9705
+group size rank 1 = 9705
+POT: 3
+ETN MUON PAD SQRT TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 2.986434e+02, 4.043508e+02, 1.898986e+03
+Energy/Atom = 4.683274e+00, 5.191114e+00, 9.569300e+00
+Forces      = 1.749610e+00, 2.459440e+00, 1.891524e+01
+Stress      = 1.632150e+02, 3.472038e+02, 3.363064e+03
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN MUON PAD SQRT VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 3.054198e+02, 4.120756e+02, 9.436399e+02
+Energy/Atom = 4.904295e+00, 5.365889e+00, 9.604253e+00
+Forces      = 1.710550e+00, 2.432965e+00, 1.857441e+01
+Stress      = 1.551486e+02, 3.268200e+02, 1.899946e+03
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN MUON PAD SQRT TIME: 773.9531456194818 STEPS: 1500 EPOCHS: 299 FINAL_LOSS: 28027.140522455637
+
+group size rank 0 = 9707
+group size rank 5 = 9706
+group size rank 4 = 9706
+group size rank 7 = 9706
+group size rank 2 = 1639
+group size rank 6 = 1640
+group size rank 3 = 1639
+group size rank 1 = 1638
+group size rank 0 = 1640
+group size rank 4 = 1639
+group size rank 7 = 1640
+group size rank 5 = 1640
+group size rank 2 = 9705
+group size rank 6 = 9706
+POT: 4
+ETN MUON PAD SQRT TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 3.685771e+02, 5.063156e+02, 2.513538e+03
+Energy/Atom = 5.904447e+00, 6.677124e+00, 1.089534e+01
+Forces      = 1.472815e+00, 2.032799e+00, 1.529599e+01
+Stress      = 1.069420e+02, 2.866024e+02, 3.038127e+03
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN MUON PAD SQRT VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 3.791778e+02, 5.222831e+02, 1.289278e+03
+Energy/Atom = 6.053850e+00, 6.836209e+00, 1.086971e+01
+Forces      = 1.418629e+00, 1.978942e+00, 1.762822e+01
+Stress      = 9.727272e+01, 2.605601e+02, 1.517246e+03
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN MUON PAD SQRT TIME: 772.4536064006388 STEPS: 1500 EPOCHS: 299 FINAL_LOSS: 89897.60595072675
+
+group size rank 0 = 9707
+group size rank 5 = 9706
+group size rank 1 = 9705
+group size rank 4 = 9706
+group size rank 7 = 9706
+group size rank 3 = 9705
+group size rank 2 = 1639
+group size rank 6 = 1640
+group size rank 0 = 1640
+group size rank 1 = 1638
+group size rank 4 = 1639
+group size rank 7 = 1640
+group size rank 5 = 1640
+group size rank 3 = 1639
+POT: 5
+ETN MUON PAD SQRT TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 3.269604e+02, 4.505366e+02, 2.357060e+03
+Energy/Atom = 5.186151e+00, 5.834948e+00, 1.025125e+01
+Forces      = 1.668561e+00, 2.341561e+00, 1.797847e+01
+Stress      = 1.396022e+02, 3.109509e+02, 2.904215e+03
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN MUON PAD SQRT VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 3.348501e+02, 4.619072e+02, 1.147281e+03
+Energy/Atom = 5.366891e+00, 6.001410e+00, 9.760771e+00
+Forces      = 1.630752e+00, 2.299103e+00, 1.851214e+01
+Stress      = 1.294887e+02, 2.820588e+02, 1.505369e+03
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN MUON PAD SQRT TIME: 771.6791484989226 STEPS: 1500 EPOCHS: 299 FINAL_LOSS: 47477.46963690559
+
+[prun] Master compute host = cn-036
+[prun] Resource manager = slurm
+[prun] Launch cmd = mpirun /home/peivzarenkov/.conda/envs/peter_env/bin/python train_etn_my_sgd.py (family=openmpi)
+group size rank 0 = 9707
+group size rank 6 = 9706
+group size rank 1 = 9705
+group size rank 5 = 9706
+group size rank 3 = 9705
+group size rank 2 = 9705
+group size rank 4 = 9706
+group size rank 7 = 9706
+group size rank 0 = 1640
+group size rank 6 = 1640
+group size rank 1 = 1638
+group size rank 5 = 1640
+group size rank 3 = 1639
+group size rank 2 = 1639
+group size rank 4 = 1639
+group size rank 7 = 1640
+group size rank 3 = 9705
+POT: 1
+ETN SGD TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 6.498301e+02, 7.978158e+02, 3.095887e+03
+Energy/Atom = 9.838337e+00, 9.969785e+00, 1.236926e+01
+Forces      = 6.342925e-01, 9.002698e-01, 4.999081e+00
+Stress      = 2.084047e-01, 5.739868e-01, 5.802555e+00
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN SGD VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 6.305673e+02, 7.810154e+02, 2.625167e+03
+Energy/Atom = 9.785630e+00, 9.957446e+00, 1.236812e+01
+Forces      = 6.069916e-01, 8.876584e-01, 4.991567e+00
+Stress      = 2.070959e-01, 5.765925e-01, 6.009670e+00
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN SGD TIME: 257.1314689591527 STEPS: 500 EPOCHS: 99 FINAL_LOSS: 163278.1137435656
+
+group size rank 0 = 9707
+group size rank 1 = 9705
+group size rank 5 = 9706
+group size rank 6 = 9706
+group size rank 7 = 9706
+group size rank 4 = 9706
+group size rank 2 = 9705
+group size rank 3 = 1639
+group size rank 0 = 1640
+group size rank 7 = 1640
+group size rank 5 = 1640
+group size rank 6 = 1640
+group size rank 1 = 1638
+group size rank 4 = 1639
+group size rank 2 = 1639
+group size rank 3 = 9705
+group size rank 7 = 9706
+group size rank 5 = 9706
+group size rank 6 = 9706
+POT: 2
+ETN SGD TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 6.510078e+02, 7.988319e+02, 3.100506e+03
+Energy/Atom = 9.857784e+00, 9.984828e+00, 1.238718e+01
+Forces      = 6.341379e-01, 9.000478e-01, 4.993744e+00
+Stress      = 1.334273e-01, 3.977643e-01, 4.531050e+00
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN SGD VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 6.313288e+02, 7.811777e+02, 2.582384e+03
+Energy/Atom = 9.800448e+00, 9.967085e+00, 1.238698e+01
+Forces      = 6.067527e-01, 8.873415e-01, 4.993607e+00
+Stress      = 1.307179e-01, 3.952335e-01, 4.074780e+00
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN SGD TIME: 258.37646071985364 STEPS: 500 EPOCHS: 99 FINAL_LOSS: 157015.86731112679
+
+group size rank 0 = 9707
+group size rank 1 = 9705
+group size rank 4 = 9706
+group size rank 2 = 9705
+group size rank 3 = 1639
+group size rank 7 = 1640
+group size rank 5 = 1640
+group size rank 6 = 1640
+group size rank 0 = 1640
+group size rank 1 = 1638
+group size rank 4 = 1639
+group size rank 2 = 1639
+group size rank 3 = 9705
+group size rank 5 = 9706
+group size rank 7 = 9706
+POT: 3
+ETN SGD TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 6.436891e+02, 7.901303e+02, 3.070060e+03
+Energy/Atom = 9.743549e+00, 9.873690e+00, 1.226610e+01
+Forces      = 6.340892e-01, 9.000088e-01, 4.993475e+00
+Stress      = 1.859336e-01, 4.998693e-01, 6.017098e+00
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN SGD VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 6.241192e+02, 7.726156e+02, 2.565829e+03
+Energy/Atom = 9.682473e+00, 9.853311e+00, 1.226639e+01
+Forces      = 6.066813e-01, 8.873036e-01, 4.990499e+00
+Stress      = 1.804996e-01, 4.864756e-01, 4.442629e+00
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN SGD TIME: 258.661443144083 STEPS: 500 EPOCHS: 99 FINAL_LOSS: 157982.05785750714
+
+group size rank 0 = 9707
+group size rank 6 = 9706
+group size rank 1 = 9705
+group size rank 4 = 9706
+group size rank 2 = 9705
+group size rank 3 = 1639
+group size rank 7 = 1640
+group size rank 5 = 1640
+group size rank 0 = 1640
+group size rank 6 = 1640
+group size rank 1 = 1638
+group size rank 4 = 1639
+group size rank 2 = 1639
+group size rank 5 = 9706
+POT: 4
+ETN SGD TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 6.479058e+02, 7.955188e+02, 3.119023e+03
+Energy/Atom = 9.808409e+00, 9.940347e+00, 1.246012e+01
+Forces      = 6.343103e-01, 9.003196e-01, 5.001783e+00
+Stress      = 6.145835e-02, 1.344801e-01, 1.269472e+00
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN SGD VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 6.288956e+02, 7.788523e+02, 2.605684e+03
+Energy/Atom = 9.758436e+00, 9.930998e+00, 1.246017e+01
+Forces      = 6.069413e-01, 8.876517e-01, 4.991060e+00
+Stress      = 6.085232e-02, 1.308105e-01, 1.072015e+00
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN SGD TIME: 306.922408439219 STEPS: 500 EPOCHS: 99 FINAL_LOSS: 151845.2166322707
+
+group size rank 0 = 9707
+group size rank 6 = 9706
+group size rank 1 = 9705
+group size rank 4 = 9706
+group size rank 2 = 9705
+group size rank 5 = 1640
+group size rank 0 = 1640
+group size rank 6 = 1640
+group size rank 1 = 1638
+group size rank 4 = 1639
+group size rank 2 = 1639
+group size rank 3 = 9705
+group size rank 7 = 9706
+group size rank 3 = 1639
+group size rank 7 = 1640
+POT: 5
+ETN SGD TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 6.452003e+02, 7.918230e+02, 3.074609e+03
+Energy/Atom = 9.766862e+00, 9.895822e+00, 1.228364e+01
+Forces      = 6.340487e-01, 8.999523e-01, 4.999527e+00
+Stress      = 4.013364e-02, 9.891084e-02, 1.038793e+00
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN SGD VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 6.262396e+02, 7.751788e+02, 2.584244e+03
+Energy/Atom = 9.717778e+00, 9.886233e+00, 1.228371e+01
+Forces      = 6.067478e-01, 8.873445e-01, 4.992992e+00
+Stress      = 3.646154e-02, 8.707766e-02, 5.235575e-01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN SGD TIME: 476.4466978907585 STEPS: 500 EPOCHS: 99 FINAL_LOSS: 128946.2182104907
+
+[prun] Master compute host = cn-036
+[prun] Resource manager = slurm
+[prun] Launch cmd = mpirun /home/peivzarenkov/.conda/envs/peter_env/bin/python train_etn_scipy_bfgs.py (family=openmpi)
+group size rank 2 = 9705
+group size rank 0 = 9707
+group size rank 4 = 9706
+group size rank 5 = 9706
+group size rank 1 = 9705
+group size rank 7 = 9706
+group size rank 3 = 9705
+group size rank 6 = 9706
+group size rank 0 = 1640
+group size rank 2 = 1639
+group size rank 4 = 1639
+group size rank 7 = 1640
+group size rank 5 = 1640
+group size rank 1 = 1638
+group size rank 3 = 1639
+group size rank 6 = 1640
+Traceback (most recent call last):
+  File "/home/peivzarenkov/mlip-4/Testing-optimization-methods-in-MLP/task6/train_etn_scipy_bfgs.py", line 96, in <module>
+    res = minimize(
+  File "/home/peivzarenkov/.conda/envs/peter_env/lib/python3.10/site-packages/scipy/optimize/_minimize.py", line 733, in minimize
+Traceback (most recent call last):
+  File "/home/peivzarenkov/mlip-4/Testing-optimization-methods-in-MLP/task6/train_etn_scipy_bfgs.py", line 96, in <module>
+    res = minimize(
+  File "/home/peivzarenkov/.conda/envs/peter_env/lib/python3.10/site-packages/scipy/optimize/_minimize.py", line 733, in minimize
+    res = _minimize_bfgs(fun, x0, args, jac, callback, **options)
+  File "/home/peivzarenkov/.conda/envs/peter_env/lib/python3.10/site-packages/scipy/optimize/_optimize.py", line 1440, in _minimize_bfgs
+    res = _minimize_bfgs(fun, x0, args, jac, callback, **options)
+  File "/home/peivzarenkov/.conda/envs/peter_env/lib/python3.10/site-packages/scipy/optimize/_optimize.py", line 1440, in _minimize_bfgs
+Traceback (most recent call last):
+  File "/home/peivzarenkov/mlip-4/Testing-optimization-methods-in-MLP/task6/train_etn_scipy_bfgs.py", line 96, in <module>
+    res = minimize(
+  File "/home/peivzarenkov/.conda/envs/peter_env/lib/python3.10/site-packages/scipy/optimize/_minimize.py", line 733, in minimize
+    res = _minimize_bfgs(fun, x0, args, jac, callback, **options)
+  File "/home/peivzarenkov/.conda/envs/peter_env/lib/python3.10/site-packages/scipy/optimize/_optimize.py", line 1440, in _minimize_bfgs
+Traceback (most recent call last):
+  File "/home/peivzarenkov/mlip-4/Testing-optimization-methods-in-MLP/task6/train_etn_scipy_bfgs.py", line 96, in <module>
+Traceback (most recent call last):
+  File "/home/peivzarenkov/mlip-4/Testing-optimization-methods-in-MLP/task6/train_etn_scipy_bfgs.py", line 96, in <module>
+    res = minimize(
+  File "/home/peivzarenkov/.conda/envs/peter_env/lib/python3.10/site-packages/scipy/optimize/_minimize.py", line 733, in minimize
+    res = minimize(
+  File "/home/peivzarenkov/.conda/envs/peter_env/lib/python3.10/site-packages/scipy/optimize/_minimize.py", line 733, in minimize
+    res = _minimize_bfgs(fun, x0, args, jac, callback, **options)
+  File "/home/peivzarenkov/.conda/envs/peter_env/lib/python3.10/site-packages/scipy/optimize/_optimize.py", line 1440, in _minimize_bfgs
+    res = _minimize_bfgs(fun, x0, args, jac, callback, **options)
+  File "/home/peivzarenkov/.conda/envs/peter_env/lib/python3.10/site-packages/scipy/optimize/_optimize.py", line 1440, in _minimize_bfgs
+Traceback (most recent call last):
+  File "/home/peivzarenkov/mlip-4/Testing-optimization-methods-in-MLP/task6/train_etn_scipy_bfgs.py", line 96, in <module>
+    res = minimize(
+  File "/home/peivzarenkov/.conda/envs/peter_env/lib/python3.10/site-packages/scipy/optimize/_minimize.py", line 733, in minimize
+    res = _minimize_bfgs(fun, x0, args, jac, callback, **options)
+  File "/home/peivzarenkov/.conda/envs/peter_env/lib/python3.10/site-packages/scipy/optimize/_optimize.py", line 1440, in _minimize_bfgs
+Traceback (most recent call last):
+  File "/home/peivzarenkov/mlip-4/Testing-optimization-methods-in-MLP/task6/train_etn_scipy_bfgs.py", line 96, in <module>
+    res = minimize(
+  File "/home/peivzarenkov/.conda/envs/peter_env/lib/python3.10/site-packages/scipy/optimize/_minimize.py", line 733, in minimize
+    res = _minimize_bfgs(fun, x0, args, jac, callback, **options)
+  File "/home/peivzarenkov/.conda/envs/peter_env/lib/python3.10/site-packages/scipy/optimize/_optimize.py", line 1440, in _minimize_bfgs
+Traceback (most recent call last):
+  File "/home/peivzarenkov/mlip-4/Testing-optimization-methods-in-MLP/task6/train_etn_scipy_bfgs.py", line 96, in <module>
+    res = minimize(
+  File "/home/peivzarenkov/.conda/envs/peter_env/lib/python3.10/site-packages/scipy/optimize/_minimize.py", line 733, in minimize
+    res = _minimize_bfgs(fun, x0, args, jac, callback, **options)
+  File "/home/peivzarenkov/.conda/envs/peter_env/lib/python3.10/site-packages/scipy/optimize/_optimize.py", line 1440, in _minimize_bfgs
+    if _call_callback_maybe_halt(callback, intermediate_result):
+  File "/home/peivzarenkov/.conda/envs/peter_env/lib/python3.10/site-packages/scipy/_lib/_util.py", line 1080, in _call_callback_maybe_halt
+    if _call_callback_maybe_halt(callback, intermediate_result):
+  File "/home/peivzarenkov/.conda/envs/peter_env/lib/python3.10/site-packages/scipy/_lib/_util.py", line 1080, in _call_callback_maybe_halt
+    if _call_callback_maybe_halt(callback, intermediate_result):
+  File "/home/peivzarenkov/.conda/envs/peter_env/lib/python3.10/site-packages/scipy/_lib/_util.py", line 1080, in _call_callback_maybe_halt
+    if _call_callback_maybe_halt(callback, intermediate_result):
+  File "/home/peivzarenkov/.conda/envs/peter_env/lib/python3.10/site-packages/scipy/_lib/_util.py", line 1080, in _call_callback_maybe_halt
+    if _call_callback_maybe_halt(callback, intermediate_result):
+  File "/home/peivzarenkov/.conda/envs/peter_env/lib/python3.10/site-packages/scipy/_lib/_util.py", line 1080, in _call_callback_maybe_halt
+    if _call_callback_maybe_halt(callback, intermediate_result):
+  File "/home/peivzarenkov/.conda/envs/peter_env/lib/python3.10/site-packages/scipy/_lib/_util.py", line 1080, in _call_callback_maybe_halt
+    if _call_callback_maybe_halt(callback, intermediate_result):
+  File "/home/peivzarenkov/.conda/envs/peter_env/lib/python3.10/site-packages/scipy/_lib/_util.py", line 1080, in _call_callback_maybe_halt
+    if _call_callback_maybe_halt(callback, intermediate_result):
+  File "/home/peivzarenkov/.conda/envs/peter_env/lib/python3.10/site-packages/scipy/_lib/_util.py", line 1080, in _call_callback_maybe_halt
+    callback(res)
+  File "/home/peivzarenkov/.conda/envs/peter_env/lib/python3.10/site-packages/scipy/optimize/_optimize.py", line 106, in wrapped_callback
+    callback(res)
+  File "/home/peivzarenkov/.conda/envs/peter_env/lib/python3.10/site-packages/scipy/optimize/_optimize.py", line 106, in wrapped_callback
+    callback(res)
+  File "/home/peivzarenkov/.conda/envs/peter_env/lib/python3.10/site-packages/scipy/optimize/_optimize.py", line 106, in wrapped_callback
+    callback(res)
+  File "/home/peivzarenkov/.conda/envs/peter_env/lib/python3.10/site-packages/scipy/optimize/_optimize.py", line 106, in wrapped_callback
+    callback(res)
+  File "/home/peivzarenkov/.conda/envs/peter_env/lib/python3.10/site-packages/scipy/optimize/_optimize.py", line 106, in wrapped_callback
+    callback(res)
+  File "/home/peivzarenkov/.conda/envs/peter_env/lib/python3.10/site-packages/scipy/optimize/_optimize.py", line 106, in wrapped_callback
+    callback(res)
+  File "/home/peivzarenkov/.conda/envs/peter_env/lib/python3.10/site-packages/scipy/optimize/_optimize.py", line 106, in wrapped_callback
+    callback(res)
+  File "/home/peivzarenkov/.conda/envs/peter_env/lib/python3.10/site-packages/scipy/optimize/_optimize.py", line 106, in wrapped_callback
+    return callback(np.copy(res.x))
+  File "/home/peivzarenkov/mlip-4/Testing-optimization-methods-in-MLP/task6/train_etn_scipy_bfgs.py", line 90, in callback
+    losses.append(float(f))
+TypeError: float() argument must be a string or a real number, not 'NoneType'
+    return callback(np.copy(res.x))
+  File "/home/peivzarenkov/mlip-4/Testing-optimization-methods-in-MLP/task6/train_etn_scipy_bfgs.py", line 90, in callback
+    return callback(np.copy(res.x))
+    return callback(np.copy(res.x))
+  File "/home/peivzarenkov/mlip-4/Testing-optimization-methods-in-MLP/task6/train_etn_scipy_bfgs.py", line 90, in callback
+  File "/home/peivzarenkov/mlip-4/Testing-optimization-methods-in-MLP/task6/train_etn_scipy_bfgs.py", line 90, in callback
+    losses.append(float(f))
+TypeError: float() argument must be a string or a real number, not 'NoneType'
+    return callback(np.copy(res.x))
+    return callback(np.copy(res.x))
+  File "/home/peivzarenkov/mlip-4/Testing-optimization-methods-in-MLP/task6/train_etn_scipy_bfgs.py", line 90, in callback
+  File "/home/peivzarenkov/mlip-4/Testing-optimization-methods-in-MLP/task6/train_etn_scipy_bfgs.py", line 90, in callback
+    losses.append(float(f))
+TypeError: float() argument must be a string or a real number, not 'NoneType'
+    losses.append(float(f))
+TypeError: float() argument must be a string or a real number, not 'NoneType'
+    losses.append(float(f))
+TypeError: float() argument must be a string or a real number, not 'NoneType'
+    losses.append(float(f))
+TypeError: float() argument must be a string or a real number, not 'NoneType'
+    return callback(np.copy(res.x))
+  File "/home/peivzarenkov/mlip-4/Testing-optimization-methods-in-MLP/task6/train_etn_scipy_bfgs.py", line 90, in callback
+    return callback(np.copy(res.x))
+  File "/home/peivzarenkov/mlip-4/Testing-optimization-methods-in-MLP/task6/train_etn_scipy_bfgs.py", line 90, in callback
+    losses.append(float(f))
+    losses.append(float(f))
+TypeError: float() argument must be a string or a real number, not 'NoneType'
+TypeError: float() argument must be a string or a real number, not 'NoneType'

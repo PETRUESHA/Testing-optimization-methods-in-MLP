@@ -9,7 +9,7 @@ import time
 import numpy as np
 from mpi4py import MPI
 
-ROOT = "/Users/peterzarenkov/projects/course_work/Testing-optimization-methods-in-MLP"
+ROOT = "/home/peivzarenkov/mlip-4/Testing-optimization-methods-in-MLP"
 sys.path.insert(0, ROOT)
 
 import utils

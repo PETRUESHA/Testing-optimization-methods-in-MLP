@@ -15,7 +15,7 @@ from mlip_4 import ETN, LossFunction, RadialBasisCinf, Trainer
 
 TRAIN_PATH = f"{ROOT}/datasets/MoNbTaVW/MoNbTaVW_train.json"
 VALID_PATH = f"{ROOT}/datasets/MoNbTaVW/MoNbTaVW_valid.json"
-RESULT_PATH = "/Users/peterzarenkov/projects/course_work/Testing-optimization-methods-in-MLP/all_etn_5000/results/MoNbTaVW_results_etn_native_bfgs.csv"
+RESULT_PATH = "/home/peivzarenkov/mlip-4/Testing-optimization-methods-in-MLP/all_etn_5000/results/MoNbTaVW_results_etn_native_bfgs.csv"
 
 comm = MPI.COMM_WORLD
 rank = comm.Get_rank()

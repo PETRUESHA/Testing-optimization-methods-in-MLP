@@ -17,7 +17,7 @@ from mpi4py import MPI
 
 TRAIN_PATH = "/home/peivzarenkov/mlip-4/Testing-optimization-methods-in-MLP/datasets/PdAg/PdAg.json"
 VALID_PATH = "/home/peivzarenkov/mlip-4/Testing-optimization-methods-in-MLP/datasets/PdAg/validation_PdAg.json"
-RESULT_PATH = "/Users/peterzarenkov/projects/course_work/Testing-optimization-methods-in-MLP/all_etn_5000/results/AgPd_results_etn_my_momentum.csv"
+RESULT_PATH = "/home/peivzarenkov/mlip-4/Testing-optimization-methods-in-MLP/all_etn_5000/results/AgPd_results_etn_my_momentum.csv"
 
 comm = MPI.COMM_WORLD
 rank = comm.Get_rank()

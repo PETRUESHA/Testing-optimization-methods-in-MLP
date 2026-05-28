@@ -16,7 +16,7 @@ from mlip_4 import LossFunction, RadialBasisCinf, ETN
 
 TRAIN_PATH = "/home/peivzarenkov/mlip-4/Testing-optimization-methods-in-MLP/datasets/PdAg/PdAg.json"
 VALID_PATH = "/home/peivzarenkov/mlip-4/Testing-optimization-methods-in-MLP/datasets/PdAg/validation_PdAg.json"
-RESULT_PATH = "/Users/peterzarenkov/projects/course_work/Testing-optimization-methods-in-MLP/all_etn_5000/results/AgPd_results_etn_my_sgd.csv"
+RESULT_PATH = "/home/peivzarenkov/mlip-4/Testing-optimization-methods-in-MLP/all_etn_5000/results/AgPd_results_etn_my_sgd.csv"
 
 comm = MPI.COMM_WORLD
 rank = comm.Get_rank()

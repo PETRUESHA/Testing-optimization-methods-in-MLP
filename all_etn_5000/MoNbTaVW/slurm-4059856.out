@@ -1,0 +1,1915 @@
+
+The following have been reloaded with a version change:
+  1) Python/Anaconda_v02.2024 => Python/Miniconda
+
+[prun] Master compute host = cn-037
+[prun] Resource manager = slurm
+[prun] Launch cmd = mpirun /home/peivzarenkov/.conda/envs/peter_env/bin/python train_etn_my_adam.py (family=openmpi)
+group size rank 6 = 9706
+group size rank 3 = 9705
+group size rank 2 = 9705
+group size rank 5 = 9706
+group size rank 3 = 1639
+group size rank 2 = 1639
+group size rank 7 = 9706
+group size rank 0 = 9707
+group size rank 5 = 1640
+group size rank 4 = 9706
+group size rank 6 = 1640
+group size rank 1 = 9705
+group size rank 7 = 1640
+group size rank 4 = 1639
+group size rank 0 = 1640
+group size rank 1 = 1638
+group size rank 6 = 9706
+group size rank 1 = 9705
+group size rank 3 = 9705
+group size rank 5 = 9706
+group size rank 7 = 9706
+group size rank 2 = 9705
+group size rank 4 = 9706
+POT: 1
+ETN ADAM TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 9.919221e+00, 1.802830e+01, 2.084620e+02
+Energy/Atom = 2.825516e-01, 7.106919e-01, 4.567717e+00
+Forces      = 5.821097e-01, 8.313066e-01, 9.034253e+00
+Stress      = 3.571687e+01, 8.324029e+01, 7.552999e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN ADAM VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.024214e+01, 1.777343e+01, 7.951218e+01
+Energy/Atom = 3.353746e-01, 8.302776e-01, 4.414821e+00
+Forces      = 5.808155e-01, 8.330742e-01, 8.170543e+00
+Stress      = 3.239159e+01, 7.704976e+01, 6.244154e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN ADAM TIME: 2871.0072418935597 STEPS: 5000 EPOCHS: 999 FINAL_LOSS: 87.05315407555797
+
+group size rank 0 = 9707
+group size rank 6 = 1640
+group size rank 1 = 1638
+group size rank 3 = 1639
+group size rank 7 = 1640
+group size rank 5 = 1640
+group size rank 2 = 1639
+group size rank 4 = 1639
+group size rank 0 = 1640
+group size rank 1 = 9705
+POT: 2
+ETN ADAM TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 9.827317e+00, 1.790482e+01, 2.127696e+02
+Energy/Atom = 2.833071e-01, 7.119715e-01, 4.598998e+00
+Forces      = 5.815021e-01, 8.301658e-01, 9.053657e+00
+Stress      = 3.536584e+01, 8.205490e+01, 7.139794e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN ADAM VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.032092e+01, 1.792646e+01, 8.420871e+01
+Energy/Atom = 3.376837e-01, 8.335234e-01, 4.441914e+00
+Forces      = 5.804567e-01, 8.327957e-01, 8.199493e+00
+Stress      = 3.224804e+01, 7.639062e+01, 6.286536e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN ADAM TIME: 2900.699725650251 STEPS: 5000 EPOCHS: 999 FINAL_LOSS: 50.15829957320931
+
+group size rank 0 = 9707
+group size rank 6 = 9706
+group size rank 4 = 9706
+group size rank 2 = 9705
+group size rank 3 = 9705
+group size rank 5 = 9706
+group size rank 6 = 1640
+group size rank 1 = 1638
+group size rank 0 = 1640
+group size rank 7 = 9706
+group size rank 4 = 1639
+group size rank 2 = 1639
+group size rank 3 = 1639
+group size rank 5 = 1640
+group size rank 7 = 1640
+group size rank 6 = 9706
+POT: 3
+ETN ADAM TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 9.831280e+00, 1.772911e+01, 2.095949e+02
+Energy/Atom = 2.835325e-01, 7.107170e-01, 4.582451e+00
+Forces      = 5.819509e-01, 8.307371e-01, 8.943167e+00
+Stress      = 3.517906e+01, 8.284201e+01, 7.351853e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN ADAM VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.038991e+01, 1.801217e+01, 8.395135e+01
+Energy/Atom = 3.389106e-01, 8.324794e-01, 4.435883e+00
+Forces      = 5.808828e-01, 8.334738e-01, 8.212438e+00
+Stress      = 3.191514e+01, 7.669845e+01, 6.261825e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN ADAM TIME: 2879.191161375493 STEPS: 5000 EPOCHS: 999 FINAL_LOSS: 149.36447925192616
+
+group size rank 0 = 9707
+group size rank 2 = 9705
+group size rank 5 = 9706
+group size rank 7 = 9706
+group size rank 1 = 9705
+group size rank 6 = 1640
+group size rank 4 = 9706
+group size rank 3 = 9705
+group size rank 0 = 1640
+group size rank 5 = 1640
+group size rank 2 = 1639
+group size rank 7 = 1640
+group size rank 1 = 1638
+group size rank 4 = 1639
+group size rank 3 = 1639
+group size rank 6 = 9706
+group size rank 7 = 9706
+group size rank 4 = 9706
+POT: 4
+ETN ADAM TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 9.806856e+00, 1.803681e+01, 2.196784e+02
+Energy/Atom = 2.821323e-01, 7.103236e-01, 4.592472e+00
+Forces      = 5.794579e-01, 8.267928e-01, 9.031136e+00
+Stress      = 3.517796e+01, 8.203798e+01, 6.797051e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN ADAM VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.047255e+01, 1.808028e+01, 8.308208e+01
+Energy/Atom = 3.403539e-01, 8.345241e-01, 4.446558e+00
+Forces      = 5.788107e-01, 8.303557e-01, 8.247791e+00
+Stress      = 3.187527e+01, 7.578258e+01, 6.304795e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN ADAM TIME: 2855.697205632925 STEPS: 5000 EPOCHS: 999 FINAL_LOSS: 79.65029206129729
+
+group size rank 0 = 9707
+group size rank 3 = 9705
+group size rank 2 = 9705
+group size rank 7 = 1640
+group size rank 6 = 1640
+group size rank 0 = 1640
+group size rank 4 = 1639
+group size rank 2 = 1639
+group size rank 3 = 1639
+group size rank 5 = 9706
+group size rank 1 = 9705
+group size rank 5 = 1640
+group size rank 1 = 1638
+POT: 5
+ETN ADAM TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 9.854687e+00, 1.785454e+01, 2.151605e+02
+Energy/Atom = 2.840061e-01, 7.124717e-01, 4.577258e+00
+Forces      = 5.813111e-01, 8.293965e-01, 8.984756e+00
+Stress      = 3.513695e+01, 8.254739e+01, 7.078903e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN ADAM VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.032457e+01, 1.811762e+01, 8.413288e+01
+Energy/Atom = 3.386931e-01, 8.343987e-01, 4.433573e+00
+Forces      = 5.803520e-01, 8.322340e-01, 8.206383e+00
+Stress      = 3.183352e+01, 7.632993e+01, 6.286345e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN ADAM TIME: 2874.183623403311 STEPS: 5000 EPOCHS: 999 FINAL_LOSS: 110.0595472780791
+
+[prun] Master compute host = cn-037
+[prun] Resource manager = slurm
+[prun] Launch cmd = mpirun /home/peivzarenkov/.conda/envs/peter_env/bin/python train_etn_my_momentum.py (family=openmpi)
+group size rank 2 = 9705
+group size rank 3 = 9705
+group size rank 6 = 9706
+group size rank 1 = 9705
+group size rank 4 = 9706
+group size rank 5 = 9706
+group size rank 7 = 9706
+group size rank 0 = 9707
+group size rank 2 = 1639
+group size rank 3 = 1639
+group size rank 6 = 1640
+group size rank 1 = 1638
+group size rank 4 = 1639
+group size rank 5 = 1640
+group size rank 7 = 1640
+group size rank 0 = 1640
+POT: 1
+ETN MOMENTUM TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 3.332881e+02, 4.150216e+02, 1.862916e+03
+Energy/Atom = 4.982049e+00, 5.162803e+00, 7.556074e+00
+Forces      = 6.340758e-01, 9.000203e-01, 4.996398e+00
+Stress      = 2.202851e-07, 6.126485e-07, 6.336280e-06
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN MOMENTUM VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 3.280294e+02, 4.117483e+02, 1.374607e+03
+Energy/Atom = 4.984883e+00, 5.198530e+00, 7.530365e+00
+Forces      = 6.067247e-01, 8.873492e-01, 4.990969e+00
+Stress      = 2.181057e-07, 6.060876e-07, 6.105067e-06
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN MOMENTUM TIME: 2850.8524235486984 STEPS: 5000 EPOCHS: 999 FINAL_LOSS: 46836.66747575154
+
+group size rank 0 = 9707
+group size rank 3 = 9705
+group size rank 4 = 9706
+group size rank 5 = 9706
+group size rank 1 = 9705
+group size rank 7 = 9706
+group size rank 6 = 9706
+group size rank 2 = 9705
+group size rank 0 = 1640
+group size rank 5 = 1640
+group size rank 4 = 1639
+group size rank 3 = 1639
+group size rank 1 = 1638
+group size rank 7 = 1640
+group size rank 6 = 1640
+group size rank 2 = 1639
+group size rank 2 = 9705
+group size rank 1 = 9705
+group size rank 3 = 9705
+group size rank 4 = 9706
+group size rank 5 = 9706
+group size rank 6 = 9706
+POT: 2
+ETN MOMENTUM TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 3.332937e+02, 4.150308e+02, 1.863507e+03
+Energy/Atom = 4.982128e+00, 5.162898e+00, 7.557859e+00
+Forces      = 6.340758e-01, 9.000203e-01, 4.996398e+00
+Stress      = 1.353714e-07, 3.994336e-07, 4.237703e-06
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN MOMENTUM VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 3.280246e+02, 4.117385e+02, 1.374014e+03
+Energy/Atom = 4.984891e+00, 5.198567e+00, 7.532150e+00
+Forces      = 6.067247e-01, 8.873492e-01, 4.990969e+00
+Stress      = 1.324291e-07, 3.978770e-07, 4.174813e-06
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN MOMENTUM TIME: 2852.7408449724317 STEPS: 5000 EPOCHS: 999 FINAL_LOSS: 42593.02724507708
+
+group size rank 0 = 9707
+group size rank 7 = 9706
+group size rank 2 = 1639
+group size rank 1 = 1638
+group size rank 3 = 1639
+group size rank 4 = 1639
+group size rank 5 = 1640
+group size rank 6 = 1640
+group size rank 0 = 1640
+group size rank 7 = 1640
+POT: 3
+ETN MOMENTUM TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 3.332488e+02, 4.149769e+02, 1.863084e+03
+Energy/Atom = 4.981478e+00, 5.162231e+00, 7.556370e+00
+Forces      = 6.340758e-01, 9.000203e-01, 4.996398e+00
+Stress      = 1.907075e-07, 4.871432e-07, 5.659678e-06
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN MOMENTUM VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 3.279822e+02, 4.116874e+02, 1.373805e+03
+Energy/Atom = 4.984237e+00, 5.197901e+00, 7.530662e+00
+Forces      = 6.067247e-01, 8.873492e-01, 4.990969e+00
+Stress      = 1.845808e-07, 4.755337e-07, 4.203764e-06
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN MOMENTUM TIME: 2877.8876568451524 STEPS: 5000 EPOCHS: 999 FINAL_LOSS: 43458.52646749118
+
+group size rank 0 = 9707
+group size rank 2 = 9705
+group size rank 4 = 9706
+group size rank 7 = 9706
+group size rank 1 = 9705
+group size rank 5 = 9706
+group size rank 6 = 9706
+group size rank 3 = 9705
+group size rank 0 = 1640
+group size rank 2 = 1639
+group size rank 4 = 1639
+group size rank 7 = 1640
+group size rank 1 = 1638
+group size rank 5 = 1640
+group size rank 6 = 1640
+group size rank 3 = 1639
+group size rank 2 = 9705
+group size rank 6 = 9706
+POT: 4
+ETN MOMENTUM TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 3.333058e+02, 4.150426e+02, 1.862985e+03
+Energy/Atom = 4.982288e+00, 5.163019e+00, 7.555927e+00
+Forces      = 6.340758e-01, 9.000203e-01, 4.996398e+00
+Stress      = 4.458643e-08, 8.971800e-08, 7.152101e-07
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN MOMENTUM VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 3.280351e+02, 4.117478e+02, 1.374390e+03
+Energy/Atom = 4.985005e+00, 5.198650e+00, 7.530219e+00
+Forces      = 6.067247e-01, 8.873492e-01, 4.990969e+00
+Stress      = 4.558023e-08, 9.575754e-08, 7.523992e-07
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN MOMENTUM TIME: 2875.1227745600045 STEPS: 5000 EPOCHS: 999 FINAL_LOSS: 31817.110402991428
+
+group size rank 0 = 9707
+group size rank 3 = 9705
+group size rank 1 = 9705
+group size rank 6 = 1640
+group size rank 7 = 9706
+group size rank 2 = 1639
+group size rank 4 = 9706
+group size rank 3 = 1639
+group size rank 0 = 1640
+group size rank 1 = 1638
+group size rank 7 = 1640
+group size rank 5 = 9706
+group size rank 4 = 1639
+group size rank 5 = 1640
+POT: 5
+ETN MOMENTUM TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 3.332446e+02, 4.149649e+02, 1.862779e+03
+Energy/Atom = 4.981376e+00, 5.162082e+00, 7.554730e+00
+Forces      = 6.340758e-01, 9.000203e-01, 4.996398e+00
+Stress      = 4.466300e-08, 1.103507e-07, 1.168518e-06
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN MOMENTUM VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 3.279760e+02, 4.116765e+02, 1.373950e+03
+Energy/Atom = 4.984060e+00, 5.197691e+00, 7.529022e+00
+Forces      = 6.067247e-01, 8.873492e-01, 4.990969e+00
+Stress      = 4.102140e-08, 9.821685e-08, 5.926583e-07
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN MOMENTUM TIME: 2858.6795021258295 STEPS: 5000 EPOCHS: 999 FINAL_LOSS: 39259.605532589296
+
+[prun] Master compute host = cn-037
+[prun] Resource manager = slurm
+[prun] Launch cmd = mpirun /home/peivzarenkov/.conda/envs/peter_env/bin/python train_etn_my_muon_factorization.py (family=openmpi)
+group size rank 7 = 9706
+group size rank 0 = 9707
+group size rank 6 = 9706
+group size rank 4 = 9706
+group size rank 5 = 9706
+group size rank 2 = 9705
+group size rank 1 = 9705
+group size rank 3 = 9705
+group size rank 7 = 1640
+group size rank 4 = 1639
+group size rank 0 = 1640
+group size rank 6 = 1640
+group size rank 5 = 1640
+group size rank 2 = 1639
+group size rank 1 = 1638
+group size rank 3 = 1639
+group size rank 2 = 9705
+group size rank 4 = 9706
+group size rank 1 = 9705
+group size rank 6 = 9706
+group size rank 5 = 9706
+group size rank 7 = 9706
+POT: 1
+ETN MUON FACTORIZATION TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 8.034343e+00, 1.413584e+01, 1.413050e+02
+Energy/Atom = 1.935990e-01, 4.356850e-01, 3.033969e+00
+Forces      = 5.242257e-01, 7.456249e-01, 7.815326e+00
+Stress      = 3.120480e+01, 7.167289e+01, 5.687499e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN MUON FACTORIZATION VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 8.255033e+00, 1.400154e+01, 6.507082e+01
+Energy/Atom = 2.230950e-01, 4.931027e-01, 2.690289e+00
+Forces      = 5.231711e-01, 7.497761e-01, 7.688042e+00
+Stress      = 2.767561e+01, 6.554839e+01, 5.015015e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN MUON FACTORIZATION TIME: 2867.796175085008 STEPS: 5000 EPOCHS: 999 FINAL_LOSS: 60.33138936419379
+
+group size rank 0 = 9707
+group size rank 3 = 9705
+group size rank 2 = 1639
+group size rank 1 = 1638
+group size rank 4 = 1639
+group size rank 6 = 1640
+group size rank 5 = 1640
+group size rank 7 = 1640
+group size rank 0 = 1640
+group size rank 3 = 1639
+group size rank 7 = 9706
+group size rank 3 = 9705
+POT: 2
+ETN MUON FACTORIZATION TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 8.100647e+00, 1.406300e+01, 1.442133e+02
+Energy/Atom = 1.952915e-01, 4.359509e-01, 2.965318e+00
+Forces      = 5.238702e-01, 7.453667e-01, 7.758230e+00
+Stress      = 3.111266e+01, 7.108594e+01, 5.728007e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN MUON FACTORIZATION VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 8.490997e+00, 1.461621e+01, 8.157464e+01
+Energy/Atom = 2.262307e-01, 4.959783e-01, 2.699054e+00
+Forces      = 5.230352e-01, 7.501064e-01, 7.714971e+00
+Stress      = 2.787606e+01, 6.561532e+01, 4.972597e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN MUON FACTORIZATION TIME: 2861.6185890957713 STEPS: 5000 EPOCHS: 999 FINAL_LOSS: 37.50943319087545
+
+group size rank 0 = 9707
+group size rank 5 = 9706
+group size rank 6 = 9706
+group size rank 1 = 9705
+group size rank 7 = 1640
+group size rank 3 = 1639
+group size rank 4 = 9706
+group size rank 0 = 1640
+group size rank 2 = 9705
+group size rank 5 = 1640
+group size rank 6 = 1640
+group size rank 1 = 1638
+group size rank 4 = 1639
+group size rank 2 = 1639
+group size rank 4 = 9706
+group size rank 1 = 9705
+group size rank 7 = 9706
+group size rank 3 = 9705
+group size rank 6 = 9706
+POT: 3
+ETN MUON FACTORIZATION TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 8.089970e+00, 1.435489e+01, 1.414455e+02
+Energy/Atom = 1.985335e-01, 4.551290e-01, 3.186370e+00
+Forces      = 5.191383e-01, 7.396594e-01, 7.644567e+00
+Stress      = 3.220331e+01, 7.391937e+01, 5.673621e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN MUON FACTORIZATION VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 8.362631e+00, 1.461221e+01, 7.682094e+01
+Energy/Atom = 2.293013e-01, 5.234106e-01, 2.852021e+00
+Forces      = 5.190143e-01, 7.442811e-01, 7.787666e+00
+Stress      = 2.861667e+01, 6.730127e+01, 4.974791e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN MUON FACTORIZATION TIME: 2874.2524113319814 STEPS: 5000 EPOCHS: 999 FINAL_LOSS: 100.54542593528039
+
+group size rank 0 = 9707
+group size rank 4 = 1639
+group size rank 7 = 1640
+group size rank 1 = 1638
+group size rank 3 = 1639
+group size rank 6 = 1640
+group size rank 0 = 1640
+group size rank 2 = 9705
+group size rank 2 = 1639
+group size rank 5 = 9706
+group size rank 5 = 1640
+group size rank 6 = 9706
+group size rank 2 = 9705
+group size rank 5 = 9706
+group size rank 3 = 9705
+group size rank 6 = 1640
+group size rank 4 = 9706
+group size rank 1 = 9705
+group size rank 2 = 1639
+POT: 4
+ETN MUON FACTORIZATION TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 8.360597e+00, 1.470445e+01, 1.526413e+02
+Energy/Atom = 2.044806e-01, 4.713078e-01, 3.189472e+00
+Forces      = 5.199746e-01, 7.414544e-01, 7.947060e+00
+Stress      = 3.190757e+01, 7.321461e+01, 5.768264e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN MUON FACTORIZATION VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 8.574349e+00, 1.491320e+01, 7.754033e+01
+Energy/Atom = 2.344788e-01, 5.354949e-01, 2.897348e+00
+Forces      = 5.202131e-01, 7.463708e-01, 7.738969e+00
+Stress      = 2.833600e+01, 6.665745e+01, 5.019887e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN MUON FACTORIZATION TIME: 2838.1498678177595 STEPS: 5000 EPOCHS: 999 FINAL_LOSS: 60.937426949486905
+
+group size rank 0 = 9707
+group size rank 5 = 1640
+group size rank 3 = 1639
+group size rank 7 = 9706
+group size rank 4 = 1639
+group size rank 1 = 1638
+group size rank 0 = 1640
+group size rank 7 = 1640
+POT: 5
+ETN MUON FACTORIZATION TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 8.247417e+00, 1.452158e+01, 1.511563e+02
+Energy/Atom = 2.022486e-01, 4.652972e-01, 3.199280e+00
+Forces      = 5.206343e-01, 7.421909e-01, 7.896858e+00
+Stress      = 3.188784e+01, 7.317919e+01, 5.720038e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN MUON FACTORIZATION VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 8.409284e+00, 1.484077e+01, 7.264919e+01
+Energy/Atom = 2.301075e-01, 5.274597e-01, 2.864606e+00
+Forces      = 5.206478e-01, 7.466596e-01, 7.675491e+00
+Stress      = 2.847935e+01, 6.686026e+01, 5.006276e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN MUON FACTORIZATION TIME: 2837.6098771058023 STEPS: 5000 EPOCHS: 999 FINAL_LOSS: 85.05456146096321
+
+[prun] Master compute host = cn-037
+[prun] Resource manager = slurm
+[prun] Launch cmd = mpirun /home/peivzarenkov/.conda/envs/peter_env/bin/python train_etn_my_muon_pad_sqrt.py (family=openmpi)
+group size rank 6 = 9706
+group size rank 4 = 9706
+group size rank 7 = 9706
+group size rank 5 = 9706
+group size rank 2 = 9705
+group size rank 1 = 9705
+group size rank 3 = 9705
+group size rank 0 = 9707
+group size rank 7 = 1640
+group size rank 1 = 1638
+group size rank 6 = 1640
+group size rank 4 = 1639
+group size rank 3 = 1639
+group size rank 2 = 1639
+group size rank 5 = 1640
+group size rank 0 = 1640
+group size rank 7 = 9706
+POT: 1
+ETN MUON PAD SQRT TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 8.034343e+00, 1.413584e+01, 1.413050e+02
+Energy/Atom = 1.935990e-01, 4.356850e-01, 3.033969e+00
+Forces      = 5.242257e-01, 7.456249e-01, 7.815326e+00
+Stress      = 3.120480e+01, 7.167289e+01, 5.687499e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN MUON PAD SQRT VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 8.255033e+00, 1.400154e+01, 6.507082e+01
+Energy/Atom = 2.230950e-01, 4.931027e-01, 2.690289e+00
+Forces      = 5.231711e-01, 7.497761e-01, 7.688042e+00
+Stress      = 2.767561e+01, 6.554839e+01, 5.015015e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN MUON PAD SQRT TIME: 2856.513428952545 STEPS: 5000 EPOCHS: 999 FINAL_LOSS: 60.33138936419379
+
+group size rank 0 = 9707
+group size rank 6 = 9706
+group size rank 4 = 9706
+group size rank 1 = 9705
+group size rank 5 = 9706
+group size rank 3 = 9705
+group size rank 2 = 9705
+group size rank 7 = 1640
+group size rank 0 = 1640
+group size rank 6 = 1640
+group size rank 4 = 1639
+group size rank 1 = 1638
+group size rank 3 = 1639
+group size rank 5 = 1640
+group size rank 2 = 1639
+group size rank 3 = 9705
+group size rank 2 = 9705
+group size rank 7 = 9706
+group size rank 5 = 9706
+POT: 2
+ETN MUON PAD SQRT TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 8.100647e+00, 1.406300e+01, 1.442133e+02
+Energy/Atom = 1.952915e-01, 4.359509e-01, 2.965318e+00
+Forces      = 5.238702e-01, 7.453667e-01, 7.758230e+00
+Stress      = 3.111266e+01, 7.108594e+01, 5.728007e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN MUON PAD SQRT VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 8.490997e+00, 1.461621e+01, 8.157464e+01
+Energy/Atom = 2.262307e-01, 4.959783e-01, 2.699054e+00
+Forces      = 5.230352e-01, 7.501064e-01, 7.714971e+00
+Stress      = 2.787606e+01, 6.561532e+01, 4.972597e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN MUON PAD SQRT TIME: 2872.0233138650656 STEPS: 5000 EPOCHS: 999 FINAL_LOSS: 37.50943319087545
+
+group size rank 0 = 9707
+group size rank 6 = 9706
+group size rank 4 = 9706
+group size rank 1 = 9705
+group size rank 3 = 1639
+group size rank 7 = 1640
+group size rank 2 = 1639
+group size rank 6 = 1640
+group size rank 4 = 1639
+group size rank 0 = 1640
+group size rank 5 = 1640
+group size rank 1 = 1638
+group size rank 6 = 9706
+group size rank 4 = 9706
+group size rank 3 = 9705
+group size rank 5 = 9706
+POT: 3
+ETN MUON PAD SQRT TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 8.089970e+00, 1.435489e+01, 1.414455e+02
+Energy/Atom = 1.985335e-01, 4.551290e-01, 3.186370e+00
+Forces      = 5.191383e-01, 7.396594e-01, 7.644567e+00
+Stress      = 3.220331e+01, 7.391937e+01, 5.673621e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN MUON PAD SQRT VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 8.362631e+00, 1.461221e+01, 7.682094e+01
+Energy/Atom = 2.293013e-01, 5.234106e-01, 2.852021e+00
+Forces      = 5.190143e-01, 7.442811e-01, 7.787666e+00
+Stress      = 2.861667e+01, 6.730127e+01, 4.974791e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN MUON PAD SQRT TIME: 2856.2018679454923 STEPS: 5000 EPOCHS: 999 FINAL_LOSS: 100.54542593528039
+
+group size rank 0 = 9707
+group size rank 2 = 9705
+group size rank 7 = 9706
+group size rank 1 = 9705
+group size rank 6 = 1640
+group size rank 4 = 1639
+group size rank 3 = 1639
+group size rank 5 = 1640
+group size rank 0 = 1640
+group size rank 2 = 1639
+group size rank 7 = 1640
+group size rank 1 = 1638
+slurmstepd: error: slurm_curl_request: curl_easy_perform failed to send data to 192.168.1.252:8086/write?db=slurm_jobs&rp=autogen&precision=s. Reason: Couldn't connect to server
+slurmstepd: error: send data failed
+slurmstepd: error: slurm_curl_request: curl_easy_perform failed to send data to 192.168.1.252:8086/write?db=slurm_jobs&rp=autogen&precision=s. Reason: Couldn't connect to server
+slurmstepd: error: send data failed
+slurmstepd: error: slurm_curl_request: curl_easy_perform failed to send data to 192.168.1.252:8086/write?db=slurm_jobs&rp=autogen&precision=s. Reason: Couldn't connect to server
+slurmstepd: error: send data failed
+slurmstepd: error: slurm_curl_request: curl_easy_perform failed to send data to 192.168.1.252:8086/write?db=slurm_jobs&rp=autogen&precision=s. Reason: Couldn't connect to server
+slurmstepd: error: send data failed
+slurmstepd: error: slurm_curl_request: curl_easy_perform failed to send data to 192.168.1.252:8086/write?db=slurm_jobs&rp=autogen&precision=s. Reason: Couldn't connect to server
+slurmstepd: error: send data failed
+slurmstepd: error: slurm_curl_request: curl_easy_perform failed to send data to 192.168.1.252:8086/write?db=slurm_jobs&rp=autogen&precision=s. Reason: Couldn't connect to server
+slurmstepd: error: send data failed
+slurmstepd: error: slurm_curl_request: curl_easy_perform failed to send data to 192.168.1.252:8086/write?db=slurm_jobs&rp=autogen&precision=s. Reason: Couldn't connect to server
+slurmstepd: error: send data failed
+group size rank 6 = 9706
+group size rank 3 = 9705
+POT: 4
+ETN MUON PAD SQRT TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 8.360597e+00, 1.470445e+01, 1.526413e+02
+Energy/Atom = 2.044806e-01, 4.713078e-01, 3.189472e+00
+Forces      = 5.199746e-01, 7.414544e-01, 7.947060e+00
+Stress      = 3.190757e+01, 7.321461e+01, 5.768264e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN MUON PAD SQRT VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 8.574349e+00, 1.491320e+01, 7.754033e+01
+Energy/Atom = 2.344788e-01, 5.354949e-01, 2.897348e+00
+Forces      = 5.202131e-01, 7.463708e-01, 7.738969e+00
+Stress      = 2.833600e+01, 6.665745e+01, 5.019887e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN MUON PAD SQRT TIME: 2846.900671966374 STEPS: 5000 EPOCHS: 999 FINAL_LOSS: 60.937426949486905
+
+group size rank 0 = 9707
+group size rank 7 = 9706
+group size rank 1 = 9705
+group size rank 4 = 9706
+group size rank 2 = 9705
+group size rank 6 = 1640
+group size rank 3 = 1639
+group size rank 5 = 9706
+group size rank 1 = 1638
+group size rank 0 = 1640
+group size rank 7 = 1640
+group size rank 4 = 1639
+group size rank 2 = 1639
+group size rank 5 = 1640
+slurmstepd: error: slurm_curl_request: curl_easy_perform failed to send data to 192.168.1.252:8086/write?db=slurm_jobs&rp=autogen&precision=s. Reason: Couldn't connect to server
+slurmstepd: error: send data failed
+slurmstepd: error: slurm_curl_request: curl_easy_perform failed to send data to 192.168.1.252:8086/write?db=slurm_jobs&rp=autogen&precision=s. Reason: Couldn't connect to server
+slurmstepd: error: send data failed
+slurmstepd: error: slurm_curl_request: curl_easy_perform failed to send data to 192.168.1.252:8086/write?db=slurm_jobs&rp=autogen&precision=s. Reason: Couldn't connect to server
+slurmstepd: error: send data failed
+slurmstepd: error: slurm_curl_request: curl_easy_perform failed to send data to 192.168.1.252:8086/write?db=slurm_jobs&rp=autogen&precision=s. Reason: Couldn't connect to server
+slurmstepd: error: send data failed
+slurmstepd: error: slurm_curl_request: curl_easy_perform failed to send data to 192.168.1.252:8086/write?db=slurm_jobs&rp=autogen&precision=s. Reason: Couldn't connect to server
+slurmstepd: error: send data failed
+slurmstepd: error: slurm_curl_request: curl_easy_perform failed to send data to 192.168.1.252:8086/write?db=slurm_jobs&rp=autogen&precision=s. Reason: Couldn't connect to server
+slurmstepd: error: send data failed
+slurmstepd: error: slurm_curl_request: curl_easy_perform failed to send data to 192.168.1.252:8086/write?db=slurm_jobs&rp=autogen&precision=s. Reason: Couldn't connect to server
+slurmstepd: error: send data failed
+slurmstepd: error: slurm_curl_request: curl_easy_perform failed to send data to 192.168.1.252:8086/write?db=slurm_jobs&rp=autogen&precision=s. Reason: Couldn't connect to server
+slurmstepd: error: send data failed
+POT: 5
+ETN MUON PAD SQRT TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 8.247417e+00, 1.452158e+01, 1.511563e+02
+Energy/Atom = 2.022486e-01, 4.652972e-01, 3.199280e+00
+Forces      = 5.206343e-01, 7.421909e-01, 7.896858e+00
+Stress      = 3.188784e+01, 7.317919e+01, 5.720038e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN MUON PAD SQRT VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 8.409284e+00, 1.484077e+01, 7.264919e+01
+Energy/Atom = 2.301075e-01, 5.274597e-01, 2.864606e+00
+Forces      = 5.206478e-01, 7.466596e-01, 7.675491e+00
+Stress      = 2.847935e+01, 6.686026e+01, 5.006276e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN MUON PAD SQRT TIME: 2883.8025278672576 STEPS: 5000 EPOCHS: 999 FINAL_LOSS: 85.05456146096321
+
+slurmstepd: error: slurm_curl_request: curl_easy_perform failed to send data to 192.168.1.252:8086/write?db=slurm_jobs&rp=autogen&precision=s. Reason: Couldn't connect to server
+slurmstepd: error: send data failed
+[prun] Master compute host = cn-037
+[prun] Resource manager = slurm
+[prun] Launch cmd = mpirun /home/peivzarenkov/.conda/envs/peter_env/bin/python train_etn_my_sgd.py (family=openmpi)
+group size rank 4 = 9706
+group size rank 5 = 9706
+group size rank 0 = 9707
+group size rank 2 = 9705
+group size rank 7 = 9706
+group size rank 3 = 9705
+group size rank 1 = 9705
+group size rank 6 = 9706
+group size rank 4 = 1639
+group size rank 0 = 1640
+group size rank 5 = 1640
+group size rank 2 = 1639
+group size rank 7 = 1640
+group size rank 1 = 1638
+group size rank 3 = 1639
+group size rank 6 = 1640
+slurmstepd: error: slurm_curl_request: curl_easy_perform failed to send data to 192.168.1.252:8086/write?db=slurm_jobs&rp=autogen&precision=s. Reason: Couldn't connect to server
+slurmstepd: error: send data failed
+slurmstepd: error: slurm_curl_request: curl_easy_perform failed to send data to 192.168.1.252:8086/write?db=slurm_jobs&rp=autogen&precision=s. Reason: Couldn't connect to server
+slurmstepd: error: send data failed
+slurmstepd: error: slurm_curl_request: curl_easy_perform failed to send data to 192.168.1.252:8086/write?db=slurm_jobs&rp=autogen&precision=s. Reason: Couldn't connect to server
+slurmstepd: error: send data failed
+slurmstepd: error: slurm_curl_request: curl_easy_perform failed to send data to 192.168.1.252:8086/write?db=slurm_jobs&rp=autogen&precision=s. Reason: Couldn't connect to server
+slurmstepd: error: send data failed
+slurmstepd: error: slurm_curl_request: curl_easy_perform failed to send data to 192.168.1.252:8086/write?db=slurm_jobs&rp=autogen&precision=s. Reason: Couldn't connect to server
+slurmstepd: error: send data failed
+slurmstepd: error: slurm_curl_request: curl_easy_perform failed to send data to 192.168.1.252:8086/write?db=slurm_jobs&rp=autogen&precision=s. Reason: Couldn't connect to server
+slurmstepd: error: send data failed
+slurmstepd: error: slurm_curl_request: curl_easy_perform failed to send data to 192.168.1.252:8086/write?db=slurm_jobs&rp=autogen&precision=s. Reason: Couldn't connect to server
+slurmstepd: error: send data failed
+POT: 1
+ETN SGD TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 3.326611e+02, 4.142682e+02, 1.860416e+03
+Energy/Atom = 4.972922e+00, 5.153489e+00, 7.546417e+00
+Forces      = 6.340758e-01, 9.000203e-01, 4.996398e+00
+Stress      = 2.202839e-07, 6.126440e-07, 6.336196e-06
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN SGD VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 3.274298e+02, 4.110206e+02, 1.372174e+03
+Energy/Atom = 4.975931e+00, 5.189373e+00, 7.520708e+00
+Forces      = 6.067247e-01, 8.873492e-01, 4.990969e+00
+Stress      = 2.181046e-07, 6.060842e-07, 6.105060e-06
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN SGD TIME: 2863.630370914936 STEPS: 5000 EPOCHS: 999 FINAL_LOSS: 46668.13696146051
+
+group size rank 0 = 9707
+group size rank 5 = 9706
+group size rank 2 = 9705
+group size rank 4 = 9706
+group size rank 3 = 9705
+group size rank 6 = 9706
+group size rank 1 = 9705
+group size rank 7 = 9706
+group size rank 0 = 1640
+group size rank 5 = 1640
+group size rank 2 = 1639
+group size rank 4 = 1639
+group size rank 1 = 1638
+group size rank 3 = 1639
+group size rank 7 = 1640
+group size rank 6 = 1640
+slurmstepd: error: slurm_curl_request: curl_easy_perform failed to send data to 192.168.1.252:8086/write?db=slurm_jobs&rp=autogen&precision=s. Reason: Couldn't connect to server
+slurmstepd: error: send data failed
+slurmstepd: error: slurm_curl_request: curl_easy_perform failed to send data to 192.168.1.252:8086/write?db=slurm_jobs&rp=autogen&precision=s. Reason: Couldn't connect to server
+slurmstepd: error: send data failed
+slurmstepd: error: slurm_curl_request: curl_easy_perform failed to send data to 192.168.1.252:8086/write?db=slurm_jobs&rp=autogen&precision=s. Reason: Couldn't connect to server
+slurmstepd: error: send data failed
+slurmstepd: error: slurm_curl_request: curl_easy_perform failed to send data to 192.168.1.252:8086/write?db=slurm_jobs&rp=autogen&precision=s. Reason: Couldn't connect to server
+slurmstepd: error: send data failed
+slurmstepd: error: slurm_curl_request: curl_easy_perform failed to send data to 192.168.1.252:8086/write?db=slurm_jobs&rp=autogen&precision=s. Reason: Couldn't connect to server
+slurmstepd: error: send data failed
+slurmstepd: error: slurm_curl_request: curl_easy_perform failed to send data to 192.168.1.252:8086/write?db=slurm_jobs&rp=autogen&precision=s. Reason: Couldn't connect to server
+slurmstepd: error: send data failed
+slurmstepd: error: slurm_curl_request: curl_easy_perform failed to send data to 192.168.1.252:8086/write?db=slurm_jobs&rp=autogen&precision=s. Reason: Couldn't connect to server
+slurmstepd: error: send data failed
+slurmstepd: error: slurm_curl_request: curl_easy_perform failed to send data to 192.168.1.252:8086/write?db=slurm_jobs&rp=autogen&precision=s. Reason: Couldn't connect to server
+slurmstepd: error: send data failed
+POT: 2
+ETN SGD TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 3.326668e+02, 4.142775e+02, 1.861013e+03
+Energy/Atom = 4.973004e+00, 5.153586e+00, 7.548210e+00
+Forces      = 6.340758e-01, 9.000203e-01, 4.996398e+00
+Stress      = 1.353716e-07, 3.994350e-07, 4.237775e-06
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN SGD VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 3.274250e+02, 4.110110e+02, 1.371578e+03
+Energy/Atom = 4.975939e+00, 5.189410e+00, 7.522502e+00
+Forces      = 6.067247e-01, 8.873492e-01, 4.990969e+00
+Stress      = 1.324293e-07, 3.978782e-07, 4.174810e-06
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN SGD TIME: 2862.3317719586194 STEPS: 5000 EPOCHS: 999 FINAL_LOSS: 42439.108963435945
+
+group size rank 0 = 9707
+group size rank 6 = 9706
+group size rank 3 = 9705
+group size rank 7 = 9706
+group size rank 1 = 9705
+group size rank 2 = 9705
+group size rank 4 = 9706
+group size rank 2 = 1639
+group size rank 0 = 1640
+group size rank 6 = 1640
+group size rank 3 = 1639
+group size rank 7 = 1640
+group size rank 1 = 1638
+group size rank 4 = 1639
+group size rank 5 = 9706
+group size rank 5 = 1640
+slurmstepd: error: slurm_curl_request: curl_easy_perform failed to send data to 192.168.1.252:8086/write?db=slurm_jobs&rp=autogen&precision=s. Reason: Couldn't connect to server
+slurmstepd: error: send data failed
+slurmstepd: error: slurm_curl_request: curl_easy_perform failed to send data to 192.168.1.252:8086/write?db=slurm_jobs&rp=autogen&precision=s. Reason: Couldn't connect to server
+slurmstepd: error: send data failed
+slurmstepd: error: slurm_curl_request: curl_easy_perform failed to send data to 192.168.1.252:8086/write?db=slurm_jobs&rp=autogen&precision=s. Reason: Couldn't connect to server
+slurmstepd: error: send data failed
+slurmstepd: error: slurm_curl_request: curl_easy_perform failed to send data to 192.168.1.252:8086/write?db=slurm_jobs&rp=autogen&precision=s. Reason: Couldn't connect to server
+slurmstepd: error: send data failed
+slurmstepd: error: slurm_curl_request: curl_easy_perform failed to send data to 192.168.1.252:8086/write?db=slurm_jobs&rp=autogen&precision=s. Reason: Couldn't connect to server
+slurmstepd: error: send data failed
+slurmstepd: error: slurm_curl_request: curl_easy_perform failed to send data to 192.168.1.252:8086/write?db=slurm_jobs&rp=autogen&precision=s. Reason: Couldn't connect to server
+slurmstepd: error: send data failed
+slurmstepd: error: slurm_curl_request: curl_easy_perform failed to send data to 192.168.1.252:8086/write?db=slurm_jobs&rp=autogen&precision=s. Reason: Couldn't connect to server
+slurmstepd: error: send data failed
+slurmstepd: error: slurm_curl_request: curl_easy_perform failed to send data to 192.168.1.252:8086/write?db=slurm_jobs&rp=autogen&precision=s. Reason: Couldn't connect to server
+slurmstepd: error: send data failed
+group size rank 1 = 9705
+group size rank 7 = 9706
+group size rank 3 = 9705
+group size rank 4 = 9706
+group size rank 6 = 9706
+group size rank 5 = 9706
+POT: 3
+ETN SGD TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 3.326223e+02, 4.142241e+02, 1.860580e+03
+Energy/Atom = 4.972359e+00, 5.152924e+00, 7.546784e+00
+Forces      = 6.340758e-01, 9.000203e-01, 4.996398e+00
+Stress      = 1.907065e-07, 4.871459e-07, 5.659760e-06
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN SGD VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 3.273830e+02, 4.109599e+02, 1.371353e+03
+Energy/Atom = 4.975291e+00, 5.188750e+00, 7.521076e+00
+Forces      = 6.067247e-01, 8.873492e-01, 4.990969e+00
+Stress      = 1.845800e-07, 4.755362e-07, 4.203819e-06
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN SGD TIME: 2838.6914259046316 STEPS: 5000 EPOCHS: 999 FINAL_LOSS: 43303.90667176322
+
+group size rank 0 = 9707
+group size rank 1 = 1638
+group size rank 7 = 1640
+group size rank 4 = 1639
+group size rank 3 = 1639
+group size rank 6 = 1640
+group size rank 2 = 9705
+group size rank 5 = 1640
+group size rank 0 = 1640
+group size rank 2 = 1639
+slurmstepd: error: slurm_curl_request: curl_easy_perform failed to send data to 192.168.1.252:8086/write?db=slurm_jobs&rp=autogen&precision=s. Reason: Couldn't connect to server
+slurmstepd: error: send data failed
+slurmstepd: error: slurm_curl_request: curl_easy_perform failed to send data to 192.168.1.252:8086/write?db=slurm_jobs&rp=autogen&precision=s. Reason: Couldn't connect to server
+slurmstepd: error: send data failed
+slurmstepd: error: slurm_curl_request: curl_easy_perform failed to send data to 192.168.1.252:8086/write?db=slurm_jobs&rp=autogen&precision=s. Reason: Couldn't connect to server
+slurmstepd: error: send data failed
+slurmstepd: error: slurm_curl_request: curl_easy_perform failed to send data to 192.168.1.252:8086/write?db=slurm_jobs&rp=autogen&precision=s. Reason: Couldn't connect to server
+slurmstepd: error: send data failed
+slurmstepd: error: slurm_curl_request: curl_easy_perform failed to send data to 192.168.1.252:8086/write?db=slurm_jobs&rp=autogen&precision=s. Reason: Couldn't connect to server
+slurmstepd: error: send data failed
+slurmstepd: error: slurm_curl_request: curl_easy_perform failed to send data to 192.168.1.252:8086/write?db=slurm_jobs&rp=autogen&precision=s. Reason: Couldn't connect to server
+slurmstepd: error: send data failed
+slurmstepd: error: slurm_curl_request: curl_easy_perform failed to send data to 192.168.1.252:8086/write?db=slurm_jobs&rp=autogen&precision=s. Reason: Couldn't connect to server
+slurmstepd: error: send data failed
+slurmstepd: error: slurm_curl_request: curl_easy_perform failed to send data to 192.168.1.252:8086/write?db=slurm_jobs&rp=autogen&precision=s. Reason: Couldn't connect to server
+slurmstepd: error: send data failed
+group size rank 1 = 9705
+group size rank 5 = 9706
+group size rank 3 = 9705
+POT: 4
+ETN SGD TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 3.326789e+02, 4.142893e+02, 1.860484e+03
+Energy/Atom = 4.973164e+00, 5.153706e+00, 7.546265e+00
+Forces      = 6.340758e-01, 9.000203e-01, 4.996398e+00
+Stress      = 4.458840e-08, 8.972320e-08, 7.151706e-07
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN SGD VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 3.274357e+02, 4.110203e+02, 1.371949e+03
+Energy/Atom = 4.976056e+00, 5.189495e+00, 7.520557e+00
+Forces      = 6.067247e-01, 8.873492e-01, 4.990969e+00
+Stress      = 4.558206e-08, 9.576053e-08, 7.523229e-07
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN SGD TIME: 2877.666186351329 STEPS: 5000 EPOCHS: 999 FINAL_LOSS: 31698.864296047515
+
+group size rank 0 = 9707
+group size rank 4 = 9706
+group size rank 6 = 9706
+group size rank 1 = 1638
+group size rank 3 = 1639
+group size rank 5 = 1640
+group size rank 2 = 9705
+group size rank 0 = 1640
+group size rank 7 = 9706
+group size rank 4 = 1639
+group size rank 6 = 1640
+group size rank 2 = 1639
+group size rank 7 = 1640
+slurmstepd: error: slurm_curl_request: curl_easy_perform failed to send data to 192.168.1.252:8086/write?db=slurm_jobs&rp=autogen&precision=s. Reason: Couldn't connect to server
+slurmstepd: error: send data failed
+slurmstepd: error: slurm_curl_request: curl_easy_perform failed to send data to 192.168.1.252:8086/write?db=slurm_jobs&rp=autogen&precision=s. Reason: Couldn't connect to server
+slurmstepd: error: send data failed
+slurmstepd: error: slurm_curl_request: curl_easy_perform failed to send data to 192.168.1.252:8086/write?db=slurm_jobs&rp=autogen&precision=s. Reason: Couldn't connect to server
+slurmstepd: error: send data failed
+slurmstepd: error: slurm_curl_request: curl_easy_perform failed to send data to 192.168.1.252:8086/write?db=slurm_jobs&rp=autogen&precision=s. Reason: Couldn't connect to server
+slurmstepd: error: send data failed
+slurmstepd: error: slurm_curl_request: curl_easy_perform failed to send data to 192.168.1.252:8086/write?db=slurm_jobs&rp=autogen&precision=s. Reason: Couldn't connect to server
+slurmstepd: error: send data failed
+slurmstepd: error: slurm_curl_request: curl_easy_perform failed to send data to 192.168.1.252:8086/write?db=slurm_jobs&rp=autogen&precision=s. Reason: Couldn't connect to server
+slurmstepd: error: send data failed
+slurmstepd: error: slurm_curl_request: curl_easy_perform failed to send data to 192.168.1.252:8086/write?db=slurm_jobs&rp=autogen&precision=s. Reason: Couldn't connect to server
+slurmstepd: error: send data failed
+slurmstepd: error: slurm_curl_request: curl_easy_perform failed to send data to 192.168.1.252:8086/write?db=slurm_jobs&rp=autogen&precision=s. Reason: Couldn't connect to server
+slurmstepd: error: send data failed
+POT: 5
+ETN SGD TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 3.326178e+02, 4.142118e+02, 1.860281e+03
+Energy/Atom = 4.972252e+00, 5.152769e+00, 7.545113e+00
+Forces      = 6.340758e-01, 9.000203e-01, 4.996398e+00
+Stress      = 4.466220e-08, 1.103484e-07, 1.168490e-06
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN SGD VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 3.273765e+02, 4.109489e+02, 1.371510e+03
+Energy/Atom = 4.975109e+00, 5.188534e+00, 7.519404e+00
+Forces      = 6.067247e-01, 8.873492e-01, 4.990969e+00
+Stress      = 4.102058e-08, 9.821468e-08, 5.926456e-07
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN SGD TIME: 2881.0248090066016 STEPS: 5000 EPOCHS: 999 FINAL_LOSS: 39114.2969650832
+
+slurmstepd: error: slurm_curl_request: curl_easy_perform failed to send data to 192.168.1.252:8086/write?db=slurm_jobs&rp=autogen&precision=s. Reason: Couldn't connect to server
+slurmstepd: error: send data failed
+slurmstepd: error: slurm_curl_request: curl_easy_perform failed to send data to 192.168.1.252:8086/write?db=slurm_jobs&rp=autogen&precision=s. Reason: Couldn't connect to server
+slurmstepd: error: send data failed
+[prun] Master compute host = cn-037
+[prun] Resource manager = slurm
+[prun] Launch cmd = mpirun /home/peivzarenkov/.conda/envs/peter_env/bin/python train_etn_scipy_bfgs.py (family=openmpi)
+group size rank 1 = 9705
+group size rank 7 = 9706
+group size rank 2 = 9705
+group size rank 5 = 9706
+group size rank 6 = 9706
+group size rank 4 = 9706
+group size rank 0 = 9707
+group size rank 3 = 9705
+group size rank 2 = 1639
+group size rank 7 = 1640
+group size rank 5 = 1640
+group size rank 1 = 1638
+group size rank 6 = 1640
+group size rank 0 = 1640
+group size rank 4 = 1639
+group size rank 3 = 1639
+group size rank 1 = 9705
+group size rank 5 = 9706
+group size rank 2 = 9705
+group size rank 7 = 9706
+group size rank 4 = 9706
+group size rank 3 = 9705
+group size rank 6 = 9706
+POT: 1
+SCIPY BFGS TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 4.472203e+00, 6.975267e+00, 3.822362e+01
+Energy/Atom = 1.364871e-01, 3.595491e-01, 3.141567e+00
+Forces      = 3.655258e-01, 5.162509e-01, 9.562499e+00
+Stress      = 3.274092e+01, 6.515339e+01, 6.183340e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+SCIPY BFGS VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 4.551564e+00, 7.597177e+00, 4.904967e+01
+Energy/Atom = 1.713952e-01, 4.999524e-01, 3.853039e+00
+Forces      = 3.682221e-01, 5.290533e-01, 1.066415e+01
+Stress      = 2.912546e+01, 5.844760e+01, 3.114040e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+SCIPY BFGS TIME: 203.45439549908042 NIT: 197 SUCCESS: False
+
+group size rank 0 = 9707
+group size rank 1 = 1638
+group size rank 5 = 1640
+group size rank 7 = 1640
+group size rank 2 = 1639
+group size rank 4 = 1639
+group size rank 3 = 1639
+group size rank 6 = 1640
+group size rank 0 = 1640
+slurmstepd: error: slurm_curl_request: curl_easy_perform failed to send data to 192.168.1.252:8086/write?db=slurm_jobs&rp=autogen&precision=s. Reason: Couldn't connect to server
+slurmstepd: error: send data failed
+group size rank 5 = 9706
+group size rank 2 = 9705
+group size rank 7 = 9706
+group size rank 6 = 9706
+POT: 2
+SCIPY BFGS TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 4.472203e+00, 6.975267e+00, 3.822362e+01
+Energy/Atom = 1.364871e-01, 3.595491e-01, 3.141567e+00
+Forces      = 3.655258e-01, 5.162509e-01, 9.562499e+00
+Stress      = 3.274092e+01, 6.515339e+01, 6.183341e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+SCIPY BFGS VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 4.551564e+00, 7.597177e+00, 4.904967e+01
+Energy/Atom = 1.713952e-01, 4.999524e-01, 3.853039e+00
+Forces      = 3.682221e-01, 5.290533e-01, 1.066415e+01
+Stress      = 2.912546e+01, 5.844760e+01, 3.114040e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+SCIPY BFGS TIME: 269.7326384410262 NIT: 305 SUCCESS: False
+
+group size rank 0 = 9707
+group size rank 4 = 9706
+group size rank 3 = 9705
+group size rank 1 = 9705
+group size rank 5 = 1640
+group size rank 2 = 1639
+group size rank 7 = 1640
+group size rank 6 = 1640
+group size rank 0 = 1640
+group size rank 4 = 1639
+group size rank 1 = 1638
+group size rank 3 = 1639
+slurmstepd: error: slurm_curl_request: curl_easy_perform failed to send data to 192.168.1.252:8086/write?db=slurm_jobs&rp=autogen&precision=s. Reason: Couldn't connect to server
+slurmstepd: error: send data failed
+group size rank 5 = 9706
+group size rank 2 = 9705
+group size rank 7 = 9706
+POT: 3
+SCIPY BFGS TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 4.472203e+00, 6.975267e+00, 3.822362e+01
+Energy/Atom = 1.364871e-01, 3.595491e-01, 3.141567e+00
+Forces      = 3.655258e-01, 5.162509e-01, 9.562499e+00
+Stress      = 3.274092e+01, 6.515339e+01, 6.183341e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+SCIPY BFGS VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 4.551564e+00, 7.597177e+00, 4.904967e+01
+Energy/Atom = 1.713952e-01, 4.999524e-01, 3.853039e+00
+Forces      = 3.682221e-01, 5.290533e-01, 1.066415e+01
+Stress      = 2.912546e+01, 5.844760e+01, 3.114040e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+SCIPY BFGS TIME: 281.7445556819439 NIT: 304 SUCCESS: False
+
+group size rank 0 = 9707
+group size rank 6 = 9706
+group size rank 3 = 9705
+group size rank 4 = 9706
+group size rank 1 = 9705
+group size rank 5 = 1640
+group size rank 2 = 1639
+group size rank 7 = 1640
+group size rank 6 = 1640
+group size rank 0 = 1640
+group size rank 3 = 1639
+group size rank 4 = 1639
+group size rank 1 = 1638
+slurmstepd: error: slurm_curl_request: curl_easy_perform failed to send data to 192.168.1.252:8086/write?db=slurm_jobs&rp=autogen&precision=s. Reason: Couldn't connect to server
+slurmstepd: error: send data failed
+group size rank 2 = 9705
+group size rank 6 = 9706
+group size rank 1 = 9705
+group size rank 4 = 9706
+group size rank 3 = 9705
+POT: 4
+SCIPY BFGS TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 4.472203e+00, 6.975267e+00, 3.822362e+01
+Energy/Atom = 1.364871e-01, 3.595491e-01, 3.141567e+00
+Forces      = 3.655258e-01, 5.162509e-01, 9.562499e+00
+Stress      = 3.274092e+01, 6.515339e+01, 6.183340e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+SCIPY BFGS VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 4.551564e+00, 7.597177e+00, 4.904967e+01
+Energy/Atom = 1.713952e-01, 4.999524e-01, 3.853039e+00
+Forces      = 3.682221e-01, 5.290533e-01, 1.066415e+01
+Stress      = 2.912546e+01, 5.844760e+01, 3.114039e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+SCIPY BFGS TIME: 346.29013587906957 NIT: 237 SUCCESS: False
+
+group size rank 0 = 9707
+group size rank 7 = 9706
+group size rank 5 = 9706
+group size rank 2 = 1639
+group size rank 6 = 1640
+group size rank 1 = 1638
+group size rank 4 = 1639
+group size rank 3 = 1639
+group size rank 0 = 1640
+group size rank 7 = 1640
+group size rank 5 = 1640
+POT: 5
+SCIPY BFGS TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 4.472203e+00, 6.975267e+00, 3.822362e+01
+Energy/Atom = 1.364871e-01, 3.595491e-01, 3.141567e+00
+Forces      = 3.655258e-01, 5.162509e-01, 9.562499e+00
+Stress      = 3.274092e+01, 6.515339e+01, 6.183341e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+SCIPY BFGS VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 4.551564e+00, 7.597178e+00, 4.904967e+01
+Energy/Atom = 1.713952e-01, 4.999524e-01, 3.853039e+00
+Forces      = 3.682221e-01, 5.290533e-01, 1.066415e+01
+Stress      = 2.912546e+01, 5.844760e+01, 3.114040e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+SCIPY BFGS TIME: 158.00984108448029 NIT: 143 SUCCESS: False
+
+slurmstepd: error: slurm_curl_request: curl_easy_perform failed to send data to 192.168.1.252:8086/write?db=slurm_jobs&rp=autogen&precision=s. Reason: Couldn't connect to server
+slurmstepd: error: send data failed
+[prun] Master compute host = cn-037
+[prun] Resource manager = slurm
+[prun] Launch cmd = mpirun /home/peivzarenkov/.conda/envs/peter_env/bin/python train_etn_native_bfgs.py (family=openmpi)
+group size rank 1 = 9705
+group size rank 5 = 9706
+group size rank 6 = 9706
+group size rank 4 = 9706
+
+=== POT 1 ===
+init params head: [-0.00076989  0.00021813 -0.00073322 -0.00051882 -0.00034572]
+group size rank 0 = 9707
+group size rank 3 = 9705
+group size rank 2 = 9705
+group size rank 7 = 9706
+group size rank 1 = 1638
+group size rank 5 = 1640
+group size rank 6 = 1640
+group size rank 4 = 1639
+group size rank 0 = 1640
+group size rank 3 = 1639
+group size rank 2 = 1639
+group size rank 7 = 1640
+init loss: 1126980.4535551532
+[MLIP] Starting pretraining...
+[MLIP] Rescaling potential...
+[MLIP] Potential rescaling completed
+[MLIP] 0	6964.1	9.06351e+17	1.29093e+06	14345.4	5868.66
+[MLIP] 1	4.91857e+18	1.17616e+08	2144.1
+[MLIP] 2	4.36693e+20	5.6158e+09	2063.27	1185.84
+[MLIP] 3	4.05733e+17	5.97743e+06	636.287	635.514	238.348
+[MLIP] 4	5.10961e+13	42111.8	90.1111
+[MLIP] 5	1.25951e+13	18158.5	49.0242	47.6453	66.2684	30.9798
+[MLIP] 6	2.61381e+10	1412.53	24.6871
+[MLIP] 7	1.90391e+07	23.5368	17.4734
+[MLIP] 8	7.33565e+06	133.77	15.0391	13.3895
+[MLIP] 9	1.53386e+07	10.2126
+[MLIP] 10	3.86517e+07	30.0716	9.47655
+[MLIP] 11	749622	13.9525	7.74605
+[MLIP] 12	4.82297e+06	8.23514	6.5837
+[MLIP] 13	9158.37	8.20034	6.18279
+[MLIP] 14	112909	8.03334	5.90253
+[MLIP] 15	24.3309	5.37318
+[MLIP] 16	11.3327	4.85365
+[MLIP] 17	36.2608	4.76802	4.60889
+[MLIP] 18	7.75621	4.50338
+[MLIP] 19	4.84288	4.44271
+[MLIP] 20	4.30968	4.23764
+[MLIP] 21	4.54995	4.18697
+[MLIP] 22	4.47739	4.14928
+[MLIP] 23	4.34534	4.08718
+[MLIP] 24	4.04244	4.02295
+[MLIP] 25	4.50238	3.98869
+[MLIP] 26	4.08747	3.96249
+[MLIP] 27	3.89466	3.86618
+[MLIP] 28	9.98905	3.84042
+[MLIP] 29	3.80826	3.76854
+[MLIP] 30	3.83118	3.71543
+[MLIP] 31	3.75617	3.66925
+[MLIP] 32	3.62181
+[MLIP] 33	3.55478
+[MLIP] 34	3.54455	3.4927
+[MLIP] 35	3.51448	3.39502
+[MLIP] 36	3.27603
+[MLIP] 37	3.18493
+[MLIP] 38	3.04502
+[MLIP] 39	2.89977	2.88732
+[MLIP] 40	4.77312	2.83589
+[MLIP] 41	27.2028	2.70327
+[MLIP] 42	2.85934	2.58921
+[MLIP] 43	2.29968
+[MLIP] 44	2.08471
+[MLIP] 45	4.21331	2.01401
+[MLIP] 46	29.7656	1.99889	1.99272	1.98008
+[MLIP] 47	3.49062	1.95434
+[MLIP] 48	2.64757	1.87828
+[MLIP] 49	1.83716
+[MLIP] 50	1.79227
+[MLIP] 51	1.78367	1.76269
+[MLIP] 52	1.74258
+[MLIP] 53	1.73138
+[MLIP] 54	1.71957
+[MLIP] 55	1.71569
+[MLIP] 56	1.71426
+[MLIP] 57	1.71333	1.713
+[MLIP] 58	1.71235	1.71213
+[MLIP] 59	1.71189
+[MLIP] 60	1.7118	1.71173
+[MLIP] 61	1.71161
+[MLIP] 62	1.71159
+[MLIP] 63	1.71158	1.71158
+[MLIP] 64	1.71157	1.71155	1.71153
+[MLIP] 65	1.71152
+[MLIP] 66	1.71151	1.7115
+[MLIP] 67	1.71149	1.71145	1.7114	1.71132
+[MLIP] 68	1.71073	1.7098	1.7089
+[MLIP] 69	1.70488	1.69968
+[MLIP] 70	1.69363
+[MLIP] 71	1.69411	1.69015
+[MLIP] 72	1.68711
+[MLIP] 73	1.68324	1.68244
+[MLIP] 74	1.67899
+[MLIP] Number of iterations exceeded the threshold. Stopping the training...
+[MLIP] Pretraining completed
+[MLIP] Rescaling potential...
+[MLIP] Potential rescaling completed
+[MLIP] 0	1.67898	43461.3	84.7357	2.05865	1.68244	1.67894	1.67891
+[MLIP] 1	6961.76	15.3918	1.73316	1.67935	1.67891	1.6789
+[MLIP] 2	5.49201	1.70478	1.67909	1.6788
+[MLIP] 3	3.04459	1.69118	1.67873	1.6786
+[MLIP] 4	2.43706	1.68461	1.67861	1.67854
+[MLIP] 5	2.01869	1.68173	1.67846
+[MLIP] 6	3.25636	1.68839	1.67834	1.67825
+[MLIP] 7	4.90499	1.69642	1.67827	1.67808
+[MLIP] 8	2.60794	1.68406	1.67813	1.67806
+[MLIP] 9	1.67956	1.67779
+[MLIP] 10	1.68005	1.67696
+[MLIP] 11	1.68325	1.67669
+[MLIP] 12	1.67678	1.67645
+[MLIP] 13	1.67986	1.67597
+[MLIP] 14	1.67814	1.67569
+[MLIP] 15	1.67811	1.6755
+[MLIP] 16	1.68226	1.67529
+[MLIP] 17	1.67524	1.67515
+[MLIP] 18	1.67668	1.67504
+[MLIP] 19	1.67652	1.67501	1.675
+[MLIP] 20	1.67482
+[MLIP] 21	1.67638	1.67471
+[MLIP] 22	1.67446
+[MLIP] 23	1.67465	1.67436
+[MLIP] 24	1.67428	1.67418
+[MLIP] 25	1.67401	1.67399
+[MLIP] 26	1.67381
+[MLIP] 27	1.67357
+[MLIP] 28	1.6734
+[MLIP] 29	1.67302
+[MLIP] 30	1.67257
+[MLIP] 31	1.67134
+[MLIP] 32	1.67482	1.67086
+[MLIP] 33	1.67014	1.66971
+[MLIP] 34	1.66877	1.66855	1.66833
+[MLIP] 35	1.70901	1.66765
+[MLIP] 36	1.68945	1.66677	1.66667	1.66679	1.66636
+[MLIP] 37	1.66828	1.66581
+[MLIP] 38	1.67523	1.66435
+[MLIP] 39	1.74049	1.66315	1.66305	1.6933	1.66233	1.66227	1.66217	1.66206
+[MLIP] 40	1.66671	1.66073
+[MLIP] 41	2.05172	1.66014
+[MLIP] 42	1.71181	1.65873
+[MLIP] 43	1.65996	1.65792
+[MLIP] 44	1.65924	1.65773
+[MLIP] 45	1.65788	1.65749
+[MLIP] 46	1.65815	1.65737
+[MLIP] 47	1.65747	1.6573
+[MLIP] 48	1.6572
+[MLIP] 49	1.65691
+[MLIP] 50	1.6566
+[MLIP] 51	1.65628
+[MLIP] 52	1.65593
+[MLIP] 53	1.65602	1.65583
+[MLIP] 54	1.65576
+[MLIP] 55	1.65572
+[MLIP] 56	1.65568
+[MLIP] 57	1.65564	1.65563
+[MLIP] 58	1.65559	1.65556
+[MLIP] 59	1.65552
+[MLIP] 60	1.6555
+[MLIP] 61	1.65549
+[MLIP] 62	1.65549
+[MLIP] 63	1.65549	1.65549
+[MLIP] 64	1.65548	1.65548
+[MLIP] 65	1.65548	1.65547
+[MLIP] 66	1.65547	1.65547
+[MLIP] 67	1.65547
+[MLIP] 68	1.65547
+[MLIP] 69	1.65547
+[MLIP] 70	1.65547
+[MLIP] 71	1.65547	1.65547
+[MLIP] 72	1.65547	1.65547	1.65547
+[MLIP] 73	1.65547
+[MLIP] 74	1.65547
+[MLIP] 75	1.65547	1.65547
+[MLIP] 76	1.65547
+[MLIP] 77	1.65547	1.65547
+[MLIP] 78	1.65547	1.65547	1.65547	1.65547
+[MLIP] 79	1.65547
+[MLIP] 80	1.65547
+[MLIP] 81	1.65547
+[MLIP] 82	1.65547
+[MLIP] 83	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547
+[MLIP] 84	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547
+[MLIP] 85	1.65547	1.65547	1.65547
+[MLIP] 86	1.65547	1.65547
+[MLIP] 87	1.65547	1.65547	1.65547	1.65547	 Line search: prev_x == curr_x	1.65547
+[MLIP] 88	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547
+[MLIP] 89	1.65547	1.65547
+[MLIP] 90	1.65547	1.65547
+[MLIP] 91	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547
+[MLIP] 92	1.65547	1.65547	1.65547
+[MLIP] 93	1.65547	1.65547
+[MLIP] 94	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547
+[MLIP] 95	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	 Line search: prev_x == curr_x	1.65547
+[MLIP] 96	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	 Line search: prev_x == curr_x	1.65547
+[MLIP] Stepping in accend direction. Stopping the training...
+group size rank 5 = 9706
+group size rank 6 = 9706
+group size rank 4 = 9706
+group size rank 1 = 9705
+group size rank 3 = 9705
+group size rank 2 = 9705
+final params head: [ 6.40890947  1.9261134  -2.59332838  3.41169794 -4.89977414]
+final loss: 211.41355880697174
+TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 4.493672e+00, 7.557570e+00, 5.375574e+01
+Energy/Atom = 1.440744e-01, 4.173344e-01, 3.076669e+00
+Forces      = 3.643953e-01, 5.151704e-01, 8.833204e+00
+Stress      = 3.082118e+01, 6.206519e+01, 5.033179e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 3.875852e+00, 6.054119e+00, 2.810512e+01
+Energy/Atom = 1.608446e-01, 4.768755e-01, 3.089187e+00
+Forces      = 3.673885e-01, 5.234715e-01, 9.467325e+00
+Stress      = 2.737345e+01, 5.515731e+01, 3.007778e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+TRAIN_TIME: 226.26900490745902
+
+=== POT 2 ===
+init params head: [ 0.00066968 -0.00079041  0.00048928 -0.000279   -0.00028138]
+group size rank 0 = 9707
+group size rank 7 = 9706
+group size rank 6 = 1640
+group size rank 5 = 1640
+group size rank 1 = 1638
+group size rank 4 = 1639
+group size rank 3 = 1639
+group size rank 2 = 1639
+group size rank 0 = 1640
+group size rank 7 = 1640
+init loss: 1126993.7795730769
+[MLIP] Starting pretraining...
+[MLIP] Rescaling potential...
+[MLIP] Potential rescaling completed
+[MLIP] 0	7108.2	2.07043e+17	2.41552e+06	4016.72
+[MLIP] 1	2.43477e+23	1.20928e+12	721.141
+[MLIP] 2	9.74142e+18	4.0179e+08	3239.36	467.077
+[MLIP] 3	5.95029e+19	8.14693e+08	80.8522
+[MLIP] 4	2.54135e+14	1.61979e+06	744.669	78.0415	74.6079
+[MLIP] 5	1.63267e+15	161408	47.505
+[MLIP] 6	1.63522e+11	3341.18	42.7182	41.0322	39.2956
+[MLIP] 7	3.2944e+08	41.1229	27.666
+[MLIP] 8	1.87108e+10	127.501	14.4082
+[MLIP] 9	2.66304e+06	15.3299	11.8178
+[MLIP] 10	100.599	8.12808
+[MLIP] 11	4129.7	8.56608	7.60492
+[MLIP] 12	30643.5	8.43477	7.13794
+[MLIP] 13	19.2323	6.74367
+[MLIP] 14	8.90221	6.45644
+[MLIP] 15	6.37965	5.85458
+[MLIP] 16	8.95273	5.71821
+[MLIP] 17	28.7732	5.54055
+[MLIP] 18	5.33498	5.23647
+[MLIP] 19	5.33206	5.07648
+[MLIP] 20	4.9115
+[MLIP] 21	4.75544	4.73333
+[MLIP] 22	4.56261	4.49763
+[MLIP] 23	4.44665	4.32535
+[MLIP] 24	4.18138
+[MLIP] 25	4.24702	3.97291
+[MLIP] 26	3.89674	3.8656
+[MLIP] 27	3.71765
+[MLIP] 28	3.86611	3.58709
+[MLIP] 29	3.36754
+[MLIP] 30	3.31048	3.27403
+[MLIP] 31	3.13001
+[MLIP] 32	4.90302	3.05472
+[MLIP] 33	2.96375
+[MLIP] 34	2.84509
+[MLIP] 35	3.2007	2.74049
+[MLIP] 36	2.55961
+[MLIP] 37	2.54713	2.39056
+[MLIP] 38	2.42365	2.26255
+[MLIP] 39	2.09986	2.0332
+[MLIP] 40	1.91923
+[MLIP] 41	3.15531	1.89791
+[MLIP] 42	2.02622	1.87042
+[MLIP] 43	1.85748
+[MLIP] 44	1.90342	1.84993
+[MLIP] 45	1.84319
+[MLIP] 46	1.83509
+[MLIP] 47	1.82227
+[MLIP] 48	1.79549	1.7862
+[MLIP] 49	1.75302
+[MLIP] 50	1.72685
+[MLIP] 51	1.72038
+[MLIP] 52	1.71831
+[MLIP] 53	1.71762
+[MLIP] 54	1.71719	1.71678
+[MLIP] 55	1.71571	1.71418
+[MLIP] 56	1.71057
+[MLIP] 57	1.70787
+[MLIP] 58	1.70683
+[MLIP] 59	1.7067
+[MLIP] 60	1.70665
+[MLIP] 61	1.7066	1.70654
+[MLIP] 62	1.70638	1.70613	1.70594
+[MLIP] 63	1.70519	1.7045
+[MLIP] 64	1.70399
+[MLIP] 65	1.70388
+[MLIP] 66	1.70382
+[MLIP] 67	1.70374	1.70368
+[MLIP] 68	1.70349	1.70314	1.70249	1.70136	1.69987
+[MLIP] 69	1.69272	1.69368	1.68937
+[MLIP] 70	1.68247
+[MLIP] 71	1.6768
+[MLIP] 72	1.67186
+[MLIP] 73	1.66914	1.66795
+[MLIP] 74	1.6661
+[MLIP] Number of iterations exceeded the threshold. Stopping the training...
+[MLIP] Pretraining completed
+[MLIP] Rescaling potential...
+[MLIP] Potential rescaling completed
+[MLIP] 0	1.6661	1.85316e+07	22284.7	47.2193	1.8434	1.66751	1.66611	1.66609
+[MLIP] 1	1992.48	14.3557	1.75329	1.66693	1.66594
+[MLIP] 2	9.21497	1.70957	1.66638	1.66592
+[MLIP] 3	1.81757	1.66738	1.66573
+[MLIP] 4	1.67976	1.66558	1.66547
+[MLIP] 5	1.71313	1.66563	1.66524
+[MLIP] 6	1.68361	1.6643
+[MLIP] 7	1.69797	1.66441	1.66404
+[MLIP] 8	1.68216	1.66395	1.66368
+[MLIP] 9	1.68895	1.66368	1.66342
+[MLIP] 10	1.71199	1.66252
+[MLIP] 11	1.66371	1.66145
+[MLIP] 12	1.65983
+[MLIP] 13	1.6587	1.65845
+[MLIP] 14	1.65799
+[MLIP] 15	1.65877	1.65787
+[MLIP] 16	1.65773
+[MLIP] 17	1.65757
+[MLIP] 18	1.65738
+[MLIP] 19	1.65717
+[MLIP] 20	1.65704
+[MLIP] 21	1.65691
+[MLIP] 22	1.65704	1.65682
+[MLIP] 23	1.65666	1.65658
+[MLIP] 24	1.65646
+[MLIP] 25	1.65666	1.65637
+[MLIP] 26	1.65622
+[MLIP] 27	1.65607	1.65601
+[MLIP] 28	1.65582
+[MLIP] 29	1.65571	1.65567
+[MLIP] 30	1.6556
+[MLIP] 31	1.65559	1.65556
+[MLIP] 32	1.65554
+[MLIP] 33	1.65553	1.65553
+[MLIP] 34	1.65552
+[MLIP] 35	1.65551	1.6555
+[MLIP] 36	1.65548
+[MLIP] 37	1.65547
+[MLIP] 38	1.65547
+[MLIP] 39	1.65547
+[MLIP] 40	1.65547
+[MLIP] 41	1.65547	1.65547
+[MLIP] 42	1.65547	1.65547
+[MLIP] 43	1.65547
+[MLIP] 44	1.65547
+[MLIP] 45	1.65547
+[MLIP] 46	1.65547
+[MLIP] 47	1.65547
+[MLIP] 48	1.65547
+[MLIP] 49	1.65547
+[MLIP] 50	1.65547	1.65547	1.65547	1.65547
+[MLIP] 51	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	 Line search: prev_x == curr_x	1.65547
+[MLIP] 52	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547
+[MLIP] 53	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547
+[MLIP] 54	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547
+[MLIP] 55	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	 Line search: prev_x == curr_x	1.65547
+[MLIP] Stepping in accend direction. Stopping the training...
+group size rank 3 = 9705
+group size rank 6 = 9706
+group size rank 1 = 9705
+group size rank 4 = 9706
+final params head: [11.95384988 -4.96615278  2.44523026 -2.43802753  0.73292106]
+final loss: 211.41355903284497
+TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 4.493672e+00, 7.557570e+00, 5.375574e+01
+Energy/Atom = 1.440744e-01, 4.173344e-01, 3.076669e+00
+Forces      = 3.643953e-01, 5.151704e-01, 8.833204e+00
+Stress      = 3.082118e+01, 6.206519e+01, 5.033179e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 3.875852e+00, 6.054119e+00, 2.810512e+01
+Energy/Atom = 1.608446e-01, 4.768755e-01, 3.089187e+00
+Forces      = 3.673885e-01, 5.234715e-01, 9.467325e+00
+Stress      = 2.737345e+01, 5.515731e+01, 3.007778e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+TRAIN_TIME: 153.51220247149467
+
+=== POT 3 ===
+init params head: [ 9.78023027e-04  9.90894537e-05 -4.37105396e-04 -8.45420868e-04
+ -1.11061008e-04]
+group size rank 0 = 9707
+group size rank 2 = 9705
+group size rank 7 = 9706
+group size rank 5 = 9706
+group size rank 3 = 1639
+group size rank 6 = 1640
+group size rank 1 = 1638
+group size rank 4 = 1639
+group size rank 0 = 1640
+group size rank 2 = 1639
+group size rank 7 = 1640
+group size rank 5 = 1640
+init loss: 1126860.1897347053
+[MLIP] Starting pretraining...
+[MLIP] Rescaling potential...
+[MLIP] Potential rescaling completed
+[MLIP] 0	7100.04	3.0417e+17	5.29568e+06	4238.96
+[MLIP] 1	1.00071e+22	7.78362e+10	1081.67
+[MLIP] 2	6.66249e+20	1.17542e+10	2979.84	305.577	212.59
+[MLIP] 3	4.40523e+14	283427	165.289	164.834
+[MLIP] 4	5.65572e+12	896.268	112.652
+[MLIP] 5	1.60712e+13	7314.44	64.8386
+[MLIP] 6	1.41183e+14	56195.1	71.0362	56.7877
+[MLIP] 7	7.93247e+10	1180.11	24.3647
+[MLIP] 8	2.25137e+09	159.653	20.5749	20.1938	19.6888
+[MLIP] 9	330753	25.3818	14.8666
+[MLIP] 10	2.07773e+08	34.1742	10.6422
+[MLIP] 11	1.26907e+10	584.522	8.69441
+[MLIP] 12	18373	20.5375	8.19775
+[MLIP] 13	583119	8.444	6.8586
+[MLIP] 14	1.75431e+07	15.8269	6.14439
+[MLIP] 15	65391.6	5.36905
+[MLIP] 16	1855.88	4.05826
+[MLIP] 17	259.695	3.27355
+[MLIP] 18	6.52203	2.60841
+[MLIP] 19	3.73311	2.42468
+[MLIP] 20	2.32981	2.26728
+[MLIP] 21	2.34455	2.19923
+[MLIP] 22	2.20766	2.14022
+[MLIP] 23	2.09337	2.07098
+[MLIP] 24	2.15596	2.03304
+[MLIP] 25	2.02095	2.00572
+[MLIP] 26	2.0042	1.99453
+[MLIP] 27	2.00156	1.99066
+[MLIP] 28	1.98219
+[MLIP] 29	1.97113
+[MLIP] 30	1.96323
+[MLIP] 31	1.95511
+[MLIP] 32	1.9519
+[MLIP] 33	1.94906
+[MLIP] 34	1.9441	1.9391
+[MLIP] 35	1.9324
+[MLIP] 36	1.91898
+[MLIP] 37	1.90618	1.90065
+[MLIP] 38	1.8664
+[MLIP] 39	1.79762	1.78252	1.7692
+[MLIP] 40	1.73094
+[MLIP] 41	1.9464	1.71224
+[MLIP] 42	1.73377	1.70291
+[MLIP] 43	1.70435	1.69805
+[MLIP] 44	1.699	1.69676
+[MLIP] 45	1.69358
+[MLIP] 46	1.69004
+[MLIP] 47	1.68652
+[MLIP] 48	1.68624	1.6861
+[MLIP] 49	1.68576
+[MLIP] 50	1.68525
+[MLIP] 51	1.68483
+[MLIP] 52	1.68472
+[MLIP] 53	1.6846	1.68454
+[MLIP] 54	1.6843	1.68403
+[MLIP] 55	1.6831	1.6824
+[MLIP] 56	1.68147	1.68097
+[MLIP] 57	1.67917	1.67798
+[MLIP] 58	1.67604
+[MLIP] 59	1.67441
+[MLIP] 60	1.67222	1.67081
+[MLIP] 61	1.66672	1.66161
+[MLIP] 62	1.65681
+[MLIP] 63	1.65562
+[MLIP] 64	1.65548
+[MLIP] 65	1.65547
+[MLIP] 66	1.65547
+[MLIP] 67	1.65547
+[MLIP] 68	1.65547
+[MLIP] 69	1.65547
+[MLIP] 70	1.65547
+[MLIP] 71	1.65547
+[MLIP] 72	1.65547
+[MLIP] 73	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547
+[MLIP] 74	1.65547	1.65547	1.65547	1.65547	1.65547	 Line search: prev_x == curr_x	1.65547
+[MLIP] Number of iterations exceeded the threshold. Stopping the training...
+[MLIP] Pretraining completed
+[MLIP] Rescaling potential...
+[MLIP] Potential rescaling completed
+[MLIP] 0	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547
+[MLIP] 1	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547
+[MLIP] 2	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547
+[MLIP] Stepping in accend direction. Stopping the training...
+group size rank 6 = 9706
+final params head: [-8.09793933  4.83250864 -2.74168474  0.79698727  0.56105883]
+final loss: 211.41355903586435
+TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 4.493672e+00, 7.557570e+00, 5.375574e+01
+Energy/Atom = 1.440744e-01, 4.173344e-01, 3.076669e+00
+Forces      = 3.643953e-01, 5.151704e-01, 8.833204e+00
+Stress      = 3.082118e+01, 6.206519e+01, 5.033179e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 3.875852e+00, 6.054119e+00, 2.810512e+01
+Energy/Atom = 1.608446e-01, 4.768755e-01, 3.089187e+00
+Forces      = 3.673885e-01, 5.234715e-01, 9.467325e+00
+Stress      = 2.737345e+01, 5.515731e+01, 3.007778e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+TRAIN_TIME: 103.8700453042984
+
+=== POT 4 ===
+init params head: [ 0.00056766  0.00026967 -0.00050191  0.00051615 -0.00037385]
+group size rank 0 = 9707
+group size rank 1 = 9705
+group size rank 4 = 9706
+group size rank 3 = 9705
+group size rank 7 = 9706
+group size rank 2 = 9705
+group size rank 5 = 9706
+group size rank 6 = 1640
+group size rank 0 = 1640
+group size rank 4 = 1639
+group size rank 1 = 1638
+group size rank 3 = 1639
+group size rank 2 = 1639
+group size rank 7 = 1640
+group size rank 5 = 1640
+slurmstepd: error: slurm_curl_request: curl_easy_perform failed to send data to 192.168.1.252:8086/write?db=slurm_jobs&rp=autogen&precision=s. Reason: Couldn't connect to server
+slurmstepd: error: send data failed
+init loss: 1127063.6544331987
+[MLIP] Starting pretraining...
+[MLIP] Rescaling potential...
+[MLIP] Potential rescaling completed
+[MLIP] 0	2190.81	6.14597e+16	5.76703e+06	6355.13	1109.6
+[MLIP] 1	1.87118e+19	1.20786e+08	6317.07	1128.46	1028.01
+[MLIP] 2	3.5912e+14	8.26171e+06	2241.26	462.299
+[MLIP] 3	1.60074e+17	1.24578e+06	3286.37	241.046
+[MLIP] 4	8.73486e+14	5133.35	322.75	169.172
+[MLIP] 5	1.46818e+17	1.76541e+06	183.067	132.733
+[MLIP] 6	2.13936e+12	6911.32	119.07	113.275	105.526
+[MLIP] 7	4.3418e+12	11018.4	62.9442
+[MLIP] 8	1.98711e+11	17678.1	105.836	58.3482
+[MLIP] 9	1.31045e+11	709.973	48.1229
+[MLIP] 10	2.08579e+09	418.778	49.6237	45.517
+[MLIP] 11	5.2897e+10	507.179	32.2531
+[MLIP] 12	1.32317e+08	315.803	29.2292
+[MLIP] 13	9.12823e+06	33.1146	16.9609
+[MLIP] 14	818218	49.8851	15.2487
+[MLIP] 15	127827	20.0194	14.4743
+[MLIP] 16	8561.17	13.3216	13.2649	12.6398
+[MLIP] 17	7776.33	14.0145	9.92009
+[MLIP] 18	18134.1	6.67027
+[MLIP] 19	20336.7	15.8552	6.28646
+[MLIP] 20	10.7751	5.21816
+[MLIP] 21	881.71	12.2033	4.58778
+[MLIP] 22	222.451	6.7478	4.47696
+[MLIP] 23	23.9738	4.24413	4.15276
+[MLIP] 24	296.412	5.48135	3.73509
+[MLIP] 25	4.85417	3.44424
+[MLIP] 26	145.63	4.55753	3.26787
+[MLIP] 27	8.48895	3.23576	3.18111
+[MLIP] 28	7.52158	2.4685
+[MLIP] 29	2.09189
+[MLIP] 30	2.01302
+[MLIP] 31	1.91892
+[MLIP] 32	1.85338
+[MLIP] 33	1.78484
+[MLIP] 34	1.74719
+[MLIP] 35	1.73395
+[MLIP] 36	1.72382
+[MLIP] 37	1.71886
+[MLIP] 38	1.71413
+[MLIP] 39	1.71205
+[MLIP] 40	1.71123
+[MLIP] 41	1.71083
+[MLIP] 42	1.71044
+[MLIP] 43	1.71012
+[MLIP] 44	1.70997
+[MLIP] 45	1.70992
+[MLIP] 46	1.70988	1.70986
+[MLIP] 47	1.70979	1.70966	1.70944	1.70922
+[MLIP] 48	1.70893	1.70869
+[MLIP] 49	1.70836	1.70792
+[MLIP] 50	1.70709	1.70644
+[MLIP] 51	1.70483	1.70205	1.69825
+[MLIP] 52	1.69314
+[MLIP] 53	1.68885	1.6873
+[MLIP] 54	1.68298	1.6765	1.67218
+[MLIP] 55	1.66558	1.65905
+[MLIP] 56	1.65599
+[MLIP] 57	1.65548
+[MLIP] 58	1.65547
+[MLIP] 59	1.65547
+[MLIP] 60	1.65547
+[MLIP] 61	1.65547
+[MLIP] 62	1.65547
+[MLIP] 63	1.65547
+[MLIP] 64	1.65547
+[MLIP] 65	1.65547
+[MLIP] 66	1.65547	1.65547	1.65547	1.65547	 Line search: prev_x == curr_x	1.65547
+[MLIP] 67	1.65547	1.65547	1.65547
+[MLIP] 68	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	 Line search: prev_x == curr_x	1.65547
+[MLIP] 69	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547
+[MLIP] 70	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	 Line search: prev_x == curr_x	1.65547
+[MLIP] Stepping in accend direction. Stopping the training...
+[MLIP] Pretraining completed
+[MLIP] Rescaling potential...
+[MLIP] Potential rescaling completed
+[MLIP] 0	1.65547	1.65547	1.65547
+[MLIP] 1	1.65547	1.65547
+[MLIP] 2	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547
+[MLIP] 3	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547
+[MLIP] 4	1.65547	1.65547
+[MLIP] 5	1.65547	1.65547
+[MLIP] 6	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547
+[MLIP] 7	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547
+[MLIP] 8	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	 Line search: prev_x == curr_x	1.65547
+[MLIP] Stepping in accend direction. Stopping the training...
+group size rank 6 = 9706
+group size rank 1 = 9705
+group size rank 4 = 9706
+final params head: [ 15.99212895 -10.23004719   6.16089254  -0.7202435    1.73637677]
+final loss: 211.41355896400927
+TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 4.493672e+00, 7.557570e+00, 5.375574e+01
+Energy/Atom = 1.440744e-01, 4.173344e-01, 3.076669e+00
+Forces      = 3.643953e-01, 5.151704e-01, 8.833204e+00
+Stress      = 3.082118e+01, 6.206519e+01, 5.033179e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 3.875852e+00, 6.054119e+00, 2.810512e+01
+Energy/Atom = 1.608446e-01, 4.768755e-01, 3.089187e+00
+Forces      = 3.673885e-01, 5.234715e-01, 9.467325e+00
+Stress      = 2.737345e+01, 5.515731e+01, 3.007778e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+TRAIN_TIME: 133.7927638553083
+
+=== POT 5 ===
+init params head: [-0.00077302  0.00094897  0.00045747 -0.00029706  0.00041521]
+group size rank 0 = 9707
+group size rank 3 = 9705
+group size rank 2 = 9705
+group size rank 7 = 9706
+group size rank 6 = 1640
+group size rank 1 = 1638
+group size rank 4 = 1639
+group size rank 0 = 1640
+group size rank 3 = 1639
+group size rank 5 = 9706
+group size rank 2 = 1639
+group size rank 7 = 1640
+group size rank 5 = 1640
+init loss: 1126892.7868736119
+[MLIP] Starting pretraining...
+[MLIP] Rescaling potential...
+[MLIP] Potential rescaling completed
+[MLIP] 0	7062.26	9.70583e+17	930095	8542.85	4477.63
+[MLIP] 1	3.30164e+23	1.87654e+12	18773.9	2429.95	2007.14	2621.62	1418.79
+[MLIP] 2	3.85303e+20	4.15279e+09	644.805
+[MLIP] 3	3.08247e+20	6.63529e+09	6208.59	368.286
+[MLIP] 4	7.12725e+12	2572.84	265.444	187.046
+[MLIP] 5	6.27509e+15	622153	171.925	170.756	148.479
+[MLIP] 6	5.17197e+12	14511	39.694
+[MLIP] 7	2.25858e+11	751.623	33.502	17.2656
+[MLIP] 8	1.33497e+10	657.416	15.125
+[MLIP] 9	3.15013e+07	114.177	12.7765
+[MLIP] 10	1.18188e+08	58.8044	9.10089
+[MLIP] 11	3.11851e+08	56.214	6.93043
+[MLIP] 12	1.50282e+07	31.7255	5.78629
+[MLIP] 13	1.08671e+08	60.9551	4.88866
+[MLIP] 14	22437.4	4.67256	3.84063
+[MLIP] 15	1.50672e+07	20.4945	3.26615
+[MLIP] 16	15.4825	2.85649
+[MLIP] 17	12.8091	2.38365
+[MLIP] 18	366.179	2.40332	2.24822
+[MLIP] 19	9.38652	2.12453	2.04947
+[MLIP] 20	3.61645	1.98996
+[MLIP] 21	3.1765	1.93768
+[MLIP] 22	2.07349	1.89218
+[MLIP] 23	2.2893	1.87066
+[MLIP] 24	2.12362	1.83437
+[MLIP] 25	1.82801	1.80967
+[MLIP] 26	1.81576	1.77246
+[MLIP] 27	1.82104	1.76492
+[MLIP] 28	1.82392	1.75563
+[MLIP] 29	1.9627	1.75151	1.74976
+[MLIP] 30	1.74503
+[MLIP] 31	1.74551	1.74131
+[MLIP] 32	1.75107	1.73719
+[MLIP] 33	1.72695
+[MLIP] 34	1.72375
+[MLIP] 35	1.72235
+[MLIP] 36	1.72016	1.71921
+[MLIP] 37	1.71741
+[MLIP] 38	1.71597
+[MLIP] 39	1.71506	1.7143
+[MLIP] 40	1.71271	1.71179
+[MLIP] 41	1.7111
+[MLIP] 42	1.71062
+[MLIP] 43	1.71039
+[MLIP] 44	1.71022	1.71012
+[MLIP] 45	1.71001	1.70997
+[MLIP] 46	1.7098	1.70963
+[MLIP] 47	1.70903	1.70845
+[MLIP] 48	1.70805
+[MLIP] 49	1.70766	1.70728
+[MLIP] 50	1.7062	1.70428	1.70132	1.69883
+[MLIP] 51	1.69315	1.68975
+[MLIP] 52	1.68637
+[MLIP] 53	1.68176	1.67465	1.67093
+[MLIP] 54	1.65975
+[MLIP] 55	1.65578
+[MLIP] 56	1.65559
+[MLIP] 57	1.65552
+[MLIP] 58	1.65547
+[MLIP] 59	1.65547
+[MLIP] 60	1.65547
+[MLIP] 61	1.65547
+[MLIP] 62	1.65547
+[MLIP] 63	1.65547
+[MLIP] 64	1.65547
+[MLIP] 65	1.65547
+[MLIP] 66	1.65547
+[MLIP] 67	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	 Line search: prev_x == curr_x	slurmstepd: error: slurm_curl_request: curl_easy_perform failed to send data to 192.168.1.252:8086/write?db=slurm_jobs&rp=autogen&precision=s. Reason: Couldn't connect to server
+slurmstepd: error: send data failed
+1.65547
+[MLIP] 68	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547
+[MLIP] 69	1.65547	1.65547
+[MLIP] 70	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	 Line search: prev_x == curr_x	1.65547
+[MLIP] 71	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	 Line search: prev_x == curr_x	1.65547
+[MLIP] 72	1.65547	1.65547
+[MLIP] 73	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	 Line search: prev_x == curr_x	1.65547
+[MLIP] 74	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	 Line search: prev_x == curr_x	1.65547
+[MLIP] Number of iterations exceeded the threshold. Stopping the training...
+[MLIP] Pretraining completed
+[MLIP] Rescaling potential...
+[MLIP] Potential rescaling completed
+[MLIP] 0	1.65547	1.65547	1.65547
+[MLIP] 1	1.65547	1.65547
+[MLIP] 2	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547
+[MLIP] 3	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547
+[MLIP] 4	1.65547	1.65547
+[MLIP] 5	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547
+[MLIP] 6	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547
+[MLIP] 7	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547	1.65547
+[MLIP] Stepping in accend direction. Stopping the training...
+final params head: [-3.4379221   3.20350542 -0.450417   -0.67549252 -0.58310022]
+final loss: 211.41355903350257
+TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 4.493672e+00, 7.557570e+00, 5.375574e+01
+Energy/Atom = 1.440744e-01, 4.173344e-01, 3.076669e+00
+Forces      = 3.643953e-01, 5.151704e-01, 8.833204e+00
+Stress      = 3.082118e+01, 6.206519e+01, 5.033179e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 3.875852e+00, 6.054119e+00, 2.810512e+01
+Energy/Atom = 1.608446e-01, 4.768755e-01, 3.089187e+00
+Forces      = 3.673885e-01, 5.234715e-01, 9.467325e+00
+Stress      = 2.737345e+01, 5.515731e+01, 3.007778e+02
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+TRAIN_TIME: 140.75978729873896
+slurmstepd: error: slurm_curl_request: curl_easy_perform failed to send data to 192.168.1.252:8086/write?db=slurm_jobs&rp=autogen&precision=s. Reason: Couldn't connect to server
+slurmstepd: error: send data failed
+slurmstepd: error: slurm_curl_request: curl_easy_perform failed to send data to 192.168.1.252:8086/write?db=slurm_jobs&rp=autogen&precision=s. Reason: Couldn't connect to server
+slurmstepd: error: send data failed

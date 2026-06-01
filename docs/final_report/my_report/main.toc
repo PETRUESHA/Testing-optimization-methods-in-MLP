@@ -1,0 +1,57 @@
+\babel@toc {russian}{}\relax 
+\contentsline {section}{Аннотация}{4}{section*.2}%
+\contentsline {section}{Ключевые слова}{4}{section*.3}%
+\contentsline {section}{\numberline {1}Введение}{5}{section.1}%
+\contentsline {section}{\numberline {2}Теоретические основы машинно-обучаемых потенциалов}{7}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Постановка задачи регрессии энергий и сил}{7}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Moment Tensor Potential}{7}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Equivariant Tensor Network}{9}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Методы оптимизации}{11}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Градиентный спуск и стохастический градиентный спуск}{11}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Momentum}{12}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Adam}{13}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Ограничение нормы градиента}{13}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}BFGS}{14}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}L-BFGS}{15}{subsection.3.6}%
+\contentsline {subsection}{\numberline {3.7}Muon}{15}{subsection.3.7}%
+\contentsline {section}{\numberline {4}Реализация вычислительного протокола}{17}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Конфигурация экспериментов}{17}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Пользовательский цикл оптимизации}{19}{subsection.4.2}%
+\contentsline {section}{\numberline {5}Эксперименты и результаты}{21}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Метрики и базовые настройки сравнения}{21}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Настройка архитектуры ETN}{22}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}MTP на AgPd}{23}{subsection.5.3}%
+\contentsline {subsubsection}{\numberline {5.3.1}Результаты для native BFGS}{23}{subsubsection.5.3.1}%
+\contentsline {subsubsection}{\numberline {5.3.2}Результаты для SciPy BFGS}{24}{subsubsection.5.3.2}%
+\contentsline {subsubsection}{\numberline {5.3.3}Результаты для SGD}{25}{subsubsection.5.3.3}%
+\contentsline {subsubsection}{\numberline {5.3.4}Результаты для Momentum}{26}{subsubsection.5.3.4}%
+\contentsline {subsubsection}{\numberline {5.3.5}Результаты для Adam}{27}{subsubsection.5.3.5}%
+\contentsline {subsubsection}{\numberline {5.3.6}Результаты для Muon pad sqrt}{28}{subsubsection.5.3.6}%
+\contentsline {subsubsection}{\numberline {5.3.7}Результаты для Muon factorization}{29}{subsubsection.5.3.7}%
+\contentsline {subsubsection}{\numberline {5.3.8}Сводное сравнение всех методов для MTP}{30}{subsubsection.5.3.8}%
+\contentsline {subsection}{\numberline {5.4}ETN на AgPd}{33}{subsection.5.4}%
+\contentsline {subsubsection}{\numberline {5.4.1}Результаты для native BFGS}{33}{subsubsection.5.4.1}%
+\contentsline {subsubsection}{\numberline {5.4.2}Результаты для SciPy BFGS}{33}{subsubsection.5.4.2}%
+\contentsline {subsubsection}{\numberline {5.4.3}Результаты для SGD}{34}{subsubsection.5.4.3}%
+\contentsline {subsubsection}{\numberline {5.4.4}Результаты для Momentum}{35}{subsubsection.5.4.4}%
+\contentsline {subsubsection}{\numberline {5.4.5}Результаты для Adam}{36}{subsubsection.5.4.5}%
+\contentsline {subsubsection}{\numberline {5.4.6}Результаты для Muon pad sqrt}{37}{subsubsection.5.4.6}%
+\contentsline {subsubsection}{\numberline {5.4.7}Результаты для Muon factorization}{38}{subsubsection.5.4.7}%
+\contentsline {subsubsection}{\numberline {5.4.8}Сводное сравнение всех методов для ETN на AgPd}{39}{subsubsection.5.4.8}%
+\contentsline {subsection}{\numberline {5.5}ETN на MoNbTaVW}{42}{subsection.5.5}%
+\contentsline {subsubsection}{\numberline {5.5.1}Результаты для native BFGS}{42}{subsubsection.5.5.1}%
+\contentsline {subsubsection}{\numberline {5.5.2}Результаты для SciPy BFGS}{43}{subsubsection.5.5.2}%
+\contentsline {subsubsection}{\numberline {5.5.3}Результаты для SGD}{44}{subsubsection.5.5.3}%
+\contentsline {subsubsection}{\numberline {5.5.4}Результаты для Momentum}{45}{subsubsection.5.5.4}%
+\contentsline {subsubsection}{\numberline {5.5.5}Результаты для Adam}{46}{subsubsection.5.5.5}%
+\contentsline {subsubsection}{\numberline {5.5.6}Результаты для Muon pad sqrt}{47}{subsubsection.5.5.6}%
+\contentsline {subsubsection}{\numberline {5.5.7}Результаты для Muon factorization}{48}{subsubsection.5.5.7}%
+\contentsline {subsubsection}{\numberline {5.5.8}Сводное сравнение всех методов для ETN на MoNbTaVW}{49}{subsubsection.5.5.8}%
+\contentsline {subsection}{\numberline {5.6}Эксперимент с возмущением параметров ETN}{51}{subsection.5.6}%
+\contentsline {section}{\numberline {6}Обсуждение результатов}{52}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Роль квазиньютоновских методов}{52}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Поведение SGD, Momentum и Adam}{52}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Различие MTP и ETN}{52}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Перенос выводов на MoNbTaVW}{53}{subsection.6.4}%
+\contentsline {section}{\numberline {7}Заключение}{54}{section.7}%
+\contentsline {section}{\numberline {8}Дальнейшая работа}{55}{section.8}%

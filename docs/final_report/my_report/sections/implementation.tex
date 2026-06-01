@@ -1,0 +1,147 @@
+\section{Реализация вычислительного протокола}
+\label{sec:implementation}
+
+\subsection{Конфигурация экспериментов}
+
+Расчёты выполнялись в MLIP-4. Обучающие и валидационные данные хранились в формате JSON; при запуске из них строились объекты \texttt{LossFunction}, к которым подключался текущий потенциал. Для MTP и ETN использовалась одна радиальная база:
+\[
+    \texttt{RadialBasisCinf(size=8, min\_dist=1.9, cutoff=5.0)}.
+\]
+При параллельном запуске данные и начальные параметры потенциала передавались между MPI-процессами в сериализованном виде. За счёт этого все процессы одного запуска работали с одной и той же начальной точкой и одним набором loss terms.
+
+Вычисления запускались через Slurm на одном узле с восемью MPI-процессами. Использовались параметры одного узла \(\texttt{-N 1}\), восьми процессов \(\texttt{-n 8}\), partition \(\texttt{normal}\) и project account \(\texttt{proj\_1786}\). Отдельный запуск потенциала, соответственно, выполнялся в фиксированной восьмиядерной конфигурации.
+
+Основные параметры моделей приведены в таблице~\ref{tab:model-config}. Для всех серий использовались пять независимых запусков с разными начальными параметрами. Номер запуска обозначался \(\texttt{pot\_num}=1,\ldots,5\), а случайная инициализация задавалась seed \(42+\texttt{pot\_num}\).
+
+\begin{table}[H]
+    \centering
+    \caption{Основные параметры моделей в вычислительных экспериментах.}
+    \label{tab:model-config}
+    \small
+    \begin{tabularx}{\textwidth}{p{0.24\textwidth}X}
+        \toprule
+        Серия экспериментов & Параметры \\
+        \midrule
+        MTP, AgPd &
+        \(\texttt{species\_order}=[0,1]\);
+        \(\texttt{level}=16\);
+        \(\texttt{jit=True}\);
+        начальная инициализация параметров из равномерного распределения на интервале \([-0.1,0.1]\). \\
+        \addlinespace
+        ETN, AgPd &
+        \(\texttt{species\_order}=[0,1]\);
+        \(\texttt{etn\_shape}=\texttt{[[1],[6],[3]]}\);
+        \(\texttt{ett\_ranks}=\texttt{[[1],[1]]}\);
+        \(\texttt{jit=True}\);
+        начальная инициализация параметров на интервале \([-0.001,0.001]\). \\
+        \addlinespace
+        ETN, MoNbTaVW &
+        \(\texttt{species\_order}=[0,1,2,3,4]\);
+        \(\texttt{etn\_shape}=\texttt{[[1],[6],[3]]}\);
+        \(\texttt{ett\_ranks}=\texttt{[[2],[2]]}\);
+        \(\texttt{jit=True}\);
+        начальная инициализация параметров на интервале \([-0.001,0.001]\). \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+Параметры оптимизации приведены в таблице~\ref{tab:optimization-config}. Native BFGS и SciPy BFGS использовали полный функционал ошибки и лимит \(5000\) итераций. Для SciPy BFGS дополнительно сохранялось фактическое число итераций \texttt{nit}; на ETN MoNbTaVW оно составило \(237.2 \pm 69.9\). Mini-batch методы работали с batch size 32 и постоянным learning rate. Для MTP использовалось \(8000\) шагов оптимизации. Для ETN на AgPd методы Adam и Muon запускались на \(10000\) шагов, а для ETN на MoNbTaVW на \(10000\) шагов запускались все mini-batch методы, поскольку при меньшем числе шагов их траектории ещё не выходили на плато.
+
+\begin{table}[H]
+    \centering
+    \caption{Основные параметры оптимизации.}
+    \label{tab:optimization-config}
+    \small
+    \begin{tabularx}{\textwidth}{p{0.28\textwidth}X}
+        \toprule
+        Метод & Параметры \\
+        \midrule
+        Native BFGS &
+        Полный batch; максимальное число итераций \(5000\). \\
+        SciPy BFGS &
+        Полный batch; метод \texttt{BFGS}; \(\texttt{maxiter}=5000\); \(\texttt{gtol}=10^{-6}\); для ETN на MoNbTaVW фактически \(237.2 \pm 69.9\) итерации, \(\texttt{success}=0\). \\
+        SGD &
+        \(\texttt{batch\_size}=32\); \(\texttt{max\_steps}=8000\) для MTP, \(5000\) для ETN на AgPd и \(10000\) для ETN на MoNbTaVW; \(\eta=10^{-3}\); \(\texttt{ConstantLR}\); \(\texttt{clip}=1.0\); \(\texttt{full\_batch=False}\). \\
+        Momentum &
+        Те же общие mini-batch параметры; коэффициент инерции \(\beta=0.9\). \\
+        Adam &
+        Те же общие mini-batch параметры; \(\texttt{max\_steps}=10000\) для ETN на AgPd и MoNbTaVW; \(\beta_1=0.9\), \(\beta_2=0.999\), \(\varepsilon=10^{-8}\). \\
+        Muon &
+        Те же общие mini-batch параметры; \(\texttt{max\_steps}=10000\) для ETN на AgPd и MoNbTaVW; \(\beta=0.95\); число Newton--Schulz итераций \(5\); \(\texttt{nesterov=True}\); \(\varepsilon=10^{-7}\); варианты \(\texttt{pad\_sqrt}\) и \(\texttt{factor}\). \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+\subsection{Пользовательский цикл оптимизации}
+
+Для mini-batch методов был реализован единый цикл оптимизации. В нём вычисление loss и градиента отделено от правила обновления параметров, поэтому один и тот же протокол можно использовать для SGD, Momentum, Adam и Muon.
+
+\begin{itemize}
+    \item \texttt{LossBatcher} собирает mini-batch функции потерь из слагаемых полного \texttt{LossFunction}. На каждой эпохе индексы перемешиваются, после чего создаётся набор batch-\texttt{LossFunction}, присоединённых к текущему потенциалу.
+    \item \texttt{MlipObjective} принимает вектор параметров, записывает его в потенциал, вычисляет loss, градиент и норму градиента. Если включён clipping, градиент масштабируется до заданного порога нормы.
+    \item \texttt{OptimizerState} задаёт общий интерфейс обновления параметров. Реализации \texttt{SGD}, \texttt{Momentum}, \texttt{Adam} и \texttt{Muon} получают текущие параметры, градиент и номер шага, после чего возвращают новый вектор параметров.
+    \item \texttt{LearningRateSchedule} описывает изменение learning rate. В основных экспериментах применялся постоянный шаг через \texttt{ConstantLR}.
+    \item \texttt{MlipTrainer} управляет циклом обучения: создаёт mini-batches, вызывает расчёт loss и градиента, применяет оптимизатор, проверяет критерий остановки по \(\texttt{gtol}\) и ограничение по числу шагов.
+    \item \texttt{TrainHistory} сохраняет loss, норму градиента, learning rate, число шагов и число эпох. Эти данные затем используются при построении графиков истории обучения.
+\end{itemize}
+
+Связь компонентов mini-batch протокола показана на рисунке~\ref{fig:custom-optimization-loop}.
+
+\begin{figure}[H]
+    \centering
+    \fbox{
+        \begin{minipage}{0.88\textwidth}
+            \centering
+            \[
+            \begin{array}{c}
+                \text{JSON train/validation data}
+                \rightarrow
+                \text{\texttt{LossFunction}}
+                \rightarrow
+                \text{MTP/ETN potential}
+                \\[0.4em]
+                \downarrow
+                \\[0.4em]
+                \text{\texttt{LossBatcher}}
+                \rightarrow
+                \text{mini-batch \texttt{LossFunction}}
+                \rightarrow
+                \text{\texttt{MlipObjective}}
+                \\[0.4em]
+                \downarrow
+                \\[0.4em]
+                \text{\texttt{OptimizerState}}
+                \rightarrow
+                \text{\texttt{MlipTrainer}}
+                \rightarrow
+                \text{\texttt{TrainHistory}}
+                \rightarrow
+                \text{validation metrics}
+            \end{array}
+            \]
+        \end{minipage}
+    }
+    \caption{Схема пользовательского mini-batch протокола оптимизации.}
+    \label{fig:custom-optimization-loop}
+\end{figure}
+
+Исходный код экспериментов, скрипты обучения и материалы отчёта размещены в репозитории:
+\url{https://github.com/PETRUESHA/Testing-optimization-methods-in-MLP}.
+
+Для SciPy BFGS использовался отдельный адаптер \texttt{MlipWrapper}. Он приводит интерфейс MLIP-4 к формату \texttt{scipy.optimize.minimize}: метод \texttt{value(x)} возвращает значение \(\mathcal L(x)\), а метод \texttt{grad(x)} возвращает \(\nabla\mathcal L(x)\). При каждом вызове вектор \(x\) записывается в параметры потенциала; затем MLIP-4 вычисляет loss или накапливает градиент. Чтобы избежать лишних повторных вычислений, wrapper кэширует последнюю точку, значение loss и градиент.
+
+Итоговая схема для SciPy BFGS имеет вид
+\[
+    \begin{array}{c}
+        \text{\texttt{LossFunction} + MTP/ETN}
+        \rightarrow
+        \text{\texttt{MlipWrapper}}
+        \\[0.3em]
+        \rightarrow
+        \text{\texttt{scipy.optimize.minimize}}
+        \rightarrow
+        \text{optimized parameters}.
+    \end{array}
+\]
+
+После завершения каждого запуска вычислялись train и validation ошибки по энергиям на атом и по силам, а также время обучения. Для ансамбля из пяти запусков в итоговые таблицы заносились среднее значение и standard deviation.

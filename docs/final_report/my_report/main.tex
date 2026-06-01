@@ -1,0 +1,145 @@
+\documentclass[a4paper,12pt]{extarticle}
+
+\usepackage{cmap}
+\usepackage{geometry}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{mathtools}
+
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage[flushleft]{threeparttable}
+\usepackage{tablefootnote}
+\usepackage{subcaption}
+\usepackage{placeins}
+\usepackage{float}
+\usepackage{xurl}
+\usepackage{indentfirst}
+\graphicspath{{graphics/}}
+
+\usepackage{chngcntr}
+\counterwithin{table}{section}
+\counterwithin{figure}{section}
+
+\usepackage[numbers]{natbib}
+\usepackage[colorlinks,citecolor=blue,linkcolor=blue,bookmarks=false,hypertexnames=true,urlcolor=blue]{hyperref}
+
+\geometry{left=2.5cm}
+\geometry{right=1.0cm}
+\geometry{top=2.0cm}
+\geometry{bottom=2.0cm}
+
+\setlength{\parindent}{1.25cm}
+\renewcommand{\baselinestretch}{1.5}
+
+\renewcommand{\theenumi}{\arabic{enumi}}
+\renewcommand{\labelenumi}{\arabic{enumi}.}
+\renewcommand{\theenumii}{\arabic{enumi}.\arabic{enumii}}
+\renewcommand{\labelenumii}{\arabic{enumi}.\arabic{enumii}.}
+
+\newcommand{\resultfigure}[3]{%
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.92\textwidth]{#1}
+    \caption{#2}
+    \label{#3}
+\end{figure}
+}
+
+\newcommand{\sourcefile}[1]{\path{#1}}
+
+\begin{document}
+
+\input{title_kr}
+\newpage
+\setcounter{page}{2}
+
+{
+    \hypersetup{linkcolor=black}
+    \tableofcontents
+}
+
+\newpage
+
+\section*{Аннотация}
+\addcontentsline{toc}{section}{Аннотация}
+Работа посвящена сравнению методов оптимизации при обучении машинно-обучаемых межатомных потенциалов. Рассматриваются две модели: Moment Tensor Potential (MTP) и Equivariant Tensor Network (ETN), обучаемые по энергиям и силам атомных конфигураций. В качестве оптимизаторов используются native BFGS из MLIP-4, SciPy BFGS, SGD, Momentum, Adam, Adam + L-BFGS и Muon. Эксперименты проведены на системах AgPd и MoNbTaVW. По результатам расчётов квазиньютоновские методы остаются важной группой baseline-методов; для MTP на AgPd минимальную validation EPA RMSE даёт native BFGS, а SciPy BFGS остаётся близким к нему по энергетической ошибке. Для ETN native BFGS также сохраняет роль устойчивого full-batch baseline, особенно по ошибке сил и времени обучения. Среди mini-batch методов картина зависит от модели, датасета и выбранной метрики: для MTP на AgPd лучший результат даёт Adam, для ETN на AgPd Adam лидирует по energy error, а варианты Muon дают меньшую force error; на MoNbTaVW варианты Muon существенно снижают validation EPA RMSE относительно Adam, SGD и Momentum и становятся лучшими по энергетической ошибке.
+
+\section*{Ключевые слова}
+\addcontentsline{toc}{section}{Ключевые слова}
+Машинно-обучаемые межатомные потенциалы; MTP; ETN; регрессия энергий и сил; BFGS; L-BFGS; SGD; Momentum; Adam; Muon; SciPy; MLIP-4; mini-batch optimization; gradient clipping; validation RMSE.
+
+\newpage
+
+\section{Введение}
+
+Машинно-обучаемые межатомные потенциалы используются как быстрые приближения к расчёту потенциальной энергии атомной конфигурации и сил на атомах. Они позволяют заменить дорогостоящие прямые вычисления регрессионной моделью и тем самым расширяют возможности молекулярной динамики, оптимизации структур и скрининга материалов. Однако итоговое качество такого потенциала определяется не только архитектурой модели. Существенную роль играет и то, каким именно методом оптимизируются её параметры.
+
+Обучение потенциала сводится к минимизации функционала, объединяющего ошибки по энергиям и силам. В этой постановке одновременно присутствуют разные масштабы компонент loss, большое число силовых наблюдений по сравнению с числом энергетических значений, плохая обусловленность поверхности ошибки и зависимость от начальной точки. Поэтому один и тот же класс потенциалов может показывать заметно разные ошибки валидации при смене оптимизатора.
+
+В этой работе сравниваются Moment Tensor Potential (MTP) \cite{shapeev2016mtp,novikov2021mlip} и Equivariant Tensor Network (ETN) \cite{hodapp2025etn}. Для них рассматриваются native BFGS из MLIP-4, SciPy BFGS, SGD, Momentum, Adam \cite{kingma2015adam}, Adam + L-BFGS и Muon. Методы сопоставляются по validation EPA RMSE, validation forces RMSE, времени обучения, траекториям loss и разбросу по ансамблю запусков.
+
+В основных mini-batch сериях для MTP использовалось 8000 шагов оптимизации. Для ETN на AgPd методы Adam и Muon запускались на 10000 шагов, а для ETN на MoNbTaVW на 10000 шагов запускались все mini-batch методы, поскольку при меньшем числе шагов их траектории не выходили на плато. Для BFGS-вариантов сохранялся full-batch режим с лимитом 5000 итераций.
+
+Цель работы состоит в том, чтобы сравнить методы оптимизации при обучении MTP и ETN по качеству, времени обучения и устойчивости результатов.
+
+Для достижения цели решаются следующие задачи:
+\begin{enumerate}
+    \item обучить MTP и ETN на AgPd с использованием baseline BFGS;
+    \item реализовать интерфейс для обучения потенциалов через SciPy BFGS;
+    \item реализовать и протестировать mini-batch оптимизаторы SGD, Momentum, Adam и Muon;
+    \item провести настройку гиперпараметров для SGD и Adam;
+    \item сравнить оптимизаторы на MTP и ETN;
+    \item проверить перенос выводов на MoNbTaVW;
+    \item проанализировать устойчивость обучения по ансамблю запусков.
+\end{enumerate}
+
+Структура работы следующая. В разделе~\ref{sec:theory} формулируется задача регрессии энергий и сил и описываются модели MTP и ETN. В разделе~\ref{sec:methods} приведены методы оптимизации. В разделе~\ref{sec:implementation} описаны вычислительный протокол и программная реализация. В разделе~\ref{sec:experiments} собраны результаты экспериментов. В разделе~\ref{sec:discussion} обсуждаются основные закономерности. Затем формулируются итоговые выводы и направления дальнейшей работы.
+
+\newpage
+
+\input{sections/theory}
+\input{sections/methods}
+\input{sections/implementation}
+\input{sections/experiments}
+\input{sections/discussion}
+
+\section{Заключение}
+\label{sec:conclusion}
+
+В ходе работы был собран единый протокол сравнения оптимизаторов для MTP и ETN на датасетах AgPd и MoNbTaVW. В него вошли train/validation RMSE по энергиям на атом и силам, время обучения, анализ ансамблей запусков и диагностика траекторий loss.
+
+Для проверки внешней full-batch оптимизации был реализован интерфейс \texttt{MlipWrapper}, который передаёт значение loss и градиент из MLIP-4 в \texttt{scipy.optimize.minimize}. Этот результат показывает, что Python/SciPy-оптимизаторы можно использовать для обучения MLIP-потенциалов, если доступны параметры потенциала, значение функции потерь и её градиент.
+
+Для MTP лучший validation EPA RMSE получил native BFGS: \(0.002104 \pm 0.000096\) eV/atom. SciPy BFGS оказался близок по energy error, но хуже по forces RMSE: \(0.002333 \pm 0.000137\) eV/atom и \(0.055401 \pm 0.000759\) eV/\AA. Среди mini-batch методов на MTP лучшим по validation EPA RMSE оказался Adam: \(0.029321 \pm 0.007448\) eV/atom, однако он существенно уступил BFGS-вариантам.
+
+Для ETN native BFGS остался сильным baseline. На AgPd native BFGS дал validation EPA RMSE 0.0138745. Среди mini-batch методов Adam дал минимальную validation EPA RMSE \(0.022675 \pm 0.000710\) eV/atom, а Muon factorization дал минимальную validation forces RMSE \(0.850381 \pm 0.005353\) eV/\AA. Поэтому для ETN на AgPd нельзя выделять единственный лучший mini-batch метод без указания метрики: Adam сильнее по energy error, а Muon --- по force error.
+
+На MoNbTaVW вывод по energy error стал более тонким: native BFGS дал validation EPA RMSE 0.476876, SciPy BFGS -- 0.499952, Adam -- \(0.441821 \pm 0.001756\), а Muon pad sqrt и Muon factorization -- \(0.428698 \pm 0.004227\). Поэтому при 10000 mini-batch шагах варианты Muon не только существенно превосходят Adam, SGD и Momentum, но и дают меньшую validation EPA RMSE, чем BFGS-варианты. При этом по validation forces RMSE и времени обучения BFGS/SciPy остаются сильнее.
+
+Итоговый вывод состоит в том, что оптимизатор нужно подбирать с учётом архитектуры потенциала, масштаба параметров, датасета и целевой метрики. Квазиньютоновские методы остаются основным baseline для гладкой full-batch постановки и дают лучшие ошибки по силам для ETN на MoNbTaVW. Среди mini-batch методов Adam сохраняет роль сильной опорной точки, но не является универсально лучшим вариантом. Для ETN матричный характер Muon лучше согласуется со структурой модели, чем для MTP: на AgPd Muon сравнивается с Adam и превосходит его по силам, а на MoNbTaVW превосходит Adam по validation EPA RMSE и становится лучшим методом по энергетической ошибке среди всех рассмотренных оптимизаторов. Поэтому дальнейшее исследование Muon для ETN представляется содержательным направлением.
+
+\section{Дальнейшая работа}
+\label{sec:future-work}
+
+Дальнейшая работа естественно распадается на несколько направлений:
+\begin{itemize}
+    \item расширенный подбор гиперпараметров для mini-batch и квазиньютоновских методов;
+    \item более осмысленное преобразование вектора параметров в матричную форму для применения Muon;
+    \item проверка выводов на новых датасетах и других классах межатомных потенциалов;
+    \item теоретическое исследование свойств методов оптимизации в задачах обучения машинно-обучаемых потенциалов.
+\end{itemize}
+
+\newpage
+\bibliographystyle{unsrt}
+\bibliography{refs}
+
+\end{document}

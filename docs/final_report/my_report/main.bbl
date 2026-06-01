@@ -1,0 +1,56 @@
+\begin{thebibliography}{1}
+
+\bibitem{shapeev2016mtp}
+Alexander~V. Shapeev.
+\newblock Moment tensor potentials: A class of systematically improvable
+  interatomic potentials.
+\newblock {\em Multiscale Modeling and Simulation}, 14(3):1153--1173, 2016.
+
+\bibitem{novikov2021mlip}
+Ivan~S. Novikov, Konstantin Gubaev, Evgeny~V. Podryabinkin, and Alexander~V.
+  Shapeev.
+\newblock The mlip package: moment tensor potentials with mpi and active
+  learning.
+\newblock {\em Machine Learning: Science and Technology}, 2(2):025002, 2021.
+
+\bibitem{hodapp2025etn}
+Markus Hodapp and Alexander Shapeev.
+\newblock Equivariant tensor networks for interatomic potentials.
+\newblock 2025.
+\newblock arXiv:2504.15760.
+
+\bibitem{kingma2015adam}
+Diederik~P. Kingma and Jimmy Ba.
+\newblock Adam: A method for stochastic optimization.
+\newblock In {\em International Conference on Learning Representations (ICLR)},
+  2015.
+\newblock arXiv:1412.6980.
+
+\bibitem{orus2014tnintro}
+Roman Orus.
+\newblock A practical introduction to tensor networks.
+\newblock {\em Annals of Physics}, 349:117--158, 2014.
+
+\bibitem{stoudenmire2016tnml}
+Edwin~M. Stoudenmire and David~J. Schwab.
+\newblock Supervised learning with quantum-inspired tensor networks.
+\newblock 2016.
+\newblock arXiv:1605.05775.
+
+\bibitem{nocedal2006numerical}
+Jorge Nocedal and Stephen~J. Wright.
+\newblock {\em Numerical Optimization}.
+\newblock Springer, 2 edition, 2006.
+
+\bibitem{jordan2024muon}
+Keller Jordan.
+\newblock Muon: An optimizer for hidden layers in neural networks.
+\newblock \url{https://kellerjordan.github.io/posts/muon/}, 2024.
+\newblock Accessed: 2026-05-30.
+
+\bibitem{bernstein2024oldoptimizer}
+Jeremy Bernstein and Laker Newhouse.
+\newblock Old optimizer, new norm: An anthology.
+\newblock arXiv:2409.20325, 2024.
+
+\end{thebibliography}

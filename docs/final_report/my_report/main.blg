@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99e (TeX Live 2026)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+The style file: unsrt.bst
+Database file #1: refs.bib
+Warning--empty journal in hodapp2025etn
+Warning--empty journal in stoudenmire2016tnml
+You've used 9 entries,
+            1791 wiz_defined-function locations,
+            495 strings with 4796 characters,
+and the built_in function-call counts, 1676 in all, are:
+= -- 147
+> -- 66
+< -- 0
++ -- 26
+- -- 17
+* -- 84
+:= -- 277
+add.period$ -- 31
+call.type$ -- 9
+change.case$ -- 9
+chr.to.int$ -- 0
+cite$ -- 11
+duplicate$ -- 75
+empty$ -- 181
+format.name$ -- 17
+if$ -- 372
+int.to.chr$ -- 0
+int.to.str$ -- 9
+missing$ -- 8
+newline$ -- 52
+num.names$ -- 9
+pop$ -- 35
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 30
+stack$ -- 0
+substring$ -- 74
+swap$ -- 8
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 2
+while$ -- 14
+width$ -- 10
+write$ -- 102
+(There were 2 warnings)

@@ -1,0 +1,1675 @@
+
+The following have been reloaded with a version change:
+  1) Python/Anaconda_v02.2024 => Python/Miniconda
+
+[prun] Master compute host = cn-030
+[prun] Resource manager = slurm
+[prun] Launch cmd = mpirun /home/peivzarenkov/.conda/envs/peter_env/bin/python train_etn_my_adam.py (family=openmpi)
+group size rank 0 = 4768
+group size rank 4 = 4768
+group size rank 1 = 4736
+group size rank 3 = 4768
+group size rank 6 = 4768
+group size rank 5 = 4768
+group size rank 2 = 4768
+group size rank 7 = 4768
+group size rank 4 = 960
+group size rank 1 = 960
+group size rank 0 = 960
+group size rank 6 = 960
+group size rank 3 = 960
+group size rank 2 = 960
+group size rank 5 = 960
+group size rank 7 = 960
+group size rank 4 = 4768
+group size rank 1 = 4736
+POT: 1
+MY ADAM TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 5.222458e-01, 6.200221e-01, 2.462066e+00
+Energy/Atom = 1.632018e-02, 1.937569e-02, 7.693957e-02
+Forces      = 3.983541e-01, 6.069323e-01, 9.694287e+00
+Stress      = 3.681738e+00, 5.034326e+00, 2.634662e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY ADAM VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 5.575298e-01, 7.111681e-01, 2.565720e+00
+Energy/Atom = 1.742281e-02, 2.222400e-02, 8.017875e-02
+Forces      = 5.580604e-01, 8.806441e-01, 9.715482e+00
+Stress      = 4.152927e+00, 5.604662e+00, 2.812743e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY ADAM TIME: 1057.6960897520185 STEPS: 5000 EPOCHS: 999 FINAL_LOSS: 9.1890797438113
+
+group size rank 0 = 4768
+group size rank 7 = 4768
+group size rank 2 = 4768
+group size rank 6 = 4768
+group size rank 5 = 4768
+group size rank 3 = 4768
+group size rank 4 = 960
+group size rank 1 = 960
+group size rank 0 = 960
+group size rank 7 = 960
+group size rank 6 = 960
+group size rank 2 = 960
+group size rank 5 = 960
+group size rank 3 = 960
+POT: 2
+MY ADAM TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 5.268572e-01, 6.299214e-01, 2.513961e+00
+Energy/Atom = 1.646429e-02, 1.968505e-02, 7.856129e-02
+Forces      = 3.982403e-01, 6.070169e-01, 9.703928e+00
+Stress      = 3.669158e+00, 4.997736e+00, 2.641233e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY ADAM VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 5.806754e-01, 7.319997e-01, 2.504988e+00
+Energy/Atom = 1.814610e-02, 2.287499e-02, 7.828089e-02
+Forces      = 5.578644e-01, 8.808512e-01, 9.711288e+00
+Stress      = 4.126323e+00, 5.553296e+00, 2.745205e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY ADAM TIME: 1055.2763350717723 STEPS: 5000 EPOCHS: 999 FINAL_LOSS: 5.45468019710369
+
+group size rank 0 = 4768
+group size rank 4 = 4768
+group size rank 1 = 4736
+group size rank 7 = 4768
+group size rank 6 = 4768
+group size rank 2 = 4768
+group size rank 5 = 4768
+group size rank 3 = 4768
+group size rank 0 = 960
+group size rank 4 = 960
+group size rank 1 = 960
+group size rank 7 = 960
+group size rank 6 = 960
+group size rank 2 = 960
+group size rank 5 = 960
+group size rank 3 = 960
+group size rank 4 = 4768
+group size rank 1 = 4736
+POT: 3
+MY ADAM TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 5.341020e-01, 6.498935e-01, 2.537493e+00
+Energy/Atom = 1.669069e-02, 2.030917e-02, 7.929667e-02
+Forces      = 3.983163e-01, 6.068400e-01, 9.711592e+00
+Stress      = 3.690793e+00, 5.051994e+00, 2.580213e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY ADAM VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 5.741148e-01, 7.345421e-01, 2.644533e+00
+Energy/Atom = 1.794109e-02, 2.295444e-02, 8.264166e-02
+Forces      = 5.578765e-01, 8.805991e-01, 9.727201e+00
+Stress      = 4.169407e+00, 5.631240e+00, 2.830023e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY ADAM TIME: 1061.2474293112755 STEPS: 5000 EPOCHS: 999 FINAL_LOSS: 8.708320922751362
+
+group size rank 0 = 4768
+group size rank 7 = 4768
+group size rank 6 = 4768
+group size rank 2 = 4768
+group size rank 5 = 4768
+group size rank 3 = 4768
+group size rank 4 = 960
+group size rank 1 = 960
+group size rank 0 = 960
+group size rank 7 = 960
+group size rank 6 = 960
+group size rank 2 = 960
+group size rank 5 = 960
+group size rank 3 = 960
+group size rank 7 = 4768
+POT: 4
+MY ADAM TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 5.320116e-01, 6.424767e-01, 2.678784e+00
+Energy/Atom = 1.662536e-02, 2.007740e-02, 8.371200e-02
+Forces      = 3.982852e-01, 6.070856e-01, 9.695712e+00
+Stress      = 3.703904e+00, 5.086012e+00, 2.648375e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY ADAM VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 5.744587e-01, 7.324267e-01, 2.744878e+00
+Energy/Atom = 1.795183e-02, 2.288833e-02, 8.577743e-02
+Forces      = 5.583484e-01, 8.812563e-01, 9.689971e+00
+Stress      = 4.196667e+00, 5.681581e+00, 2.867073e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY ADAM TIME: 1096.6995912715793 STEPS: 5000 EPOCHS: 999 FINAL_LOSS: 7.617326192028429
+
+group size rank 0 = 4768
+group size rank 0 = 960
+group size rank 1 = 4736
+group size rank 2 = 4768
+group size rank 3 = 4768
+group size rank 3 = 960
+group size rank 4 = 4768
+group size rank 4 = 960
+group size rank 7 = 960
+group size rank 1 = 960
+group size rank 2 = 960
+group size rank 6 = 4768
+group size rank 5 = 4768
+group size rank 5 = 960
+group size rank 6 = 960
+POT: 5
+MY ADAM TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 5.284615e-01, 6.373785e-01, 2.396121e+00
+Energy/Atom = 1.651442e-02, 1.991808e-02, 7.487877e-02
+Forces      = 3.980630e-01, 6.068019e-01, 9.721832e+00
+Stress      = 3.679676e+00, 5.015668e+00, 2.552184e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY ADAM VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 6.142557e-01, 7.689286e-01, 2.436872e+00
+Energy/Atom = 1.919549e-02, 2.402902e-02, 7.615226e-02
+Forces      = 5.579731e-01, 8.808018e-01, 9.708378e+00
+Stress      = 4.125016e+00, 5.548617e+00, 2.761422e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY ADAM TIME: 1072.1133409924805 STEPS: 5000 EPOCHS: 999 FINAL_LOSS: 8.746708802069108
+
+[prun] Master compute host = cn-030
+[prun] Resource manager = slurm
+[prun] Launch cmd = mpirun /home/peivzarenkov/.conda/envs/peter_env/bin/python train_etn_my_momentum.py (family=openmpi)
+group size rank 4 = 4768
+group size rank 3 = 4768
+group size rank 6 = 4768
+group size rank 2 = 4768
+group size rank 7 = 4768
+group size rank 5 = 4768
+group size rank 4 = 960
+group size rank 3 = 960
+group size rank 6 = 960
+group size rank 7 = 960
+group size rank 2 = 960
+group size rank 5 = 960
+group size rank 0 = 4768
+group size rank 1 = 4736
+group size rank 0 = 960
+group size rank 1 = 960
+group size rank 4 = 4768
+group size rank 1 = 4736
+group size rank 3 = 4768
+group size rank 6 = 4768
+group size rank 5 = 4768
+POT: 1
+MY MOMENTUM TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 3.199362e+00, 4.104438e+00, 1.061649e+01
+Energy/Atom = 9.998005e-02, 1.282637e-01, 3.317652e-01
+Forces      = 1.037605e+00, 1.401374e+00, 1.354057e+01
+Stress      = 1.308341e+01, 1.935354e+01, 7.380740e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY MOMENTUM VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 5.151109e+00, 5.547121e+00, 1.074474e+01
+Energy/Atom = 1.609722e-01, 1.733475e-01, 3.357732e-01
+Forces      = 1.266381e+00, 1.730164e+00, 1.354057e+01
+Stress      = 2.332452e+01, 3.079889e+01, 7.380740e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY MOMENTUM TIME: 1067.385645378381 STEPS: 5000 EPOCHS: 999 FINAL_LOSS: 57.21032488875609
+
+group size rank 0 = 4768
+group size rank 2 = 4768
+group size rank 7 = 4768
+group size rank 4 = 960
+group size rank 1 = 960
+group size rank 3 = 960
+group size rank 6 = 960
+group size rank 0 = 960
+group size rank 5 = 960
+group size rank 2 = 960
+group size rank 7 = 960
+group size rank 4 = 4768
+group size rank 1 = 4736
+group size rank 6 = 4768
+group size rank 3 = 4768
+group size rank 2 = 4768
+group size rank 5 = 4768
+group size rank 7 = 4768
+POT: 2
+MY MOMENTUM TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 3.207869e+00, 4.105005e+00, 1.057206e+01
+Energy/Atom = 1.002459e-01, 1.282814e-01, 3.303768e-01
+Forces      = 1.037605e+00, 1.401374e+00, 1.354057e+01
+Stress      = 1.308341e+01, 1.935354e+01, 7.380740e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY MOMENTUM VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 5.201867e+00, 5.592456e+00, 1.073313e+01
+Energy/Atom = 1.625583e-01, 1.747642e-01, 3.354104e-01
+Forces      = 1.266381e+00, 1.730164e+00, 1.354057e+01
+Stress      = 2.332452e+01, 3.079889e+01, 7.380740e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY MOMENTUM TIME: 1060.0524108596146 STEPS: 5000 EPOCHS: 999 FINAL_LOSS: 42.48379920619619
+
+group size rank 0 = 4768
+group size rank 4 = 960
+group size rank 1 = 960
+group size rank 6 = 960
+group size rank 3 = 960
+group size rank 2 = 960
+group size rank 5 = 960
+group size rank 7 = 960
+group size rank 0 = 960
+group size rank 1 = 4736
+group size rank 4 = 4768
+group size rank 6 = 4768
+group size rank 3 = 4768
+POT: 3
+MY MOMENTUM TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 3.196183e+00, 4.104445e+00, 1.056553e+01
+Energy/Atom = 9.988073e-02, 1.282639e-01, 3.301730e-01
+Forces      = 1.037605e+00, 1.401374e+00, 1.354057e+01
+Stress      = 1.308341e+01, 1.935354e+01, 7.380740e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY MOMENTUM VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 5.123237e+00, 5.521544e+00, 1.073083e+01
+Energy/Atom = 1.601012e-01, 1.725483e-01, 3.353385e-01
+Forces      = 1.266381e+00, 1.730164e+00, 1.354057e+01
+Stress      = 2.332452e+01, 3.079889e+01, 7.380740e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY MOMENTUM TIME: 1060.4088620617986 STEPS: 5000 EPOCHS: 999 FINAL_LOSS: 56.35134710388332
+
+group size rank 0 = 4768
+group size rank 2 = 4768
+group size rank 7 = 4768
+group size rank 5 = 4768
+group size rank 1 = 960
+group size rank 4 = 960
+group size rank 6 = 960
+group size rank 3 = 960
+group size rank 0 = 960
+group size rank 2 = 960
+group size rank 5 = 960
+group size rank 7 = 960
+group size rank 1 = 4736
+POT: 4
+MY MOMENTUM TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 3.196027e+00, 4.104389e+00, 1.052772e+01
+Energy/Atom = 9.987584e-02, 1.282621e-01, 3.289913e-01
+Forces      = 1.037605e+00, 1.401374e+00, 1.354057e+01
+Stress      = 1.308341e+01, 1.935354e+01, 7.380740e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY MOMENTUM VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 5.126946e+00, 5.523064e+00, 1.066675e+01
+Energy/Atom = 1.602171e-01, 1.725957e-01, 3.333360e-01
+Forces      = 1.266381e+00, 1.730164e+00, 1.354057e+01
+Stress      = 2.332452e+01, 3.079889e+01, 7.380740e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY MOMENTUM TIME: 1062.0725486725569 STEPS: 5000 EPOCHS: 999 FINAL_LOSS: 55.88466536064133
+
+group size rank 0 = 4768
+group size rank 0 = 960
+group size rank 1 = 960
+group size rank 2 = 4768
+group size rank 2 = 960
+group size rank 3 = 4768
+group size rank 4 = 4768
+group size rank 5 = 4768
+group size rank 6 = 4768
+group size rank 7 = 4768
+group size rank 7 = 960
+group size rank 6 = 960
+group size rank 3 = 960
+group size rank 5 = 960
+group size rank 4 = 960
+POT: 5
+MY MOMENTUM TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 3.186723e+00, 4.105034e+00, 1.045032e+01
+Energy/Atom = 9.958509e-02, 1.282823e-01, 3.265723e-01
+Forces      = 1.037605e+00, 1.401374e+00, 1.354057e+01
+Stress      = 1.308341e+01, 1.935354e+01, 7.380740e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY MOMENTUM VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 5.047756e+00, 5.447501e+00, 1.056885e+01
+Energy/Atom = 1.577424e-01, 1.702344e-01, 3.302767e-01
+Forces      = 1.266381e+00, 1.730164e+00, 1.354057e+01
+Stress      = 2.332452e+01, 3.079889e+01, 7.380740e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY MOMENTUM TIME: 1069.929674178362 STEPS: 5000 EPOCHS: 999 FINAL_LOSS: 59.03856370050408
+
+[prun] Master compute host = cn-030
+[prun] Resource manager = slurm
+[prun] Launch cmd = mpirun /home/peivzarenkov/.conda/envs/peter_env/bin/python train_etn_my_muon_factorization.py (family=openmpi)
+group size rank 3 = 4768
+group size rank 2 = 4768
+group size rank 1 = 4736
+group size rank 5 = 4768
+group size rank 6 = 4768
+group size rank 7 = 4768
+group size rank 3 = 960
+group size rank 2 = 960
+group size rank 1 = 960
+group size rank 6 = 960
+group size rank 7 = 960
+group size rank 5 = 960
+group size rank 0 = 4768
+group size rank 4 = 4768
+group size rank 0 = 960
+group size rank 4 = 960
+group size rank 7 = 4768
+group size rank 6 = 4768
+POT: 1
+MY MUON TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 6.781214e-01, 9.296882e-01, 4.777231e+00
+Energy/Atom = 2.119129e-02, 2.905275e-02, 1.492885e-01
+Forces      = 7.760218e-01, 1.123435e+00, 1.320737e+01
+Stress      = 1.308648e+01, 1.805678e+01, 6.431920e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY MUON VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.148716e+00, 1.463093e+00, 5.261724e+00
+Energy/Atom = 3.589738e-02, 4.572167e-02, 1.644289e-01
+Forces      = 1.106934e+00, 1.554210e+00, 1.314594e+01
+Stress      = 1.780690e+01, 2.334961e+01, 6.499322e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY MUON TIME: 1065.6812072619796 STEPS: 5000 EPOCHS: 999 FINAL_LOSS: 32.45602209228965
+
+group size rank 0 = 4768
+group size rank 4 = 4768
+group size rank 1 = 4736
+group size rank 3 = 4768
+group size rank 5 = 4768
+group size rank 2 = 4768
+group size rank 7 = 960
+group size rank 6 = 960
+group size rank 0 = 960
+group size rank 4 = 960
+group size rank 1 = 960
+group size rank 3 = 960
+group size rank 5 = 960
+group size rank 2 = 960
+group size rank 6 = 4768
+POT: 2
+MY MUON TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 6.818462e-01, 9.367891e-01, 4.897076e+00
+Energy/Atom = 2.130769e-02, 2.927466e-02, 1.530336e-01
+Forces      = 7.819973e-01, 1.130676e+00, 1.319253e+01
+Stress      = 1.315420e+01, 1.816764e+01, 6.441167e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY MUON VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.154488e+00, 1.467065e+00, 5.406990e+00
+Energy/Atom = 3.607775e-02, 4.584577e-02, 1.689685e-01
+Forces      = 1.114965e+00, 1.563841e+00, 1.320299e+01
+Stress      = 1.780737e+01, 2.334022e+01, 6.519582e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY MUON TIME: 1063.9427044950426 STEPS: 5000 EPOCHS: 999 FINAL_LOSS: 19.11087753242702
+
+group size rank 0 = 4768
+group size rank 4 = 4768
+group size rank 7 = 4768
+group size rank 3 = 4768
+group size rank 2 = 4768
+group size rank 1 = 4736
+group size rank 5 = 4768
+group size rank 6 = 960
+group size rank 0 = 960
+group size rank 4 = 960
+group size rank 3 = 960
+group size rank 7 = 960
+group size rank 2 = 960
+group size rank 1 = 960
+group size rank 5 = 960
+group size rank 6 = 4768
+POT: 3
+MY MUON TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 6.796074e-01, 9.349397e-01, 4.714071e+00
+Energy/Atom = 2.123773e-02, 2.921686e-02, 1.473147e-01
+Forces      = 7.857272e-01, 1.134737e+00, 1.324048e+01
+Stress      = 1.358115e+01, 1.883017e+01, 6.615880e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY MUON VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.141405e+00, 1.438028e+00, 5.043946e+00
+Energy/Atom = 3.566890e-02, 4.493838e-02, 1.576233e-01
+Forces      = 1.120372e+00, 1.570454e+00, 1.323229e+01
+Stress      = 1.851644e+01, 2.428683e+01, 6.669763e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY MUON TIME: 1062.1209882944822 STEPS: 5000 EPOCHS: 999 FINAL_LOSS: 33.50050153884576
+
+group size rank 0 = 4768
+group size rank 4 = 4768
+group size rank 3 = 4768
+group size rank 1 = 4736
+group size rank 2 = 4768
+group size rank 5 = 4768
+group size rank 7 = 4768
+group size rank 6 = 960
+group size rank 0 = 960
+group size rank 4 = 960
+group size rank 3 = 960
+group size rank 2 = 960
+group size rank 1 = 960
+group size rank 5 = 960
+group size rank 7 = 960
+group size rank 6 = 4768
+group size rank 4 = 4768
+group size rank 3 = 4768
+group size rank 7 = 4768
+POT: 4
+MY MUON TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 6.626293e-01, 8.990911e-01, 4.398452e+00
+Energy/Atom = 2.070716e-02, 2.809660e-02, 1.374516e-01
+Forces      = 6.653015e-01, 9.831403e-01, 1.226657e+01
+Stress      = 1.694532e+01, 2.440829e+01, 7.384915e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY MUON VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.115068e+00, 1.422658e+00, 4.695557e+00
+Energy/Atom = 3.484587e-02, 4.445807e-02, 1.467361e-01
+Forces      = 9.796007e-01, 1.389981e+00, 1.224342e+01
+Stress      = 2.328213e+01, 3.079121e+01, 7.384915e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY MUON TIME: 1062.6181902438402 STEPS: 5000 EPOCHS: 999 FINAL_LOSS: 23.64662745398176
+
+group size rank 0 = 4768
+group size rank 5 = 4768
+group size rank 6 = 960
+group size rank 4 = 960
+group size rank 3 = 960
+group size rank 0 = 960
+group size rank 7 = 960
+group size rank 5 = 960
+group size rank 2 = 4768
+group size rank 1 = 4736
+group size rank 2 = 960
+group size rank 1 = 960
+POT: 5
+MY MUON TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 6.649503e-01, 9.091917e-01, 4.340330e+00
+Energy/Atom = 2.077970e-02, 2.841224e-02, 1.356353e-01
+Forces      = 7.453384e-01, 1.083015e+00, 1.283161e+01
+Stress      = 1.498782e+01, 2.107235e+01, 6.739753e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY MUON VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.134819e+00, 1.423018e+00, 4.435178e+00
+Energy/Atom = 3.546309e-02, 4.446933e-02, 1.385993e-01
+Forces      = 1.068444e+00, 1.504428e+00, 1.281676e+01
+Stress      = 2.045244e+01, 2.682938e+01, 6.791342e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY MUON TIME: 1062.9134355038404 STEPS: 5000 EPOCHS: 999 FINAL_LOSS: 29.86407416501098
+
+[prun] Master compute host = cn-030
+[prun] Resource manager = slurm
+[prun] Launch cmd = mpirun /home/peivzarenkov/.conda/envs/peter_env/bin/python train_etn_my_muon_pad_sqrt.py (family=openmpi)
+group size rank 2 = 4768
+group size rank 3 = 4768
+group size rank 5 = 4768
+group size rank 6 = 4768
+group size rank 7 = 4768
+group size rank 1 = 4736
+group size rank 2 = 960
+group size rank 3 = 960
+group size rank 6 = 960
+group size rank 5 = 960
+group size rank 7 = 960
+group size rank 0 = 4768
+group size rank 1 = 960
+group size rank 0 = 960
+group size rank 4 = 4768
+group size rank 4 = 960
+POT: 1
+MY MUON TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 5.396530e-01, 6.637287e-01, 2.794102e+00
+Energy/Atom = 1.686416e-02, 2.074152e-02, 8.731568e-02
+Forces      = 4.012681e-01, 6.107255e-01, 9.708921e+00
+Stress      = 3.776976e+00, 5.074932e+00, 2.327151e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY MUON VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 5.819383e-01, 7.646466e-01, 2.681958e+00
+Energy/Atom = 1.818557e-02, 2.389521e-02, 8.381118e-02
+Forces      = 5.623934e-01, 8.851757e-01, 9.719989e+00
+Stress      = 4.030280e+00, 5.293940e+00, 2.447302e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY MUON TIME: 1062.3879061862826 STEPS: 5000 EPOCHS: 999 FINAL_LOSS: 9.462977241293409
+
+group size rank 0 = 4768
+group size rank 1 = 4736
+group size rank 2 = 4768
+group size rank 6 = 4768
+group size rank 3 = 4768
+group size rank 4 = 4768
+group size rank 5 = 4768
+group size rank 7 = 4768
+group size rank 0 = 960
+group size rank 1 = 960
+group size rank 2 = 960
+group size rank 6 = 960
+group size rank 4 = 960
+group size rank 3 = 960
+group size rank 7 = 960
+group size rank 5 = 960
+POT: 2
+MY MUON TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 5.202923e-01, 6.316021e-01, 2.368081e+00
+Energy/Atom = 1.625913e-02, 1.973757e-02, 7.400254e-02
+Forces      = 4.007118e-01, 6.135115e-01, 9.758907e+00
+Stress      = 3.694207e+00, 5.008164e+00, 2.706068e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY MUON VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 5.823565e-01, 7.446032e-01, 2.547891e+00
+Energy/Atom = 1.819864e-02, 2.326885e-02, 7.962158e-02
+Forces      = 5.650012e-01, 8.926945e-01, 9.739253e+00
+Stress      = 4.072030e+00, 5.422038e+00, 2.493629e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY MUON TIME: 1062.3492531254888 STEPS: 5000 EPOCHS: 999 FINAL_LOSS: 5.4903449854722775
+
+group size rank 0 = 4768
+group size rank 2 = 4768
+group size rank 1 = 4736
+group size rank 6 = 4768
+group size rank 5 = 4768
+group size rank 7 = 4768
+group size rank 3 = 4768
+group size rank 4 = 4768
+group size rank 0 = 960
+group size rank 2 = 960
+group size rank 1 = 960
+group size rank 6 = 960
+group size rank 5 = 960
+group size rank 3 = 960
+group size rank 7 = 960
+group size rank 4 = 960
+POT: 3
+MY MUON TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 4.710891e-01, 5.667351e-01, 2.451036e+00
+Energy/Atom = 1.472154e-02, 1.771047e-02, 7.659486e-02
+Forces      = 3.980386e-01, 6.380301e-01, 9.966221e+00
+Stress      = 4.552875e+00, 6.338425e+00, 3.426820e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY MUON VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 5.952142e-01, 7.714228e-01, 2.296988e+00
+Energy/Atom = 1.860044e-02, 2.410696e-02, 7.178088e-02
+Forces      = 5.912978e-01, 9.468894e-01, 1.026001e+01
+Stress      = 6.330203e+00, 8.706663e+00, 3.526502e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY MUON TIME: 1067.4817441031337 STEPS: 5000 EPOCHS: 999 FINAL_LOSS: 10.24442374589643
+
+group size rank 0 = 4768
+group size rank 1 = 4736
+group size rank 6 = 4768
+group size rank 3 = 4768
+group size rank 5 = 4768
+group size rank 4 = 4768
+group size rank 7 = 4768
+group size rank 2 = 4768
+group size rank 0 = 960
+group size rank 1 = 960
+group size rank 6 = 960
+group size rank 3 = 960
+group size rank 5 = 960
+group size rank 4 = 960
+group size rank 7 = 960
+group size rank 2 = 960
+group size rank 5 = 4768
+group size rank 2 = 4768
+group size rank 4 = 4768
+group size rank 3 = 4768
+group size rank 6 = 4768
+group size rank 7 = 4768
+group size rank 4 = 960
+group size rank 5 = 960
+group size rank 2 = 960
+group size rank 3 = 960
+group size rank 6 = 960
+group size rank 7 = 960
+group size rank 1 = 4736
+group size rank 1 = 960
+POT: 4
+MY MUON TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 5.255465e-01, 6.368024e-01, 2.455650e+00
+Energy/Atom = 1.642333e-02, 1.990007e-02, 7.673905e-02
+Forces      = 4.008723e-01, 6.109167e-01, 9.736634e+00
+Stress      = 3.740636e+00, 5.040619e+00, 2.367288e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY MUON VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 5.569396e-01, 7.317663e-01, 2.792382e+00
+Energy/Atom = 1.740436e-02, 2.286770e-02, 8.726193e-02
+Forces      = 5.628909e-01, 8.865232e-01, 9.723464e+00
+Stress      = 4.016175e+00, 5.297589e+00, 2.436972e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY MUON TIME: 1069.3667799197137 STEPS: 5000 EPOCHS: 999 FINAL_LOSS: 7.660410161476655
+
+group size rank 0 = 4768
+group size rank 0 = 960
+POT: 5
+MY MUON TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 4.791034e-01, 6.225915e-01, 3.062741e+00
+Energy/Atom = 1.497198e-02, 1.945598e-02, 9.571065e-02
+Forces      = 4.542659e-01, 7.260899e-01, 1.107911e+01
+Stress      = 8.850880e+00, 1.246404e+01, 4.604950e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY MUON VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 7.499250e-01, 9.884017e-01, 3.307917e+00
+Energy/Atom = 2.343516e-02, 3.088755e-02, 1.033724e-01
+Forces      = 6.948757e-01, 1.071493e+00, 1.093551e+01
+Stress      = 1.193986e+01, 1.605220e+01, 4.650824e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+MY MUON TIME: 1059.3145903609693 STEPS: 5000 EPOCHS: 999 FINAL_LOSS: 14.052763035233726
+
+[prun] Master compute host = cn-030
+[prun] Resource manager = slurm
+[prun] Launch cmd = mpirun /home/peivzarenkov/.conda/envs/peter_env/bin/python train_etn_my_sgd.py (family=openmpi)
+group size rank 4 = 4768
+group size rank 2 = 4768
+group size rank 6 = 4768
+group size rank 1 = 4736
+group size rank 5 = 4768
+group size rank 7 = 4768
+group size rank 3 = 4768
+group size rank 0 = 4768
+group size rank 4 = 960
+group size rank 2 = 960
+group size rank 6 = 960
+group size rank 1 = 960
+group size rank 5 = 960
+group size rank 7 = 960
+group size rank 3 = 960
+group size rank 0 = 960
+group size rank 6 = 4768
+group size rank 3 = 4768
+group size rank 1 = 4736
+group size rank 4 = 4768
+group size rank 5 = 4768
+POT: 1
+ETN SGD TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 3.200484e+00, 4.104414e+00, 1.061472e+01
+Energy/Atom = 1.000151e-01, 1.282629e-01, 3.317099e-01
+Forces      = 1.037605e+00, 1.401374e+00, 1.354057e+01
+Stress      = 1.308341e+01, 1.935354e+01, 7.380740e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN SGD VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 5.156606e+00, 5.551673e+00, 1.073962e+01
+Energy/Atom = 1.611440e-01, 1.734898e-01, 3.356131e-01
+Forces      = 1.266381e+00, 1.730164e+00, 1.354057e+01
+Stress      = 2.332452e+01, 3.079889e+01, 7.380740e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN SGD TIME: 1062.1616392880678 STEPS: 5000 EPOCHS: 999 FINAL_LOSS: 57.33669130662454
+
+group size rank 0 = 4768
+group size rank 7 = 4768
+group size rank 2 = 4768
+group size rank 6 = 960
+group size rank 3 = 960
+group size rank 1 = 960
+group size rank 4 = 960
+group size rank 5 = 960
+group size rank 0 = 960
+group size rank 7 = 960
+group size rank 2 = 960
+group size rank 4 = 4768
+group size rank 6 = 4768
+group size rank 1 = 4736
+group size rank 3 = 4768
+group size rank 5 = 4768
+group size rank 7 = 4768
+POT: 2
+ETN SGD TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 3.203242e+00, 4.104397e+00, 1.055926e+01
+Energy/Atom = 1.001013e-01, 1.282624e-01, 3.299768e-01
+Forces      = 1.037605e+00, 1.401374e+00, 1.354057e+01
+Stress      = 1.308341e+01, 1.935354e+01, 7.380740e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN SGD VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 5.175151e+00, 5.567714e+00, 1.073166e+01
+Energy/Atom = 1.617235e-01, 1.739911e-01, 3.353643e-01
+Forces      = 1.266381e+00, 1.730164e+00, 1.354057e+01
+Stress      = 2.332452e+01, 3.079889e+01, 7.380740e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN SGD TIME: 1061.784579243511 STEPS: 5000 EPOCHS: 999 FINAL_LOSS: 42.71271308958086
+
+group size rank 0 = 4768
+group size rank 2 = 4768
+group size rank 4 = 960
+group size rank 6 = 960
+group size rank 1 = 960
+group size rank 3 = 960
+group size rank 7 = 960
+group size rank 5 = 960
+group size rank 0 = 960
+group size rank 2 = 960
+group size rank 3 = 4768
+group size rank 6 = 4768
+group size rank 4 = 4768
+group size rank 1 = 4736
+POT: 3
+ETN SGD TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 3.199528e+00, 4.104413e+00, 1.051998e+01
+Energy/Atom = 9.998527e-02, 1.282629e-01, 3.287493e-01
+Forces      = 1.037605e+00, 1.401374e+00, 1.354057e+01
+Stress      = 1.308341e+01, 1.935354e+01, 7.380740e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN SGD VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 5.140169e+00, 5.536837e+00, 1.071235e+01
+Energy/Atom = 1.606303e-01, 1.730262e-01, 3.347608e-01
+Forces      = 1.266381e+00, 1.730164e+00, 1.354057e+01
+Stress      = 2.332452e+01, 3.079889e+01, 7.380740e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN SGD TIME: 1061.4614928513765 STEPS: 5000 EPOCHS: 999 FINAL_LOSS: 56.46904658956926
+
+group size rank 0 = 4768
+group size rank 7 = 4768
+group size rank 5 = 4768
+group size rank 2 = 4768
+group size rank 3 = 960
+group size rank 6 = 960
+group size rank 4 = 960
+group size rank 1 = 960
+group size rank 0 = 960
+group size rank 7 = 960
+group size rank 2 = 960
+group size rank 5 = 960
+POT: 4
+ETN SGD TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 3.192688e+00, 4.104318e+00, 1.047696e+01
+Energy/Atom = 9.977149e-02, 1.282599e-01, 3.274049e-01
+Forces      = 1.037605e+00, 1.401374e+00, 1.354057e+01
+Stress      = 1.308341e+01, 1.935354e+01, 7.380740e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN SGD VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 5.099703e+00, 5.497053e+00, 1.063955e+01
+Energy/Atom = 1.593657e-01, 1.717829e-01, 3.324861e-01
+Forces      = 1.266381e+00, 1.730164e+00, 1.354057e+01
+Stress      = 2.332452e+01, 3.079889e+01, 7.380740e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN SGD TIME: 1061.0445124357939 STEPS: 5000 EPOCHS: 999 FINAL_LOSS: 55.974708909124246
+
+group size rank 0 = 4768
+group size rank 4 = 4768
+group size rank 5 = 4768
+group size rank 7 = 4768
+group size rank 6 = 4768
+group size rank 4 = 960
+group size rank 5 = 960
+group size rank 7 = 960
+group size rank 0 = 960
+group size rank 3 = 4768
+group size rank 6 = 960
+group size rank 1 = 4736
+group size rank 2 = 4768
+group size rank 3 = 960
+group size rank 2 = 960
+group size rank 1 = 960
+POT: 5
+ETN SGD TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 3.190022e+00, 4.104516e+00, 1.050068e+01
+Energy/Atom = 9.968820e-02, 1.282661e-01, 3.281462e-01
+Forces      = 1.037605e+00, 1.401374e+00, 1.354057e+01
+Stress      = 1.308341e+01, 1.935354e+01, 7.380740e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN SGD VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 5.083059e+00, 5.482055e+00, 1.063110e+01
+Energy/Atom = 1.588456e-01, 1.713142e-01, 3.322220e-01
+Forces      = 1.266381e+00, 1.730164e+00, 1.354057e+01
+Stress      = 2.332452e+01, 3.079889e+01, 7.380740e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+ETN SGD TIME: 1058.7077291421592 STEPS: 5000 EPOCHS: 999 FINAL_LOSS: 59.03480910278855
+
+[prun] Master compute host = cn-030
+[prun] Resource manager = slurm
+[prun] Launch cmd = mpirun /home/peivzarenkov/.conda/envs/peter_env/bin/python train_etn_scipy_bfgs.py (family=openmpi)
+group size rank 4 = 4768
+group size rank 7 = 4768
+group size rank 0 = 4768
+group size rank 6 = 4768
+group size rank 5 = 4768
+group size rank 3 = 4768
+group size rank 4 = 960
+group size rank 7 = 960
+group size rank 0 = 960
+group size rank 6 = 960
+group size rank 5 = 960
+group size rank 3 = 960
+group size rank 1 = 4736
+group size rank 1 = 960
+group size rank 2 = 4768
+group size rank 2 = 960
+group size rank 4 = 4768
+group size rank 1 = 4736
+group size rank 5 = 4768
+POT: 1
+SCIPY BFGS TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.036827e+00, 2.057763e+00, 1.065107e+01
+Energy/Atom = 3.240084e-02, 6.430510e-02, 3.328460e-01
+Forces      = 3.423361e-01, 6.847276e-01, 1.106066e+01
+Stress      = 4.524370e+00, 9.921756e+00, 7.116234e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+SCIPY BFGS VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 1.968587e+00, 3.538281e+00, 1.065107e+01
+Energy/Atom = 6.151834e-02, 1.105713e-01, 3.328460e-01
+Forces      = 4.502401e-01, 8.973235e-01, 1.098181e+01
+Stress      = 7.128860e+00, 1.576663e+01, 7.396428e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+SCIPY BFGS TIME: 66.29023834690452 NIT: 88 SUCCESS: True
+
+group size rank 0 = 4768
+group size rank 3 = 4768
+group size rank 6 = 4768
+group size rank 2 = 4768
+group size rank 7 = 4768
+group size rank 4 = 960
+group size rank 1 = 960
+group size rank 5 = 960
+group size rank 0 = 960
+group size rank 6 = 960
+group size rank 3 = 960
+group size rank 2 = 960
+group size rank 7 = 960
+group size rank 1 = 4736
+POT: 2
+SCIPY BFGS TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 2.042311e-01, 2.736606e-01, 1.422937e+00
+Energy/Atom = 6.382221e-03, 8.551895e-03, 4.446679e-02
+Forces      = 1.341627e-01, 1.915036e-01, 4.300368e+00
+Stress      = 1.620888e+00, 2.373338e+00, 1.053559e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+SCIPY BFGS VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 3.568508e-01, 4.470584e-01, 1.324448e+00
+Energy/Atom = 1.115159e-02, 1.397057e-02, 4.138899e-02
+Forces      = 1.828675e-01, 2.772638e-01, 4.363010e+00
+Stress      = 1.662729e+00, 2.319043e+00, 1.046940e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+SCIPY BFGS TIME: 76.72602916136384 NIT: 117 SUCCESS: False
+
+group size rank 0 = 4768
+group size rank 4 = 4768
+group size rank 5 = 4768
+group size rank 6 = 4768
+group size rank 3 = 4768
+group size rank 7 = 4768
+group size rank 2 = 4768
+group size rank 1 = 960
+group size rank 0 = 960
+group size rank 4 = 960
+group size rank 5 = 960
+group size rank 6 = 960
+group size rank 3 = 960
+group size rank 7 = 960
+group size rank 2 = 960
+group size rank 5 = 4768
+group size rank 1 = 4736
+group size rank 4 = 4768
+POT: 3
+SCIPY BFGS TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 2.042311e-01, 2.736606e-01, 1.422937e+00
+Energy/Atom = 6.382221e-03, 8.551895e-03, 4.446680e-02
+Forces      = 1.341627e-01, 1.915036e-01, 4.300368e+00
+Stress      = 1.620888e+00, 2.373338e+00, 1.053559e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+SCIPY BFGS VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 3.568508e-01, 4.470584e-01, 1.324448e+00
+Energy/Atom = 1.115159e-02, 1.397057e-02, 4.138899e-02
+Forces      = 1.828675e-01, 2.772638e-01, 4.363010e+00
+Stress      = 1.662729e+00, 2.319043e+00, 1.046940e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+SCIPY BFGS TIME: 89.63405158370733 NIT: 114 SUCCESS: False
+
+group size rank 0 = 4768
+group size rank 2 = 4768
+group size rank 6 = 4768
+group size rank 7 = 4768
+group size rank 3 = 4768
+group size rank 1 = 960
+group size rank 5 = 960
+group size rank 0 = 960
+group size rank 4 = 960
+group size rank 6 = 960
+group size rank 2 = 960
+group size rank 7 = 960
+group size rank 3 = 960
+group size rank 1 = 4736
+group size rank 5 = 4768
+group size rank 4 = 4768
+POT: 4
+SCIPY BFGS TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 2.042311e-01, 2.736606e-01, 1.422937e+00
+Energy/Atom = 6.382221e-03, 8.551895e-03, 4.446680e-02
+Forces      = 1.341627e-01, 1.915036e-01, 4.300368e+00
+Stress      = 1.620888e+00, 2.373338e+00, 1.053559e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+SCIPY BFGS VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 3.568508e-01, 4.470584e-01, 1.324448e+00
+Energy/Atom = 1.115159e-02, 1.397057e-02, 4.138899e-02
+Forces      = 1.828675e-01, 2.772638e-01, 4.363010e+00
+Stress      = 1.662729e+00, 2.319043e+00, 1.046940e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+SCIPY BFGS TIME: 56.72737658023834 NIT: 75 SUCCESS: True
+
+group size rank 0 = 4768
+group size rank 6 = 4768
+group size rank 2 = 4768
+group size rank 3 = 4768
+group size rank 7 = 4768
+group size rank 1 = 960
+group size rank 5 = 960
+group size rank 4 = 960
+group size rank 0 = 960
+group size rank 2 = 960
+group size rank 6 = 960
+group size rank 7 = 960
+group size rank 3 = 960
+POT: 5
+SCIPY BFGS TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 2.042311e-01, 2.736606e-01, 1.422937e+00
+Energy/Atom = 6.382221e-03, 8.551895e-03, 4.446680e-02
+Forces      = 1.341627e-01, 1.915036e-01, 4.300368e+00
+Stress      = 1.620888e+00, 2.373338e+00, 1.053559e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+SCIPY BFGS VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 3.568508e-01, 4.470584e-01, 1.324448e+00
+Energy/Atom = 1.115159e-02, 1.397057e-02, 4.138899e-02
+Forces      = 1.828675e-01, 2.772638e-01, 4.363010e+00
+Stress      = 1.662729e+00, 2.319043e+00, 1.046940e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+SCIPY BFGS TIME: 117.98469655960798 NIT: 99 SUCCESS: False
+
+[prun] Master compute host = cn-030
+[prun] Resource manager = slurm
+[prun] Launch cmd = mpirun /home/peivzarenkov/.conda/envs/peter_env/bin/python train_etn_native_bfgs.py (family=openmpi)
+group size rank 2 = 4768
+group size rank 1 = 4736
+group size rank 4 = 4768
+group size rank 6 = 4768
+group size rank 7 = 4768
+group size rank 3 = 4768
+group size rank 2 = 960
+group size rank 1 = 960
+group size rank 4 = 960
+group size rank 6 = 960
+group size rank 7 = 960
+group size rank 3 = 960
+group size rank 5 = 4768
+
+=== POT 1 ===
+init params head: [-0.00076989  0.00021813 -0.00073322 -0.00051882 -0.00034572]
+group size rank 0 = 4768
+group size rank 5 = 960
+group size rank 0 = 960
+init loss: 63832.48268291732
+[MLIP] Starting pretraining...
+[MLIP] Rescaling potential...
+[MLIP] Potential rescaling completed
+[MLIP] 0	294.847	7.30715e+14	3.98887e+06	3296.68	46.0354
+[MLIP] 1	4.91488e+13	276.09	319.314	41.5976	24.9421
+[MLIP] 2	3.28628e+09	86.2711	4.17978
+[MLIP] 3	5.23466e+07	317.342	4.22526	2.96718
+[MLIP] 4	23489.2	5.81554	2.90274
+[MLIP] 5	51.8046	2.67734
+[MLIP] 6	56.7176	2.41368
+[MLIP] 7	40722	2.59282	2.24855
+[MLIP] 8	161667	2.5306	2.08412
+[MLIP] 9	19.8266	1.78703
+[MLIP] 10	3.03956	1.51048
+[MLIP] 11	18.2536	1.17002
+[MLIP] 12	2.42124	0.921985
+[MLIP] 13	6.00771	0.827018
+[MLIP] 14	3.52994	0.708343
+[MLIP] 15	12.6777	0.687873	0.674069	0.664639
+[MLIP] 16	0.449289
+[MLIP] 17	0.439257	0.419891
+[MLIP] 18	0.413591	0.410542
+[MLIP] 19	0.400796
+[MLIP] 20	0.391126
+[MLIP] 21	0.388773	0.387064
+[MLIP] 22	0.384572
+[MLIP] 23	0.382456
+[MLIP] 24	0.381573
+[MLIP] 25	0.380756	0.380234
+[MLIP] 26	0.379371
+[MLIP] 27	0.376955	0.375844
+[MLIP] 28	0.371591	0.366888
+[MLIP] 29	0.435639	0.357122	0.355362	0.354861	0.353399
+[MLIP] 30	0.341551
+[MLIP] 31	0.345652	0.320349
+[MLIP] 32	0.293121	0.289023	0.278484
+[MLIP] 33	0.238417
+[MLIP] 34	0.238398	0.181049
+[MLIP] 35	0.148592
+[MLIP] 36	0.119005
+[MLIP] 37	0.175938	0.110697
+[MLIP] 38	0.104356
+[MLIP] 39	0.102558	0.10194
+[MLIP] 40	0.0963974
+[MLIP] 41	0.0876088
+[MLIP] 42	0.0771536
+[MLIP] 43	0.0716905	0.0683291
+[MLIP] 44	0.0603949	0.0583334
+[MLIP] 45	0.0534479
+[MLIP] 46	0.0500771	0.0486409
+[MLIP] 47	0.0456061
+[MLIP] 48	0.0489131	0.043477
+[MLIP] 49	0.0421162
+[MLIP] 50	0.0412969
+[MLIP] 51	0.0408986
+[MLIP] 52	0.0406859
+[MLIP] 53	0.0404895
+[MLIP] 54	0.0402857
+[MLIP] 55	0.0400645	0.0399568
+[MLIP] 56	0.0396774	0.0392439	0.038862
+[MLIP] 57	0.0388
+[MLIP] 58	0.03879
+[MLIP] 59	0.0387894
+[MLIP] 60	0.0387893
+[MLIP] 61	0.0387893
+[MLIP] 62	0.0387893
+[MLIP] 63	0.0387893
+[MLIP] 64	0.0387893
+[MLIP] 65	0.0387893
+[MLIP] 66	0.0387893	0.0387893	0.0387893
+[MLIP] 67	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893
+[MLIP] 68	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893
+[MLIP] 69	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893
+[MLIP] 70	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893
+[MLIP] 71	0.0387893	0.0387893
+[MLIP] 72	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	 Line search: prev_x == curr_x	0.0387893
+[MLIP] 73	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	 Line search: prev_x == curr_x	0.0387893
+[MLIP] 74	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	 Line search: prev_x == curr_x	0.0387893
+[MLIP] Stepping in accend direction. Stopping the training...
+[MLIP] Pretraining completed
+[MLIP] Rescaling potential...
+[MLIP] Potential rescaling completed
+[MLIP] 0	0.0387893	0.0387893	0.0387893
+[MLIP] 1	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893
+[MLIP] 2	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	 Line search: prev_x == curr_x	0.0387893
+[MLIP] 3	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	 Line search: prev_x == curr_x	0.0387893
+[MLIP] Stepping in accend direction. Stopping the training...
+group size rank 1 = 4736
+group size rank 4 = 4768
+group size rank 2 = 4768
+group size rank 5 = 4768
+group size rank 6 = 4768
+group size rank 7 = 4768
+group size rank 3 = 4768
+final params head: [ 66.19073638 -38.12013516  19.1123486   -8.98476839   3.69316029]
+final loss: 5.854124874241474
+TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 2.057596e-01, 2.756559e-01, 1.332411e+00
+Energy/Atom = 6.429987e-03, 8.614246e-03, 4.163784e-02
+Forces      = 1.341377e-01, 1.917362e-01, 4.324607e+00
+Stress      = 1.620948e+00, 2.373711e+00, 1.037363e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 3.539201e-01, 4.439839e-01, 1.332411e+00
+Energy/Atom = 1.106000e-02, 1.387450e-02, 4.163784e-02
+Forces      = 1.825137e-01, 2.771155e-01, 4.324607e+00
+Stress      = 1.661372e+00, 2.316578e+00, 1.037363e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+TRAIN_TIME: 62.52455244958401
+
+=== POT 2 ===
+init params head: [ 0.00066968 -0.00079041  0.00048928 -0.000279   -0.00028138]
+group size rank 0 = 4768
+group size rank 1 = 960
+group size rank 4 = 960
+group size rank 2 = 960
+group size rank 5 = 960
+group size rank 7 = 960
+group size rank 6 = 960
+group size rank 3 = 960
+group size rank 0 = 960
+init loss: 63838.69571303016
+[MLIP] Starting pretraining...
+[MLIP] Rescaling potential...
+[MLIP] Potential rescaling completed
+[MLIP] 0	424.513	7.46856e+09	3040.06	21.8263
+[MLIP] 1	4.19214e+09	58.9774	10.3202	7.62443	11.0225	4.85301
+[MLIP] 2	501976	27.9423	4.67218	4.60059
+[MLIP] 3	25946.5	3.06904
+[MLIP] 4	303.691	2.35482
+[MLIP] 5	4762.34	1.91245	1.9114	1.86721	1.82691
+[MLIP] 6	4908.16	1.64968
+[MLIP] 7	4.87071	1.40469
+[MLIP] 8	3.09885	1.61355	1.37187
+[MLIP] 9	1.28942
+[MLIP] 10	1.18838
+[MLIP] 11	3.48115	1.18902	1.1765
+[MLIP] 12	1.09439
+[MLIP] 13	0.9249	0.944768	0.899001
+[MLIP] 14	0.602487
+[MLIP] 15	58.0503	0.543182
+[MLIP] 16	0.767705	0.459177
+[MLIP] 17	0.837902	0.442596
+[MLIP] 18	0.457735	0.429164
+[MLIP] 19	0.427852
+[MLIP] 20	0.427466
+[MLIP] 21	0.426881	0.426233
+[MLIP] 22	0.424519
+[MLIP] 23	0.421357
+[MLIP] 24	0.415807
+[MLIP] 25	0.410041
+[MLIP] 26	0.407907	0.406959
+[MLIP] 27	0.403121
+[MLIP] 28	0.400259
+[MLIP] 29	0.400162	0.3971
+[MLIP] 30	0.399937	0.393888
+[MLIP] 31	0.396333	0.392209
+[MLIP] 32	0.390633	0.390231
+[MLIP] 33	0.387933
+[MLIP] 34	0.385226
+[MLIP] 35	0.461489	0.383343	0.383223
+[MLIP] 36	0.386321	0.381909
+[MLIP] 37	0.379276
+[MLIP] 38	0.3771
+[MLIP] 39	0.401248	0.375964
+[MLIP] 40	0.377742	0.375566
+[MLIP] 41	0.374907
+[MLIP] 42	0.373267	0.372729
+[MLIP] 43	0.372691	0.371723
+[MLIP] 44	0.370794	0.370422	0.370233
+[MLIP] 45	0.379752	0.369168
+[MLIP] 46	0.367718
+[MLIP] 47	0.426658	0.366988	0.36695	0.366842
+[MLIP] 48	0.36592	0.365497
+[MLIP] 49	0.365689	0.365016
+[MLIP] 50	0.365303	0.364486
+[MLIP] 51	0.365354	0.364085
+[MLIP] 52	0.363381
+[MLIP] 53	0.364106	0.363175
+[MLIP] 54	0.362825
+[MLIP] 55	0.363015	0.362642
+[MLIP] 56	0.362427
+[MLIP] 57	0.362297
+[MLIP] 58	0.362274	0.362224
+[MLIP] 59	0.362182	0.362174
+[MLIP] 60	0.362106	0.36207
+[MLIP] 61	0.362043
+[MLIP] 62	0.362018
+[MLIP] 63	0.361999
+[MLIP] 64	0.361979	0.361963
+[MLIP] 65	0.361925	0.361867	0.361833
+[MLIP] 66	0.361753	0.361675
+[MLIP] 67	0.36147	0.361155	0.360854
+[MLIP] 68	0.360923	0.360617
+[MLIP] 69	0.359947
+[MLIP] 70	0.359277
+[MLIP] 71	0.358387
+[MLIP] 72	0.356624
+[MLIP] 73	0.353113	0.350485
+[MLIP] 74	0.733861	0.345855
+[MLIP] Number of iterations exceeded the threshold. Stopping the training...
+[MLIP] Pretraining completed
+[MLIP] Rescaling potential...
+[MLIP] Potential rescaling completed
+[MLIP] 0	0.345835	537.801	3.76797	0.381249	0.343771
+[MLIP] 1	9726.01	35.8293	0.599361	0.346347	0.343506
+[MLIP] 2	28.9562	0.357049	0.342757
+[MLIP] 3	2.5223	0.363436	0.342709	0.342486
+[MLIP] 4	3.88055	0.349612	0.33908
+[MLIP] 5	0.336634	0.334939
+[MLIP] 6	0.333483
+[MLIP] 7	0.331064
+[MLIP] 8	0.329805
+[MLIP] 9	0.328992
+[MLIP] 10	0.3289	0.328818
+[MLIP] 11	0.328689
+[MLIP] 12	0.328529
+[MLIP] 13	0.328399
+[MLIP] 14	0.328341
+[MLIP] 15	0.3283	0.328279
+[MLIP] 16	0.328207	0.328064	0.327782	0.327271	0.326932
+[MLIP] 17	0.325178	0.323144
+[MLIP] 18	1.69401	0.321291	0.321258	0.321	0.32082
+[MLIP] 19	0.338355	0.319689
+[MLIP] 20	0.315925
+[MLIP] 21	0.3119	0.311567
+[MLIP] 22	0.413041	0.306758
+[MLIP] 23	1.16579	0.302852	0.302737	0.302181
+[MLIP] 24	0.318732	0.295902
+[MLIP] 25	0.287062	0.284076
+[MLIP] 26	1.26776	0.275746	0.275198	0.281608	0.271377
+[MLIP] 27	11.9967	0.263289
+[MLIP] 28	0.337082	0.250709
+[MLIP] 29	7.27354	0.240562
+[MLIP] 30	0.229464	0.222468
+[MLIP] 31	29.9948	0.214332
+[MLIP] 32	0.412017	0.194316
+[MLIP] 33	0.698955	0.158225
+[MLIP] 34	0.612889	0.149778
+[MLIP] 35	8.16522	0.132643	0.132207	0.130706	0.126695
+[MLIP] 36	0.988814	0.119356
+[MLIP] 37	0.139814	0.108932
+[MLIP] 38	0.135999	0.0988983
+[MLIP] 39	0.0766527
+[MLIP] 40	0.0717189	0.0588971
+[MLIP] 41	0.303369	0.0548614
+[MLIP] 42	0.351509	0.0545318	0.0527736
+[MLIP] 43	0.0464209
+[MLIP] 44	0.0639125	0.0458
+[MLIP] 45	0.0450106	0.0437956
+[MLIP] 46	0.041825
+[MLIP] 47	0.0400196
+[MLIP] 48	0.0402967	0.0390973
+[MLIP] 49	0.0388725
+[MLIP] 50	0.0388518
+[MLIP] 51	0.0388269	0.0388175
+[MLIP] 52	0.0387991	0.038792
+[MLIP] 53	0.0387895
+[MLIP] 54	0.0387893
+[MLIP] 55	0.0387893
+[MLIP] 56	0.0387893	0.0387893
+[MLIP] 57	0.0387893	0.0387893
+[MLIP] 58	0.0387893
+[MLIP] 59	0.0387893
+[MLIP] 60	0.0387893
+[MLIP] 61	0.0387893
+[MLIP] 62	0.0387893	0.0387893
+[MLIP] 63	0.0387893
+[MLIP] 64	0.0387893
+[MLIP] 65	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	 Line search: prev_x == curr_x	0.0387893
+[MLIP] 66	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893
+[MLIP] 67	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893
+[MLIP] Stepping in accend direction. Stopping the training...
+group size rank 1 = 4736
+group size rank 4 = 4768
+group size rank 5 = 4768
+group size rank 2 = 4768
+group size rank 6 = 4768
+final params head: [25.09254505 -9.16951112  5.05102227  6.40236141  3.76219063]
+final loss: 5.8541248742381375
+TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 2.057596e-01, 2.756559e-01, 1.332411e+00
+Energy/Atom = 6.429987e-03, 8.614246e-03, 4.163784e-02
+Forces      = 1.341377e-01, 1.917362e-01, 4.324607e+00
+Stress      = 1.620948e+00, 2.373711e+00, 1.037363e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 3.539201e-01, 4.439839e-01, 1.332411e+00
+Energy/Atom = 1.106000e-02, 1.387450e-02, 4.163784e-02
+Forces      = 1.825137e-01, 2.771155e-01, 4.324607e+00
+Stress      = 1.661372e+00, 2.316578e+00, 1.037363e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+TRAIN_TIME: 78.07398123294115
+
+=== POT 3 ===
+init params head: [ 9.78023027e-04  9.90894537e-05 -4.37105396e-04 -8.45420868e-04
+ -1.11061008e-04]
+group size rank 0 = 4768
+group size rank 7 = 4768
+group size rank 3 = 4768
+group size rank 1 = 960
+group size rank 4 = 960
+group size rank 2 = 960
+group size rank 5 = 960
+group size rank 6 = 960
+group size rank 0 = 960
+group size rank 7 = 960
+group size rank 3 = 960
+init loss: 63818.46180313757
+[MLIP] Starting pretraining...
+[MLIP] Rescaling potential...
+[MLIP] Potential rescaling completed
+[MLIP] 0	73.7773	1.30322e+13	553763	696.57	49.0918
+[MLIP] 1	2.00344e+14	391.055	132.714	8.94136
+[MLIP] 2	5.78413e+10	367.138	2.70542
+[MLIP] 3	156692	2.21856
+[MLIP] 4	345.418	2.53579	2.05372
+[MLIP] 5	12301.8	2.22355	1.87499
+[MLIP] 6	33.0012	1.56868
+[MLIP] 7	4.86434	1.60818	1.51824
+[MLIP] 8	5.81028	1.45142
+[MLIP] 9	1.34401
+[MLIP] 10	2.98196	1.25565
+[MLIP] 11	1.45545	1.1834	1.17428
+[MLIP] 12	3.75776	1.0733
+[MLIP] 13	23.3749	0.959312	0.953978	0.950704	0.914748
+[MLIP] 14	1.03382	0.844412
+[MLIP] 15	1.75612	0.701064	0.68208
+[MLIP] 16	1.4513	0.622629
+[MLIP] 17	1.19666	0.570487	0.565722
+[MLIP] 18	0.684717	0.529212
+[MLIP] 19	0.460335
+[MLIP] 20	0.499319	0.444807
+[MLIP] 21	0.464188	0.438439
+[MLIP] 22	0.425413	0.421512
+[MLIP] 23	0.41472	0.410611
+[MLIP] 24	0.398368
+[MLIP] 25	0.384869
+[MLIP] 26	0.381203
+[MLIP] 27	0.380148	0.379468
+[MLIP] 28	0.378583
+[MLIP] 29	0.378452
+[MLIP] 30	0.378402	0.378327	0.378271
+[MLIP] 31	0.377952	0.377363	0.376392	0.375299
+[MLIP] 32	0.367797	0.374951	0.365132
+[MLIP] 33	0.352249
+[MLIP] 34	0.37734	0.347763
+[MLIP] 35	0.339188
+[MLIP] 36	0.333001	0.33103
+[MLIP] 37	0.305376
+[MLIP] 38	0.247489
+[MLIP] 39	6.78519	0.217497
+[MLIP] 40	4.64602	0.178634
+[MLIP] 41	2.28115	0.141371
+[MLIP] 42	1.04281	0.0850281
+[MLIP] 43	18.6223	0.0676784
+[MLIP] 44	1.72045	0.0505719
+[MLIP] 45	0.0510606	0.0426626
+[MLIP] 46	0.0526988	0.0403458
+[MLIP] 47	0.0396001	0.0391794
+[MLIP] 48	0.0389341	0.0388576
+[MLIP] 49	0.0387978
+[MLIP] 50	0.0387902
+[MLIP] 51	0.0387893
+[MLIP] 52	0.0387893
+[MLIP] 53	0.0387893
+[MLIP] 54	0.0387893
+[MLIP] 55	0.0387893
+[MLIP] 56	0.0387893
+[MLIP] 57	0.0387893
+[MLIP] 58	0.0387893
+[MLIP] 59	0.0387893	0.0387893
+[MLIP] 60	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	 Line search: prev_x == curr_x	0.0387893
+[MLIP] 61	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893
+[MLIP] 62	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893
+[MLIP] 63	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893
+[MLIP] 64	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	 Line search: prev_x == curr_x	0.0387893
+[MLIP] 65	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893
+[MLIP] Stepping in accend direction. Stopping the training...
+[MLIP] Pretraining completed
+[MLIP] Rescaling potential...
+[MLIP] Potential rescaling completed
+[MLIP] 0	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893
+[MLIP] 1	0.0387893	0.0387893
+[MLIP] 2	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893
+[MLIP] 3	0.0387893	0.0387893	0.0387893
+[MLIP] 4	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893
+[MLIP] 5	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893
+[MLIP] 6	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	 Line search: prev_x == curr_x	0.0387893
+[MLIP] 7	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893
+[MLIP] 8	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	 Line search: prev_x == curr_x	0.0387893
+[MLIP] Stepping in accend direction. Stopping the training...
+group size rank 1 = 4736
+group size rank 4 = 4768
+group size rank 5 = 4768
+group size rank 2 = 4768
+group size rank 6 = 4768
+group size rank 7 = 4768
+final params head: [ 32.61760127 -19.02128169  10.64953005  -5.27953236   1.19188715]
+final loss: 5.854124874238182
+TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 2.057596e-01, 2.756559e-01, 1.332411e+00
+Energy/Atom = 6.429987e-03, 8.614246e-03, 4.163784e-02
+Forces      = 1.341377e-01, 1.917362e-01, 4.324607e+00
+Stress      = 1.620948e+00, 2.373711e+00, 1.037363e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 3.539201e-01, 4.439839e-01, 1.332411e+00
+Energy/Atom = 1.106000e-02, 1.387450e-02, 4.163784e-02
+Forces      = 1.825137e-01, 2.771155e-01, 4.324607e+00
+Stress      = 1.661372e+00, 2.316578e+00, 1.037363e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+TRAIN_TIME: 64.86352874338627
+
+=== POT 4 ===
+init params head: [ 0.00056766  0.00026967 -0.00050191  0.00051615 -0.00037385]
+group size rank 0 = 4768
+group size rank 3 = 4768
+group size rank 1 = 960
+group size rank 4 = 960
+group size rank 5 = 960
+group size rank 2 = 960
+group size rank 7 = 960
+group size rank 6 = 960
+group size rank 0 = 960
+group size rank 3 = 960
+init loss: 63799.353621774746
+[MLIP] Starting pretraining...
+[MLIP] Rescaling potential...
+[MLIP] Potential rescaling completed
+[MLIP] 0	5.79853	72217.7	7.92886	4.15716
+[MLIP] 1	1.44221e+15	8764.49	9.44373	1.88437
+[MLIP] 2	2753.74	2.29494	1.65387
+[MLIP] 3	151.457	1.54702
+[MLIP] 4	68.5182	1.4382
+[MLIP] 5	12.5894	1.42046	1.38508
+[MLIP] 6	10.1588	1.21532	1.20247	1.17809
+[MLIP] 7	6.93823	1.09303	1.08695	1.07719
+[MLIP] 8	0.913995	0.901101
+[MLIP] 9	2.12864	0.852353
+[MLIP] 10	63.8713	0.854794	0.80656
+[MLIP] 11	4.73006	0.683212
+[MLIP] 12	7.57617	0.56987
+[MLIP] 13	13.4952	0.473248
+[MLIP] 14	16.86	0.409216
+[MLIP] 15	0.708212	0.378725
+[MLIP] 16	0.383427	0.375468
+[MLIP] 17	0.374341	0.373868
+[MLIP] 18	0.373132
+[MLIP] 19	0.372072
+[MLIP] 20	0.370735
+[MLIP] 21	0.37031
+[MLIP] 22	0.369864
+[MLIP] 23	0.369558
+[MLIP] 24	0.36861	0.367606
+[MLIP] 25	0.363971	0.364113	0.362539
+[MLIP] 26	0.341118	0.337615	0.328807
+[MLIP] 27	140.693	0.306791
+[MLIP] 28	6366.89	0.300785	0.300713	0.288036
+[MLIP] 29	0.314654	0.262396
+[MLIP] 30	0.17314
+[MLIP] 31	16486.9	0.29487	0.146484
+[MLIP] 32	61.0659	0.110114
+[MLIP] 33	4.02792	0.0896726
+[MLIP] 34	0.526859	0.0805455
+[MLIP] 35	0.306333	0.058236
+[MLIP] 36	0.104686	0.0475968
+[MLIP] 37	0.050161	0.042032
+[MLIP] 38	0.0518142	0.0394082
+[MLIP] 39	0.0411166	0.0390566
+[MLIP] 40	0.0388714
+[MLIP] 41	0.038795
+[MLIP] 42	0.0387936	0.0387903
+[MLIP] 43	0.0387894
+[MLIP] 44	0.0387893
+[MLIP] 45	0.0387893
+[MLIP] 46	0.0387893
+[MLIP] 47	0.0387893
+[MLIP] 48	0.0387893
+[MLIP] 49	0.0387893
+[MLIP] 50	0.0387893
+[MLIP] 51	0.0387893
+[MLIP] 52	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	 Line search: prev_x == curr_x	0.0387893
+[MLIP] 53	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893
+[MLIP] 54	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893
+[MLIP] Stepping in accend direction. Stopping the training...
+[MLIP] Pretraining completed
+[MLIP] Rescaling potential...
+[MLIP] Potential rescaling completed
+[MLIP] 0	0.0387893	0.0387893	0.0387893
+[MLIP] 1	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893
+[MLIP] 2	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893
+[MLIP] 3	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	 Line search: prev_x == curr_x	0.0387893
+[MLIP] Stepping in accend direction. Stopping the training...
+group size rank 2 = 4768
+group size rank 1 = 4736
+group size rank 4 = 4768
+group size rank 5 = 4768
+group size rank 7 = 4768
+group size rank 6 = 4768
+final params head: [ 19.28593472 -12.11507741   6.85654846  -1.8934555   -0.73687278]
+final loss: 5.854124874259803
+TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 2.057596e-01, 2.756559e-01, 1.332411e+00
+Energy/Atom = 6.429987e-03, 8.614246e-03, 4.163784e-02
+Forces      = 1.341377e-01, 1.917362e-01, 4.324607e+00
+Stress      = 1.620948e+00, 2.373711e+00, 1.037363e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 3.539201e-01, 4.439839e-01, 1.332411e+00
+Energy/Atom = 1.106000e-02, 1.387450e-02, 4.163784e-02
+Forces      = 1.825137e-01, 2.771155e-01, 4.324607e+00
+Stress      = 1.661372e+00, 2.316578e+00, 1.037363e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+TRAIN_TIME: 45.11885383725166
+
+=== POT 5 ===
+init params head: [-0.00077302  0.00094897  0.00045747 -0.00029706  0.00041521]
+group size rank 0 = 4768
+group size rank 3 = 4768
+group size rank 2 = 960
+group size rank 1 = 960
+group size rank 4 = 960
+group size rank 5 = 960
+group size rank 7 = 960
+group size rank 6 = 960
+group size rank 0 = 960
+group size rank 3 = 960
+init loss: 63875.3674087065
+[MLIP] Starting pretraining...
+[MLIP] Rescaling potential...
+[MLIP] Potential rescaling completed
+[MLIP] 0	53.93	3.35199e+11	41279.6	237.927	42.835
+[MLIP] 1	1.64836e+13	291.251	24.1237	7.87262
+[MLIP] 2	1.337e+08	268.218	7.50893	4.98538
+[MLIP] 3	148436	3.57238	3.56119	2.22129
+[MLIP] 4	64798.4	3.12909	1.89123
+[MLIP] 5	31573.3	1.65683	1.65581	1.55295
+[MLIP] 6	4.66767	1.31294
+[MLIP] 7	3.88254	1.1676
+[MLIP] 8	1.94924	1.11295
+[MLIP] 9	1.02576
+[MLIP] 10	2.80025	0.943423
+[MLIP] 11	1.38769	0.792798
+[MLIP] 12	3.46805	0.691666
+[MLIP] 13	0.506097
+[MLIP] 14	1.83316	0.434085
+[MLIP] 15	0.790493	0.419266
+[MLIP] 16	0.395673
+[MLIP] 17	0.387738
+[MLIP] 18	0.381693
+[MLIP] 19	0.377158	0.375115
+[MLIP] 20	0.370272
+[MLIP] 21	0.370396	0.36837
+[MLIP] 22	0.367499
+[MLIP] 23	0.367126
+[MLIP] 24	0.367058	0.366993
+[MLIP] 25	0.366828	0.366545	0.366177
+[MLIP] 26	0.364546	0.362831
+[MLIP] 27	0.356562	0.347381
+[MLIP] 28	0.348269	0.32878
+[MLIP] 29	0.292553
+[MLIP] 30	0.682786	0.269225
+[MLIP] 31	2.29716	0.226452
+[MLIP] 32	1.33934	0.190728	0.188107
+[MLIP] 33	0.916895	0.164117	0.16251
+[MLIP] 34	0.761283	0.138974
+[MLIP] 35	2.18663	0.113873	0.112613	0.108765
+[MLIP] 36	0.416834	0.0887462
+[MLIP] 37	0.17837	0.0694342
+[MLIP] 38	0.108376	0.0650193
+[MLIP] 39	0.282115	0.0599874
+[MLIP] 40	0.0712372	0.0505305
+[MLIP] 41	0.0460382
+[MLIP] 42	0.0504666	0.0449968
+[MLIP] 43	0.0457741	0.0437061
+[MLIP] 44	0.0430653	0.0425021
+[MLIP] 45	0.0419183	0.0417354
+[MLIP] 46	0.0414246	0.0411297
+[MLIP] 47	0.0416113	0.0408659
+[MLIP] 48	0.0407407
+[MLIP] 49	0.040557	0.0404203
+[MLIP] 50	0.0399568	0.0398835
+[MLIP] 51	0.0394867
+[MLIP] 52	0.0392905
+[MLIP] 53	0.0390721
+[MLIP] 54	0.0389341
+[MLIP] 55	0.0388737
+[MLIP] 56	0.0388176
+[MLIP] 57	0.038796
+[MLIP] 58	0.0387904
+[MLIP] 59	0.0387896
+[MLIP] 60	0.0387893
+[MLIP] 61	0.0387893
+[MLIP] 62	0.0387893
+[MLIP] 63	0.0387893
+[MLIP] 64	0.0387893
+[MLIP] 65	0.0387893
+[MLIP] 66	0.0387893
+[MLIP] 67	0.0387893
+[MLIP] 68	0.0387893
+[MLIP] 69	0.0387893
+[MLIP] 70	0.0387893
+[MLIP] 71	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893
+[MLIP] 72	0.0387906	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893
+[MLIP] 73	0.0387903	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893
+[MLIP] Stepping in accend direction. Stopping the training...
+[MLIP] Pretraining completed
+[MLIP] Rescaling potential...
+[MLIP] Potential rescaling completed
+[MLIP] 0	0.0387893	0.0387893	0.0387893
+[MLIP] 1	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	 Line search: prev_x == curr_x	0.0387893
+[MLIP] 2	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893
+[MLIP] 3	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893	0.0387893
+[MLIP] Stepping in accend direction. Stopping the training...
+final params head: [ 93.07930562 -54.6080143   28.77294762 -13.60338626   1.87898692]
+final loss: 5.854124874253525
+TRAIN: Errors (MAE, RMSE, MAXAE)
+Energy      = 2.057596e-01, 2.756559e-01, 1.332411e+00
+Energy/Atom = 6.429987e-03, 8.614246e-03, 4.163784e-02
+Forces      = 1.341377e-01, 1.917362e-01, 4.324607e+00
+Stress      = 1.620948e+00, 2.373711e+00, 1.037363e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+VALID: Errors (MAE, RMSE, MAXAE)
+Energy      = 3.539201e-01, 4.439839e-01, 1.332411e+00
+Energy/Atom = 1.106000e-02, 1.387450e-02, 4.163784e-02
+Forces      = 1.825137e-01, 2.771155e-01, 4.324607e+00
+Stress      = 1.661372e+00, 2.316578e+00, 1.037363e+01
+Charges     = 0.000000e+00, 0.000000e+00, 0.000000e+00
+
+TRAIN_TIME: 51.945874474942684

@@ -1,0 +1,728 @@
+\section{Эксперименты и результаты}
+\label{sec:experiments}
+
+Численные значения в этом разделе взяты из локальных CSV-таблиц с результатами обучения. Для MTP full-batch BFGS используется лимит \(5000\) итераций, а для MTP mini-batch методов --- \(8000\) шагов оптимизации. Для ETN используется конфигурация из раздела~\ref{sec:implementation}: на AgPd методы Adam и Muon обучались \(10000\) шагов, а на MoNbTaVW все mini-batch методы обучались \(10000\) шагов. Во всех таблицах EPA RMSE измеряется в eV/atom, forces RMSE -- в eV/\AA, время обучения -- в секундах. Для ансамблей указаны mean и std.
+
+\subsection{Метрики и базовые настройки сравнения}
+
+Основными метриками качества являются validation EPA RMSE и validation forces RMSE. Дополнительно приводятся train EPA RMSE, train forces RMSE, train time и, где это доступно, диагностические величины SciPy BFGS. Native BFGS используется как baseline, с которым далее сравниваются остальные методы.
+
+\begin{table}[H]
+\centering
+\small
+\caption{Базовое сравнение MTP и ETN на AgPd при native BFGS.}
+\label{tab:task1-mtp-etn}
+\begingroup
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}lcccccc@{}}
+\toprule
+Модель & \multicolumn{2}{c}{Validation EPA RMSE, eV/atom} & \multicolumn{2}{c}{Validation forces RMSE, eV/\AA} & \multicolumn{2}{c}{Train time, s} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}\cmidrule(lr){6-7}
+ & Mean & Std & Mean & Std & Mean & Std \\
+\midrule
+MTP native BFGS & 0.002104 & 0.000096 & 0.047462 & 0.000910 & 2810.26 & 273.32 \\
+ETN native BFGS & 0.0138745 & \(2.70491\cdot 10^{-12}\) & 0.277115 & \(9.1027\cdot 10^{-12}\) & 60.5054 & 12.6663 \\
+\bottomrule
+\end{tabular}
+\endgroup
+\end{table}
+
+В основной конфигурации native BFGS для MTP даёт существенно меньшие ошибки, чем native BFGS для ETN, но требует заметно большего времени обучения. Это сравнение служит только общей ориентацией по двум моделям; далее оптимизаторы анализируются отдельно для MTP и ETN.
+
+\resultfigure{fig_05_01_mtp_etn_quality_time_agpd.png}{Сравнение качества и времени обучения MTP и ETN на AgPd.}{fig:task1-quality-time}
+
+\subsection{Настройка архитектуры ETN}
+
+Для ETN были проверены варианты \texttt{ett\_ranks} и \texttt{etn\_shape}. Изменение rank в этом эксперименте почти не влияло на validation EPA RMSE: для \(\texttt{[[1],[1]]}\), \(\texttt{[[2],[2]]}\) и \(\texttt{[[3],[3]]}\) средняя validation EPA RMSE осталась равной 0.0138745 eV/atom. Параметр shape, напротив, оказался заметнее: вариант \(\texttt{[[1],[8],[4]]}\) дал validation EPA RMSE 0.0125834 eV/atom и validation forces RMSE 0.164119 eV/\AA, что лучше базового \(\texttt{[[1],[6],[3]]}\).
+
+\resultfigure{fig_05_02_etn_rank_tuning_agpd.png}{Настройка \texttt{ett\_ranks} для ETN на AgPd.}{fig:task1-etn-rank}
+\resultfigure{fig_05_03_etn_shape_tuning_agpd.png}{Настройка \texttt{etn\_shape} для ETN на AgPd.}{fig:task1-etn-shape}
+
+\subsection{MTP на AgPd}
+\label{subsec:mtp-results}
+
+В этом подразделе методы оптимизации для MTP рассматриваются последовательно. BFGS-варианты работают в full-batch режиме с лимитом \(5000\) итераций. SGD, Momentum, Adam и Muon используют mini-batch режим с \(8000\) шагами оптимизации. Для каждого метода сначала приведена таблица результатов и сравнение с native BFGS, затем показан график обучения или диагностический график.
+
+\subsubsection{Результаты для native BFGS}
+
+\begin{table}[H]
+\centering
+\small
+\caption{MTP на AgPd: native BFGS.}
+\label{tab:mtp-native-bfgs}
+\begin{tabular}{lccc}
+\toprule
+Метрика & Единица & Mean & Std \\
+\midrule
+Train EPA RMSE & eV/atom & 0.001155 & 0.000045 \\
+Train forces RMSE & eV/\AA & 0.029888 & 0.000671 \\
+Validation EPA RMSE & eV/atom & 0.002104 & 0.000096 \\
+Validation forces RMSE & eV/\AA & 0.047462 & 0.000910 \\
+Train time & s & 2810.26 & 273.32 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\resultfigure{fig_05_04_mtp_bfgs_native_vs_scipy_agpd.png}{Сравнение native BFGS и SciPy BFGS для MTP на AgPd.}{fig:mtp-native-diagnostics-5000}
+
+В MTP-серии native BFGS даёт минимальные validation EPA RMSE и validation forces RMSE. Поэтому именно этот метод используется как основной baseline для остальных MTP-оптимизаторов.
+
+\FloatBarrier
+
+\subsubsection{Результаты для SciPy BFGS}
+
+\begin{table}[H]
+\centering
+\small
+\caption{MTP на AgPd: SciPy BFGS в сравнении с native BFGS.}
+\label{tab:mtp-scipy-bfgs}
+\begin{tabular}{lcccc}
+\toprule
+\multirow{2}{*}{Метрика, единица} & \multicolumn{2}{c}{SciPy BFGS} & \multicolumn{2}{c}{Native BFGS} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+ & Mean & Std & Mean & Std \\
+\midrule
+Train EPA RMSE, eV/atom & 0.001112 & 0.000041 & 0.001155 & 0.000045 \\
+Train forces RMSE, eV/\AA & 0.031007 & 0.000967 & 0.029888 & 0.000671 \\
+Validation EPA RMSE, eV/atom & 0.002333 & 0.000137 & 0.002104 & 0.000096 \\
+Validation forces RMSE, eV/\AA & 0.055401 & 0.000759 & 0.047462 & 0.000910 \\
+Train time, s & 2894.70 & 69.03 & 2810.26 & 273.32 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\resultfigure{fig_05_05_mtp_bfgs_diagnostics_agpd.png}{Диагностика BFGS-вариантов для MTP на AgPd.}{fig:mtp-scipy-bfgs-diagnostics-5000}
+
+SciPy BFGS близок к native BFGS по энергетической ошибке, но уступает ему по validation EPA RMSE и validation forces RMSE. Среднее число итераций SciPy BFGS составило 4873.6; success rate равен 0, что в данной серии соответствует остановке по лимиту итераций во всех запусках.
+
+\FloatBarrier
+
+\subsubsection{Результаты для SGD}
+
+\begin{table}[H]
+\centering
+\small
+\caption{MTP на AgPd: SGD в сравнении с native BFGS.}
+\label{tab:mtp-sgd}
+\begin{tabular}{lcccc}
+\toprule
+\multirow{2}{*}{Метрика, единица} & \multicolumn{2}{c}{SGD} & \multicolumn{2}{c}{Native BFGS} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+ & Mean & Std & Mean & Std \\
+\midrule
+Train EPA RMSE, eV/atom & 0.080615 & 0.022432 & 0.001155 & 0.000045 \\
+Train forces RMSE, eV/\AA & 0.984533 & 0.116070 & 0.029888 & 0.000671 \\
+Validation EPA RMSE, eV/atom & 0.093689 & 0.026609 & 0.002104 & 0.000096 \\
+Validation forces RMSE, eV/\AA & 1.424873 & 0.146451 & 0.047462 & 0.000910 \\
+Train time, s & 1958.05 & 69.93 & 2810.26 & 273.32 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\resultfigure{fig_05_08_mtp_sgd_loss_agpd.png}{Сглаженная история loss для MTP SGD: mean \(\pm\) std по ансамблю.}{fig:mtp-sgd-band-8000}
+
+SGD уступает Adam, Momentum и Muon pad sqrt по validation EPA RMSE и имеет наибольшую force error среди mini-batch методов. В выбранной конфигурации это показывает чувствительность SGD к масштабу шага и шуму mini-batch градиента.
+
+\FloatBarrier
+
+\subsubsection{Результаты для Momentum}
+
+\begin{table}[H]
+\centering
+\small
+\caption{MTP на AgPd: Momentum в сравнении с native BFGS.}
+\label{tab:mtp-momentum}
+\begin{tabular}{lcccc}
+\toprule
+\multirow{2}{*}{Метрика, единица} & \multicolumn{2}{c}{Momentum} & \multicolumn{2}{c}{Native BFGS} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+ & Mean & Std & Mean & Std \\
+\midrule
+Train EPA RMSE, eV/atom & 0.042911 & 0.008859 & 0.001155 & 0.000045 \\
+Train forces RMSE, eV/\AA & 0.774203 & 0.083373 & 0.029888 & 0.000671 \\
+Validation EPA RMSE, eV/atom & 0.050901 & 0.015717 & 0.002104 & 0.000096 \\
+Validation forces RMSE, eV/\AA & 1.148895 & 0.096406 & 0.047462 & 0.000910 \\
+Train time, s & 1924.49 & 22.12 & 2810.26 & 273.32 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\resultfigure{fig_05_07_mtp_momentum_loss_agpd.png}{Сглаженная история loss для MTP Momentum: mean \(\pm\) std по ансамблю.}{fig:mtp-momentum-band-8000}
+
+Momentum занимает второе место среди pure mini-batch методов MTP по validation EPA RMSE, но ошибка по силам остаётся большой. Поэтому улучшение energy error здесь не означает сопоставимого улучшения forces RMSE.
+
+\FloatBarrier
+
+\subsubsection{Результаты для Adam}
+
+\begin{table}[H]
+\centering
+\small
+\caption{MTP на AgPd: Adam в сравнении с native BFGS.}
+\label{tab:mtp-adam}
+\begin{tabular}{lcccc}
+\toprule
+\multirow{2}{*}{Метрика, единица} & \multicolumn{2}{c}{Adam} & \multicolumn{2}{c}{Native BFGS} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+ & Mean & Std & Mean & Std \\
+\midrule
+Train EPA RMSE, eV/atom & 0.027625 & 0.007792 & 0.001155 & 0.000045 \\
+Train forces RMSE, eV/\AA & 0.201813 & 0.047051 & 0.029888 & 0.000671 \\
+Validation EPA RMSE, eV/atom & 0.029321 & 0.007448 & 0.002104 & 0.000096 \\
+Validation forces RMSE, eV/\AA & 0.338570 & 0.074599 & 0.047462 & 0.000910 \\
+Train time, s & 1913.95 & 15.62 & 2810.26 & 273.32 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\resultfigure{fig_05_06_mtp_adam_loss_agpd.png}{Сглаженная история loss для MTP Adam: mean \(\pm\) std по ансамблю.}{fig:mtp-adam-band-8000}
+
+Среди mini-batch методов для MTP лучший validation EPA RMSE даёт Adam. При этом до BFGS-вариантов по energy error и force error остаётся большой разрыв, хотя время обучения у Adam меньше.
+
+\FloatBarrier
+
+\subsubsection{Результаты для Muon pad sqrt}
+
+\begin{table}[H]
+\centering
+\small
+\caption{MTP на AgPd: Muon pad sqrt в сравнении с native BFGS.}
+\label{tab:mtp-muon-pad}
+\begin{tabular}{lcccc}
+\toprule
+\multirow{2}{*}{Метрика, единица} & \multicolumn{2}{c}{Muon pad sqrt} & \multicolumn{2}{c}{Native BFGS} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+ & Mean & Std & Mean & Std \\
+\midrule
+Train EPA RMSE, eV/atom & 0.080235 & 0.032057 & 0.001155 & 0.000045 \\
+Train forces RMSE, eV/\AA & 0.313185 & 0.052386 & 0.029888 & 0.000671 \\
+Validation EPA RMSE, eV/atom & 0.080185 & 0.025868 & 0.002104 & 0.000096 \\
+Validation forces RMSE, eV/\AA & 0.503803 & 0.078258 & 0.047462 & 0.000910 \\
+Train time, s & 2052.81 & 237.96 & 2810.26 & 273.32 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\resultfigure{fig_05_09_mtp_muon_pad_sqrt_loss_agpd.png}{Сглаженная история loss для MTP Muon pad sqrt: mean \(\pm\) std по ансамблю.}{fig:mtp-muon-pad-band-8000}
+
+Muon pad sqrt лучше Muon factorization по validation EPA RMSE и validation forces RMSE, но Adam не превосходит. По force error он лучше Momentum и SGD, однако по energy error уступает Adam и Momentum.
+
+\FloatBarrier
+
+\subsubsection{Результаты для Muon factorization}
+
+\begin{table}[H]
+\centering
+\small
+\caption{MTP на AgPd: Muon factorization в сравнении с native BFGS.}
+\label{tab:mtp-muon-factor}
+\begin{tabular}{lcccc}
+\toprule
+\multirow{2}{*}{Метрика, единица} & \multicolumn{2}{c}{Muon factorization} & \multicolumn{2}{c}{Native BFGS} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+ & Mean & Std & Mean & Std \\
+\midrule
+Train EPA RMSE, eV/atom & 0.117925 & 0.039347 & 0.001155 & 0.000045 \\
+Train forces RMSE, eV/\AA & 0.385825 & 0.037469 & 0.029888 & 0.000671 \\
+Validation EPA RMSE, eV/atom & 0.113416 & 0.045063 & 0.002104 & 0.000096 \\
+Validation forces RMSE, eV/\AA & 0.598674 & 0.054244 & 0.047462 & 0.000910 \\
+Train time, s & 1913.01 & 12.00 & 2810.26 & 273.32 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\resultfigure{fig_05_10_mtp_muon_factorization_loss_agpd.png}{Сглаженная история loss для MTP Muon factorization: mean \(\pm\) std по ансамблю.}{fig:mtp-muon-factor-band-8000}
+
+Muon factorization уступает Muon pad sqrt по validation EPA RMSE и validation forces RMSE. Для MTP на AgPd факторизованный вариант, таким образом, не даёт преимущества.
+
+\FloatBarrier
+
+\subsubsection{Сводное сравнение всех методов для MTP}
+
+\begin{table}[H]
+\centering
+\small
+\caption{MTP на AgPd: сводное сравнение оптимизаторов. Единицы указаны в заголовках столбцов.}
+\label{tab:mtp-summary}
+\begingroup
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}lccc@{}}
+\toprule
+Метод & Validation EPA RMSE, eV/atom & Validation forces RMSE, eV/\AA & Train time, s \\
+\midrule
+Native BFGS & \(0.002104 \pm 0.000096\) & \(0.047462 \pm 0.000910\) & \(2810.26 \pm 273.32\) \\
+SciPy BFGS & \(0.002333 \pm 0.000137\) & \(0.055401 \pm 0.000759\) & \(2894.70 \pm 69.03\) \\
+SGD & \(0.093689 \pm 0.026609\) & \(1.424873 \pm 0.146451\) & \(1958.05 \pm 69.93\) \\
+Momentum & \(0.050901 \pm 0.015717\) & \(1.148895 \pm 0.096406\) & \(1924.49 \pm 22.12\) \\
+Adam & \(0.029321 \pm 0.007448\) & \(0.338570 \pm 0.074599\) & \(1913.95 \pm 15.62\) \\
+Muon pad sqrt & \(0.080185 \pm 0.025868\) & \(0.503803 \pm 0.078258\) & \(2052.81 \pm 237.96\) \\
+Muon factorization & \(0.113416 \pm 0.045063\) & \(0.598674 \pm 0.054244\) & \(1913.01 \pm 12.00\) \\
+\bottomrule
+\end{tabular}
+\endgroup
+\end{table}
+
+\resultfigure{fig_05_11_mtp_validation_errors_agpd.png}{Validation errors для MTP на AgPd.}{fig:mtp-validation-8000}
+\resultfigure{fig_05_12_mtp_time_quality_agpd.png}{Качество и время обучения MTP на AgPd.}{fig:mtp-time-quality-8000}
+\resultfigure{fig_05_13_mtp_ensemble_spread_agpd.png}{Разброс validation RMSE по ансамблю для MTP на AgPd.}{fig:mtp-ensemble-8000}
+\resultfigure{fig_05_14_mtp_loss_overview_agpd.png}{Обзор сглаженных loss histories для MTP mini-batch оптимизаторов.}{fig:mtp-losses-overview-8000}
+
+Сводное сравнение MTP показывает, что BFGS-варианты остаются сильнейшей группой методов. Native BFGS немного лучше SciPy BFGS по validation EPA RMSE и заметнее лучше по forces RMSE. Среди mini-batch методов минимальную validation EPA RMSE даёт Adam. Далее по energy error идёт Momentum; Muon pad sqrt занимает промежуточное положение, а SGD и Muon factorization уступают по одной или нескольким основным метрикам.
+
+\FloatBarrier
+
+\subsection{ETN на AgPd}
+\label{subsec:etn-agpd-results}
+
+Для ETN на AgPd native BFGS даёт лучшие validation EPA RMSE и validation forces RMSE. В отличие от MTP, SciPy BFGS не даёт устойчивого улучшения относительно native BFGS. Для Adam и Muon использовалось \(10000\) шагов оптимизации, поскольку при меньшем числе шагов их loss histories ещё не выходили на плато.
+
+\subsubsection{Результаты для native BFGS}
+
+\begin{table}[H]
+\centering
+\small
+\caption{ETN на AgPd: native BFGS.}
+\label{tab:etn-agpd-native-bfgs}
+\begin{tabular}{lccc}
+\toprule
+Метрика & Единица & Mean & Std \\
+\midrule
+Validation EPA RMSE & eV/atom & 0.0138745 & \(2.70491\cdot 10^{-12}\) \\
+Validation forces RMSE & eV/\AA & 0.277115 & \(9.1027\cdot 10^{-12}\) \\
+Train time & s & 60.5054 & 12.6663 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Для full-batch native BFGS отдельная mini-batch история loss не строилась. Этот метод используется как основной baseline для ETN на AgPd, поскольку даёт минимальные validation EPA RMSE и validation forces RMSE среди рассмотренных оптимизаторов.
+
+\FloatBarrier
+
+\subsubsection{Результаты для SciPy BFGS}
+
+\begin{table}[H]
+\centering
+\small
+\caption{ETN на AgPd: SciPy BFGS в сравнении с native BFGS.}
+\label{tab:etn-agpd-scipy-bfgs}
+\begin{tabular}{lcccc}
+\toprule
+\multirow{2}{*}{Метрика, единица} & \multicolumn{2}{c}{SciPy BFGS} & \multicolumn{2}{c}{Native BFGS} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+ & Mean & Std & Mean & Std \\
+\midrule
+Validation EPA RMSE, eV/atom & 0.0332907 & 0.0432011 & 0.0138745 & \(2.70491\cdot 10^{-12}\) \\
+Validation forces RMSE, eV/\AA & 0.401276 & 0.277299 & 0.277115 & \(9.1027\cdot 10^{-12}\) \\
+Train time, s & 81.4725 & 23.7965 & 60.5054 & 12.6663 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\resultfigure{fig_05_15_etn_bfgs_native_vs_scipy_agpd.png}{Диагностическое сравнение native BFGS и SciPy BFGS для ETN на AgPd.}{fig:etn-agpd-bfgs-old}
+
+SciPy BFGS уступает native BFGS по средним validation-метрикам и имеет заметный разброс по ансамблю. В отличие от MTP, внешний BFGS-интерфейс для ETN на AgPd не улучшает качество.
+
+\FloatBarrier
+
+\subsubsection{Результаты для SGD}
+
+\begin{table}[H]
+\centering
+\small
+\caption{ETN на AgPd: SGD в сравнении с native BFGS.}
+\label{tab:etn-agpd-sgd}
+\begin{tabular}{lcccc}
+\toprule
+\multirow{2}{*}{Метрика, единица} & \multicolumn{2}{c}{SGD} & \multicolumn{2}{c}{Native BFGS} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+ & Mean & Std & Mean & Std \\
+\midrule
+Validation EPA RMSE, eV/atom & 0.172721 & 0.001135 & 0.0138745 & \(2.70491\cdot 10^{-12}\) \\
+Validation forces RMSE, eV/\AA & 1.73016 & \(6.61807\cdot 10^{-10}\) & 0.277115 & \(9.1027\cdot 10^{-12}\) \\
+Train time, s & 1061.03 & 1.36 & 60.5054 & 12.6663 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\resultfigure{fig_05_16_etn_sgd_loss_agpd.png}{Сглаженная история loss для ETN SGD на AgPd.}{fig:agpd-sgd-band-5000}
+
+SGD на ETN даёт высокие validation errors; в этой постановке он заметно уступает остальным baseline-методам.
+
+\FloatBarrier
+
+\subsubsection{Результаты для Momentum}
+
+\begin{table}[H]
+\centering
+\small
+\caption{ETN на AgPd: Momentum в сравнении с native BFGS.}
+\label{tab:etn-agpd-momentum}
+\begin{tabular}{lcccc}
+\toprule
+\multirow{2}{*}{Метрика, единица} & \multicolumn{2}{c}{Momentum} & \multicolumn{2}{c}{Native BFGS} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+ & Mean & Std & Mean & Std \\
+\midrule
+Validation EPA RMSE, eV/atom & 0.172698 & 0.001643 & 0.0138745 & \(2.70491\cdot 10^{-12}\) \\
+Validation forces RMSE, eV/\AA & 1.73016 & \(6.63209\cdot 10^{-10}\) & 0.277115 & \(9.1027\cdot 10^{-12}\) \\
+Train time, s & 1063.97 & 4.44 & 60.5054 & 12.6663 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\resultfigure{fig_05_17_etn_momentum_loss_agpd.png}{Сглаженная история loss для ETN Momentum на AgPd.}{fig:agpd-momentum-band-5000}
+
+Momentum даёт близкое к SGD значение validation EPA RMSE и не улучшает force error.
+
+\FloatBarrier
+
+\subsubsection{Результаты для Adam}
+
+\begin{table}[H]
+\centering
+\small
+\caption{ETN на AgPd: Adam в сравнении с native BFGS.}
+\label{tab:etn-agpd-adam}
+\begin{tabular}{lcccc}
+\toprule
+\multirow{2}{*}{Метрика, единица} & \multicolumn{2}{c}{Adam} & \multicolumn{2}{c}{Native BFGS} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+ & Mean & Std & Mean & Std \\
+\midrule
+Validation EPA RMSE, eV/atom & 0.022675 & 0.000710 & 0.0138745 & \(2.70491\cdot 10^{-12}\) \\
+Validation forces RMSE, eV/\AA & 0.870676 & 0.000541 & 0.277115 & \(9.1027\cdot 10^{-12}\) \\
+Train time, s & 2034.93 & 9.39 & 60.5054 & 12.6663 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\resultfigure{fig_05_18_etn_adam_loss_agpd.png}{Сглаженная история loss для ETN Adam на AgPd.}{fig:agpd-adam-band-10000}
+
+Для ETN на AgPd Adam даёт лучшую validation EPA RMSE среди mini-batch методов. По force error он уступает вариантам Muon, но остаётся существенно лучше SGD и Momentum.
+
+\FloatBarrier
+
+\subsubsection{Результаты для Muon pad sqrt}
+
+\begin{table}[H]
+\centering
+\small
+\caption{ETN на AgPd: Muon pad sqrt в сравнении с native BFGS.}
+\label{tab:etn-agpd-muon-pad}
+\begin{tabular}{lcccc}
+\toprule
+\multirow{2}{*}{Метрика, единица} & \multicolumn{2}{c}{Muon pad sqrt} & \multicolumn{2}{c}{Native BFGS} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+ & Mean & Std & Mean & Std \\
+\midrule
+Validation EPA RMSE, eV/atom & 0.023418 & 0.000600 & 0.0138745 & \(2.70491\cdot 10^{-12}\) \\
+Validation forces RMSE, eV/\AA & 0.856381 & 0.005138 & 0.277115 & \(9.1027\cdot 10^{-12}\) \\
+Train time, s & 2168.03 & 265.08 & 60.5054 & 12.6663 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\resultfigure{fig_05_19_etn_muon_pad_sqrt_loss_agpd.png}{Сглаженная история loss для ETN Muon pad sqrt на AgPd.}{fig:agpd-muon-pad-band-10000}
+
+Muon pad sqrt близок к Adam по validation EPA RMSE и лучше Adam по validation forces RMSE. Относительно native BFGS он всё равно даёт более высокую ошибку и требует существенно большего времени.
+
+\FloatBarrier
+
+\subsubsection{Результаты для Muon factorization}
+
+\begin{table}[H]
+\centering
+\small
+\caption{ETN на AgPd: Muon factorization в сравнении с native BFGS.}
+\label{tab:etn-agpd-muon-factor}
+\begin{tabular}{lcccc}
+\toprule
+\multirow{2}{*}{Метрика, единица} & \multicolumn{2}{c}{Muon factorization} & \multicolumn{2}{c}{Native BFGS} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+ & Mean & Std & Mean & Std \\
+\midrule
+Validation EPA RMSE, eV/atom & 0.023494 & 0.001181 & 0.0138745 & \(2.70491\cdot 10^{-12}\) \\
+Validation forces RMSE, eV/\AA & 0.850381 & 0.005353 & 0.277115 & \(9.1027\cdot 10^{-12}\) \\
+Train time, s & 2037.94 & 7.76 & 60.5054 & 12.6663 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\resultfigure{fig_05_20_etn_muon_factorization_loss_agpd.png}{Сглаженная история loss для ETN Muon factorization на AgPd.}{fig:agpd-muon-factor-band-10000}
+
+Muon factorization близок к Muon pad sqrt по validation EPA RMSE и немного лучше по validation forces RMSE. Среди mini-batch методов он даёт минимальную force error, но по energy error уступает Adam.
+
+\FloatBarrier
+
+\subsubsection{Сводное сравнение всех методов для ETN на AgPd}
+
+\begin{table}[H]
+\centering
+\small
+\caption{ETN на AgPd: сводное сравнение оптимизаторов.}
+\label{tab:etn-agpd-summary}
+\begingroup
+\setlength{\tabcolsep}{2.5pt}
+\begin{tabular}{@{}lccc@{}}
+\toprule
+Метод & Validation EPA RMSE, eV/atom & Validation forces RMSE, eV/\AA & Train time, s \\
+\midrule
+Native BFGS & \(0.0138745 \pm 2.70491\cdot 10^{-12}\) & \(0.277115 \pm 9.1027\cdot 10^{-12}\) & \(60.5054 \pm 12.6663\) \\
+SciPy BFGS & \(0.033291 \pm 0.043201\) & \(0.401276 \pm 0.277299\) & \(81.47 \pm 23.80\) \\
+SGD & \(0.172721 \pm 0.001135\) & \(1.73016 \pm 6.61807\cdot 10^{-10}\) & \(1061.03 \pm 1.36\) \\
+Momentum & \(0.172698 \pm 0.001643\) & \(1.73016 \pm 6.63209\cdot 10^{-10}\) & \(1063.97 \pm 4.44\) \\
+Adam & \(0.022675 \pm 0.000710\) & \(0.870676 \pm 0.000541\) & \(2034.93 \pm 9.39\) \\
+Muon pad sqrt & \(0.023418 \pm 0.000600\) & \(0.856381 \pm 0.005138\) & \(2168.03 \pm 265.08\) \\
+Muon factorization & \(0.023494 \pm 0.001181\) & \(0.850381 \pm 0.005353\) & \(2037.94 \pm 7.76\) \\
+\bottomrule
+\end{tabular}
+\endgroup
+\end{table}
+
+\resultfigure{fig_05_21_etn_validation_errors_agpd.png}{Validation errors для ETN на AgPd.}{fig:agpd-validation-10000}
+\resultfigure{fig_05_22_etn_loss_overview_agpd.png}{Обзор сглаженных loss histories для ETN на AgPd.}{fig:agpd-losses-overview-10000}
+\resultfigure{fig_05_23_etn_time_quality_agpd.png}{Качество и время обучения ETN на AgPd.}{fig:agpd-time-quality-10000}
+\resultfigure{fig_05_24_etn_ensemble_spread_agpd.png}{Разброс ETN-результатов по ансамблю на AgPd.}{fig:agpd-ensemble-10000}
+
+Сводное сравнение показывает, что native BFGS остаётся лучшим методом по обеим validation-метрикам. Среди mini-batch методов Adam даёт минимальную validation EPA RMSE, а варианты Muon близки к нему по energy error и немного лучше по force error. SGD и Momentum заметно уступают остальным методам.
+
+\FloatBarrier
+
+\subsection{ETN на MoNbTaVW}
+\label{subsec:etn-monbtavw-results}
+
+MoNbTaVW используется как проверка переносимости выводов на другой многокомпонентный датасет. В этой серии все mini-batch методы обучались \(10000\) шагов. Native BFGS и SciPy BFGS остаются сильными full-batch baseline, но по validation EPA RMSE после увеличения числа шагов лучшими оказываются варианты Muon.
+
+\subsubsection{Результаты для native BFGS}
+
+\begin{table}[H]
+\centering
+\small
+\caption{ETN на MoNbTaVW: native BFGS.}
+\label{tab:etn-monbtavw-native-bfgs}
+\begin{tabular}{lccc}
+\toprule
+Метрика & Единица & Mean & Std \\
+\midrule
+Validation EPA RMSE & eV/atom & 0.476876 & \(2.33759\cdot 10^{-10}\) \\
+Validation forces RMSE & eV/\AA & 0.523471 & \(8.20466\cdot 10^{-11}\) \\
+Train time & s & 145.110 & 41.9128 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Для full-batch native BFGS отдельная mini-batch история loss не строилась. На MoNbTaVW этот метод служит baseline для остальных оптимизаторов и даёт минимальную validation forces RMSE, но по validation EPA RMSE уступает вариантам Muon после \(10000\) mini-batch шагов.
+
+\FloatBarrier
+
+\subsubsection{Результаты для SciPy BFGS}
+
+\begin{table}[H]
+\centering
+\small
+\caption{ETN на MoNbTaVW: SciPy BFGS в сравнении с native BFGS.}
+\label{tab:etn-monbtavw-scipy-bfgs}
+\begin{tabular}{lcccc}
+\toprule
+\multirow{2}{*}{Метрика, единица} & \multicolumn{2}{c}{SciPy BFGS} & \multicolumn{2}{c}{Native BFGS} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+ & Mean & Std & Mean & Std \\
+\midrule
+Validation EPA RMSE, eV/atom & 0.499952 & \(4.27592\cdot 10^{-10}\) & 0.476876 & \(2.33759\cdot 10^{-10}\) \\
+Validation forces RMSE, eV/\AA & 0.529053 & \(1.30138\cdot 10^{-9}\) & 0.523471 & \(8.20466\cdot 10^{-11}\) \\
+Train time, s & 240.921 & 63.9803 & 145.110 & 41.9128 \\
+SciPy iterations, count & 237.2 & 69.9085 & -- & -- \\
+SciPy success, flag & 0 & 0 & -- & -- \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\resultfigure{fig_05_25_etn_bfgs_diagnostics_monbtavw.png}{Диагностическое сравнение native BFGS и SciPy BFGS для ETN на MoNbTaVW.}{fig:task6-bfgs-diagnostics}
+
+SciPy BFGS близок к native BFGS по energy error и force error, но по обеим validation-метрикам немного уступает native BFGS. Среднее время SciPy BFGS выше: \(240.921\) s против \(145.110\) s у native BFGS. При этом среднее число итераций SciPy BFGS равно \(237.2\), а флаг \texttt{success} равен нулю во всех запусках; в данной серии это не связано с плохим качеством решения, поскольку итоговые ошибки близки к native BFGS. По validation EPA RMSE оба BFGS-варианта уступают Muon.
+
+\FloatBarrier
+
+\subsubsection{Результаты для SGD}
+
+\begin{table}[H]
+\centering
+\small
+\caption{ETN на MoNbTaVW: SGD в сравнении с native BFGS.}
+\label{tab:etn-monbtavw-sgd}
+\begin{tabular}{lcccc}
+\toprule
+\multirow{2}{*}{Метрика, единица} & \multicolumn{2}{c}{SGD} & \multicolumn{2}{c}{Native BFGS} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+ & Mean & Std & Mean & Std \\
+\midrule
+Validation EPA RMSE, eV/atom & 1.72847 & 0.000501 & 0.476876 & \(2.33759\cdot 10^{-10}\) \\
+Validation forces RMSE, eV/\AA & 0.887349 & \(2.30430\cdot 10^{-10}\) & 0.523471 & \(8.20466\cdot 10^{-11}\) \\
+Train time, s & 5446.38 & 108.408 & 145.110 & 41.9128 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\resultfigure{fig_05_26_etn_sgd_loss_monbtavw.png}{Сглаженная история loss для ETN SGD на MoNbTaVW.}{fig:monbtavw-sgd-band-10000}
+
+SGD остаётся слабым mini-batch методом для ETN на MoNbTaVW. Увеличение числа шагов уменьшило validation EPA RMSE по сравнению с более короткими запусками, но метод всё ещё заметно уступает Adam, Muon и BFGS-вариантам по energy error, а также проигрывает BFGS по force error и времени.
+
+\FloatBarrier
+
+\subsubsection{Результаты для Momentum}
+
+\begin{table}[H]
+\centering
+\small
+\caption{ETN на MoNbTaVW: Momentum в сравнении с native BFGS.}
+\label{tab:etn-monbtavw-momentum}
+\begin{tabular}{lcccc}
+\toprule
+\multirow{2}{*}{Метрика, единица} & \multicolumn{2}{c}{Momentum} & \multicolumn{2}{c}{Native BFGS} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+ & Mean & Std & Mean & Std \\
+\midrule
+Validation EPA RMSE, eV/atom & 1.73013 & 0.000473 & 0.476876 & \(2.33759\cdot 10^{-10}\) \\
+Validation forces RMSE, eV/\AA & 0.887349 & \(2.30449\cdot 10^{-10}\) & 0.523471 & \(8.20466\cdot 10^{-11}\) \\
+Train time, s & 5425.00 & 50.5405 & 145.110 & 41.9128 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\resultfigure{fig_05_27_etn_momentum_loss_monbtavw.png}{Сглаженная история loss для ETN Momentum на MoNbTaVW.}{fig:monbtavw-momentum-band-10000}
+
+Momentum ведёт себя близко к SGD: energy error остаётся существенно выше, чем у BFGS, Adam и Muon. В данной конфигурации добавление momentum не устраняет слабость метода по validation EPA RMSE.
+
+\FloatBarrier
+
+\subsubsection{Результаты для Adam}
+
+\begin{table}[H]
+\centering
+\small
+\caption{ETN на MoNbTaVW: Adam в сравнении с native BFGS.}
+\label{tab:etn-monbtavw-adam}
+\begin{tabular}{lcccc}
+\toprule
+\multirow{2}{*}{Метрика, единица} & \multicolumn{2}{c}{Adam} & \multicolumn{2}{c}{Native BFGS} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+ & Mean & Std & Mean & Std \\
+\midrule
+Validation EPA RMSE, eV/atom & 0.441821 & 0.001756 & 0.476876 & \(2.33759\cdot 10^{-10}\) \\
+Validation forces RMSE, eV/\AA & 0.678150 & 0.000513 & 0.523471 & \(8.20466\cdot 10^{-11}\) \\
+Train time, s & 5344.02 & 28.9838 & 145.110 & 41.9128 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\resultfigure{fig_05_28_etn_adam_loss_monbtavw.png}{Сглаженная история loss для ETN Adam на MoNbTaVW.}{fig:monbtavw-adam-band-10000}
+
+Adam существенно лучше SGD и Momentum и после \(10000\) шагов даёт меньшую validation EPA RMSE, чем native BFGS и SciPy BFGS. При этом он уступает вариантам Muon по energy error и force error, а по validation forces RMSE остаётся хуже BFGS-вариантов.
+
+\FloatBarrier
+
+\subsubsection{Результаты для Muon pad sqrt}
+
+\begin{table}[H]
+\centering
+\small
+\caption{ETN на MoNbTaVW: Muon pad sqrt в сравнении с native BFGS.}
+\label{tab:etn-monbtavw-muon-pad}
+\begin{tabular}{lcccc}
+\toprule
+\multirow{2}{*}{Метрика, единица} & \multicolumn{2}{c}{Muon pad sqrt} & \multicolumn{2}{c}{Native BFGS} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+ & Mean & Std & Mean & Std \\
+\midrule
+Validation EPA RMSE, eV/atom & 0.428698 & 0.004227 & 0.476876 & \(2.33759\cdot 10^{-10}\) \\
+Validation forces RMSE, eV/\AA & 0.600915 & 0.003125 & 0.523471 & \(8.20466\cdot 10^{-11}\) \\
+Train time, s & 5392.03 & 106.256 & 145.110 & 41.9128 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\resultfigure{fig_05_29_etn_muon_pad_sqrt_loss_monbtavw.png}{Сглаженная история loss для ETN Muon pad sqrt на MoNbTaVW.}{fig:monbtavw-muon-pad-band-10000}
+
+Muon pad sqrt существенно превосходит Adam, SGD и Momentum по validation EPA RMSE и становится лучше BFGS-вариантов по energy error. При этом force error остаётся хуже, чем у BFGS-вариантов, а время обучения значительно выше.
+
+\FloatBarrier
+
+\subsubsection{Результаты для Muon factorization}
+
+\begin{table}[H]
+\centering
+\small
+\caption{ETN на MoNbTaVW: Muon factorization в сравнении с native BFGS.}
+\label{tab:etn-monbtavw-muon-factor}
+\begin{tabular}{lcccc}
+\toprule
+\multirow{2}{*}{Метрика, единица} & \multicolumn{2}{c}{Muon factorization} & \multicolumn{2}{c}{Native BFGS} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+ & Mean & Std & Mean & Std \\
+\midrule
+Validation EPA RMSE, eV/atom & 0.428698 & 0.004227 & 0.476876 & \(2.33759\cdot 10^{-10}\) \\
+Validation forces RMSE, eV/\AA & 0.600915 & 0.003125 & 0.523471 & \(8.20466\cdot 10^{-11}\) \\
+Train time, s & 5423.30 & 63.3786 & 145.110 & 41.9128 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\resultfigure{fig_05_30_etn_muon_factorization_loss_monbtavw.png}{Сглаженная история loss для ETN Muon factorization на MoNbTaVW.}{fig:monbtavw-muon-factor-band-10000}
+
+Muon factorization даёт те же средние validation EPA RMSE и validation forces RMSE, что и Muon pad sqrt, но немного отличается по времени обучения. В этой серии оба варианта Muon приводят к одному качественному выводу: матричная нормализация обновлений особенно полезна для ETN на MoNbTaVW по энергетической ошибке.
+
+\FloatBarrier
+
+\subsubsection{Сводное сравнение всех методов для ETN на MoNbTaVW}
+
+\begin{table}[H]
+\centering
+\small
+\caption{ETN на MoNbTaVW: сводное сравнение оптимизаторов.}
+\label{tab:etn-monbtavw-summary}
+\begingroup
+\setlength{\tabcolsep}{2.5pt}
+\begin{tabular}{@{}lccc@{}}
+\toprule
+Метод & Validation EPA RMSE, eV/atom & Validation forces RMSE, eV/\AA & Train time, s \\
+\midrule
+Native BFGS & \(0.476876 \pm 2.33759\cdot 10^{-10}\) & \(0.523471 \pm 8.20466\cdot 10^{-11}\) & \(145.110 \pm 41.9128\) \\
+SciPy BFGS & \(0.499952 \pm 4.27592\cdot 10^{-10}\) & \(0.529053 \pm 1.30138\cdot 10^{-9}\) & \(240.921 \pm 63.9803\) \\
+SGD & \(1.72847 \pm 0.000501\) & \(0.887349 \pm 2.30430\cdot 10^{-10}\) & \(5446.38 \pm 108.408\) \\
+Momentum & \(1.73013 \pm 0.000473\) & \(0.887349 \pm 2.30449\cdot 10^{-10}\) & \(5425.00 \pm 50.5405\) \\
+Adam & \(0.441821 \pm 0.001756\) & \(0.678150 \pm 0.000513\) & \(5344.02 \pm 28.9838\) \\
+Muon pad sqrt & \(0.428698 \pm 0.004227\) & \(0.600915 \pm 0.003125\) & \(5392.03 \pm 106.256\) \\
+Muon factorization & \(0.428698 \pm 0.004227\) & \(0.600915 \pm 0.003125\) & \(5423.30 \pm 63.3786\) \\
+\bottomrule
+\end{tabular}
+\endgroup
+\end{table}
+
+\resultfigure{fig_05_31_etn_validation_errors_monbtavw.png}{Validation errors для ETN на MoNbTaVW.}{fig:monbtavw-validation-10000}
+\resultfigure{fig_05_32_etn_time_quality_monbtavw.png}{Качество и время обучения ETN на MoNbTaVW.}{fig:monbtavw-time-quality-10000}
+\resultfigure{fig_05_33_etn_ensemble_spread_monbtavw.png}{Разброс ETN-результатов по ансамблю на MoNbTaVW.}{fig:monbtavw-ensemble-10000}
+\resultfigure{fig_05_34_etn_loss_overview_monbtavw.png}{Обзор сглаженных loss histories для ETN на MoNbTaVW.}{fig:monbtavw-losses-overview-10000}
+
+Сводное сравнение показывает, что по validation EPA RMSE лучшими становятся Muon pad sqrt и Muon factorization. Adam также превосходит native BFGS и SciPy BFGS по energy error, но уступает Muon. При этом по validation forces RMSE и времени обучения BFGS-варианты остаются сильнее mini-batch методов. Поэтому для MoNbTaVW итог зависит от выбранной метрики: Muon лучше по energy error, а BFGS-варианты лучше по force error и вычислительной стоимости.
+
+\FloatBarrier
+
+\subsection{Эксперимент с возмущением параметров ETN}
+
+Дополнительно проверялась гипотеза о том, что периодическое добавление малых возмущений к параметрам ETN может уменьшить разброс по ансамблю или помочь выходить из неблагоприятных локальных минимумов:
+\[
+\theta_{t+1}
+=
+\theta_t
+-
+\eta_t g_t
++
+\varepsilon_t,
+\qquad
+\varepsilon_t
+\sim
+\mathcal N(0,\sigma^2 I).
+\]
+Найденный набор результатов ограничен: строгий baseline CSV для сравнения отсутствует, а ETN в этой постановке практически сходился в один минимум. Поэтому этот эксперимент рассматривается как вспомогательная проверка и не используется как основное доказательство преимущества какого-либо метода.
+
+\FloatBarrier
